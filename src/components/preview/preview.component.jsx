@@ -1,4 +1,5 @@
 import React from "react";
+
 import {ReactComponent as HtmlLogo} from '../../icons/icons8-html-5-48.svg';
 import {ReactComponent as CssLogo} from '../../icons/icons8-css3.svg';
 import {ReactComponent as JsLogo} from '../../icons/icons8-javascript.svg';
@@ -7,6 +8,7 @@ import {ReactComponent as GitLogo} from '../../icons/icons8-git.svg';
 import {ReactComponent as GithubtLogo} from '../../icons/icons8-github.svg';
 
 import './preview.style.scss';
+import Button from "../button/button.component";
 
 const Preview = () => {
     return(
@@ -17,8 +19,8 @@ const Preview = () => {
                 <span>------------------------------</span>
                 <span>------------------------------</span>
                 <div className="preview-buttons">
-                    <button>CV</button>
-                    <button>Contact</button>
+                    <Button name={'Hire Me'} type={'point1'}/>
+                    <Button name={'Projects'} type={'point2'}/>
                 </div>
             </div>
             <div className="preview-right">
