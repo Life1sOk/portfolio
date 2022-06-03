@@ -25,32 +25,6 @@
     }
 
     .preview-right {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .basic-skills {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .skill-container {
-            background-color: #1f1f1f;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-            width: 100px;
-            margin: 10px;
-            border-radius: 30px;
-
-            .git-container {
-                display: flex;
-                align-items: center;
-                background-color: white;
-                border-radius: 15px;
-            }
-        }
+        
     }
 }

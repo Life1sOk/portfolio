@@ -1,4 +1,45 @@
-.skills-container{
-    height: 40vh;
-    background-color: white;
+.skills-container {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    background-color: #1f1f1f;
+
+    .already {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #e9d5a1;
+
+        .basic-skills {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    
+        .skill-container {
+            background-color: #eacd85;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 30px;
+    
+            .git-container {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    .in-scope {
+        width: 30%;
+    }
+
 }

@@ -1,0 +1,17 @@
+.about-container {
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #e9d5a1;
+
+    img {
+        max-width: 300px;
+        border-radius: 100px;
+        object-fit: contain;
+    }
+
+    .about-me {
+        font-size: 1.5rem;
+    }
+}
