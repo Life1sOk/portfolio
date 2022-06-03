@@ -1,0 +1,31 @@
+.name-wrapper {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .first-line {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    .second-line {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    .third-line {
+        display: flex;
+        column-gap: 20px;
+    }
+
+
+    .word {
+        display: flex;
+        font-size: 5em;
+    }
+}
+
+.img-wrapper {
+    width: 50vw;
+}
