@@ -1,0 +1,26 @@
+.preview-container {
+    background-color: #e9d5a1;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .preview-left {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-size: 3.5rem;
+        }
+
+        .preview-buttons {
+            display: flex;
+            justify-content: space-around;
+
+            button {
+                height: 3rem;
+                width: 7rem;
+            }
+        }
+    }
+}

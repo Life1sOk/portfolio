@@ -1,0 +1,23 @@
+.navbar-container {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .navbar-left {
+        margin-left: 7%;
+        font-size: 2.5rem;
+    }
+
+    .navbar-right {
+        width: 25%;
+        margin-right: 30px;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+}

@@ -1,9 +1,11 @@
+body {
+    color: white;
+}
+
 .wrap-main {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-	height: 100vh;
+	width: 100vw;
 }
 
