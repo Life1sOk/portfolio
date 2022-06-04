@@ -6,7 +6,7 @@ import {ReactComponent as CssLogo} from '../../icons/icons8-css3.svg';
 import {ReactComponent as JsLogo} from '../../icons/icons8-javascript.svg';
 import {ReactComponent as ReactLogo} from '../../icons/icons8-react.svg';
 import {ReactComponent as GitLogo} from '../../icons/icons8-git.svg';
-import {ReactComponent as GithubtLogo} from '../../icons/icons8-github.svg';
+import {ReactComponent as GithubLogo} from '../../icons/icons8-github.svg';
 
 const Skills = () => {
     return(
@@ -30,7 +30,7 @@ const Skills = () => {
                         <span>Git / Github</span>
                         <div className="git-container">
                             <GitLogo />
-                            <GithubtLogo />
+                            <GithubLogo />
                         </div>
                     </div>
                 </div>
