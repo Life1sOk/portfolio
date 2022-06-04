@@ -21,7 +21,7 @@
     }
 
     .preview-right {
-        width: 30rem;
+        width: 40rem;
 
         img {
             width: 100%;
@@ -41,6 +41,7 @@
 @media only screen and (max-width: 1200px) {
     .preview-container {
         flex-direction: column;
+        min-height: 800px;
 
         .preview-left{
             width: 100%;
@@ -51,7 +52,7 @@
         }
 
         .preview-right {
-            width: 100%;
+            width: 40rem;
 
             img {
                 width: 60%;

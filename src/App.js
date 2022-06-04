@@ -10,7 +10,7 @@ import Projects from "./components/projects/projects.component";
 import Footer from "./components/footer/footer.component";
 
 function App() {
-  
+
   return (
     <div className='wrap-main'>
       <Navbar />
