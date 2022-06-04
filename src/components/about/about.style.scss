@@ -1,5 +1,7 @@
 .about-container {
-    height: 40vh;
+    width: 100%;
+    // height: 40vh;
+    padding: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -13,5 +15,28 @@
 
     .about-me {
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about-container {
+        max-width: 1500px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-container {
+        flex-direction: column;
+        padding: 5vh;
+
+        .about-me {
+            max-width: 50vh;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-container {
+        min-width: 768px;
     }
 }

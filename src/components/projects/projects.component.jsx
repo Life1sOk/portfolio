@@ -27,7 +27,7 @@ const Projects = () => {
         <div className="projects-container">
             {
                 allProjects.map(project => {
-                    return <ProjectStructure project={project}/>
+                    return <ProjectStructure key={project.title} project={project}/>
                 })
             }
         </div>

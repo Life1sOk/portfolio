@@ -1,6 +1,7 @@
 .preview-container {
     background-color: #e9d5a1;
-    height: 100vh;
+    width: 100%;
+    height: 93vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,15 +17,52 @@
         .preview-buttons {
             display: flex;
             justify-content: space-around;
-
-            button {
-                height: 3rem;
-                width: 7rem;
-            }
         }
     }
 
     .preview-right {
-        
+        width: 30rem;
+
+        img {
+            width: 100%;
+            position: cover;
+            border: 2px solid #e9d5a1;
+            border-radius: 120px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .preview-container {
+        max-width: 1500px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .preview-container {
+        flex-direction: column;
+
+        .preview-left{
+            width: 100%;
+
+            .preview-buttons {
+                justify-content: center;
+            }
+        }
+
+        .preview-right {
+            width: 100%;
+
+            img {
+                width: 60%;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .preview-container {
+        min-width: 768px;
     }
 }

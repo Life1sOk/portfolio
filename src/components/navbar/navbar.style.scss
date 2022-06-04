@@ -1,11 +1,11 @@
 .navbar-container {
-    // height: 10vh;
+    height: 7vh;
     padding: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     // border: 1px solid white;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: #e9d5a1;
@@ -31,5 +31,17 @@
         font-size: 1.5rem;
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .navbar-container {
+        max-width: 1500px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-container {
+        min-width: 768px;
     }
 }

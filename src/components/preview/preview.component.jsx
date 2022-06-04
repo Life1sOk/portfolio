@@ -1,6 +1,7 @@
 import React from "react";
 
 import './preview.style.scss';
+import picture from '../../img/Set_of_programmers_02_03.jpg';
 import Button from "../button/button.component";
 
 const Preview = () => {
@@ -17,8 +18,7 @@ const Preview = () => {
                 </div>
             </div>
             <div className="preview-right">
-                
-                
+                <img src={picture}/>
             </div>
         </div>
     );

@@ -3,12 +3,15 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: white;
+    /* background-color: #e9d5a1; */
+    background-color: white;
 }
 
 .wrap-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 	width: 100vw;
 }
 

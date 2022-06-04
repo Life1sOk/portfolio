@@ -33,17 +33,19 @@ const Skills = () => {
                             <GithubLogo />
                         </div>
                     </div>
-                </div>
-                <div className="skill-container">
-                    <span>React.js</span>
-                    <ReactLogo />
+                    <div className="skill-container">
+                        <span>React.js</span>
+                        <ReactLogo />
+                    </div>
                 </div>
             </div>
             <div className="in-scope">
                 <h2>In process</h2>
-                <div>Type Script</div>
-                <div>GraphQl</div>
-                <div>Redux</div>
+                <div className="process-skills">
+                    <div className="skill-container">Type Script</div>
+                    <div className="skill-container">GraphQl</div>
+                    <div className="skill-container">Redux</div>
+                </div>
             </div>
         </div>
     );
