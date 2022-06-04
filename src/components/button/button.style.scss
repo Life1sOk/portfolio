@@ -23,7 +23,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
-  width: auto;
+  max-width: 200px;
     
   &:hover {
     background-color: #fb8332;
@@ -98,7 +98,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
-  width: auto;
+  width: 200px;
   
   &:hover {
     transform: translateY(-1px);
