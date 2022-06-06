@@ -24,12 +24,14 @@ const Footer = () => {
         <div className="footer-container">
             <form ref={form} onSubmit={sendEmail}>
                 <label>Name</label>
-                <input type="text" name="name" />
+                <input type="text" name="name" required />
                 <label>Email</label>
-                <input type="email" name="email" />
+                <input type="email" name="email" required />
+                <label>Company/Organization</label>
+                <input type="text" name="name" required />
                 <label>Message</label>
-                <textarea name="message" />
-                <input type="submit" value="Send" />
+                <textarea name="message" required />
+                <button type="submit">Send</button>
             </form>
         </div>
     );
