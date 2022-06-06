@@ -4,7 +4,7 @@ import './input.style.scss';
 
 const Input = ({label, ...otherProps}) => {
     return(
-        <div>
+        <div className="input-container">
             <label>{label}</label>
             <input {...otherProps} />
         </div>
