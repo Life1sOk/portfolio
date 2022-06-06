@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 import './footer.style.scss';
+import Input from '../form-input/input.component';
 
 const Footer = () => {
     const form = useRef();
@@ -23,14 +24,17 @@ const Footer = () => {
     return(
         <div className="footer-container">
             <form ref={form} onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="name" required />
-                <label>Email</label>
-                <input type="email" name="email" required />
-                <label>Company/Organization</label>
-                <input type="text" name="name" required />
-                <label>Message</label>
-                <textarea name="message" required />
+                <Input label='Name' type='text' name='name' required />
+                
+                <Input label='E-mail' type='email' name='email' required />
+
+                <Input label='Company/Organization' type='text' name='company' required />
+
+                <div>
+                    <label>Message</label>
+                    <textarea name="message" required />
+                </div>
+                
                 <button type="submit">Send</button>
             </form>
         </div>
