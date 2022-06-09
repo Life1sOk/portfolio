@@ -18,7 +18,7 @@ const Preview = () => {
                 </div>
             </div>
             <div className="preview-right">
-                <img src={picture}/>
+                <img alt={picture} src={picture}/>
             </div>
         </div>
     );
