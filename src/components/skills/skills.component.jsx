@@ -7,6 +7,10 @@ import {ReactComponent as JsLogo} from '../../icons/icons8-javascript.svg';
 import {ReactComponent as ReactLogo} from '../../icons/icons8-react.svg';
 import {ReactComponent as GitLogo} from '../../icons/icons8-git.svg';
 import {ReactComponent as GithubLogo} from '../../icons/icons8-github.svg';
+import {ReactComponent as ReduxLogo} from '../../icons/icons8-redux.svg';
+import {ReactComponent as SassLogo} from '../../icons/icons8-sass.svg';
+import {ReactComponent as TsLogo} from '../../icons/icons8-typescript.svg';
+import {ReactComponent as GqlLogo} from '../../icons/icons8-graphql.svg';
 
 const Skills = () => {
     return(
@@ -23,6 +27,10 @@ const Skills = () => {
                         <CssLogo />
                     </div>
                     <div className="skill-container">
+                        <span>Sass</span>
+                        <SassLogo />
+                    </div>
+                    <div className="skill-container">
                         <span>Java Script</span>
                         <JsLogo />
                     </div>
@@ -37,14 +45,23 @@ const Skills = () => {
                         <span>React.js</span>
                         <ReactLogo />
                     </div>
+                    <div className="skill-container">
+                        <span>Redux</span>
+                        <ReduxLogo />
+                    </div>
                 </div>
             </div>
             <div className="in-scope">
                 <h2>In process</h2>
                 <div className="process-skills">
-                    <div className="skill-container">Type Script</div>
-                    <div className="skill-container">GraphQl</div>
-                    <div className="skill-container">Redux</div>
+                    <div className="skill-container">
+                        <span>Type Script</span>
+                        <TsLogo />
+                    </div>
+                    <div className="skill-container">
+                        <span>GraphQl</span>
+                        <GqlLogo />
+                    </div>
                 </div>
             </div>
         </div>

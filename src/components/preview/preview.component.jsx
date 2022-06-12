@@ -5,6 +5,7 @@ import picture from '../../img/Set_of_programmers_02_03.jpg';
 import Button from "../button/button.component";
 
 const Preview = () => {
+
     return(
         <div className="preview-container">
             <div className="preview-left">

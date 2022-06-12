@@ -1,5 +1,4 @@
 import React from "react";
-import "aos/dist/aos.css";
 
 import './App.css';
 import Navbar from "./components/navbar/navbar.component";

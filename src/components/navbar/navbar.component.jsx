@@ -5,6 +5,7 @@ import './navbar.style.scss';
 import Button from "../button/button.component";
 
 const Navbar = () => {
+   
     return(
         <div className="navbar-container">
             <div className="navbar-left">
