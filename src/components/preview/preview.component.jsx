@@ -1,8 +1,9 @@
 import React from "react";
 
 import './preview.style.scss';
-import picture from '../../img/Set_of_programmers_02_03.jpg';
+// import picture from '../../img/Set_of_programmers_02_03.jpg';
 import Button from "../button/button.component";
+import Animation from "../animation/animation.component";
 
 const Preview = () => {
 
@@ -19,7 +20,8 @@ const Preview = () => {
                 </div>
             </div>
             <div className="preview-right">
-                <img alt={picture} src={picture}/>
+                {/* <img alt={picture} src={picture}/> */}
+                <Animation />
             </div>
         </div>
     );
