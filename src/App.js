@@ -14,9 +14,9 @@ function App() {
     <div className='wrap-main'>
       <Navbar />
       <Preview />
-      <About />
       <Skills />
       <Projects />
+      <About />
       <Footer />
     </div>
   );

@@ -15,13 +15,13 @@ const Navbar = () => {
             </div>
             <div className="navbar-center">
                 <Link to="projects-container" smooth={true} spy={true} offset={-65} duration={700}>
-                    <span>Projects</span>
+                    <span className="nav-word">Projects</span>
                 </Link>
                 <Link to="skills-container" smooth={true} spy={true} offset={-65} duration={700}>
-                    <span>Skills</span>
+                    <span className="nav-word">Skills</span>
                 </Link>
                 <Link to="about-container" smooth={true} spy={true} offset={-65} duration={700}>
-                    <span>About</span>
+                    <span className="nav-word">About</span>
                 </Link>
             </div>
             <div className="navbar-right">
