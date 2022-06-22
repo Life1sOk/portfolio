@@ -3,7 +3,7 @@ import React from "react";
 import './preview.style.scss';
 // import picture from '../../img/cute-programmer.webp';
 import Button from "../button/button.component";
-import Canvas from "../canvas/canvas";
+import Canvas from '../canvas-try/canvas';
 
 const Preview = () => {
 

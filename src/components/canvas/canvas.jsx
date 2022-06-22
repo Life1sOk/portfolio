@@ -24,13 +24,14 @@ const Canvas = () => {
             const context = canvasRef.current.getContext('2d');
             context.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
             for (let i=0; i < arrayParticles.length; i++) {
-                arrayParticles[i].draw(canvasRef);
+                arrayParticles[i].draw(canvasRef, mouse.radius);
                 arrayParticles[i].update(mouse.x, mouse.y, mouse.radius);
             }
             requestAnimationFrame(animation);
         }
         animation()
     }, [arrayParticles])
+
 
     useEffect(() => {
         console.log('init')
@@ -42,7 +43,7 @@ const Canvas = () => {
                     if(dataScan.data[(y * 4 * dataScan.width) + (x * 4) + 3] > 128) {
                         let positionX = x;
                         let positionY = y;
-                        newArray.push(new Particle(positionX * 5, positionY * 5))
+                        newArray.push(new Particle(positionX * 15, positionY * 15))
                     }
                 }
             }
@@ -60,7 +61,7 @@ const Canvas = () => {
     const dataText = (ctx) => {
         ctx.fillStyle = 'black';
         ctx.font = '24px Verdana';
-        ctx.fillText('Andrey', 10, 30);
+        ctx.fillText('A', 12, 30);
         const data = ctx.getImageData(0,0,100,100);
         setDataScan(data);
     } 

@@ -1,7 +1,7 @@
 .preview-container {
     background-color: #e9d5a1;
     width: 100%;
-    height: 93vh;
+    height: 92vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,7 +21,9 @@
     }
 
     .preview-right {
-        width: 40rem;
+        width: 600px;
+        height: 600px;
+        border: 1px solid white;
 
         img {
             width: 100%;
