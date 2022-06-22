@@ -9,7 +9,7 @@ export class Particle {
         }
         draw(canvasRef) {
             const context = canvasRef.current.getContext('2d');
-            context.fillStyle = 'white';
+            context.fillStyle = 'red';
             context.beginPath();
             context.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             context.closePath();
@@ -35,11 +35,9 @@ export class Particle {
                     this.x -= dx/100;
                 }
                 if ( this.y !== this.baseY) {
-                    let dy = this.x - this.baseY;
+                    let dy = this.y - this.baseY;
                     this.y -= dy/100;
                 }
-                // this.x += this.baseX;
-                // this.y += this.baseY;
             }
         }
     }
