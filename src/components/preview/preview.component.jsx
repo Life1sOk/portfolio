@@ -1,9 +1,8 @@
 import React from "react";
 
 import './preview.style.scss';
-// import picture from '../../img/cute-programmer.webp';
+import picture from '../../img/cute-programmer.webp';
 import Button from "../button/button.component";
-import Canvas from '../canvas-try/canvas';
 
 const Preview = () => {
 
@@ -20,8 +19,7 @@ const Preview = () => {
                 </div>
             </div>
             <div className="preview-right">
-                {/* <img alt={picture} src={picture}/> */}
-                <Canvas />
+                <img alt={picture} src={picture}/>
             </div>
         </div>
     );

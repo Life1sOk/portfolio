@@ -61,14 +61,15 @@ const Canvas = () => {
     const dataText = (ctx) => {
         ctx.fillStyle = 'black';
         ctx.font = '24px Verdana';
-        ctx.fillText('A', 12, 30);
+        ctx.fillText('A', 0, 10);
         const data = ctx.getImageData(0,0,100,100);
+        console.log(data);
         setDataScan(data);
     } 
 
     return(
         <div className="canvas-container">
-            <canvas ref={canvasRef} width='640' height='640' 
+            <canvas ref={canvasRef} width='10' height='10' 
             onMouseMove={(e) => hoverHandler(e)}
             />
         </div>
