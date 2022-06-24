@@ -7,39 +7,74 @@
     border: 1px solid #1f1f1f;
 
     .top-footer-container {
-        height: 90px;
         width: 100%;
         display: flex;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: center;
         
-        .send-me-location {
-            width: 300px;
+        .top-footer-left {
+            width: 50%;
+
+            .thx {
+                
+            }
+        }
+
+        .top-footer-right {
             display: flex;
-            flex-direction: column;
-            padding-top: 15px;
-            font-size: 17px;
-    
-            .contact-line {
-                width: 100%;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            gap: 33px;
+
+            .send-me-location {
                 display: flex;
-                align-items: center;
-                justify-content: center;
-    
-                .contact-line-icon {
-                    margin-right: 6px;
+                flex-direction: column;
+                padding: 15px;
+                font-size: 13px;
+        
+                .contact-line {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+        
+                    .contact-line-icon {
+                        margin-right: 6px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .bot-footer-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .footer-nav {
+            width: 50%;
+
+            .footer-word {
+                padding: 4px;
+                margin: 0 44px;
+                cursor: pointer;
+
+                &:hover {
+                    color: white;
+                    border-bottom: 2px solid white;
                 }
             }
         }
 
-        .footer-nav {
-            height: 100%;
-            width: 300px;
+        .contact-icons-wrap {
+            width: 50%;
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+            justify-content: center;
         }
+        
     }
 }
 

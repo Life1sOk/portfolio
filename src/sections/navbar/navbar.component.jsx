@@ -9,18 +9,16 @@ const Navbar = () => {
     return(
         <nav className="navbar-container">
             <section className="navbar-left">
-                <Link to="preview-container" smooth={true} spy={true} offset={-65} duration={700}>
-                    AndyT <span className="dot">&#8226;</span>
-                </Link>
+                AndyT <span className="dot">&#8226;</span>
             </section>
             <section className="navbar-center">
-                <Link to="projects-container" smooth={true} spy={true} offset={-65} duration={700}>
+                <Link to="projects-container" smooth={true} spy={true} duration={700}>
                     <span className="nav-word">Projects</span>
                 </Link>
-                <Link to="skills-container" smooth={true} spy={true} offset={-65} duration={700}>
+                <Link to="skills-container" smooth={true} spy={true} duration={700}>
                     <span className="nav-word">Skills</span>
                 </Link>
-                <Link to="about-container" smooth={true} spy={true} offset={-65} duration={700}>
+                <Link to="about-container" smooth={true} spy={true} duration={700}>
                     <span className="nav-word">About</span>
                 </Link>
             </section>

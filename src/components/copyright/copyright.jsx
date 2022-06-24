@@ -8,7 +8,7 @@ const Copyright = () => {
         <div className="copyright-container">
             <FaRegCopyright />
             <span>2022</span>
-            <span>Andrey Tsoy</span>
+            <span className="name">Andrey Tsoy</span>
         </div>
     );
 }
