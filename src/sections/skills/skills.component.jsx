@@ -14,8 +14,8 @@ import {ReactComponent as GqlLogo} from '../../icons/icons8-graphql.svg';
 
 const Skills = () => {
     return(
-        <div className="skills-container">
-            <div className="already">
+        <aside className="skills-container">
+            <section className="already">
                 <h2>Skills</h2>
                 <div className="basic-skills">
                     <div className="skill-container">
@@ -50,8 +50,8 @@ const Skills = () => {
                         <ReduxLogo />
                     </div>
                 </div>
-            </div>
-            <div className="in-scope">
+            </section>
+            <section className="in-scope">
                 <h2>In process</h2>
                 <div className="process-skills">
                     <div className="skill-container">
@@ -63,8 +63,8 @@ const Skills = () => {
                         <GqlLogo />
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </aside>
     );
 }
 

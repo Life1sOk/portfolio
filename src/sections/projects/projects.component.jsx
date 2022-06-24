@@ -1,7 +1,7 @@
 import React from "react";
 
 import './projects.style.scss';
-import ProjectStructure from "../project-structure/project.structure.component";
+import ProjectStructure from "../../components/project-structure/project.structure.component";
 import {ReactComponent as JsLogo} from '../../icons/icons8-javascript.svg';
 import {ReactComponent as ReactLogo} from '../../icons/icons8-react.svg';
 
@@ -24,13 +24,13 @@ const allProjects = [
 
 const Projects = () => {
     return(
-        <div className="projects-container">
+        <main className="projects-container">
             {
                 allProjects.map(project => {
                     return <ProjectStructure key={project.title} project={project}/>
                 })
             }
-        </div>
+        </main>
     );
 }
 

@@ -7,7 +7,7 @@ import Button from '../button/button.component';
 const ProjectStructure = ({project}) => {
     const { title, img, tools, discription, link } = project
     return(
-        <div className="project-structure-container">
+        <section className="project-structure-container">
             <div className="project-left">
                 <img alt={`${title}`} src={img}/>
                 <div className="tools-container">
@@ -20,7 +20,7 @@ const ProjectStructure = ({project}) => {
                 <div className="discription">{discription}</div>
                 <Button type={'point3'} name={'Link'} onClick={link}/>
             </div>
-        </div>
+        </section>
     );
 }
 
