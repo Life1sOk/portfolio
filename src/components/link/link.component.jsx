@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-scroll/modules';
 
-import './link.style.scss';
+import { NavbarWords } from './link.style';
 
 const LinkToComponent = ({ name, to, openToggle }) => {
     return (
-        <Link onClick={openToggle} className='nav-menu-word' to={to} smooth={true} spy={true} duration={700}>
-            {name}
+        <Link onClick={openToggle} to={to} smooth={true} spy={true} duration={700}>
+            <NavbarWords>{name}</NavbarWords>
         </Link>
     )
 }
