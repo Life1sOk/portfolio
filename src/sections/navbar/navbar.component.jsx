@@ -1,31 +1,29 @@
-import React from "react";
-import { Link } from "react-scroll/modules";
+import React, { useState } from "react";
 
 import './navbar.style.scss';
 import Button from "../../components/button/button.component";
+import LinkToComponent from "../../components/link/link.component";
+import Burger from "../../components/burger/burger";
+import BurgerMemu from "../../components/burger-menu/burger-menu.component";
 
 const Navbar = () => {
-   
-    return(
-        <nav className="navbar-container">
-            <section className="navbar-left">
-                AndyT <span className="dot">&#8226;</span>
-            </section>
-            <section className="navbar-center">
-                <Link to="projects-container" smooth={true} spy={true} duration={700}>
-                    <span className="nav-word">Projects</span>
-                </Link>
-                <Link to="skills-container" smooth={true} spy={true} duration={700}>
-                    <span className="nav-word">Skills</span>
-                </Link>
-                <Link to="about-container" smooth={true} spy={true} duration={700}>
-                    <span className="nav-word">About</span>
-                </Link>
-            </section>
-            <section className="navbar-right">
-                <Button name={'Contact'} type={'point3'}/>
-            </section>
-        </nav>
+    const [open, setOpen] = useState(false);
+
+    return (
+        <>
+            <BurgerMemu open={open} openToggle={() => setOpen(!open)} />
+            <nav className="navbar-container">
+                <span className="short-name">Andrey Tsoy</span>
+                <Burger openToggle={() => setOpen(!open)} />
+                <section className="navbar-center">
+                    <LinkToComponent to="projects-container" name='Projects' />
+                    <LinkToComponent to="skills-container" name="Skills" />
+                    <LinkToComponent to="about-container" name='About' />
+                </section>
+                <Button name={'Contact'} type={'point3'} />
+            </nav>
+        </>
+
     )
 }
 

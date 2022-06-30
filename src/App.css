@@ -1,17 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Mukta', sans-serif;
     color: white;
-    /* background-color: #e9d5a1; */
     background-color: white;
 }
 
 .wrap-main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	width: 100vw;
+    min-height: 100vh;
 }
-

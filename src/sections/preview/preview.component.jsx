@@ -1,12 +1,11 @@
 import React from "react";
 
 import './preview.style.scss';
-import picture from '../../img/cute-programmer.webp';
 import Button from "../../components/button/button.component";
 
 const Preview = () => {
 
-    return(
+    return (
         <header className="preview-container">
             <section className="preview-left">
                 <span>Hi, I'm Andrew</span>
@@ -14,13 +13,12 @@ const Preview = () => {
                 <span>------------------------------</span>
                 <span>------------------------------</span>
                 <div className="preview-buttons">
-                    <Button name={'Hire Me'} type={'point1'}/>
-                    <Button name={'Projects'} type={'point2'}/>
+                    <Button name={'Hire Me'} type={'point1'} />
+                    <Button name={'Projects'} type={'point2'} />
                 </div>
             </section>
-            <section className="preview-right">
-                <img alt={picture} src={picture}/>
-            </section>
+            {/* <section className="preview-right">
+            </section> */}
         </header>
     );
 }
