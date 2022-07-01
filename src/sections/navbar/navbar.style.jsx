@@ -5,8 +5,11 @@ export const NavbarContainer = styled.nav`
     align-items: center;
     display: flex;
     flex: 0 0 auto;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 160px;
     padding: 5px 44px;
+    min-width: 320px;
+    white-space: nowrap;
 
     & button:nth-of-type(1) {
         display: none;
@@ -28,6 +31,9 @@ export const NavbarContainer = styled.nav`
     }
 
     @media only screen and (max-width: 760px) {
+        justify-content: space-between;
+        column-gap: 0px;
+
         button:nth-of-type(1) {
             width: 3rem;
         }
@@ -53,6 +59,10 @@ export const MyName = styled.span`
     @media only screen and (max-width: 1068px) {
         margin: 0;
     };
+
+    @media only screen and (max-width: 510px) {
+        font-size: 1.7rem;
+    }
 `;
 
 export const NavbarMenu = styled.section`

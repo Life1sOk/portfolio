@@ -3,8 +3,10 @@ import React from "react";
 import './animation.style.scss';
 
 const Animation = () => {
-    return(
-        <div></div>
+    return (
+        <div className="animation-container">
+
+        </div>
     )
 }
 
