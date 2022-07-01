@@ -9,6 +9,7 @@ const BurgerMemu = ({ open, openToggle }) => {
             <LinkToComponent openToggle={openToggle} to="projects-container" name='Projects' />
             <LinkToComponent openToggle={openToggle} to="skills-container" name="Skills" />
             <LinkToComponent openToggle={openToggle} to="about-container" name='About' />
+            <LinkToComponent openToggle={openToggle} to="contact" name='Contact' />
         </BurgerMenuContainer>
     )
 }

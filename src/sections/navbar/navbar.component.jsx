@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AiOutlineMail } from 'react-icons/ai';
 
 import { NavbarContainer, MyName, NavbarMenu } from './navbar.style';
 import Button from "../../components/button/button.component";
@@ -21,6 +22,7 @@ const Navbar = () => {
                     <LinkToComponent to="about-container" name='About' />
                 </NavbarMenu>
                 <Button name={'Contact'} type={'point3'} />
+                <Button name={<AiOutlineMail />} type={'point3'} />
             </NavbarContainer>
         </>
 

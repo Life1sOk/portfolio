@@ -8,7 +8,7 @@ export const BurgerMenuContainer = styled.div`
     width: 44%;
     align-items: flex-start;
     padding: 2rem;
-    position: absolute;
+    position: fixed;
     background-color: #06223c;
     top: 0;
     left: 0;

@@ -10,7 +10,6 @@ export const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-right: auto; 
   z-index: 100;
   
   &:focus {
@@ -23,7 +22,7 @@ export const StyledBurger = styled.button`
     background-color: white;
     border-radius: 10px;
     transition: all 0.3s linear;
-    ${'' /* position: relative; */}
+    position: relative;
     transform-origin: 1px;
   }
 `;

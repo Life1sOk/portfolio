@@ -1,6 +1,6 @@
 .preview-container {
     // background-color: #e9d5a1;
-    background-color: #02203c;
+    background-color: #06223c;
     width: 100%;
     // height: 92vh;
     display: flex;
@@ -66,8 +66,8 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .preview-container {
-        min-width: 768px;
-    }
-}
+// @media only screen and (max-width: 768px) {
+//     .preview-container {
+//         min-width: 768px;
+//     }
+// }

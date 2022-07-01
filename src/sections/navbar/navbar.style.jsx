@@ -5,27 +5,42 @@ export const NavbarContainer = styled.nav`
     align-items: center;
     display: flex;
     flex: 0 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 5px 44px;
 
-    & button:first-of-type {
-    display: none;
+    & button:nth-of-type(1) {
+        display: none;
     }
 
-    & button:last-of-type {
-        margin-left: auto;
+    & button:nth-of-type(3) {
+        display: none;
     }
 
     @media only screen and (max-width: 1068px) {
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
 
-        button:first-of-type {
+        button:nth-of-type(1) {
             display: flex;
+            width: 10rem;
             order: -1;
     }
 
-    @media only screen and (max-width: 622px) {
-        button:first-of-type {
-            width: auto;
+    @media only screen and (max-width: 760px) {
+        button:nth-of-type(1) {
+            width: 3rem;
+        }
+
+        button:nth-of-type(2) {
+            display: none;
+        }
+
+        button:nth-of-type(3) {
+            display: initial;
+            width: 3rem;
+            height: 3rem;
+            padding: 0;
         }
     }
 
@@ -34,15 +49,10 @@ export const NavbarContainer = styled.nav`
 export const MyName = styled.span`
     font-size: 2.4rem;
     font-weight: bolder;
-    margin-right: auto;
 
     @media only screen and (max-width: 1068px) {
         margin: 0;
     };
-
-    @media only screen and (max-width: 622px) {
-        font-size: 1.7rem;
-    }
 `;
 
 export const NavbarMenu = styled.section`
