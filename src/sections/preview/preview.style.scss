@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
-    column-gap: 100px;
+    column-gap: 80px;
 
     .preview-left {
         display: flex;
@@ -46,5 +46,8 @@
     .preview-right {
         display: flex;
         justify-content: center;
+        height: 400px;
+        width: 400px;
+        border: 1px solid white;
     }
 }

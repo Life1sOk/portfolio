@@ -1,68 +1,9 @@
 .animation-container {
+    overflow: hidden;
+    position: relative;
+    height: 390px;
     width: 500px;
-    height: 400px;
     border: 1px solid white;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-        "one one two two"
-        "three four five six"
-        "three four five six"
-        "three four five six"
-        "seven seven eight eight";
-    row-gap: 20px;
-    padding: 15px;
-
-    div {
-        border: 1px solid greenyellow;
-    }
-
-    .animation-1 {
-        grid-area: one;
-        border-right: none;
-        border-radius: 30% 0 0 30%;
-    }
-
-    .animation-2 {
-        grid-area: two;
-        border-left: none;
-        border-radius: 0 30% 30% 0;
-    }
-
-    .animation-3 {
-        grid-area: three;
-        border-right: none;
-        border-radius: 30% 0 0 30%;
-    }
-
-    .animation-4 {
-        grid-area: four;
-        border-right: none;
-        border-left: none;
-    }
-
-    .animation-5 {
-        grid-area: five;
-        border-left: none;
-        border-radius: 0 30% 30% 0;
-    }
-
-    .animation-6 {
-        grid-area: six;
-        border-radius: 30%;
-        margin-left: 20px;
-    }
-
-    .animation-7 {
-        grid-area: seven;
-        border-right: none;
-        border-radius: 30% 0 0 30%;
-    }
-
-    .animation-8 {
-        grid-area: eight;
-        border-left: none;
-        border-radius: 0 30% 30% 0;
-    }
+    border-radius: 45%;
+    background-color: white;
 }

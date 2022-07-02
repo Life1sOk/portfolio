@@ -22,7 +22,6 @@ const Preview = () => {
                 </div>
             </section>
             <section className="preview-right">
-                <Animation />
             </section>
         </header>
     );

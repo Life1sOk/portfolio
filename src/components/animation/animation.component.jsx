@@ -1,18 +1,16 @@
 import React from "react";
 
+import { words } from "./animation.array";
 import './animation.style.scss';
+import AnimationWord from "../animation-wrap/animation.word.component";
 
 const Animation = () => {
+
     return (
         <div className="animation-container">
-            <div className="animation-1">1</div>
-            <div className="animation-2">2</div>
-            <div className="animation-3">3</div>
-            <div className="animation-4">4</div>
-            <div className="animation-5">5</div>
-            <div className="animation-6">6</div>
-            <div className="animation-7">7</div>
-            <div className="animation-8">8</div>
+            {
+                words.map(word => <AnimationWord key={word.id} name={word.name} top={word.top} delay={word.delay} />)
+            }
         </div>
     )
 }
