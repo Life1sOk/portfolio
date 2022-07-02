@@ -14,10 +14,10 @@ function App() {
     <div className='wrap-main'>
       <Navbar />
       <Preview />
-      {/* <Skills /> */}
-      {/* <Projects /> */}
-      {/* <About /> */}
-      {/* <Footer /> */}
+      {/* <About />
+      <Skills />
+      <Projects />
+      <Footer /> */}
     </div>
   );
 }

@@ -2,15 +2,14 @@ import React from "react";
 
 import './preview.style.scss';
 import Button from "../../components/button/button.component";
-import Animation from "../../components/animation/animation.component";
 
 const Preview = () => {
 
     return (
-        <header className="preview-container">
+        <>
             <section className="preview-left">
                 <div className="article">
-                    <p className="bigg">Hello, I'm Andrey,</p>
+                    <p className="bigg">Hello, I'm Andrey</p>
                     <p className="small">Front End Developer</p>
                 </div>
                 <div className="middle">
@@ -21,9 +20,7 @@ const Preview = () => {
                     <Button name={'Projects'} type={'point2'} />
                 </div>
             </section>
-            <section className="preview-right">
-            </section>
-        </header>
+        </>
     );
 }
 
