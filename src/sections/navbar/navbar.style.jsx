@@ -8,7 +8,7 @@ export const NavbarContainer = styled.nav`
     justify-content: center;
     column-gap: 160px;
     padding: 5px 44px;
-    min-width: 320px;
+    min-width: 400px;
     white-space: nowrap;
 
     & button:nth-of-type(1) {
@@ -28,6 +28,7 @@ export const NavbarContainer = styled.nav`
             display: flex;
             width: 10rem;
             order: -1;
+        }
     }
 
     @media only screen and (max-width: 760px) {
@@ -60,8 +61,8 @@ export const MyName = styled.span`
         margin: 0;
     };
 
-    @media only screen and (max-width: 510px) {
-        font-size: 1.7rem;
+    @media only screen and (max-width: 760px) {
+        font-size: 1.9rem;
     }
 `;
 
