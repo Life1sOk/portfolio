@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-scroll/modules";
 
-import './footer.style.scss';
+import { FooterContainer, TopFooterContainer, BotFooterContainer, FooterNav, ContactIconWrap } from './footer.style';
 import ContactIcons from '../../components/contact-icons/contact.icons.component';
 import Copyright from '../../components/copyright/copyright';
 import ContactBase from '../../components/contact-base/contact-base.component';
@@ -9,13 +9,13 @@ import ContactBase from '../../components/contact-base/contact-base.component';
 const Footer = () => {
 
     return (
-        <footer className='footer-container'>
-            <section className="top-footer-container">
+        <FooterContainer>
+            <TopFooterContainer>
                 <div className='top-footer-left'>Something</div>
                 <ContactBase />
-            </section>
-            <section className='bot-footer-container'>
-                <div className='footer-nav'>
+            </TopFooterContainer>
+            <BotFooterContainer>
+                <FooterNav>
                     <Link to="navbar-container" smooth={true} spy={true} duration={700}>
                         <span className='footer-word'>Home</span>
                     </Link>
@@ -25,13 +25,13 @@ const Footer = () => {
                     <Link to="skills-container" smooth={true} spy={true} duration={700}>
                         <span className='footer-word'>Skills</span>
                     </Link>
-                </div>
-                <div className='contact-icons-wrap'>
+                </FooterNav>
+                <ContactIconWrap>
                     <ContactIcons />
-                </div>
-            </section>
+                </ContactIconWrap>
+            </BotFooterContainer>
             <Copyright />
-        </footer>
+        </FooterContainer>
     );
 }
 
