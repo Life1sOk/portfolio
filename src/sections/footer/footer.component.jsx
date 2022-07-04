@@ -1,33 +1,18 @@
 import React from 'react';
 import { Link } from "react-scroll/modules";
-import { FaPhoneAlt } from 'react-icons/fa';
-import { AiOutlineMail } from 'react-icons/ai';
 
 import './footer.style.scss';
 import ContactIcons from '../../components/contact-icons/contact.icons.component';
 import Copyright from '../../components/copyright/copyright';
-import Button from '../../components/button/button.component';
+import ContactBase from '../../components/contact-base/contact-base.component';
 
 const Footer = () => {
- 
-    return(
+
+    return (
         <footer className='footer-container'>
             <section className="top-footer-container">
                 <div className='top-footer-left'>Something</div>
-                <div className='top-footer-right'>
-                    <div className='send-me-location'>
-                        <span>Base in Kazakhstan, Almaty</span>
-                        <div className='contact-line'> 
-                            <AiOutlineMail className='contact-line-icon'/>
-                            <p>mr.lifeisok@gmail.com</p>
-                        </div>
-                        <div className='contact-line'>
-                            <FaPhoneAlt className='contact-line-icon'/>
-                            <p>(xxx) xxx xx xx</p>
-                        </div>
-                    </div>
-                    <Button name={'Contact'} type={'point3'}/>
-                </div>
+                <ContactBase />
             </section>
             <section className='bot-footer-container'>
                 <div className='footer-nav'>
@@ -45,7 +30,7 @@ const Footer = () => {
                     <ContactIcons />
                 </div>
             </section>
-            <Copyright /> 
+            <Copyright />
         </footer>
     );
 }

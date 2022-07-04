@@ -71,7 +71,6 @@ export const NavbarMenu = styled.section`
     display: flex;
     justify-content: space-around;
     width: 26rem;
-    z-index: 3;
 
     @media only screen and (max-width: 1068px) {
         display: none;

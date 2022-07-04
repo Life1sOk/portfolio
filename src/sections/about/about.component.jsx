@@ -1,17 +1,17 @@
 import React from "react";
 
-import './about.style.scss';
+import { AboutContainer, AboutMe, JustLine } from './about.style';
 
 const About = () => {
     return (
-        <article className="about-container">
-            <div className="hr-line"></div>
-            <section className="about-me">
+        <AboutContainer>
+            <JustLine />
+            <AboutMe>
                 <h2>About</h2>
                 <p>__________________________ </p>
                 <p> _______________________________________________________</p>
-            </section>
-        </article>
+            </AboutMe>
+        </AboutContainer>
     );
 }
 

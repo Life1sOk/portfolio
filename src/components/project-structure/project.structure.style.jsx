@@ -7,7 +7,7 @@ export const ProjectStructureContainer = styled.section`
     justify-content: center;
     gap: 170px;
     padding: 80px 20px;
-    margin: 0 40px;
+    margin: 0 20px;
     z-index: 0;
 
     @media only screen and (max-width: 1366px) {
@@ -16,9 +16,12 @@ export const ProjectStructureContainer = styled.section`
     }
 
     @media only screen and (max-width: 1069px) {
-        ${'' /* height: 800px; */}
         flex-direction: column;
         align-items: center;
+    }
+
+    @media only screen and (max-width: 562px) {
+        padding-bottom: 20px;
     }
 `;
 
@@ -78,6 +81,11 @@ export const ProjectButtons = styled.div`
     display: flex;
     justify-content: center;
     gap: 50px;
+
+    @media only screen and (max-width: 562px) {
+        padding-bottom: 40px;
+        border-bottom: 2px solid #0b3a66;
+    }
 `;
 
 export const JustLine = styled.div`
