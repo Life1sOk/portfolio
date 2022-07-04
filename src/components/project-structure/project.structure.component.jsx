@@ -1,26 +1,26 @@
 import React from "react";
-import { Fragment } from "react";
 
-import './project.structure.style.scss';
+import { ProjectStructureContainer, ProjectImage, ProjectButtons, ProjectAbout, JustLine, Title, Tools, Discription } from './project.structure.style';
 import Button from '../button/button.component';
 
-const ProjectStructure = ({project}) => {
-    const { title, img, tools, discription, link } = project
-    return(
-        <section className="project-structure-container">
-            <div className="project-left">
-                <img alt={`${title}`} src={img}/>
-                <div className="tools-container">
-                    {/* <h3>Tools:</h3> */}
-                    {tools.map(tool => <Fragment key={tools.indexOf(tool)}>{tool}</Fragment>)}
-                </div>
-            </div>
-            <div className="project-right">
-                <h2>{title}</h2>
-                <div className="discription">{discription}</div>
-                <Button type={'point3'} name={'Link'} onClick={link}/>
-            </div>
-        </section>
+const ProjectStructure = ({ project, side }) => {
+    const { title, img, tools, discription, link } = project;
+
+    return (
+        <ProjectStructureContainer side={side}>
+            <JustLine side='left' />
+            <ProjectImage alt={title} src={img} />
+            <ProjectAbout>
+                <Title>{title}</Title>
+                <Tools>tools</Tools>
+                <Discription>{discription}</Discription>
+                <ProjectButtons>
+                    <Button type={'point3'} name={'Link'} onClick={link} />
+                    <Button type={'point3'} name={'Link'} onClick={link} />
+                </ProjectButtons>
+            </ProjectAbout>
+            <JustLine side='right' />
+        </ProjectStructureContainer>
     );
 }
 

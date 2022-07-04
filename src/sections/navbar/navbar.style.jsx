@@ -23,6 +23,7 @@ export const NavbarContainer = styled.nav`
         justify-content: space-between;
         position: sticky;
         top: 0;
+        z-index: 4;
 
         button:nth-of-type(1) {
             display: flex;
@@ -70,6 +71,7 @@ export const NavbarMenu = styled.section`
     display: flex;
     justify-content: space-around;
     width: 26rem;
+    z-index: 3;
 
     @media only screen and (max-width: 1068px) {
         display: none;

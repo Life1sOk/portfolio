@@ -3,15 +3,13 @@ import React from "react";
 import './about.style.scss';
 
 const About = () => {
-    return(
+    return (
         <article className="about-container">
-            <section className="me">
-                <img alt="foto" src="https://img.freepik.com/free-vector/cute-rabbit-with-duck-working-laptop-cartoon-illustration_56104-471.jpg?w=2000"/>
-            </section>
+            <div className="hr-line"></div>
             <section className="about-me">
                 <h2>About</h2>
-                <p>__________________________ <br/>
-            _______________________________________________________</p>
+                <p>__________________________ </p>
+                <p> _______________________________________________________</p>
             </section>
         </article>
     );

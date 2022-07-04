@@ -14,6 +14,7 @@ export const BurgerMenuContainer = styled.div`
     left: 0;
     transition: transform 0.3s ease-in-out;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-200%)'};
+    z-index: 3;
 
     @media(max-width: 560px) {
         width: 100 %;

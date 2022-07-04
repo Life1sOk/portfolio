@@ -1,42 +1,21 @@
 .about-container {
-    width: 100%;
-    // height: 40vh;
-    padding: 10vh;
+    padding: 30px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    color: #e9d5a1;
+    color: #0b3a66;
 
-    img {
-        max-width: 300px;
-        border-radius: 100px;
-        object-fit: contain;
+    .hr-line {
+        width: 840px;
+        border-top: 2px solid #0b3a66;
     }
 
     .about-me {
-        font-size: 1.5rem;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .about-container {
-        max-width: 1500px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .about-container {
+        padding-top: 30px;
+        width: 600px;
+        display: flex;
         flex-direction: column;
-        padding: 5vh;
-
-        .about-me {
-            max-width: 50vh;
-        }
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .about-container {
-        min-width: 768px;
+        justify-content: end;
+        // align-items: flex-end;
     }
 }

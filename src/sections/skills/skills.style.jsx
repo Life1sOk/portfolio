@@ -21,7 +21,7 @@ export const MainSkills = styled.div`
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: 870px) {
+    @media only screen and (max-width: 940px) {
         flex-direction: column;
     }
 `;
