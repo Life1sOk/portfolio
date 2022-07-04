@@ -4,9 +4,9 @@ import './App.css';
 import Navbar from "./sections/navbar/navbar.component";
 import Preview from "./sections/preview/preview.component";
 import Skills from "./sections/skills/skills.component";
-// import Projects from "./sections/projects/projects.component";
-// import About from "./sections/about/about.component";
-// import Footer from "./sections/footer/footer.component";
+import Projects from "./sections/projects/projects.component";
+import About from "./sections/about/about.component";
+import Footer from "./sections/footer/footer.component";
 
 function App() {
 
@@ -15,9 +15,9 @@ function App() {
       <Navbar />
       <Preview />
       <Skills />
-      {/* <Projects /> */}
-      {/* <About /> */}
-      {/* <Footer /> */}
+      <Projects />
+      <About />
+      <Footer />
     </div>
   );
 }

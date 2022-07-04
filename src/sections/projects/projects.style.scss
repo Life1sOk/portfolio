@@ -1,6 +1,7 @@
-.projects-container{
+.projects-container {
     width: 100%;
-    background-color: #e9d5a1;
+    background-color: white;
+    color: #0b3a66;
     display: flex;
     flex-direction: column;
 }
@@ -12,7 +13,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .projects-container  {
+    .projects-container {
         min-width: 768px;
     }
 }

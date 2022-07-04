@@ -1,3 +1,43 @@
 import React from 'react';
-import { } from 'react-icons';
 
+import html from '../img/icons-img/html5.svg';
+import css from '../img/icons-img/css3.svg';
+import js from '../img/icons-img/javascript.svg';
+import react from '../img/icons-img/react.svg';
+import sass from '../img/icons-img/sass.svg';
+import redux from '../img/icons-img/redux.svg';
+import ts from '../img/icons-img/typescript.svg';
+
+export const basicLevel = [
+    {
+        name: 'HTML5',
+        icon: <img alt='html' src={html} />,
+    },
+    {
+        name: 'CSS3',
+        icon: <img alt='css' src={css} />,
+    },
+    {
+        name: 'JavaScript',
+        icon: <img alt='js' src={js} />,
+    },
+];
+
+export const nextLevel = [
+    {
+        name: 'React.js',
+        icon: <img alt='react' src={react} />,
+    },
+    {
+        name: 'Sass',
+        icon: <img alt='sass' src={sass} />,
+    },
+    {
+        name: 'Redux',
+        icon: <img alt='redux' src={redux} />,
+    },
+    {
+        name: 'TypeScript',
+        icon: <img alt='ts' src={ts} />,
+    },
+];
