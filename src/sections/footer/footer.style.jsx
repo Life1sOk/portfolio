@@ -44,18 +44,11 @@ export const BotFooterContainer = styled.div`
 `;
 
 export const FooterNav = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 50px;
     width: 300px;
 
-    & .footer-word {
-        padding: 4px;
-        margin: 0 22px;
-        cursor: pointer;
-
-        &:hover {
-            color: white;
-            border-bottom: 2px solid white;
-        }
-    }
 
     @media only screen and (max-width: 1068px) {
         display: none;

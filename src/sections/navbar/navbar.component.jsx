@@ -6,8 +6,7 @@ import Button from "../../components/button/button.component";
 import LinkToComponent from "../../components/link/link.component";
 import Burger from "../../components/burger/burger";
 import BurgerMemu from "../../components/burger-menu/burger-menu.component";
-
-import Skills from '../skills/skills.component';
+import Mailto from "../../components/mailto/mailto.component";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -23,8 +22,10 @@ const Navbar = () => {
                     <LinkToComponent to='skills' name="Skills" />
                     <LinkToComponent to="about" name='About' />
                 </NavbarMenu>
-                <Button name={'Contact'} type={'point3'} />
-                <Button name={<AiOutlineMail />} type={'point3'} />
+                <Mailto email='andreytsoy.webdev@gmail.com'>
+                    <Button name={'Contact'} type={'type3'} />
+                    <Button name={<AiOutlineMail />} type={'type3'} />
+                </Mailto>
             </NavbarContainer>
         </>
 

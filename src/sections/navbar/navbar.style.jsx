@@ -11,13 +11,19 @@ export const NavbarContainer = styled.nav`
     min-width: 400px;
     white-space: nowrap;
 
-    & button:nth-of-type(1) {
+    & .burger {
         display: none;
     }
 
-    & button:nth-of-type(3) {
+    & a button:first-child {
+        display: initial;
+    }
+
+    & a button:last-child {
         display: none;
     }
+
+
 
     @media only screen and (max-width: 1068px) {
         justify-content: space-between;
@@ -25,10 +31,22 @@ export const NavbarContainer = styled.nav`
         top: 0;
         z-index: 4;
 
-        button:nth-of-type(1) {
+        & .burger {
             display: flex;
             width: 10rem;
             order: -1;
+        }
+    }
+
+    @media only screen and (max-width: 880px) {
+        & .burger {
+            max-width: 120px;
+            min-width: 80px;
+        }
+
+        & a button:first-child {
+            max-width: 120px;
+            min-width: 80px;
         }
     }
 
@@ -36,15 +54,15 @@ export const NavbarContainer = styled.nav`
         justify-content: space-between;
         column-gap: 0px;
 
-        button:nth-of-type(1) {
+        & .burger {
             width: 3rem;
         }
 
-        button:nth-of-type(2) {
+        & a button:first-child {
             display: none;
         }
 
-        button:nth-of-type(3) {
+        & a button:last-child {
             display: initial;
             width: 3rem;
             height: 3rem;

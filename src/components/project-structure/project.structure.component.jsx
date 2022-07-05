@@ -15,8 +15,8 @@ const ProjectStructure = ({ project, side }) => {
                 <Tools>tools</Tools>
                 <Discription>{discription}</Discription>
                 <ProjectButtons>
-                    <Button type={'point3'} name={'Link'} onClick={link} />
-                    <Button type={'point3'} name={'Link'} onClick={link} />
+                    <Button type={'type2'} name={'Link'} onClick={link} />
+                    <Button type={'type2'} name={'Link'} onClick={link} />
                 </ProjectButtons>
             </ProjectAbout>
             <JustLine side='right' />
