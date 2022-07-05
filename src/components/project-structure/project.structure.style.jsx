@@ -26,6 +26,7 @@ export const ProjectStructureContainer = styled.section`
 `;
 
 export const ProjectImage = styled.img`
+    border-radius: 10%;
     width: 350px;
     height: 350px;
 

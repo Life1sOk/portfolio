@@ -17,7 +17,7 @@ const ContactBase = () => {
                 </ContactLine>
                 <ContactLine>
                     <FaPhoneAlt className='contact-line-icon' />
-                    <p>(xxx) xxx xx xx</p>
+                    <p>+7(705)6187051</p>
                 </ContactLine>
             </SendMeLocation>
             <Mailto email='andreytsoy.webdev@gmail.com'>
