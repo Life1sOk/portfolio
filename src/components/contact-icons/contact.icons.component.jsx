@@ -13,7 +13,7 @@ const ContactIcons = () => {
         <ContactIconsContainer>
             {
                 socialMedia.map(link => {
-                    return <img alt={link.sm} src={link.icon} onClick={() => openInNewTab(link.url)} title={link.sm} />
+                    return <img key={link.sm} alt={link.sm} src={link.icon} onClick={() => openInNewTab(link.url)} title={link.sm} />
                 })
             }
         </ContactIconsContainer>

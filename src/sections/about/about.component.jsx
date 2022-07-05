@@ -4,7 +4,7 @@ import { AboutContainer, AboutMe, JustLine } from './about.style';
 
 const About = () => {
     return (
-        <AboutContainer>
+        <AboutContainer name='about'>
             <JustLine />
             <AboutMe>
                 <h2>About</h2>

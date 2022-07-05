@@ -6,7 +6,7 @@ import ProjectStructure from "../../components/project-structure/project.structu
 
 const Projects = () => {
     return (
-        <ProjectsContainer>
+        <ProjectsContainer name='projects'>
             {
                 allProjects.map(project => {
                     return <ProjectStructure key={project.title} project={project} side={allProjects.indexOf(project)} />

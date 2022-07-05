@@ -6,7 +6,7 @@ import Icon from "../../components/icon-wrap/icon-wrap.component";
 
 const Skills = () => {
     return (
-        <SkillsContainer>
+        <SkillsContainer name='skills'>
             <H2>Skills</H2>
             <MainSkills>
                 <Basics>

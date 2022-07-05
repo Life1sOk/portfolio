@@ -8,7 +8,7 @@ import MyFoto from '../../img/foto.jpg';
 const Preview = () => {
 
     return (
-        <MainContainer>
+        <MainContainer name='preview'>
             <Introduction>
                 <Hello>
                     <Iam>Hello, I'm Andrey</Iam>
