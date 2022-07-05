@@ -20,7 +20,9 @@ const ContactBase = () => {
                     <p>(xxx) xxx xx xx</p>
                 </ContactLine>
             </SendMeLocation>
-            <Button name={'Contact'} type={'type3'} />
+            <Mailto email='andreytsoy.webdev@gmail.com'>
+                <Button name={'Contact'} type={'type3'} />
+            </Mailto>
         </ContactBaseContainer>
     )
 }

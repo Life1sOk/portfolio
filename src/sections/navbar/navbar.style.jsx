@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const NavbarContainer = styled.nav`
+export const NavbarContainer = styled.div`
     background-color: #06223c;
     align-items: center;
     display: flex;
@@ -70,19 +70,6 @@ export const NavbarContainer = styled.nav`
         }
     }
 
-`;
-
-export const MyName = styled.span`
-    font-size: 2.4rem;
-    font-weight: bolder;
-
-    @media only screen and (max-width: 1068px) {
-        margin: 0;
-    };
-
-    @media only screen and (max-width: 760px) {
-        font-size: 1.9rem;
-    }
 `;
 
 export const NavbarMenu = styled.section`

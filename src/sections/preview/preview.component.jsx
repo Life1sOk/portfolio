@@ -19,7 +19,7 @@ const Preview = () => {
                         and exceed your expectations.</MyPrinciple>
                 </Mission>
                 <Buttons>
-                    <Button name={'Hire Me'} type={'type1'} />
+                    <Button name={'Resume'} type={'type1'} />
                     <Button name={'Projects'} type={'type2'} />
                 </Buttons>
             </Introduction>

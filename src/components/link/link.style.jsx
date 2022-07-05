@@ -11,3 +11,17 @@ export const NavbarWords = styled.span`
         border-bottom: 2px solid white;
     }
 `;
+
+export const MyName = styled.span`
+    font-size: 2.4rem;
+    font-weight: bolder;
+    cursor: pointer;
+
+    @media only screen and (max-width: 1068px) {
+        margin: 0;
+    };
+
+    @media only screen and (max-width: 760px) {
+        font-size: 1.9rem;
+    }
+`;

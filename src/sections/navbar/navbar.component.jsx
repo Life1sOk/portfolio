@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineMail } from 'react-icons/ai';
 
-import { NavbarContainer, MyName, NavbarMenu } from './navbar.style';
+import { NavbarContainer, NavbarMenu } from './navbar.style';
 import Button from "../../components/button/button.component";
 import LinkToComponent from "../../components/link/link.component";
 import Burger from "../../components/burger/burger";
@@ -15,12 +15,12 @@ const Navbar = () => {
         <>
             <BurgerMemu open={open} openToggle={() => setOpen(!open)} />
             <NavbarContainer name='nav'>
-                <MyName>Andrey Tsoy</MyName>
+                <LinkToComponent typeLink='name' to='preview' name='Andrey Tsoy' offset={-74} />
                 <Burger openToggle={() => setOpen(!open)} />
                 <NavbarMenu>
-                    <LinkToComponent to="projects" name='Projects' />
-                    <LinkToComponent to='skills' name="Skills" />
-                    <LinkToComponent to="about" name='About' />
+                    <LinkToComponent to='projects' name='Projects' offset={-74} />
+                    <LinkToComponent to='skills' name='Skills' offset={-74} />
+                    <LinkToComponent to='about' name='About' offset={-74} />
                 </NavbarMenu>
                 <Mailto email='andreytsoy.webdev@gmail.com'>
                     <Button name={'Contact'} type={'type3'} />

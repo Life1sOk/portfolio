@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-scroll/modules";
 
 import { FooterContainer, TopFooterContainer, BotFooterContainer, FooterNav, ContactIconWrap } from './footer.style';
 import ContactIcons from '../../components/contact-icons/contact.icons.component';
