@@ -7,7 +7,6 @@ export const IconWrapContainer = styled.div`
     align-items: center;
     width: 100px;
     height: 100px;
-    ${'' /* border: 3px solid #0b3a66; */}
     border-radius: 30%;
     background-color: #0b3a66;
 

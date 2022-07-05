@@ -6,6 +6,12 @@ export const ContactBaseContainer = styled.div`
     justify-content: center;
     align-items: center;
     gap: 33px;
+
+    @media only screen and (max-width: 760px) {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+    }
 `;
 
 export const SendMeLocation = styled.div`

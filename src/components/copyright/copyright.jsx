@@ -1,15 +1,15 @@
 import React from "react";
 import { FaRegCopyright } from 'react-icons/fa';
 
-import './copyright-style.scss';
+import { CopyrightContainer } from './copyright-style';
 
 const Copyright = () => {
-    return(
-        <div className="copyright-container">
+    return (
+        <CopyrightContainer>
             <FaRegCopyright />
             <span>2022</span>
             <span className="name">Andrey Tsoy</span>
-        </div>
+        </CopyrightContainer>
     );
 }
 

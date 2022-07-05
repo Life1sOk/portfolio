@@ -1,16 +1,22 @@
 import React from "react";
-import { FaLinkedin, FaTwitter, FaInstagram, FaTelegram } from 'react-icons/fa'
 
-import './contact.icons.style.scss';
+import { socialMedia } from '../../utils/social-media';
+import { ContactIconsContainer } from "./contact.icons.style";
 
 const ContactIcons = () => {
-    return(
-        <div className="contact-icons-container">
-            <FaLinkedin className="contact-icon"/>
-            <FaTwitter className="contact-icon" />
-            <FaInstagram className="contact-icon" />
-            <FaTelegram className="contact-icon" />
-        </div>
+
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
+    return (
+        <ContactIconsContainer>
+            {
+                socialMedia.map(link => {
+                    return <img alt={link.sm} src={link.icon} onClick={() => openInNewTab(link.url)} title={link.sm} />
+                })
+            }
+        </ContactIconsContainer>
     );
 }
 
