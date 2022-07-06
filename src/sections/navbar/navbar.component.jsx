@@ -18,9 +18,9 @@ const Navbar = () => {
                 <LinkToComponent typeLink='name' to='preview' name='Andrey Tsoy' offset={-74} />
                 <Burger openToggle={() => setOpen(!open)} />
                 <NavbarMenu>
-                    <LinkToComponent to='projects' name='Projects' offset={-74} />
-                    <LinkToComponent to='skills' name='Skills' offset={-74} />
-                    <LinkToComponent to='about' name='About' offset={-74} />
+                    <LinkToComponent to='projects' name='Projects' />
+                    <LinkToComponent to='skills' name='Skills' />
+                    <LinkToComponent to='about' name='About' />
                 </NavbarMenu>
                 <Mailto email='andreytsoy.webdev@gmail.com'>
                     <Button name={'Contact'} type={'type3'} />

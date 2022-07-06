@@ -4,6 +4,7 @@ import { MainContainer, Introduction, Hello, Iam, Position, Mission, MyPrinciple
 import Animation from "../../components/animation/animation.component";
 import Button from "../../components/button/button.component";
 import MyFoto from '../../img/foto-preview.png';
+import { Link } from "react-scroll/modules";
 
 const Preview = () => {
 
@@ -20,7 +21,9 @@ const Preview = () => {
                 </Mission>
                 <Buttons>
                     <Button name={'Resume'} type={'type1'} />
-                    <Button name={'Projects'} type={'type2'} />
+                    <Link to='projects' smooth={true} spy={true}>
+                        <Button name={'Projects'} type={'type2'} />
+                    </Link>
                 </Buttons>
             </Introduction>
             <Foto>

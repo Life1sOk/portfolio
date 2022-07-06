@@ -10,28 +10,12 @@ export const MainContainer = styled.main`
     padding: 40px 40px 40px 40px;
     min-width: 400px;
 
-    ${'' /* & .vr {
-        position: absolute;
-        left: 650px;
-        height: calc(100% - 40px);
-        border: 1px solid white;
-    }
-
-    & .vr2 {
-        position: absolute;
-        right: 40px;
-        height: calc(100% - 40px);
-        border: 1px solid white;
-    } */}
-
     @media only screen and (max-width: 1280px) {
         justify-content: space-around;
         column-gap: 0;
     }
 
     @media only screen and (max-width: 1068px) {
-        ${'' /* justify-content: space-around;
-        column-gap: 0; */}
         padding-top: 40px;
     }
 
@@ -47,7 +31,6 @@ export const Introduction = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    ${'' /* height: 500px; */}
     padding-bottom: 40px;
     
     @media only screen and (max-width: 1068px) {
