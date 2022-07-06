@@ -2,7 +2,7 @@ export const words = [
     {
         name: '<div/>',
         delay: '2s',
-        left: '150px',
+        left: '450px',
     },
     {
         name: '<header/>',
@@ -30,49 +30,70 @@ export const words = [
         left: '200px',
     },
     {
-        name: '<div/>',
+        name: '<hr/>',
         delay: '9s',
         left: '150px',
         right: ''
     },
     {
-        name: '<header/>',
+        name: '<br/>',
         delay: '11s',
-        left: '350px',
+        left: '450px',
     },
     {
-        name: '<main/>',
+        name: '<body/>',
         delay: '16s',
         left: '400px',
     },
     {
-        name: '<footer/>',
+        name: '<iframe/>',
         delay: '13s',
         left: '80px',
     },
     {
-        name: '<section/>',
+        name: '<form/>',
         delay: '16s',
         left: '40px',
     },
     {
-        name: '<aside/>',
+        name: '<input/>',
         delay: '14s',
         left: '200px',
     },
     {
-        name: '<footer/>',
+        name: '<button/>',
         delay: '18s',
         left: '400px',
     },
     {
-        name: '<section/>',
+        name: '<strong/>',
         delay: '19s',
         left: '30px',
     },
     {
-        name: '<aside/>',
+        name: '<span/>',
         delay: '20s',
         left: '200px',
+    },
+
+    {
+        name: '<input/>',
+        delay: '11s',
+        left: '0px',
+    },
+    {
+        name: '<button/>',
+        delay: '3s',
+        left: '500px',
+    },
+    {
+        name: '<strong/>',
+        delay: '8s',
+        left: '470px',
+    },
+    {
+        name: '<span/>',
+        delay: '15s',
+        left: '480px',
     },
 ]

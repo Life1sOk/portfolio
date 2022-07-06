@@ -13,7 +13,7 @@ export const NavbarWords = styled.span`
 `;
 
 export const MyName = styled.span`
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     cursor: pointer;
 
@@ -22,6 +22,6 @@ export const MyName = styled.span`
     };
 
     @media only screen and (max-width: 760px) {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 `;
