@@ -7,6 +7,13 @@ export const ContactBaseContainer = styled.div`
     align-items: center;
     gap: 33px;
 
+    @media only screen and (max-width: 880px) {
+        & a button {
+                max-width: 120px;
+                min-width: 80px;
+        }
+    }
+
     @media only screen and (max-width: 760px) {
         width: 100%;
         justify-content: space-between;

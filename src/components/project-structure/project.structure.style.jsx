@@ -38,7 +38,7 @@ export const ProjectImage = styled.img`
 
 export const ProjectAbout = styled.div`
     height: 350px;
-    width: 550px;
+    ${'' /* width: 550px; */}
     display: flex;
     flex-direction: column;
     justify-content: space-around;

@@ -7,6 +7,7 @@ export const MainContainer = styled.main`
     column-gap: 170px;
     padding: 40px;
     min-width: 400px;
+    min-height: 600px;
 
     @media only screen and (max-width: 1068px) {
         justify-content: space-around;
@@ -98,6 +99,7 @@ export const Foto = styled.section`
 export const Img = styled.img`
     width: 300px;
     height: auto;
+    ${'' /* border: 1px solid white; */}
 
     @media only screen and (max-width: 1068px) {
         width: 250px;
