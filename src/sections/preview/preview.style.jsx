@@ -7,7 +7,7 @@ export const MainContainer = styled.main`
     justify-content: center;
     align-items: center;
     column-gap: 170px;
-    padding: 40px 40px 0px 40px;
+    padding: 40px 40px 40px 40px;
     min-width: 400px;
 
     ${'' /* & .vr {
@@ -42,13 +42,14 @@ export const MainContainer = styled.main`
 `;
 
 export const Introduction = styled.section`
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     ${'' /* height: 500px; */}
     padding-bottom: 40px;
-
+    
     @media only screen and (max-width: 1068px) {
         padding-bottom: 0px;
     }
@@ -125,28 +126,14 @@ export const Foto = styled.section`
     align-items: start;
     z-index: 0;
     background-color: #041436;
-    box-shadow:0px 1px 0px #ccc, 0px 2px 0px #c9c9c9, 0px 3px 0px #bbb, 0px 4px 0px #b9b9b9, 0px 5px 0px #aaa, 0px 6px 1px rgba(0,0,0,0.1), 0px 0px 5px rgba(0,0,0,0.1), 0px 1px 3px rgba(0,0,0,0.3), 0px 3px 5px rgba(0,0,0,0.2), -4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.37), -16px 32px 32px rgba(0,0,0,0.25), -32px 64px 64px rgba(0,0,0,0.25);
-
-    & .vr {
-        position: absolute;
-        left: 0px;
-        height: 100%;
-        border: 10px solid #041436;
-        z-index: 2;
-    }
-
-    & .vr2 {
-        position: absolute;
-        right: 0px;
-        height: 100%;
-        border: 10px solid #041436;
-        z-index: 2;
-    }
+    border-radius: 20%;
+    -webkit-box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.74); 
+    box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.74);
 
     @media only screen and (max-width: 760px) {
         justify-content: center;
-        ${'' /* margin: 20px auto; */}
-        padding: 0px 155px;
+        margin-top: 30px;
+        padding: 0px 50px;
         order: -1;
     }
 `;

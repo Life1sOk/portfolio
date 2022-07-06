@@ -24,10 +24,8 @@ const Preview = () => {
                 </Buttons>
             </Introduction>
             <Foto>
-                <div className="vr"></div>
                 <Animation />
                 <Img alt="foto" src={MyFoto} />
-                <div className="vr2"></div>
             </Foto>
         </MainContainer>
     );
