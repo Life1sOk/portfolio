@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.main`
+    position: relative;
     background-color: #06223c;
     display: flex;
     justify-content: center;
@@ -8,6 +9,20 @@ export const MainContainer = styled.main`
     column-gap: 170px;
     padding: 40px 40px 0px 40px;
     min-width: 400px;
+
+    ${'' /* & .vr {
+        position: absolute;
+        left: 650px;
+        height: calc(100% - 40px);
+        border: 1px solid white;
+    }
+
+    & .vr2 {
+        position: absolute;
+        right: 40px;
+        height: calc(100% - 40px);
+        border: 1px solid white;
+    } */}
 
     @media only screen and (max-width: 1280px) {
         justify-content: space-around;
@@ -109,6 +124,24 @@ export const Foto = styled.section`
     justify-content: center;
     align-items: start;
     z-index: 0;
+    background-color: #041436;
+    box-shadow:0px 1px 0px #ccc, 0px 2px 0px #c9c9c9, 0px 3px 0px #bbb, 0px 4px 0px #b9b9b9, 0px 5px 0px #aaa, 0px 6px 1px rgba(0,0,0,0.1), 0px 0px 5px rgba(0,0,0,0.1), 0px 1px 3px rgba(0,0,0,0.3), 0px 3px 5px rgba(0,0,0,0.2), -4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.37), -16px 32px 32px rgba(0,0,0,0.25), -32px 64px 64px rgba(0,0,0,0.25);
+
+    & .vr {
+        position: absolute;
+        left: 0px;
+        height: 100%;
+        border: 10px solid #041436;
+        z-index: 2;
+    }
+
+    & .vr2 {
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        border: 10px solid #041436;
+        z-index: 2;
+    }
 
     @media only screen and (max-width: 760px) {
         justify-content: center;

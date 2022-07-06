@@ -1,27 +1,27 @@
 export const words = [
     {
         name: '<div/>',
-        delay: '2s',
+        delay: '0s',
         left: '450px',
     },
     {
         name: '<header/>',
-        delay: '4s',
+        delay: '2s',
         left: '350px',
     },
     {
         name: '<main/>',
-        delay: '8s',
+        delay: '6s',
         left: '400px',
     },
     {
         name: '<footer/>',
-        delay: '5s',
+        delay: '3s',
         left: '80px',
     },
     {
         name: '<section/>',
-        delay: '7s',
+        delay: '5s',
         left: '40px',
     },
     {
@@ -31,7 +31,7 @@ export const words = [
     },
     {
         name: '<hr/>',
-        delay: '9s',
+        delay: '7s',
         left: '150px',
         right: ''
     },
@@ -42,49 +42,44 @@ export const words = [
     },
     {
         name: '<body/>',
-        delay: '16s',
+        delay: '14s',
         left: '400px',
     },
     {
         name: '<iframe/>',
-        delay: '13s',
+        delay: '11s',
         left: '80px',
     },
     {
         name: '<form/>',
-        delay: '16s',
+        delay: '14s',
         left: '40px',
     },
     {
         name: '<input/>',
-        delay: '14s',
+        delay: '12s',
         left: '200px',
     },
     {
         name: '<button/>',
-        delay: '18s',
-        left: '400px',
+        delay: '16s',
+        left: '180px',
     },
     {
         name: '<strong/>',
-        delay: '19s',
+        delay: '17s',
         left: '30px',
     },
     {
         name: '<span/>',
-        delay: '20s',
+        delay: '18s',
         left: '200px',
     },
 
     {
         name: '<input/>',
-        delay: '11s',
+        delay: '10s',
         left: '0px',
-    },
-    {
-        name: '<button/>',
-        delay: '3s',
-        left: '500px',
     },
     {
         name: '<strong/>',
@@ -93,7 +88,7 @@ export const words = [
     },
     {
         name: '<span/>',
-        delay: '15s',
+        delay: '13s',
         left: '480px',
     },
 ]

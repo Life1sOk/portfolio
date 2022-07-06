@@ -11,6 +11,23 @@ const run = keyframes`
     }
 `;
 
+const run2 = keyframes`
+    0% {
+        transform: translateY(550px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+`;
+
+const run3 = keyframes`
+    0% {
+        transform: translateY(480px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+`;
 
 export const AnimationWordContainer = styled.div`
     font-family: 'Shadows Into Light', cursive;
@@ -22,4 +39,14 @@ export const AnimationWordContainer = styled.div`
     left: ${props => props.left};
     animation: ${run} 20s linear infinite;
     animation-delay: ${props => props.delay || 0};
+
+    @media only screen and (max-width: 1068px) {
+        animation: ${run2} 15s linear infinite;
+        animation-delay: ${props => props.delay || 0};
+    }
+
+    @media only screen and (max-width: 760px) {
+        animation: ${run3} 10s linear infinite;
+        animation-delay: ${props => props.delay || 0};
+    }
 `;
