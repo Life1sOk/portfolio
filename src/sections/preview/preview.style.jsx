@@ -4,15 +4,16 @@ export const MainContainer = styled.main`
     background-color: #06223c;
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 170px;
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
     min-width: 400px;
-    min-height: 600px;
+    ${'' /* min-height: 600px; */}
 
     @media only screen and (max-width: 1068px) {
         justify-content: space-around;
         column-gap: 0;
-        padding: 40px 0;
+        padding-top: 40px;
     }
 
     @media only screen and (max-width: 760px) {
@@ -26,6 +27,7 @@ export const Introduction = styled.section`
     justify-content: center;
     align-items: center;
     ${'' /* height: 500px; */}
+    padding-bottom: 40px;
 `;
 
 export const Hello = styled.article`
@@ -87,7 +89,7 @@ export const Buttons = styled.div`
 
 export const Foto = styled.section`
     display: flex;
-    align-items: center;
+    align-items: start;
 
     @media only screen and (max-width: 760px) {
         justify-content: center;
@@ -97,12 +99,11 @@ export const Foto = styled.section`
 `;
 
 export const Img = styled.img`
-    width: 300px;
-    height: auto;
-    ${'' /* border: 1px solid white; */}
+    width: 400px;
+    height: 100%;
 
     @media only screen and (max-width: 1068px) {
-        width: 250px;
+        width: 300px;
         border-radius: 20%;
     }
 
