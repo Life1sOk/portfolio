@@ -41,7 +41,6 @@ export const NavbarContainer = styled.div`
     @media only screen and (max-width: 880px) {
         & .burger {
             max-width: 120px;
-            min-width: 80px;
         }
 
         & a button:first-child {
@@ -55,7 +54,7 @@ export const NavbarContainer = styled.div`
         column-gap: 0px;
 
         & .burger {
-            width: 3rem;
+            width: 48px;
         }
 
         & a button:first-child {

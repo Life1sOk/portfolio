@@ -1,27 +1,25 @@
 import styled, { keyframes } from 'styled-components';
 
+
+//400x600px //
 const run = keyframes`
     0% {
-        transform: translateX(710px);
+        transform: translateY(660px);
     }
-
     100% {
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 `;
 
 
 export const AnimationWordContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
-    width: 150px;
-    border-radius: 20px;
-    background-color: #06223c;
+    font-family: 'Shadows Into Light', cursive;
+    opacity: 0.2;
+    font-size: 2rem;
+    z-index: 1;
     position: absolute;
-    top: ${props => props.top || 0};
-    left: -200px;
-    animation: ${run} 10s linear infinite;
+    top: -40px;
+    left: ${props => props.left};
+    animation: ${run} 20s linear infinite;
     animation-delay: ${props => props.delay || 0};
 `;

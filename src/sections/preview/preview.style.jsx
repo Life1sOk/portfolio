@@ -88,8 +88,12 @@ export const Buttons = styled.div`
 `;
 
 export const Foto = styled.section`
+    width: 600px;
+    overflow: hidden;
+    position: relative;
     display: flex;
     align-items: start;
+    z-index: 0;
 
     @media only screen and (max-width: 760px) {
         justify-content: center;
@@ -101,6 +105,8 @@ export const Foto = styled.section`
 export const Img = styled.img`
     width: 400px;
     height: 100%;
+    ${'' /* margin-right: 30px; */}
+    z-index: 2;
 
     @media only screen and (max-width: 1068px) {
         width: 300px;

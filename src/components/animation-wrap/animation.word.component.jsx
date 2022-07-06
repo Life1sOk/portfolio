@@ -3,9 +3,11 @@ import React from "react";
 import './animation.word.style.jsx';
 import { AnimationWordContainer } from "./animation.word.style.jsx";
 
-const AnimationWord = ({ name, top, left, delay }) => {
+const AnimationWord = ({ name, left, delay }) => {
+    console.log(left)
+
     return (
-        <AnimationWordContainer top={top} left={left} delay={delay}>{name}</AnimationWordContainer>
+        <AnimationWordContainer left={left} delay={delay}>{name}</AnimationWordContainer>
     )
 }
 

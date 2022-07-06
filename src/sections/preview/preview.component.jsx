@@ -1,7 +1,7 @@
 import React from "react";
 
 import { MainContainer, Introduction, Hello, Iam, Position, Mission, MyPrinciple, Buttons, Img, Foto } from './preview.style';
-import './preview.style.jsx';
+import Animation from "../../components/animation/animation.component";
 import Button from "../../components/button/button.component";
 import MyFoto from '../../img/foto-preview.png';
 
@@ -24,6 +24,7 @@ const Preview = () => {
                 </Buttons>
             </Introduction>
             <Foto>
+                <Animation />
                 <Img alt="foto" src={MyFoto} />
             </Foto>
         </MainContainer>
