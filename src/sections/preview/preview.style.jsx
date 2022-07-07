@@ -9,6 +9,7 @@ export const MainContainer = styled.main`
     column-gap: 170px;
     padding: 40px 40px 40px 40px;
     min-width: 400px;
+    z-index: 2;
 
     @media only screen and (max-width: 1280px) {
         justify-content: space-around;
@@ -31,6 +32,7 @@ export const Introduction = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #06223c;
     padding-bottom: 40px;
     
     @media only screen and (max-width: 1068px) {
@@ -74,8 +76,10 @@ export const Position = styled.p`
 `;
 
 export const Mission = styled.article`
-    margin: 30px;
-    width: 380px;
+    background-color: #06223c;
+    padding: 30px;
+    width: 600px;
+    z-index: 1;
 
     @media only screen and (max-width: 760px) {
         width: 340px;

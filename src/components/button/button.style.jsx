@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-export const Type1 = styled.button`
+export const ResumeButton = styled.button`
+    z-index: 2;
     align-items: center;
     background-clip: padding-box;
     background-color: #fa6400;

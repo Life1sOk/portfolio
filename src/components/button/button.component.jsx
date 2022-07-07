@@ -1,14 +1,13 @@
 import React from "react";
 import { FaGithub } from 'react-icons/fa'
 
-import { Type1, Type2, TypeMail, Github } from './button.style';
-import { socialMedia } from "../../utils/social-media";
+import { ResumeButton, Type2, TypeMail, Github } from './button.style';
 
-const Button = ({ name, type }) => {
+const Button = ({ name, type, toggle }) => {
     return (
         <>
-            {(type === 'type1') ?
-                <Type1>{name}</Type1> : (type === 'type2') ?
+            {(type === 'resume') ?
+                <ResumeButton onClick={toggle}>{name}</ResumeButton> : (type === 'type2') ?
                     <Type2>{name}</Type2> : (type === 'github') ?
                         <Github>{<FaGithub />}Github</Github> :
                         <TypeMail>{name}</TypeMail>

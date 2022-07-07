@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-scroll/modules";
 
 import { MainContainer, Introduction, Hello, Iam, Position, Mission, MyPrinciple, Buttons, Img, Foto } from './preview.style';
 import Animation from "../../components/animation/animation.component";
 import Button from "../../components/button/button.component";
 import MyFoto from '../../img/foto-preview.png';
-import { Link } from "react-scroll/modules";
+import Resume from "../../components/resume/resume.component";
 
 const Preview = () => {
 
@@ -20,7 +21,7 @@ const Preview = () => {
                         and exceed your expectations.</MyPrinciple>
                 </Mission>
                 <Buttons>
-                    <Button name={'Resume'} type={'type1'} />
+                    <Resume />
                     <Link to='projects' smooth={true} spy={true}>
                         <Button name={'Projects'} type={'type2'} />
                     </Link>

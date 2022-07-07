@@ -12,7 +12,10 @@ const ProjectStructure = ({ project, side }) => {
             <ProjectImage alt={title} src={img} />
             <ProjectAbout>
                 <Title>{title}</Title>
-                <Tools>tools:</Tools>
+                <Tools>
+                    <div className="tool">tools:</div>
+                    <div className="icon">{tools}</div>
+                </Tools>
                 <Discription>{discription}</Discription>
                 <ProjectButtons>
                     <Button type={'type2'} name={'Site'} onClick={link} />

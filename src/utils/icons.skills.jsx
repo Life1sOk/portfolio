@@ -25,18 +25,22 @@ export const basicLevel = [
 
 export const nextLevel = [
     {
+        id: 0,
         name: 'React.js',
         icon: <img alt='react' src={react} />,
     },
     {
+        id: 1,
         name: 'Sass',
         icon: <img alt='sass' src={sass} />,
     },
     {
+        id: 2,
         name: 'Redux',
         icon: <img alt='redux' src={redux} />,
     },
     {
+        id: 3,
         name: 'TypeScript',
         icon: <img alt='ts' src={ts} />,
     },

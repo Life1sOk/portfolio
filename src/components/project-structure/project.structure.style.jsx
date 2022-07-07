@@ -66,11 +66,23 @@ export const Title = styled.span`
 `;
 
 export const Tools = styled.div`
+    display: flex;
+    align-items: center;
     padding: 10px;
     font-size: 1.5rem;
+
+    & .tool {
+        padding-right: 10px;
+    }
+
+    & .icon {
+        display: flex;
+        height: 50px;
+    }
 `;
 
 export const Discription = styled.div`
+    max-width: 500px;
     font-size: 1.3rem;
     
     @media only screen and (max-width: 562px) {
