@@ -5,7 +5,7 @@ export const ResumeButton = styled.button`
     align-items: center;
     background-clip: padding-box;
     background-color: #fa6400;
-    border: 1px solid transparent;
+    border: 1px solid white;
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
     box-sizing: border-box;
@@ -16,10 +16,7 @@ export const ResumeButton = styled.button`
     font-size: 16px;
     font-weight: 600;
     justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    max-height: 48px;
-    min-height: 3rem;
+    height: 42px;
     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
     text-decoration: none;
     transition: all 250ms;
@@ -28,17 +25,11 @@ export const ResumeButton = styled.button`
     touch-action: manipulation;
     vertical-align: baseline;
     width: 10rem;
+    transform: translateY(-1px);
 
     &:hover {
         background-color: #fb8332;
-        transform: translateY(-1px);
         box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    }
-
-    &:active {
-        background-color: #c85000;
-        box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-        transform: translateY(0);
     }
 `;
 
@@ -67,6 +58,7 @@ export const Type2 = styled.button`
     touch-action: manipulation;
     vertical-align: middle;
     width: 10rem;
+    transform: translateY(-1px);
 
     &:hover,
     &:active {

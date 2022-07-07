@@ -18,8 +18,8 @@ export const InOut = styled.div`
     border: 1px solid #fa6400;
     border-bottom-right-radius: 10%;
     border-top-left-radius: 10%;
-    transition: transform 0.3s ease-in-out;
-    transform: ${({ toggle }) => toggle ? 'translateY(-150%)' : 'translateY(5px)'};
+    transition: transform .5s ease-in-out;
+    transform: ${({ toggle }) => toggle ? 'translateY(5px)' : 'translateY(-150%)'};
 `;
 
 export const Var = styled.span`

@@ -13,17 +13,14 @@ export const MainContainer = styled.main`
 
     @media only screen and (max-width: 1280px) {
         justify-content: space-around;
-        column-gap: 0;
+        column-gap: 50px;
     }
 
     @media only screen and (max-width: 1068px) {
         padding-top: 40px;
+        flex-direction: column-reverse;
+        padding:auto;
     }
-
-    @media only screen and (max-width: 760px) {
-        flex-direction: column;
-        padding:0px;
-    };
 `;
 
 export const Introduction = styled.section`
@@ -37,12 +34,9 @@ export const Introduction = styled.section`
     
     @media only screen and (max-width: 1068px) {
         padding-bottom: 0px;
-    }
-
-    @media only screen and (max-width: 760px) {
         flex-direction: column;
         padding: 40px 0px;
-    };
+    }
 `;
 
 export const Hello = styled.article`
@@ -78,12 +72,9 @@ export const Position = styled.p`
 export const Mission = styled.article`
     background-color: #06223c;
     padding: 30px;
-    width: 600px;
+    max-width: 600px;
+    min-height: 115px;
     z-index: 1;
-
-    @media only screen and (max-width: 760px) {
-        width: 340px;
-    };
 `;
 
 export const MyPrinciple = styled.p`
@@ -101,7 +92,14 @@ export const MyPrinciple = styled.p`
 export const Buttons = styled.div`
     display: flex;
     justify-content: center;
+    align-items: start;
     column-gap: 50px;
+
+    & a {
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
 `;
 
 export const Foto = styled.section`
@@ -121,7 +119,10 @@ export const Foto = styled.section`
         justify-content: center;
         margin-top: 30px;
         padding: 0px 50px;
-        order: -1;
+    }
+
+    @media only screen and (max-width: 500px) {
+        padding: 0px 30px;
     }
 `;
 
