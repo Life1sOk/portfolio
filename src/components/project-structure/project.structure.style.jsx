@@ -28,7 +28,8 @@ export const ProjectStructureContainer = styled.section`
 export const ProjectImage = styled.img`
     border-radius: 10%;
     width: 350px;
-    height: 350px;
+    height: auto;
+    ${'' /* height: 350px; */}
 
     @media only screen and (max-width: 1069px) {
         width: 300px;
@@ -38,7 +39,6 @@ export const ProjectImage = styled.img`
 
 export const ProjectAbout = styled.div`
     height: 350px;
-    ${'' /* width: 550px; */}
     display: flex;
     flex-direction: column;
     justify-content: space-around;

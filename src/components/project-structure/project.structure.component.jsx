@@ -4,7 +4,11 @@ import { ProjectStructureContainer, ProjectImage, ProjectButtons, ProjectAbout, 
 import Button from '../button/button.component';
 
 const ProjectStructure = ({ project, side }) => {
-    const { title, img, tools, discription, link } = project;
+    const { title, img, tools, discription, git, site } = project;
+
+    const openInNewTab = url => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
 
     return (
         <ProjectStructureContainer side={side}>
@@ -18,8 +22,8 @@ const ProjectStructure = ({ project, side }) => {
                 </Tools>
                 <Discription>{discription}</Discription>
                 <ProjectButtons>
-                    <Button type={'type2'} name={'Site'} onClick={link} />
-                    <Button type={'github'} name={'Link'} onClick={link} />
+                    <Button type={'type2'} name={'Site'} visit={() => openInNewTab(site)} />
+                    <Button type={'github'} name={'Link'} visit={() => openInNewTab(git)} />
                 </ProjectButtons>
             </ProjectAbout>
             <JustLine side='right' />
