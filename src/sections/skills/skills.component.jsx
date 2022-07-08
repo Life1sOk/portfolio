@@ -1,13 +1,13 @@
 import React from "react";
 
 import { basicLevel, nextLevel } from "../../utils/icons.skills";
-import { SkillsContainer, H2, MainSkills, Basics, Advanced } from './skills.style';
+import { SkillsContainer, Title, MainSkills, Basics, Advanced } from './skills.style';
 import Icon from "../../components/icon-wrap/icon-wrap.component";
 
 const Skills = () => {
     return (
         <SkillsContainer name='skills'>
-            <H2>Skills</H2>
+            <Title>Skills</Title>
             <MainSkills>
                 <Basics>
                     {

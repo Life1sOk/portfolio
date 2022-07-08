@@ -11,7 +11,7 @@ export const SkillsContainer = styled.section`
     }
 `;
 
-export const H2 = styled.h2`
+export const Title = styled.span`
     color: #0b3a66;
     font-size: 1.7rem;
 `;
