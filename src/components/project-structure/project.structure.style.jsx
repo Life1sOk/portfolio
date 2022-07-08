@@ -86,7 +86,7 @@ export const Discription = styled.div`
     font-size: 1.3rem;
     
     @media only screen and (max-width: 562px) {
-        ${'' /* display: none; */}
+        display: none;
     }
 `;
 
