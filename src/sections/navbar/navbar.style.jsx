@@ -70,7 +70,7 @@ export const NavbarContainer = styled.div`
     }
 
     @media only screen and (max-width: 760px) {
-        padding: 5px 10px;
+        padding: 5px 20px;
     }
 
 `;

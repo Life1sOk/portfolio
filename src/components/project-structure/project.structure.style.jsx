@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectStructureContainer = styled.section`
-    position: relative;
+    ${'' /* position: relative; */}
     display: flex;
     flex-direction: ${props => (props.side % 2 === 0) ? 'row' : 'row-reverse'};
     justify-content: center;
@@ -81,6 +81,7 @@ export const Tools = styled.div`
     & .icon {
         display: flex;
         height: 50px;
+        width: 150px;
     }
 `;
 
@@ -109,22 +110,5 @@ export const ProjectButtons = styled.div`
         & button {
             width: 7rem;
         }
-    }
-`;
-
-export const JustLine = styled.div`
-    height: 350px;
-    border-left: 2px solid #0b3a66;
-
-    @media only screen and (max-width: 1069px) {
-        height: 650px;
-        position: absolute;
-        top: 80;
-        left: ${props => (props.side) === 'left' ? -30 : 0};
-        right: ${props => (props.side) === 'right' ? -30 : 0};
-    }
-
-    @media only screen and (max-width: 716px) {
-        display: none;
     }
 `;

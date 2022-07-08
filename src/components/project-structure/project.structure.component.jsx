@@ -12,7 +12,6 @@ const ProjectStructure = ({ project, side }) => {
 
     return (
         <ProjectStructureContainer side={side}>
-            <JustLine side='left' />
             <ProjectImage alt={title} src={img} />
             <ProjectAbout>
                 <Title>{title}</Title>
@@ -26,7 +25,6 @@ const ProjectStructure = ({ project, side }) => {
                     <Button type={'github'} name={'Link'} visit={() => openInNewTab(git)} />
                 </ProjectButtons>
             </ProjectAbout>
-            <JustLine side='right' />
         </ProjectStructureContainer>
     );
 }
