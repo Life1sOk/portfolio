@@ -23,12 +23,13 @@ export const TopFooterContainer = styled.div`
         justify-content: space-between;
         width: 100%;
         padding: 0 30px;
-        gap: 0;
+        gap: 0px;
     }
 
     @media only screen and (max-width: 760px) {
         justify-content: center;
         white-space: nowrap;
+        max-width: 600px;
 
         & .top-footer-left {
             display: none; 

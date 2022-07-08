@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContactBaseContainer = styled.div`
-    width: 370px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ export const ContactBaseContainer = styled.div`
     }
 
     @media only screen and (max-width: 760px) {
-        width: 100%;
+        ${'' /* max-width: 300px; */}
         justify-content: space-between;
         gap: 0;
     }
