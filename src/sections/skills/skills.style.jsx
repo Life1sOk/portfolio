@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const SkillsContainer = styled.section`
     display: flex;
     flex-direction: column;
-    min-width: 400px;
+    min-width: 300px;
     padding: 30px;
 
     @media only screen and (max-width: 870px) {
@@ -35,8 +35,15 @@ export const Basics = styled.div`
     border-bottom: 2px solid #0b3a66;
 
     @media only screen and (max-width: 485px) {
-        width: 300px;
-        column-gap: 7px;
+        display: grid;
+        max-width: 300px;
+        row-gap: 7px;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: 400px) {
     }
 `;
 
@@ -49,7 +56,11 @@ export const Advanced = styled.div`
     border-bottom: 2px solid #0b3a66;
 
     @media only screen and (max-width: 485px) {
-        width: 400px;
-        column-gap: 7px;
+        display: grid;
+        max-width: 300px;
+        row-gap: 7px;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
     }
 `;

@@ -8,7 +8,7 @@ export const NavbarContainer = styled.div`
     justify-content: center;
     column-gap: 160px;
     padding: 5px 44px;
-    min-width: 400px;
+    min-width: 300px;
     white-space: nowrap;
 
     & .burger {
@@ -67,6 +67,10 @@ export const NavbarContainer = styled.div`
             height: 3rem;
             padding: 0;
         }
+    }
+
+    @media only screen and (max-width: 760px) {
+        padding: 5px 10px;
     }
 
 `;

@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
     align-items: center;
     background-color: #06223c;
     border: 1px solid #06223c;
-    min-width: 400px;
+    min-width: 300px;
 `;
 
 export const TopFooterContainer = styled.div`
@@ -59,4 +59,8 @@ export const ContactIconWrap = styled.div`
     display: flex;
     justify-content: center;
     width: 370px;
+
+    @media only screen and (max-width: 400px) {
+        width: auto;
+    }
 `;

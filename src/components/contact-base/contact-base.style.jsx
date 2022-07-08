@@ -19,6 +19,12 @@ export const ContactBaseContainer = styled.div`
         justify-content: space-between;
         gap: 0;
     }
+
+    @media only screen and (max-width: 400px) {
+        & a {
+            display: none;
+        }
+    }
 `;
 
 export const SendMeLocation = styled.div`
@@ -26,6 +32,10 @@ export const SendMeLocation = styled.div`
     flex-direction: column;
     padding: 15px;
     font-size: 13px;
+
+    @media only screen and (max-width: 400px) {
+        margin: 0 auto;
+    }
 `;
 
 export const ContactLine = styled.div`

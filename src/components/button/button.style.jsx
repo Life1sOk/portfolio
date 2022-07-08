@@ -143,7 +143,6 @@ export const Github = styled.button`
     & svg {
         width: 30px;
         height: auto;
-        padding: 
     }
 
     &:hover {

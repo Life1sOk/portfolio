@@ -22,6 +22,7 @@ export const ProjectStructureContainer = styled.section`
 
     @media only screen and (max-width: 562px) {
         padding-bottom: 20px;
+        margin: 0px;
     }
 `;
 
@@ -29,11 +30,13 @@ export const ProjectImage = styled.img`
     border-radius: 10%;
     width: 350px;
     height: auto;
-    ${'' /* height: 350px; */}
 
     @media only screen and (max-width: 1069px) {
         width: 300px;
-        height: 300px;
+    }
+
+    @media only screen and (max-width: 562px) {
+        width: 250px;
     }
 `;
 
@@ -98,6 +101,14 @@ export const ProjectButtons = styled.div`
     @media only screen and (max-width: 562px) {
         padding-bottom: 40px;
         border-bottom: 2px solid #0b3a66;
+    }
+
+    @media only screen and (max-width: 400px) {
+        column-gap: 10px;
+
+        & button {
+            width: 7rem;
+        }
     }
 `;
 

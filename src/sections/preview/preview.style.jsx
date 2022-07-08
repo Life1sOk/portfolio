@@ -8,7 +8,7 @@ export const MainContainer = styled.main`
     align-items: center;
     column-gap: 170px;
     padding: 40px 40px 40px 40px;
-    min-width: 400px;
+    min-width: 300px;
     z-index: 2;
 
     @media only screen and (max-width: 1280px) {
@@ -19,7 +19,7 @@ export const MainContainer = styled.main`
     @media only screen and (max-width: 1068px) {
         padding-top: 40px;
         flex-direction: column-reverse;
-        padding:auto;
+        padding: auto;
     }
 `;
 
@@ -55,6 +55,10 @@ export const Iam = styled.p`
     @media only screen and (max-width: 760px) { 
         font-size: 2.5rem;
     };
+
+    @media only screen and (max-width: 400px) {
+        font-size: 2rem;
+    }
 `;
 
 export const Position = styled.p`
@@ -67,6 +71,10 @@ export const Position = styled.p`
     @media only screen and (max-width: 760px) {
         font-size: 1.3rem;
     };
+
+    @media only screen and (max-width: 400px) {
+        font-size: 1rem;
+    }
 `;
 
 export const Mission = styled.article`
@@ -99,6 +107,14 @@ export const Buttons = styled.div`
         z-index: 2;
         width: 100%;
         height: 100%;
+    }
+
+    @media only screen and (max-width: 400px) {
+        column-gap: 10px;
+
+        & button {
+            width: 7rem;
+        }
     }
 `;
 
@@ -138,5 +154,9 @@ export const Img = styled.img`
 
     @media only screen and (max-width: 760px) {
         width: 270px;
+    }
+
+    @media only screen and (max-width: 400px) {
+        width: 180px;
     }
 `;

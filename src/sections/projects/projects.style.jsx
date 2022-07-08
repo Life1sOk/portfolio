@@ -6,5 +6,5 @@ export const ProjectsContainer = styled.section`
     display: flex;
     flex-direction: column;
     gap: 50px;
-    min-width: 400px;
+    min-width: 300px;
 `;

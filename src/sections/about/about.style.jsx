@@ -6,7 +6,7 @@ export const AboutContainer = styled.section`
     flex-direction: column;
     align-items: center;
     color: #0b3a66;
-    min-width: 400px;
+    min-width: 300px;
     height: 500px;
 `;
 
@@ -32,6 +32,6 @@ export const AboutMe = styled.div`
     ${'' /* width: 600px; */}
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    ${'' /* justify-content: end; */}
 
 `;
