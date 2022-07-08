@@ -22,11 +22,23 @@ export const InOut = styled.div`
     transform: ${({ toggle }) => toggle ? 'translateY(5px)' : 'translateY(-150%)'};
 `;
 
-export const Var = styled.span`
+export const Var = styled.a`
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     padding: 5px;
     background-color: aliceblue;
     color: #fa6400;
+
+    &:link {
+        text-decoration: inherit;
+    }
+
+    &:visited {
+        text-decoration: inherit;
+    }
 
     &:hover {
         background-color: #fb8332;
@@ -36,5 +48,9 @@ export const Var = styled.span`
     &:active {
         background-color: #c85000;
         color: aliceblue;
+    }
+
+    span {
+        width: 50px;
     }
 `;

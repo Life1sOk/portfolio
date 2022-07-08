@@ -29,7 +29,7 @@ export const JustLine = styled.div`
 
 export const AboutMe = styled.div`
     padding-top: 30px;
-    ${'' /* width: 600px; */}
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     ${'' /* justify-content: end; */}
