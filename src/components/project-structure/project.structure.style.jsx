@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ProjectStructureContainer = styled.section`
-    ${'' /* position: relative; */}
+    position: relative;
     display: flex;
     flex-direction: ${props => (props.side % 2 === 0) ? 'row' : 'row-reverse'};
     justify-content: center;
