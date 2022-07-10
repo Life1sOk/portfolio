@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='wrap-main'>
       <Navbar nav={nav} preview={preview} skills={skills} projects={projects} about={about} />
-      <Preview preview={preview} />
+      <Preview preview={preview} projects={projects} />
       <Skills skills={skills} />
       <Projects projects={projects} />
       <About about={about} />
