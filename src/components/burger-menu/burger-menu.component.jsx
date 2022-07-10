@@ -1,15 +1,20 @@
 import React from "react";
 
 import { BurgerMenuContainer } from "./burger-menu.styte";
-import LinkToComponent from "../link/link.component";
 
-const BurgerMemu = ({ open, openToggle }) => {
+const BurgerMemu = ({ open, openToggle, preview, skills, projects, about, handleClick }) => {
+
+    const openPlusScroll = (to) => {
+        openToggle();
+        handleClick(to);
+    }
+
     return (
         <BurgerMenuContainer open={open}>
-            <LinkToComponent openToggle={openToggle} to="preview" name='Home' offset={-74} />
-            <LinkToComponent openToggle={openToggle} to="projects" name='Projects' offset={-74} />
-            <LinkToComponent openToggle={openToggle} to="skills" name="Skills" offset={-74} />
-            <LinkToComponent openToggle={openToggle} to="about" name='About' offset={-74} />
+            <span onClick={() => openPlusScroll(preview)}>Home</span>
+            <span onClick={() => openPlusScroll(projects)}>Projects</span>
+            <span onClick={() => openPlusScroll(skills)}>Skills</span>
+            <span onClick={() => openPlusScroll(about)}>About</span>
         </BurgerMenuContainer>
     )
 }

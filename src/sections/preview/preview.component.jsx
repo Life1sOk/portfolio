@@ -7,10 +7,10 @@ import Button from "../../components/button/button.component";
 import MyFoto from '../../img/foto-preview.png';
 import Resume from "../../components/resume/resume.component";
 
-const Preview = () => {
+const Preview = ({ preview }) => {
 
     return (
-        <MainContainer name='preview'>
+        <MainContainer name='preview' ref={preview}>
             <Introduction>
                 <Hello>
                     <Iam>Hello, I'm Andrey</Iam>

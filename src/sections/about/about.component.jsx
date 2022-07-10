@@ -2,9 +2,9 @@ import React from "react";
 
 import { AboutContainer, AboutMe, JustLine } from './about.style';
 
-const About = () => {
+const About = ({ about }) => {
     return (
-        <AboutContainer name='about'>
+        <AboutContainer name='about' ref={about}>
             <JustLine />
             <AboutMe>
                 <span>About</span>

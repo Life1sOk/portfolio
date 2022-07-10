@@ -20,12 +20,13 @@ export const BurgerMenuContainer = styled.div`
         width: 100 %;
     }
 
-    & a {
+    & span {
         font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: 0.5rem;
         margin: 37px auto;
         width: auto;
+        cursor: pointer;
 
         &:hover {
             color: rgb(211, 96, 96);

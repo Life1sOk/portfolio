@@ -1,24 +1,27 @@
 import React from 'react';
 
-import { FooterContainer, TopFooterContainer, BotFooterContainer, FooterNav, ContactIconWrap } from './footer.style';
+import { FooterContainer, TopFooterContainer, BotFooterContainer, FooterNav, ContactIconWrap, NavbarWords } from './footer.style';
 import ContactIcons from '../../components/contact-icons/contact.icons.component';
 import Copyright from '../../components/copyright/copyright';
 import ContactBase from '../../components/contact-base/contact-base.component';
-import LinkToComponent from '../../components/link/link.component';
 
-const Footer = () => {
+const Footer = ({ footer, nav, projects, skills }) => {
+
+    const handleClick = (ref) => {
+        ref.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
-        <FooterContainer name='footer'>
+        <FooterContainer name='footer' ref={footer}>
             <TopFooterContainer>
                 <div className='top-footer-left'>Something</div>
                 <ContactBase />
             </TopFooterContainer>
             <BotFooterContainer>
                 <FooterNav>
-                    <LinkToComponent to='nav' name='Home' />
-                    <LinkToComponent to='projects' name='Projects' />
-                    <LinkToComponent to='skills' name='Skills' />
+                    <NavbarWords onClick={() => handleClick(nav)}>Home</NavbarWords>
+                    <NavbarWords onClick={() => handleClick(projects)}>Projects</NavbarWords>
+                    <NavbarWords onClick={() => handleClick(skills)}>Skills</NavbarWords>
                 </FooterNav>
                 <ContactIconWrap>
                     <ContactIcons />
