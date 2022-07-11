@@ -10,7 +10,7 @@ export const ResumeContainer = styled.div`
 export const InOut = styled.div`
     overflow: hidden;
     position: absolute;
-    top: 46px;
+    top: 40px;
     right: 5%;
     width: 90%;
     display: flex;

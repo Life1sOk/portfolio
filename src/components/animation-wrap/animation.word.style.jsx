@@ -1,7 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-
-//400x600px //
 const run = keyframes`
     0% {
         transform: translateY(700px);
@@ -41,12 +39,14 @@ export const AnimationWordContainer = styled.div`
     animation-delay: ${props => props.delay || 0};
 
     @media only screen and (max-width: 1068px) {
+        ${'' /* left: ${props => `calc(${props.left} / 2)`}; */}
         animation: ${run2} 15s linear infinite;
         animation-delay: ${props => props.delay || 0};
     }
 
     @media only screen and (max-width: 760px) {
+        left: ${props => `calc(${props.left} / 1.2)`};
         animation: ${run3} 10s linear infinite;
-        animation-delay: ${props => props.delay || 0};
+        animation-delay: ${props => `calc(${props.delay} / 1.3)` || 0};
     }
 `;

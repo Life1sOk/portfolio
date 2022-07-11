@@ -34,14 +34,14 @@ export const Basics = styled.div`
     column-gap: 20px;
     border-bottom: 2px solid #0b3a66;
 
-    @media only screen and (max-width: 485px) {
+    ${'' /* @media only screen and (max-width: 485px) {
         display: grid;
         max-width: 300px;
         row-gap: 7px;
         align-items: center;
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */}
 
     @media only screen and (max-width: 400px) {
     }

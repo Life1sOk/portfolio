@@ -11,8 +11,12 @@ export const IconWrapContainer = styled.div`
     background-color: #0b3a66;
 
     @media only screen and (max-width: 485px) {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
+
+        & span {
+            font-size: 0.9rem;
+        }
     }
 `;
 
@@ -27,4 +31,7 @@ export const IconWrap = styled.div`
         width: 100%;
     }
 
+    @media only screen and (max-width: 485px) {
+        width: 40px;
+    }
 `;

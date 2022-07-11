@@ -25,9 +25,7 @@ const Preview = ({ preview, projects }) => {
                 </Mission>
                 <Buttons>
                     <Resume />
-                    {/* <Link to='projects' smooth={true} spy={true}> */}
                     <Button handleClick={handleClick} name={'Projects'} type={'type2'} />
-                    {/* </Link> */}
                 </Buttons>
             </Introduction>
             <Foto>

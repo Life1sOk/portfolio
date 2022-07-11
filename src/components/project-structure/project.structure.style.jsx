@@ -1,35 +1,45 @@
 import styled from 'styled-components';
 
+export const Wrapper = styled.div`
+    display: flex;
+    justify-content: cetner;
+    align-items: center; 
+`;
+
 export const ProjectStructureContainer = styled.section`
     position: relative;
     display: flex;
     flex-direction: ${props => (props.side % 2 === 0) ? 'row' : 'row-reverse'};
-    justify-content: center;
-    gap: 170px;
-    padding: 80px 20px;
-    margin: 0 20px;
+    justify-content: space-between;
+    gap: 200px;
+    padding: 40px 20px;
+    margin: 40px auto;
     z-index: 0;
+    box-shadow: 0px 0px 26px 7px rgba(0,0,0,0.25);
 
     @media only screen and (max-width: 1366px) {
-        gap: 0;
+        gap: 100px;
         justify-content: space-around;
     }
 
     @media only screen and (max-width: 1069px) {
+        gap: 23px;
         flex-direction: column;
         align-items: center;
+        padding-top: 80px;
     }
 
     @media only screen and (max-width: 562px) {
+        gap: 10px;
         padding-bottom: 20px;
-        margin: 0px;
+        ${'' /* margin: 0px; */}
     }
 `;
 
 export const ProjectImage = styled.img`
     border-radius: 10%;
     width: 350px;
-    height: auto;
+    min-height: 250px;
 
     @media only screen and (max-width: 1069px) {
         width: 300px;
@@ -64,7 +74,7 @@ export const Title = styled.span`
 
     @media only screen and (max-width: 1069px) {
         position: absolute;
-        top: 15px;
+        top: 10px;
     }
 `;
 
