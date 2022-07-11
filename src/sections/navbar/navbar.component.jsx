@@ -10,10 +10,6 @@ import Mailto from "../../components/mailto/mailto.component";
 const Navbar = ({ nav, preview, skills, projects, about }) => {
     const [open, setOpen] = useState(false);
 
-    const handleClick = (ref) => {
-        ref.current?.scrollIntoView({ behavior: 'smooth' });
-    };
-
     return (
         <>
             <BurgerMemu
@@ -27,7 +23,7 @@ const Navbar = ({ nav, preview, skills, projects, about }) => {
             />
             <NavbarContainer name='nav' ref={nav}>
                 <MyName onClick={() => handleClick(preview)}>Andrey Tsoy</MyName>
-                <Burger openToggle={() => setOpen(!open)} />
+                <Burger open={open} openToggle={() => setOpen(!open)} />
                 <NavbarMenu>
                     <NavbarWords onClick={() => handleClick(projects)}>Projects</NavbarWords>
                     <NavbarWords onClick={() => handleClick(skills)}>Skills</NavbarWords>
@@ -42,5 +38,9 @@ const Navbar = ({ nav, preview, skills, projects, about }) => {
 
     )
 }
+
+const handleClick = (ref) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+};
 
 export default Navbar;

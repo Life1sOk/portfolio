@@ -21,7 +21,7 @@ const ProjectStructure = ({ project, side }) => {
                 </Tools>
                 <Discription>{discription}</Discription>
                 <ProjectButtons>
-                    <Button type={'type2'} name={'Site'} visit={() => openInNewTab(site)} />
+                    <Button type={'site'} name={'Site'} visit={() => openInNewTab(site)} />
                     <Button type={'github'} name={'Link'} visit={() => openInNewTab(git)} />
                 </ProjectButtons>
             </ProjectAbout>

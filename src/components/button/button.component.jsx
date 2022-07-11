@@ -12,8 +12,9 @@ const Button = ({ name, type, toggle, open, visit, handleClick }) => {
         <>
             {(type === 'resume') ? <ResumeButton open={open} onClick={toggle}>{name}</ResumeButton> :
                 (type === 'type2') ? <Type2 onClick={() => visitAndScroll()}>{name}</Type2> :
-                    (type === 'github') ? <Github onClick={visit}>{<FaGithub />}Github</Github> :
-                        <TypeMail>{name}</TypeMail>
+                    (type === 'site') ? <Type2 onClick={visit}>{name}</Type2> :
+                        (type === 'github') ? <Github onClick={visit}>{<FaGithub />}Github</Github> :
+                            <TypeMail>{name}</TypeMail>
             }
         </>
     );

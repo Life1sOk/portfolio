@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyledBurger } from './burger.style';
 
-const Burger = ({ openToggle }) => {
+const Burger = ({ openToggle, open }) => {
     return (
-        <StyledBurger className='burger' onClick={openToggle}>
-            <div />
-            <div />
-            <div />
+        <StyledBurger open={open} className='burger' onClick={openToggle}>
+            <div className='line1' />
+            <div className='line2' />
+            <div className='line3' />
         </StyledBurger>
     )
 }

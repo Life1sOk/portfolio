@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BurgerMenuContainer } from "./burger-menu.styte";
+import { BurgerMenuContainer, BurgerWord, BackToCloseMenu } from "./burger-menu.styte";
 
 const BurgerMemu = ({ open, openToggle, preview, skills, projects, about, handleClick }) => {
 
@@ -10,12 +10,15 @@ const BurgerMemu = ({ open, openToggle, preview, skills, projects, about, handle
     }
 
     return (
-        <BurgerMenuContainer open={open}>
-            <span onClick={() => openPlusScroll(preview)}>Home</span>
-            <span onClick={() => openPlusScroll(projects)}>Projects</span>
-            <span onClick={() => openPlusScroll(skills)}>Skills</span>
-            <span onClick={() => openPlusScroll(about)}>About</span>
-        </BurgerMenuContainer>
+        <>
+            <BackToCloseMenu onClick={() => openToggle()} open={open} />
+            <BurgerMenuContainer open={open}>
+                <BurgerWord onClick={() => openPlusScroll(preview)}>Home</BurgerWord>
+                <BurgerWord onClick={() => openPlusScroll(projects)}>Projects</BurgerWord>
+                <BurgerWord onClick={() => openPlusScroll(skills)}>Skills</BurgerWord>
+                <BurgerWord onClick={() => openPlusScroll(about)}>About</BurgerWord>
+            </BurgerMenuContainer>
+        </>
     )
 }
 

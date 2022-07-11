@@ -39,19 +39,20 @@ export const NavbarContainer = styled.div`
     }
 
     @media only screen and (max-width: 880px) {
+        justify-content: space-between;
+        column-gap: 0px;
+
         & .burger {
-            max-width: 120px;
+            width: 120px;
         }
 
         & a button:first-child {
-            max-width: 120px;
+            width: 120px;
             min-width: 80px;
         }
     }
 
     @media only screen and (max-width: 760px) {
-        justify-content: space-between;
-        column-gap: 0px;
 
         & .burger {
             width: 48px;
@@ -107,6 +108,6 @@ export const MyName = styled.span`
     };
 
     @media only screen and (max-width: 760px) {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
 `;
