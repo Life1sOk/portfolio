@@ -11,7 +11,8 @@ export const ProjectStructureContainer = styled.section`
     display: flex;
     flex-direction: ${props => (props.side % 2 === 0) ? 'row' : 'row-reverse'};
     justify-content: space-between;
-    gap: 200px;
+    align-items: center;
+    gap: 130px;
     padding: 40px 20px;
     margin: 40px auto;
     z-index: 0;
@@ -32,21 +33,22 @@ export const ProjectStructureContainer = styled.section`
     @media only screen and (max-width: 562px) {
         gap: 10px;
         padding-bottom: 20px;
-        ${'' /* margin: 0px; */}
     }
 `;
 
 export const ProjectImage = styled.img`
     border-radius: 10%;
-    width: 350px;
-    min-height: 250px;
+    width: 400px;
+    height: 350px;
+    ${'' /* min-height: 250px; */}
 
     @media only screen and (max-width: 1069px) {
-        width: 300px;
+        ${'' /* width: 80%; */}
     }
 
     @media only screen and (max-width: 562px) {
-        width: 250px;
+        width: 270px;
+        height: 260px;
     }
 `;
 
@@ -110,8 +112,9 @@ export const ProjectButtons = styled.div`
     gap: 50px;
 
     @media only screen and (max-width: 562px) {
-        padding-bottom: 40px;
-        border-bottom: 2px solid #0b3a66;
+        gap: 23px;
+        ${'' /* padding-bottom: 40px; */}
+        ${'' /* border-bottom: 2px solid #0b3a66; */}
     }
 
     @media only screen and (max-width: 400px) {
