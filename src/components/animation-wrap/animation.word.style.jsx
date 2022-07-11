@@ -49,4 +49,10 @@ export const AnimationWordContainer = styled.div`
         animation: ${run3} 10s linear infinite;
         animation-delay: ${props => `calc(${props.delay} / 1.3)` || 0};
     }
+
+    @media only screen and (max-width: 600px) {
+        left: ${props => `calc(${props.left} / 2)`};
+        animation: ${run3} 10s linear infinite;
+        animation-delay: ${props => `calc(${props.delay} / 2)` || 0};
+    }
 `;
