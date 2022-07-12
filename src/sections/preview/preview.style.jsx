@@ -6,7 +6,7 @@ export const MainContainer = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 170px;
+    column-gap: 50px;
     padding: 40px 40px 40px 40px;
     min-width: 300px;
     z-index: 2;
@@ -143,7 +143,7 @@ export const Foto = styled.section`
 `;
 
 export const Img = styled.img`
-    width: 400px;
+    width: 350px;
     height: auto;
     margin-right: 30px;
     z-index: 2;
