@@ -119,7 +119,8 @@ export const Buttons = styled.div`
 `;
 
 export const Foto = styled.section`
-    padding: 0px 100px;
+    width: 300px;
+    ${'' /* padding: 0px 100px; */}
     overflow: hidden;
     position: relative;
     display: flex;
@@ -127,7 +128,7 @@ export const Foto = styled.section`
     align-items: start;
     z-index: 0;
     background-color: #041436;
-    border-radius: 20%;
+    ${'' /* border-radius: 50% 50% 0 0; */}
     -webkit-box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.74); 
     box-shadow: 6px 6px 11px 4px rgba(0,0,0,0.74);
 
@@ -143,9 +144,9 @@ export const Foto = styled.section`
 `;
 
 export const Img = styled.img`
-    width: 350px;
+    width: 100%;
     height: auto;
-    margin-right: 30px;
+    ${'' /* margin-right: 30px; */}
     z-index: 2;
 
     @media only screen and (max-width: 1068px) {

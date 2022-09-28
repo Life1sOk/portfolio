@@ -3,7 +3,7 @@ import React from "react";
 import { MainContainer, Introduction, Hello, Iam, Position, Mission, MyPrinciple, Buttons, Img, Foto } from './preview.style';
 import Animation from "../../components/animation/animation.component";
 import Button from "../../components/button/button.component";
-import MyFoto from '../../img/foto-preview.png';
+import MyFoto from '../../img/foto.jpg';
 import Resume from "../../components/resume/resume.component";
 
 const Preview = ({ preview, projects }) => {
@@ -29,7 +29,6 @@ const Preview = ({ preview, projects }) => {
                 </Buttons>
             </Introduction>
             <Foto>
-                <Animation />
                 <Img alt="foto" src={MyFoto} />
             </Foto>
         </MainContainer>
