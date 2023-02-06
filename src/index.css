@@ -3,7 +3,16 @@
   margin: 0;
   padding: 0;
   text-align: center;
-}
+};
+
+:root {
+  --background: #1e2b45;
+  --white: #ffffff;
+  --blue: #40578f;
+  --font-color: #a9c6d9;
+  --light-orange: #e55f3f;
+  --light-yellow: #f1a845;
+};
 
 html,
 body {
@@ -12,4 +21,4 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-}
+};

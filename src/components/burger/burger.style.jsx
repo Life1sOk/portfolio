@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const StyledBurger = styled.button`
-  ${'' /* position: relative; */}
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
+  width: 49px;
+  height: 32px;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0px;
   z-index: 100;
+  
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
 
   &:focus {
     outline: none;
@@ -37,5 +37,9 @@ export const StyledBurger = styled.button`
 
   & .line3 {
     transform: ${({ open }) => open ? 'rotate(-45deg)' : 'none'}
+  }
+
+  @media only screen and (max-width: 1068px) {
+    display: flex;
   }
 `;

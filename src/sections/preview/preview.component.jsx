@@ -1,9 +1,8 @@
 import React from "react";
 
-import { MainContainer, Introduction, Hello, Iam, Position, Mission, MyPrinciple, Buttons, Img, Foto } from './preview.style';
-import Animation from "../../components/animation/animation.component";
+import { MainContainer, Introduction, Animation } from './preview.style';
+// import Animation from "../../components/animation/animation.component";
 import Button from "../../components/button/button.component";
-import MyFoto from '../../img/foto.jpg';
 import Resume from "../../components/resume/resume.component";
 
 const Preview = ({ preview, projects }) => {
@@ -15,22 +14,17 @@ const Preview = ({ preview, projects }) => {
     return (
         <MainContainer name='preview' ref={preview}>
             <Introduction>
-                <Hello>
-                    <Iam>Hello, I'm Andrey</Iam>
-                    <Position>Front End Developer</Position>
-                </Hello>
-                <Mission>
-                    <MyPrinciple>I always try to be one step ahead in my work
-                        and exceed your expectations.</MyPrinciple>
-                </Mission>
-                <Buttons>
-                    <Resume />
-                    <Button handleClick={handleClick} name={'Projects'} type={'type2'} />
-                </Buttons>
+                <h1 className="welcome">Welcome, I'm <span className="name">Andrey</span></h1>
+                    <span className="spec">Front-end Developer </span> 
+                <p className="ido">I turn new ideas into products and help people discover new possibilities. 
+                <br />My work standards: 
+                <span className="stand"> Quality</span>, 
+                <span className="stand"> Reliability</span>,
+                <span className="stand"> Result</span>!</p>
+                <button>Projects --&gt;</button>
             </Introduction>
-            <Foto>
-                <Img alt="foto" src={MyFoto} />
-            </Foto>
+            <Animation>
+            </Animation>
         </MainContainer>
     );
 }

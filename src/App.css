@@ -7,7 +7,5 @@ body {
 }
 
 .wrap-main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    min-width: 330px;
 }

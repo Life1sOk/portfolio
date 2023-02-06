@@ -1,79 +1,28 @@
 import styled from 'styled-components';
 
-export const NavbarContainer = styled.div`
-    background-color: #06223c;
-    align-items: center;
+export const NavigationContainer = styled.nav`
+    position: relative;
+    width: 100%;
+    background-color: #001528;
+    padding: 14px 44px;
+
     display: flex;
-    flex: 0 0 auto;
     justify-content: center;
-    column-gap: 160px;
-    padding: 5px 44px;
-    min-width: 300px;
-    white-space: nowrap;
+    align-items: center;
+    gap: 200px;
 
-    & .burger {
-        display: none;
-    }
+    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
+    -moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
 
-    & a button:first-child {
-        display: initial;
-    }
-
-    & a button:last-child {
-        display: none;
-    }
-
-
-
-    @media only screen and (max-width: 1068px) {
+    @media only screen and (max-width: 1290px) {
         justify-content: space-between;
-        position: sticky;
-        top: 0;
-        z-index: 4;
-
-        & .burger {
-            display: flex;
-            width: 10rem;
-            order: -1;
-        }
+        gap: 0;
     }
 
-    @media only screen and (max-width: 880px) {
-        justify-content: space-between;
-        column-gap: 0px;
-
-        & .burger {
-            width: 120px;
-        }
-
-        & a button:first-child {
-            width: 120px;
-            min-width: 80px;
-        }
+    @media only screen and (max-width: 544px) {
+        padding: 14px 22px;
     }
-
-    @media only screen and (max-width: 760px) {
-
-        & .burger {
-            width: 48px;
-        }
-
-        & a button:first-child {
-            display: none;
-        }
-
-        & a button:last-child {
-            display: initial;
-            width: 3rem;
-            height: 3rem;
-            padding: 0;
-        }
-    }
-
-    @media only screen and (max-width: 760px) {
-        padding: 5px 20px;
-    }
-
 `;
 
 export const NavbarMenu = styled.section`
@@ -87,27 +36,21 @@ export const NavbarMenu = styled.section`
 `;
 
 export const NavbarWords = styled.span`
-    font-size: 1rem;
+    font-size: 14px;
     padding: 5px;
-    border: 2px solid #06223c;
-    cursor: pointer;
+    border-bottom: 2px solid #06223c;
 
     &:hover {
+        cursor: pointer;
         color: white;
         border-bottom: 2px solid white;
     }
 `;
 
-export const MyName = styled.span`
-    font-size: 2.5rem;
-    font-weight: bolder;
-    cursor: pointer;
+export const LogoStyle = styled.img`
+    /* position: absolute;
+    top: 0;
+    left: 60px; */
 
-    @media only screen and (max-width: 1068px) {
-        margin: 0;
-    };
-
-    @media only screen and (max-width: 760px) {
-        font-size: 1.9rem;
-    }
+    max-width: 160px;
 `;

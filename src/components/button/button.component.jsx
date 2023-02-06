@@ -1,22 +1,12 @@
 import React from "react";
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa';
 
-import { ResumeButton, Type2, TypeMail, Github } from './button.style';
+import { TypeMail } from './button.style';
 
 const Button = ({ name, type, toggle, open, visit, handleClick }) => {
-    const visitAndScroll = () => {
-        handleClick();
-    }
 
     return (
-        <>
-            {(type === 'resume') ? <ResumeButton open={open} onClick={toggle}>{name}</ResumeButton> :
-                (type === 'type2') ? <Type2 onClick={() => visitAndScroll()}>{name}</Type2> :
-                    (type === 'site') ? <Type2 onClick={visit}>{name}</Type2> :
-                        (type === 'github') ? <Github onClick={visit}>{<FaGithub />}Github</Github> :
-                            <TypeMail>{name}</TypeMail>
-            }
-        </>
+        <TypeMail>{name}</TypeMail>
     );
 }
 

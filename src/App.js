@@ -20,10 +20,10 @@ function App() {
     <div className='wrap-main'>
       <Navbar nav={nav} preview={preview} skills={skills} projects={projects} about={about} />
       <Preview preview={preview} projects={projects} />
-      <Skills skills={skills} />
+      {/* <Skills skills={skills} />
       <Projects projects={projects} />
       <About about={about} />
-      <Footer footer={footer} nav={nav} projects={projects} skills={skills} />
+      <Footer footer={footer} nav={nav} projects={projects} skills={skills} /> */}
     </div>
   );
 }
