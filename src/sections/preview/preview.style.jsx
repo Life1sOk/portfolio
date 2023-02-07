@@ -2,14 +2,15 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.main`
     width: 100%;
-    min-height: 600px;
+    height: 92vh;
+    /* min-height: 650px; */
     background-color: #001528;
     /* padding: 40px; */
     z-index: 2;
 
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     column-gap: 50px;
 
     @media only screen and (max-width: 1280px) {
@@ -21,16 +22,13 @@ export const MainContainer = styled.main`
 
 export const Introduction = styled.section`
     width: 500px;
-    margin: 150px 0 0 100px;
+    margin-left: 60px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
-    /* gap: 100px; */
 
     .welcome {
-        /* margin-top: 100px; */
         font-size: 38px;
     }
 
@@ -45,7 +43,7 @@ export const Introduction = styled.section`
     }
 
     .ido {
-        margin-top: 20px;
+        margin-top: 10px;
         font-size: 18px;
         max-width: 400px;
         line-height: 1.6;
@@ -57,5 +55,13 @@ export const Introduction = styled.section`
 `;
 
 export const Animation = styled.section`
-    width: 50%;
+    width: 600px;
+    height: 650px;
+    /* height: 100%; */
+    /* border: 1px solid coral; */
+    /* margin-top: 100px; */
+    perspective: 700px;
+
+    display: flex;
+    flex-direction: column;
 `;

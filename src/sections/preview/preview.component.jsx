@@ -4,6 +4,7 @@ import { MainContainer, Introduction, Animation } from './preview.style';
 // import Animation from "../../components/animation/animation.component";
 import Button from "../../components/button/button.component";
 import Resume from "../../components/resume/resume.component";
+import Slides from "../../components/slides-animation";
 
 const Preview = ({ preview, projects }) => {
 
@@ -16,14 +17,15 @@ const Preview = ({ preview, projects }) => {
             <Introduction>
                 <h1 className="welcome">Welcome, I'm <span className="name">Andrey</span></h1>
                     <span className="spec">Front-end Developer </span> 
-                <p className="ido">I turn new ideas into products and help people discover new possibilities. 
-                <br />My work standards: 
+                <p className="ido">I turn new ideas into products and help people discover new possibilities.</p>
+                <p className="ido">My work standards: 
                 <span className="stand"> Quality</span>, 
                 <span className="stand"> Reliability</span>,
                 <span className="stand"> Result</span>!</p>
-                <button>Projects --&gt;</button>
+                <Button name='Projects ==>' type='projects'/>
             </Introduction>
             <Animation>
+                <Slides />
             </Animation>
         </MainContainer>
     );

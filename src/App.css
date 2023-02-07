@@ -8,4 +8,5 @@ body {
 
 .wrap-main {
     min-width: 330px;
+    max-height: 100vh;
 }

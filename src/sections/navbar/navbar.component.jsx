@@ -1,5 +1,4 @@
-import React, { useState, useRef } from "react";
-import { AiOutlineMail } from 'react-icons/ai';
+import React, { useState } from "react";
 
 import Logo from '../../assets/andrey-high-resolution-logo-color-on-transparent-background.png';
 import { NavigationContainer, NavbarMenu, NavbarWords, LogoStyle} from './navbar.style';
@@ -11,10 +10,8 @@ import Mailto from "../../components/mailto/mailto.component";
 const Navbar = ({ nav, preview, skills, projects, about }) => {
     const [open, setOpen] = useState(false);
 
-    const navRef = useRef(null);
-
     return (
-        <NavigationContainer ref={navRef}>
+        <NavigationContainer>
         <BurgerMemu
             open={open}
             openToggle={() => setOpen(!open)}
@@ -31,11 +28,7 @@ const Navbar = ({ nav, preview, skills, projects, about }) => {
             <NavbarWords>About</NavbarWords>
         </NavbarMenu>
         <Mailto email='andreytsoy.webdev@gmail.com'>
-            {   navRef.current?.clientWidth < 1068 ? 
-                <Button name={<AiOutlineMail />} /> 
-                :
-                <Button name={'Contact'} />
-            }
+            <Button name={'Contact'} type='mail'/>
         </Mailto>
     </NavigationContainer>
 )};
