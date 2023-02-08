@@ -1,72 +1,44 @@
 import { FaCss3Alt, FaReact, FaSass } from 'react-icons/fa';
 import { SiJavascript, SiRedux, SiTypescript, SiStyledcomponents, SiFirebase, SiHtml5 } from 'react-icons/si';
 
-export const basicLevel = [
+export const bigBox = [
     {
-        id: 3,
-        name: 'HTML5',
+        id: 0,
         icon: <SiHtml5 />,
         color: '#FF6D00',
-        left: '0',
-        top: '0',
-        rotate: 0,
-        duration: 0.5,
+        side: 'front',
     },
     {
-        id: 2,
-        name: 'CSS3',
+        id: 1,
         icon: <FaCss3Alt />,
         color: '#039BE5',
-        left: 43,
-        top: '0',
-        rotate: 0,
-        duration: 0.8,
+        side: 'back',
     },
-    {
-        id: 1,
-        name: 'JavaScript',
-        icon: <SiJavascript />,
-        color: '#FFD600',
-        left: 96,
-        top: '',
-        rotate: 0,
-        duration: 1.1,
-    },
-];
-
-export const secondLevel = [
     {
         id: 2,
-        name: 'React.js',
-        icon: <FaReact />,
-        color: '#80DEEA',
-        left: 24,
-        top: -50,
-        rotate: 25,
-        duration: 1.4,
+        icon: <SiJavascript />,
+        color: '#FFD600',
+        side: 'left',
     },
     {
-        id: 1,
-        name: 'Redux',
+        id: 3,
+        icon: <FaReact />,
+        color: '#80DEEA',
+        side: 'rigth',
+    },
+    {
+        id: 4,
+        icon: <SiTypescript />,
+        color: '#1976D2',
+        side: 'top',
+    },
+    {
+        id: 5,
         icon: <SiRedux />,
         color: '#7E57C2',
-        left: 72,
-        top: -50,
-        rotate: 25,
-        duration: 1.7,
+        side: 'bottom',
     },
 ];
-
-export const topLevel = {
-    id: 1,
-    name: 'TypeScript',
-    icon: <SiTypescript />,
-    color: '#1976D2',
-    left: 48,
-    top: -100,
-    rotate: 25,
-    duration: 2,
-};
 
 export const tierOne = [
     {

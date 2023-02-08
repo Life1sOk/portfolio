@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -20,10 +20,6 @@ function App() {
         <Route path='projects' element={<Projects />}/>
         <Route path='about' element={<About />}/>
       </Route>
-      {/* <Skills skills={skills} />
-      <Projects projects={projects} />
-      <About about={about} />
-      <Footer footer={footer} nav={nav} projects={projects} skills={skills} /> */}
     </Routes>
   );
 }

@@ -4,7 +4,7 @@ export const SlideContainerLayout = styled.div`
     width: 270px;
     height: 300px;
     padding: 0 3px 3px 3px;
-    background-color: rgba(64, 87, 143, .3);
+    background-color: rgba(64, 87, 143, .6);
     border-radius: 5px;
 
     box-shadow: 21px 34px 26px -6px rgba(0,0,0,0.75);
@@ -36,7 +36,7 @@ export const TitleLayout = styled.span`
 export const MainColumnLayout = styled.div`
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 25, 47, .3);
+    background-color: rgba(0, 25, 47, .5);
     padding: 8px;
 
     display: flex;
@@ -47,7 +47,7 @@ export const MainColumnLayout = styled.div`
 export const MainRawLayout = styled.div`
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 25, 47, .3);
+    background-color: rgba(0, 25, 47, .5);
     padding: 8px;
 
     display: flex;

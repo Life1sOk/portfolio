@@ -6,7 +6,7 @@ export const NavigationContainer = styled.nav`
     width: 100%;
     min-width: 370px;
     /* background-color: #00192f; */
-    /* background-color: #001528; */
+    background-color: rgba(0, 21, 40, .8);
     padding: 14px 44px;
     z-index: 200;
 

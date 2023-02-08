@@ -4,7 +4,7 @@ export const PaperPlaneContainer = styled.div`
     position: absolute;
     left: 0;
     bottom: -20px;
-    transform: rotate3d(2, -1, -10, -0.11turn);
+    transform: rotate3d(2, -1, -10, -0.11turn) scale(.7);
     
     /* left: -200px;
     bottom: -80px;
@@ -24,7 +24,7 @@ export const PaperPlaneContainer = styled.div`
         100% {
             left: 0;
             bottom: -20px;
-            transform: rotate3d(2, -1, -10, -0.11turn);
+            transform: rotate3d(2, -1, -10, -0.11turn) scale(0);
         };
     }
 `;

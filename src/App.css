@@ -34,15 +34,10 @@ body {
     min-width: 370px;
 
     background-attachment: fixed;
-    background-image: linear-gradient(to right, #054f7d, #001528, #082c60, #3e0f44, #001528);
-    /* background-image: linear-gradient(96deg, rgba(0,0,96,1) 0%, rgba(181,0,255,1) 49%, rgba(9,9,121,1) 98%);; */
-    background-size: 600%;
-    background-position: 0 0;
+    background-image: url(/src/assets/Animated\ Shape.svg);
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 5em rgba(0, 0, 0, 0.5);
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-name: gradients;
+    background-position: 0 0;
+    background-size: cover;
 }
 
 a {

@@ -5,18 +5,18 @@ export const MainSkills = styled.div`
     max-width: 100vw;
     min-width: 370px;
     height: 100vh;
-    /* max-height: 100vh; */
-    /* background-color: #001528; */
     padding-top: 40px;
+    /* background-color: #001528; */
 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex: 1 1 auto; */
-    column-gap: 40px;
+    flex: 1 1 auto;
+    column-gap: 100px;
 
     @media only screen and (max-width: 805px) {
+        padding-top: 100px;
         flex-direction: column;
-        /* row-gap: 40px; */
+        /* row-gap: 30px; */
     };
 `;

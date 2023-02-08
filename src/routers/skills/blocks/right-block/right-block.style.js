@@ -5,6 +5,13 @@ export const RightContainer = styled.div`
     height: 500px;
     padding: 10px 30px;
     /* border-left: 1px solid white; */
+    /* border: 1px solid white; */
+    border-radius: 40px;
+    background-color: rgba(0, 21, 40, .8);
+
+    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.77);
+    -moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
 
     display: flex;
     flex-direction: column;
@@ -19,6 +26,7 @@ export const RightContainer = styled.div`
 
     @media only screen and (max-width: 805px) {
         width: 100%;
+        transform: scale(.8);
     };
 `;
 

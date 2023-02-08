@@ -26,6 +26,10 @@ export const IconWrapContainer = styled.div`
         }
     };
 
+    @media only screen and (max-width: 805px) {
+        
+    };
+
     @media only screen and (max-width: 485px) {
 
     }
