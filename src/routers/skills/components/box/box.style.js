@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const BoxWrapper = styled.div`
-    position: absolute;
+    /* position: absolute;
     top: ${({top}) => top ? `${top}px` : '0'};
-    left: ${({left}) => left ? `${left}px` : '0'};
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
+    left: ${({left}) => left ? `${left}px` : '0'}; */
+    perspective: 800px;
+    perspective-origin: 50% 50px;
     z-index: ${({number}) => number ? number : '0'};
 
     animation-name: animationBox;
@@ -29,7 +29,8 @@ export const BoxContainer = styled.div`
     height: 50px;
     width: 50px;
     transform-style: preserve-3d;
-    transform: ${({rotate}) => rotate ? `rotateY(${rotate}deg)`: '0'};
+    /* transform: rotate3d(0, 1, 0, 35deg); */
+    transform: rotateY(20deg);
 
     #front {
         transform: translateZ(25px);

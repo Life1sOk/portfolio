@@ -7,13 +7,13 @@ import ProjectStructure from "../../components/project-structure/project.structu
 const Projects = ({ projects }) => {
     return (
         <ProjectsContainer name='projects' ref={projects}>
-            {
+            {/* {
                 allProjects.map(project => {
                     return <ProjectStructure key={project.title} project={project} side={allProjects.indexOf(project)} />
                 })
-            }
+            } */}
         </ProjectsContainer>
     );
-}
+};
 
 export default Projects

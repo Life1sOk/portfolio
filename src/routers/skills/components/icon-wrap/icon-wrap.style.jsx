@@ -4,7 +4,7 @@ export const IconWrapContainer = styled.div`
     min-width: 100px;
     /* height: 100px; */
     padding: 10px;
-    background-color: #0b3a66;
+    background-color: rgba(11, 58, 102, .3);
     border: 1px solid white;
     border-radius: 20px;
 

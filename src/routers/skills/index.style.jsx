@@ -6,7 +6,7 @@ export const MainSkills = styled.div`
     min-width: 370px;
     height: 100vh;
     /* max-height: 100vh; */
-    background-color: #001528;
+    /* background-color: #001528; */
     padding-top: 40px;
 
     display: flex;

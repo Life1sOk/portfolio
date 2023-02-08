@@ -9,7 +9,7 @@ export const basicLevel = [
         color: '#FF6D00',
         left: '0',
         top: '0',
-        rotate: 25,
+        rotate: 0,
         duration: 0.5,
     },
     {
@@ -17,9 +17,9 @@ export const basicLevel = [
         name: 'CSS3',
         icon: <FaCss3Alt />,
         color: '#039BE5',
-        left: 48,
+        left: 43,
         top: '0',
-        rotate: 25,
+        rotate: 0,
         duration: 0.8,
     },
     {
@@ -29,7 +29,7 @@ export const basicLevel = [
         color: '#FFD600',
         left: 96,
         top: '',
-        rotate: 25,
+        rotate: 0,
         duration: 1.1,
     },
 ];

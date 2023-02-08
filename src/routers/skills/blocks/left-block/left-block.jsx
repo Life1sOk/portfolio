@@ -10,10 +10,12 @@ const LeftBlock = () => {
     return(
         <LeftContainer>
             <BasicsContainer>
-                <Box datas={topLevel} key={0} />
                 {
                     secondLevel.map((box, index) => <Box datas={box} key={index}/>)
                 }
+            </BasicsContainer>
+            <BasicsContainer>
+                {/* <Box datas={topLevel} key={0} /> */}
                 {
                     basicLevel?.map((box, index) => <Box datas={box} key={index}/>)
                 }

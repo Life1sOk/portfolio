@@ -7,7 +7,7 @@ const Box = ({datas}) => {
 
     return(
         <BoxWrapper number={id} left={left} top={top} duration={duration}>
-            <BoxContainer rotate={rotate}>
+            <BoxContainer rotate={rotate} duration={duration}>
                 <CardSide id="front">
                     <IconWrap color={color}>
                         {icon}
