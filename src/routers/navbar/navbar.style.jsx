@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const NavigationContainer = styled.nav`
-    position: relative;
+    position: fixed;
+    top: 0;
     width: 100%;
-    background-color: #00192f;
+    min-width: 370px;
+    /* background-color: #00192f; */
+    background-color: #001528;
     padding: 14px 44px;
 
     display: flex;
@@ -12,17 +15,30 @@ export const NavigationContainer = styled.nav`
     gap: 200px;
 
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
-    -webkit-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.77);
     -moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
+
+    animation-name: animationNav;
+    animation-duration: 1.3s;
+    animation-direction: alternate;
+
+    @keyframes animationNav {
+        from {
+            transform: translateY(-100px);
+        }
+        to {
+            transform: translateY(0);
+        }
+    };
 
     @media only screen and (max-width: 1290px) {
         justify-content: space-between;
         gap: 0;
-    }
+    };
 
     @media only screen and (max-width: 544px) {
         padding: 14px 22px;
-    }
+    };
 `;
 
 export const NavbarMenu = styled.section`

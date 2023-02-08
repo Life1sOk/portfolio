@@ -43,7 +43,6 @@ export const TypeProjects = styled.button`
     font-size: 16px;
     font-weight: 600;
     padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-    margin-top: 50px;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
