@@ -20,17 +20,17 @@ const Navbar = () => {
                     openToggle={() => setOpen(!open)}
                 />
                 <Burger open={open} openToggle={() => setOpen(!open)} />
-                <Link to='/portfolio'>
+                <Link to='/'>
                     <LogoStyle src={Logo}/>
                 </Link>
                 <NavbarMenu>
-                    <Link to='portfolio/projects'>
+                    <Link to='/projects'>
                         <NavbarWords>Projects</NavbarWords>
                     </Link>
-                    <Link to='portfolio/skills'>
+                    <Link to='/skills'>
                         <NavbarWords>Skills</NavbarWords>
                     </Link>
-                    <Link to='portfolio/about'>
+                    <Link to='/about'>
                         <NavbarWords>About</NavbarWords>
                     </Link>
                 </NavbarMenu>

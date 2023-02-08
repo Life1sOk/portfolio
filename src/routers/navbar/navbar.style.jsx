@@ -8,6 +8,7 @@ export const NavigationContainer = styled.nav`
     /* background-color: #00192f; */
     background-color: #001528;
     padding: 14px 44px;
+    z-index: 200;
 
     display: flex;
     justify-content: center;

@@ -8,11 +8,6 @@ body {
     min-width: 370px;
 }
 
-.wrap-main {
-    min-width: 330px;
-    max-height: 100vh;
-}
-
 a {
     text-decoration: inherit;
     color: inherit;
