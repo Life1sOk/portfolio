@@ -4,8 +4,6 @@ export const RightContainer = styled.div`
     width: 500px;
     height: 500px;
     padding: 10px 30px;
-    /* border-left: 1px solid white; */
-    /* border: 1px solid white; */
     border-radius: 40px;
     background-color: rgba(0, 21, 40, .8);
 

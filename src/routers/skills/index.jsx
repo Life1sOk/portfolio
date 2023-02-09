@@ -8,8 +8,8 @@ import RightBlock from "./blocks/right-block/right-block";
 const Skills = () => {
     return (
         <MainSkills>
-            <LeftBlock />
             <RightBlock />
+            <LeftBlock />
         </MainSkills>
     );
 }

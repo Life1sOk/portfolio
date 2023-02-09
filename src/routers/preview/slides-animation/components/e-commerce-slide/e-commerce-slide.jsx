@@ -69,10 +69,10 @@ const ECommerce = () => {
                         {
                             middle.map(num => 
                             <BoxContainer key={num}>
-                                <Figur datas={{type: 'line', width: '100%', height: '80%'}}/>
+                                <Figur datas={{type: 'line', width: '100%', height: '80%', color: 'lightblue',}}/>
                                 <BoxContainerBot>
-                                    <Figur datas={{type: 'line', width: '100%', height: '100%'}}/>
-                                    <Figur datas={{type: 'line', width: '100%', height: '100%'}}/>
+                                    <Figur datas={{type: 'line', width: '100%', height: '100%', color: 'lightblue',}}/>
+                                    <Figur datas={{type: 'line', width: '100%', height: '100%', color: 'lightblue',}}/>
                                 </BoxContainerBot>
                             </BoxContainer>)
                         }
