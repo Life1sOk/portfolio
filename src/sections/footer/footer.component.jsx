@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { FooterContainer, TopFooterContainer, BotFooterContainer, FooterNav, ContactIconWrap, NavbarWords } from './footer.style';
-import ContactIcons from '../../components/contact-icons/contact.icons.component';
-import Copyright from '../../components/copyright/copyright';
-import ContactBase from '../../components/contact-base/contact-base.component';
+// import ContactIcons from '../../components/contact-icons/contact.icons.component';
+// import Copyright from '../../components/copyright/copyright';
+// import ContactBase from '../../components/contact-base/contact-base.component';
 
 const Footer = ({ footer, nav, projects, skills }) => {
 
@@ -13,7 +13,7 @@ const Footer = ({ footer, nav, projects, skills }) => {
 
     return (
         <FooterContainer name='footer' ref={footer}>
-            <TopFooterContainer>
+            {/* <TopFooterContainer>
                 <div className='top-footer-left'>Something</div>
                 <ContactBase />
             </TopFooterContainer>
@@ -26,8 +26,8 @@ const Footer = ({ footer, nav, projects, skills }) => {
                 <ContactIconWrap>
                     <ContactIcons />
                 </ContactIconWrap>
-            </BotFooterContainer>
-            <Copyright />
+            </BotFooterContainer> */}
+            {/* <Copyright /> */}
         </FooterContainer>
     );
 }

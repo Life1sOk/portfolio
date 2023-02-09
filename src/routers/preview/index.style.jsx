@@ -22,7 +22,7 @@ export const MainContainer = styled.main`
 export const Introduction = styled.section`
     width: 500px;
     padding: 30px 0;
-    border-radius: 40px;
+    border-radius: 10px;
     background-color: rgba(0, 21, 40, .8);
 
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);

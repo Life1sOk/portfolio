@@ -12,20 +12,20 @@ export const MainAbout = styled.div`
     align-items: center;
     gap: 120px;
 
+    @media only screen and (max-width: 1069px) {
+       justify-content: space-around;
+       gap: 0;
+    };
+
     @media only screen and (max-width: 805px) {
-        padding-top: 100px;
-        flex-direction: column;
+
     };
 `;
 
 export const LeftContainer = styled.div`
     width: fit-content;
-    /* height: 100%; */
     border-radius: 40px;
     padding-top: 20px;
-    /* perspective: 1000px; */
-    /* transform: rotateY(26deg);
-    transform-style: preserve-3d; */
 
     display: flex;
     flex-direction: column;
@@ -33,38 +33,22 @@ export const LeftContainer = styled.div`
 `;
 
 export const FotoWrapper = styled.div`
-    /* width: 220px;
-    height: 296.83px; */
     width: 300px;
     height: 403.5px;
-    /* margin-top: 10px; */
     border-radius: 10px;
     background-color: rgba(0, 21, 40, .8);
-
-    /* transform: rotateY(26deg);
-    transform-style: preserve-3d; */
 
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
     -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.77);
     -moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
-`;
 
-export const QuoteWrapper = styled.p`
-    width: 350px;
-    padding: 10px 10px 10px 15px;
-    background-color: rgba(0, 21, 40, .8);
-    border-radius: 10px;
-    font-size: 15px;
-    line-height: 1.6;
-    text-align: left;
+    @media only screen and (max-width: 929px) {
+        transform: scale(.8);
+    };
 
-    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.77);
-    -moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
-`;
-
-export const Quote = styled.q`
-    /* text-align: left; */
+    @media only screen and (max-width: 651px) {
+        display: none;
+    };
 `;
 
 export const Foto = styled.img`
@@ -91,9 +75,8 @@ export const Foto = styled.img`
 
 export const RightContainer = styled.div`
     width: 550px;
-    /* height: 100%; */
-    padding: 40px 30px 40px 40px;
-    border-radius: 40px;
+    padding: 20px 30px 40px 40px;
+    border-radius: 10px;
     background-color: rgba(0, 21, 40, .8);
 
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
@@ -104,10 +87,13 @@ export const RightContainer = styled.div`
     flex-direction: column;
     gap: 20px;
 
-    @media only screen and (max-width: 871px) {
+    @media only screen and (max-width: 929px) {
+        transform: scale(.9);
     };
 
-    @media only screen and (max-width: 805px) {
+    @media only screen and (max-width: 651px) {
+        width: 100%;
+        transform: scale(1);
     };
 `;
 
