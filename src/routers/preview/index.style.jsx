@@ -2,26 +2,29 @@ import styled from 'styled-components';
 
 export const MainContainer = styled.main`
     width: 100vw;
-    max-width: 100vw;
-    min-width: 370px;
     height: 100vh;
-    /* background-color: #001528; */
-    padding-top: 40px;
+    min-width: 370px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 auto;
     column-gap: 50px;
 
+
+    @media only screen and (max-width: 1150px) {
+        column-gap: 0px;
+    };
+
     @media only screen and (max-width: 1016px) {
-        width: 100%;
+        justify-content: center;
     };
 `;
 
 export const Introduction = styled.section`
-    width: 500px;
-    padding: 30px 0;
+    width: 50%;
+    max-width: 500px;
+    padding: 30px;
+    margin-top: 30px; // check thant
     border-radius: 10px;
     background-color: rgba(0, 21, 40, .8);
 
@@ -46,9 +49,20 @@ export const Introduction = styled.section`
         }
     };
 
-    @media only screen and (max-width: 551px) {
+    @media only screen and (max-width: 1150px) {
+        max-width: 400px;
+        padding: 30px 5px;
+    };
+
+    @media only screen and (max-width: 1016px) {
         width: 100%;
-        margin: 0 20px;
+        max-width: 500px;
+        padding: 30px;
+    };
+
+    @media only screen and (max-width: 551px) {
+        padding: 20px;
+        max-width: 400px;
     };
 `;
 
@@ -61,18 +75,26 @@ export const IntroductionBottom = styled.div`
     display: flex;
     justify-content: flex-end;
 
-    @media only screen and (max-width: 551px) {
+    @media only screen and (max-width: 1150px) {
+        width: 90%;
+    };
+
+    /* @media only screen and (max-width: 551px) {
         width: 80%;
     };
 
     @media only screen and (max-width: 430px) {
         width: 100%;
-    };
+    }; */
 `;
 
 export const ProfWrapper = styled.span`
     color: #a9c6d9;
     font-size: 26px;
+
+    @media only screen and (max-width: 551px) {
+        font-size: 20px;
+    };
 `;
 
 export const IdoWrapper = styled.p`
@@ -88,10 +110,15 @@ export const IdoWrapper = styled.p`
     @media only screen and (max-width: 1016px) {
         max-width: 100%;
     };
+
+    @media only screen and (max-width: 551px) {
+        font-size: 15px;
+    };
 `;
 
 export const Animation = styled.section`
-    width: 600px;
+    /* width: 600px; */
+    width: 50%;
     height: 650px;
     perspective: 700px;
 
@@ -112,7 +139,20 @@ export const Animation = styled.section`
         }
     };
 
+    @media only screen and (max-width: 1189px) {
+       width: 500px;
+    };
+
     @media only screen and (max-width: 1016px) {
         display: none;
+    };
+`;
+
+export const MediaWrapper = styled.div`
+    margin-top: 40px; // check thant
+    transform: scale(.9); // check thant
+
+     @media only screen and (max-width: 1189px) {
+       transform: scale(.8);
     };
 `;

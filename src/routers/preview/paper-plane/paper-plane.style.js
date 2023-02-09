@@ -18,13 +18,17 @@ export const PaperPlaneContainer = styled.div`
         0%  {
             left: -500px;
             bottom: -100px;
-            transform: rotate3d(2, -1, -10, -0.2turn) scale(1.2);
+            transform: rotate3d(2, -1, -10, -0.2turn) scale(.7);
         };
 
         100% {
             left: 0;
             bottom: -20px;
-            transform: rotate3d(2, -1, -10, -0.11turn) scale(0);
+            transform: rotate3d(2, -1, -10, -0.11turn) scale(.7);
         };
     }
+
+    @media only screen and (max-width: 551px) {
+        /* transform: scale(.6); */
+    };
 `;

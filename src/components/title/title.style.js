@@ -8,4 +8,12 @@ export const TitleStyle = styled.h1`
         font-size: 44px;
         color: #f1a845;
     }
+
+    @media only screen and (max-width: 551px) {
+        font-size: 30px;
+
+        .name {
+            font-size: 35px;
+        }
+    };
 `;

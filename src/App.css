@@ -30,7 +30,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #001528;
-    /* max-width: 1280px; */
+    max-width: 1280px;
     min-width: 370px;
 
     background-attachment: fixed;

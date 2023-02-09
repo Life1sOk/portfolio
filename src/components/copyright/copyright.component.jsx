@@ -7,7 +7,7 @@ const Copyright = () => {
     return (
         <CopyrightContainer>
             <FaRegCopyright />
-            <span>2022</span>
+            <span>2023</span>
             <span className="name">Andrey Tsoy</span>
         </CopyrightContainer>
     );

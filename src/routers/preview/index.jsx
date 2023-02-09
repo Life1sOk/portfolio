@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MainContainer, Introduction, Animation, IntroductionBottom, IdoWrapper, ProfWrapper } from './index.style';
+import { MainContainer, Introduction, Animation, MediaWrapper, IntroductionBottom, IdoWrapper, ProfWrapper } from './index.style';
 // import Animation from "../../components/animation/animation.component";
 import Button from "../../components/button/button.component";
 import Slides from "./slides-animation";
@@ -8,7 +8,6 @@ import PaperPlane from "./paper-plane/paper-plane.component";
 import Title from "../../components/title/title.component";
 
 const Preview = () => {
-
     return (
         <MainContainer>
             <Introduction>
@@ -24,9 +23,11 @@ const Preview = () => {
                     <Button name='Projects ==>' type='projects'/>
                 </IntroductionBottom>
             </Introduction>
-            <Animation>
-                <Slides />
-            </Animation>
+            <MediaWrapper>
+                <Animation>
+                    <Slides />
+                </Animation>
+            </MediaWrapper>
         </MainContainer>
     );
 }
