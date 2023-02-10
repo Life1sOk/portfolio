@@ -6,7 +6,6 @@ export const MainSkills = styled.div`
     min-width: 370px;
     height: 100vh;
     padding-top: 40px;
-    /* background-color: #001528; */
 
     display: flex;
     justify-content: center;
@@ -17,6 +16,5 @@ export const MainSkills = styled.div`
     @media only screen and (max-width: 805px) {
         padding-top: 100px;
         flex-direction: column;
-        /* row-gap: 30px; */
     };
 `;

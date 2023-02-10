@@ -1,11 +1,13 @@
 import React from "react";
 
-import { MainContainer, Introduction, Animation, MediaWrapper, IntroductionBottom, IdoWrapper, ProfWrapper } from './index.style';
-// import Animation from "../../components/animation/animation.component";
+import ButtonWindow from "../../components/button-window/button-window.component";
 import Button from "../../components/button/button.component";
-import Slides from "./slides-animation";
-import PaperPlane from "./paper-plane/paper-plane.component";
+import Mailto from "../../components/mailto/mailto.component";
+import Slides from "../../components/slides-animation";
+import Resume from "../../components/resume/resume.component";
 import Title from "../../components/title/title.component";
+
+import { MainContainer, Introduction, Animation, MediaWrapper, IntroductionBottom, IdoWrapper, ProfWrapper } from './index.style';
 
 const Preview = () => {
     return (
@@ -19,8 +21,12 @@ const Preview = () => {
                     <span className="stand"> Reliability</span>,
                     <span className="stand"> Result</span>!</IdoWrapper>
                 <IntroductionBottom>
-                    <PaperPlane />
-                    <Button name='Projects ==>' type='projects'/>
+                    <ButtonWindow name='Resume'>
+                        <Resume />
+                    </ButtonWindow>
+                    <Mailto email='andreytsoy.webdev@gmail.com'>
+                        <Button />
+                    </Mailto>
                 </IntroductionBottom>
             </Introduction>
             <MediaWrapper>

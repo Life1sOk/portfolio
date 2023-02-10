@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ProjectStructureContainer, ProjectImage, ProjectButtons, ProjectAbout, Title, Tools, Discription, Wrapper } from './project.structure.style';
-import Button from '../button/button.component';
+import Button from '../button-window/button-window.component';
 
 const ProjectStructure = ({ project, side }) => {
     const { title, img, tools, discription, git, site } = project;

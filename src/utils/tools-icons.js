@@ -1,5 +1,5 @@
-import { FaCss3Alt, FaReact, FaSass } from 'react-icons/fa';
-import { SiJavascript, SiRedux, SiTypescript, SiStyledcomponents, SiFirebase, SiHtml5 } from 'react-icons/si';
+import { FaCss3Alt, FaReact, FaSass, FaTelegram } from 'react-icons/fa';
+import { SiJavascript, SiRedux, SiTypescript, SiStyledcomponents, SiFirebase, SiHtml5, SiFacebook } from 'react-icons/si';
 
 export const bigBox = [
     {
@@ -98,4 +98,17 @@ export const tierThree = [
         icon: <SiFirebase />,
         time: 2.7,
     }
+];
+
+export const contactsIcons = [
+    {
+        sm: 'Telegram',
+        icon: <FaTelegram />,
+        url: 'https://t.me/mrAndreyT',
+    },
+    {
+        sm: 'Facebook',
+        icon: <SiFacebook />,
+        url: 'https://www.facebook.com/andrey.tsoy.3975',
+    },
 ];

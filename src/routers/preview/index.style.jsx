@@ -70,10 +70,11 @@ export const IntroductionBottom = styled.div`
     position: relative;
     width: 75%;
     height: fit-content;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin: 25px 0;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 
     @media only screen and (max-width: 1150px) {
         width: 90%;

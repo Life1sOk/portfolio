@@ -1,15 +1,18 @@
 import React from "react";
 
-import { TypeMail, TypeProjects } from './button.style';
+import { CgMail } from "react-icons/cg";
 
-const Button = ({ name, type, toggle, open, visit, handleClick }) => {
+import { ButtonBack, ButtonFront } from './button.style';
 
-    return (
-        <>
-            {type === 'mail' ? <TypeMail>{name}</TypeMail> : null}
-            {type === 'projects' ? <TypeProjects>{name}</TypeProjects> : null}
-        </>
-    );
-}
+const Button = () => {
+    return(
+        <ButtonBack>
+            <ButtonFront>
+                <CgMail />
+                <span>Get in touch</span>
+            </ButtonFront>
+        </ButtonBack>
+    )
+};
 
-export default Button
+export default Button;

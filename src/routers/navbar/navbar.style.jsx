@@ -4,10 +4,11 @@ export const NavigationContainer = styled.nav`
     position: fixed;
     top: 0;
     width: 100%;
+    height: 65.5px;
     min-width: 370px;
     /* background-color: #00192f; */
     background-color: rgba(0, 21, 40, .8);
-    padding: 14px 44px;
+    padding: 0 44px;
     z-index: 200;
 
     display: flex;
@@ -52,22 +53,17 @@ export const NavbarMenu = styled.section`
     }
 `;
 
-export const NavbarWords = styled.span`
-    font-size: 14px;
-    padding: 5px;
-    border-bottom: 2px solid #06223c;
-
-    &:hover {
-        cursor: pointer;
-        color: white;
-        border-bottom: 2px solid white;
-    }
+export const LogoStyle = styled.img`
+    width: 100%;
+    max-width: 160px;
 `;
 
-export const LogoStyle = styled.img`
-    /* position: absolute;
-    top: 0;
-    left: 60px; */
+export const SideContainer = styled.div`
+    width: 200px;
+    height: 100%;
 
-    max-width: 160px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    /* justify-content: center; */
 `;

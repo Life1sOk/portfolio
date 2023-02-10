@@ -4,7 +4,7 @@ import { tierOne, tierTwo, tierThree } from "../../../../utils/tools-icons";
 
 import { RightContainer, BasicsContainer, FrameworksLibrariesContainer} from './right-block.style';
 import Title from "../../../../components/title/title.component";
-import Icon from "../../components/icon-wrap/icon-wrap.component";
+import Icon from "../../../../components/icon-wrap/icon-wrap.component";
 
 const RightBlock = () => {
     return(

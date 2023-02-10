@@ -1,6 +1,6 @@
 import React from "react";
 
-import { bigBox } from "../../../../utils/tools-icons";
+import { bigBox } from "../../utils/tools-icons";
 
 import { BoxWrapper, BoxContainer, CardSide, IconWrap } from './box-big.style';
 
