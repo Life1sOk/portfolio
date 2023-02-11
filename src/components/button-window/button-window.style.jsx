@@ -73,12 +73,12 @@ export const ButtonWindowContainer = styled.div`
 
     @keyframes smallWindow {
         0% {
-            transform: translate(20%, 50px);
+            transform: translate(40%, 50px);
             opacity: 0;
         };
 
         50% {
-            transform: translate(20%, 50px);
+            transform: translate(40%, 50px);
             opacity: 0;
         }
 

@@ -57,7 +57,6 @@ export const NavbarMenu = styled.section`
 
 export const LogoStyle = styled.img`
     width: 75%;
-    height: fit-content;
     max-width: 160px;
 
     @media only screen and (min-width: 992px) {
