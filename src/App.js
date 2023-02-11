@@ -10,10 +10,8 @@ import Preview from "./routers/preview";
 import Skills from "./routers/skills";
 import Projects from "./sections/projects/projects.component";
 import About from "./routers/about";
-import Footer from "./sections/footer/footer.component";
 
 function App() {
-
   return (
     <Routes>
       <Route path='/' element={[<Navbar key='navbar'/>, <ContactIcons key='aside' />, <Copyright key='copyright'/>]}>
@@ -26,5 +24,4 @@ function App() {
   );
 }
 
-// <ContactIcons key='aside' />, <Copyright key='copyright'/>/
 export default App;
