@@ -1,30 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1c4250c3.css",
-    "main.js": "/portfolio/static/js/main.b741837c.js",
-    "static/media/just.jpeg": "/portfolio/static/media/just.b906cf50d2ddf9666317.jpeg",
-    "static/media/sio1.png": "/portfolio/static/media/sio1.79f62375cef962ccf07e.png",
-    "static/media/foto-preview.png": "/portfolio/static/media/foto-preview.42c7849b5b3d7a4045fe.png",
-    "static/media/Andrey_Tsoy_ru.pdf": "/portfolio/static/media/Andrey_Tsoy_ru.4b97e211be5eeb9becb1.pdf",
-    "static/media/Andrey_Tsoy_cz.pdf": "/portfolio/static/media/Andrey_Tsoy_cz.dff2045adb8131102154.pdf",
-    "static/media/Andrey_Tsoy_eng.pdf": "/portfolio/static/media/Andrey_Tsoy_eng.9d2705c3d3e1c35853a4.pdf",
-    "static/media/sass.svg": "/portfolio/static/media/sass.8bc32fe1b3fc5c549d6edf218729e20a.svg",
-    "static/media/typescript.svg": "/portfolio/static/media/typescript.1bd166c69617209ba0e2764474b58b1c.svg",
-    "static/media/twitter.svg": "/portfolio/static/media/twitter.54043e4698104c7b7c16a74b1b54c3f3.svg",
-    "static/media/react.svg": "/portfolio/static/media/react.f1484e295933af0e748d6a01b05a8361.svg",
-    "static/media/redux.svg": "/portfolio/static/media/redux.0a4a6ca2be44339bedb69de15f66d243.svg",
-    "static/media/github.svg": "/portfolio/static/media/github.4cd3a2bc790226c346ae943ec1622139.svg",
-    "static/media/javascript.svg": "/portfolio/static/media/javascript.081325c6f229605dce15142ddd948d6d.svg",
-    "static/media/css3.svg": "/portfolio/static/media/css3.74d7bcc15b667f1b98e7c0170080357e.svg",
-    "static/media/html5.svg": "/portfolio/static/media/html5.2b2e078a005e3b67d05cd71b6b2b0f7f.svg",
-    "static/media/facebook.svg": "/portfolio/static/media/facebook.5f90d8c72e9f0636d70cce273eb9cd8d.svg",
-    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.beca437ff906ecdaf04245d3f950c09c.svg",
-    "index.html": "/portfolio/index.html",
-    "main.1c4250c3.css.map": "/portfolio/static/css/main.1c4250c3.css.map",
-    "main.b741837c.js.map": "/portfolio/static/js/main.b741837c.js.map"
+    "main.css": "/static/css/main.0ca8a88c.css",
+    "main.js": "/static/js/main.167c895c.js",
+    "static/media/IMG_3531.jpg": "/static/media/IMG_3531.480cbec157b6af8edc03.jpg",
+    "static/media/Andrey_Tsoy_ru.pdf": "/static/media/Andrey_Tsoy_ru.4b97e211be5eeb9becb1.pdf",
+    "static/media/Andrey_Tsoy_cz.pdf": "/static/media/Andrey_Tsoy_cz.dff2045adb8131102154.pdf",
+    "static/media/Andrey_Tsoy_eng.pdf": "/static/media/Andrey_Tsoy_eng.9d2705c3d3e1c35853a4.pdf",
+    "static/media/andrey-high-resolution-logo-color-on-transparent-background.png": "/static/media/andrey-high-resolution-logo-color-on-transparent-background.ac00c366c6d29ae906df.png",
+    "static/media/Animated Shape.svg": "/static/media/Animated Shape.6ffd2511805f0ed896e2.svg",
+    "static/media/twitter.svg": "/static/media/twitter.54043e4698104c7b7c16a74b1b54c3f3.svg",
+    "static/media/github.svg": "/static/media/github.4cd3a2bc790226c346ae943ec1622139.svg",
+    "static/media/facebook.svg": "/static/media/facebook.5f90d8c72e9f0636d70cce273eb9cd8d.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.beca437ff906ecdaf04245d3f950c09c.svg",
+    "index.html": "/index.html",
+    "main.0ca8a88c.css.map": "/static/css/main.0ca8a88c.css.map",
+    "main.167c895c.js.map": "/static/js/main.167c895c.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c4250c3.css",
-    "static/js/main.b741837c.js"
+    "static/css/main.0ca8a88c.css",
+    "static/js/main.167c895c.js"
   ]
 }
