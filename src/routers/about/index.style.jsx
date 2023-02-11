@@ -1,24 +1,31 @@
 import styled from 'styled-components';
 
 export const MainAbout = styled.div`
-    width: 100vw;
-    max-width: 100vw;
-    min-width: 370px;
     height: 100vh;
-    padding-top: 40px;
+    width: 100%;
+    min-width: 320px;
+    padding-top: 65px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 120px;
 
-    @media only screen and (max-width: 1069px) {
-       justify-content: space-around;
-       gap: 0;
+    @media only screen and (max-width: 499.98px) and (min-height: 716.98px) {
+        flex-direction: column;
+        gap: 20px;
     };
 
-    @media only screen and (max-width: 805px) {
+    @media only screen and (min-width: 500px) and (max-width: 767.98px) {
+        flex-direction: column;
+        gap: 20px;
+    };
 
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        justify-content: space-around;
+    };
+
+    @media only screen and (min-width: 992px) {
+        gap: 100px;
     };
 `;
 
@@ -33,6 +40,7 @@ export const LeftContainer = styled.div`
 `;
 
 export const FotoWrapper = styled.div`
+    display: none;
     width: 300px;
     height: 403.5px;
     border-radius: 10px;
@@ -42,12 +50,20 @@ export const FotoWrapper = styled.div`
     -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.77);
     -moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
 
-    @media only screen and (max-width: 929px) {
-        transform: scale(.8);
+    @media only screen and (min-width: 499.98px) {
+        display: block;
     };
 
-    @media only screen and (max-width: 651px) {
-        display: none;
+    @media only screen and (max-width: 499.98px) and (min-height: 716.98px) {
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+    };
+
+    @media only screen and (min-width: 500px) and (max-width: 767.98px) {
+        margin: 0 auto;
+        width: 35%;
+        height: auto;
     };
 `;
 
@@ -74,7 +90,8 @@ export const Foto = styled.img`
 `;
 
 export const RightContainer = styled.div`
-    width: 550px;
+    width: 90vw;
+    max-width: 400px;
     padding: 20px 30px 40px 40px;
     border-radius: 10px;
     background-color: rgba(0, 21, 40, .8);
@@ -87,18 +104,17 @@ export const RightContainer = styled.div`
     flex-direction: column;
     gap: 20px;
 
-    @media only screen and (max-width: 929px) {
-        transform: scale(.9);
-    };
-
-    @media only screen and (max-width: 651px) {
-        width: 100%;
-        transform: scale(1);
+    @media only screen and (min-width: 992px) {
+        max-width: 500px;
     };
 `;
 
 export const PBlock = styled.p`
-    font-size: 15px;
+    font-size: 10px;
     line-height: 1.6;
     text-align: left;
+
+    @media only screen and (min-width: 768px) {
+        font-size: .9rem;
+    };
 `;

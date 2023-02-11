@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import foto from '../../assets/IMG_3531.jpg';
 
-import { MainAbout, LeftContainer, FotoWrapper, Foto, RightContainer, PBlock } from './about.style';
+import { MainAbout, LeftContainer, FotoWrapper, Foto, RightContainer, PBlock } from './index.style';
 import Title from "../../components/title/title.component";
 
 const About = () => {
