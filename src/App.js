@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 
 import './App.css';
 import Navbar from "./routers/navbar/navbar.component";
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/' element={[<Navbar key='navbar'/>, <ContactIcons key='aside' />, <Copyright key='copyright'/>]}>
+      <Route path='/' element={<Navbar key='navbar'/>}>
         <Route index element={<Preview />}/>
         <Route path='/skills' element={<Skills />}/>
         <Route path='/projects' element={<Projects />}/>
@@ -26,4 +26,5 @@ function App() {
   );
 }
 
+// <ContactIcons key='aside' />, <Copyright key='copyright'/>/
 export default App;
