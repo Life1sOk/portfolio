@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.93bd09b7.css",
+    "main.css": "/portfolio/static/css/main.e9a60015.css",
     "main.js": "/portfolio/static/js/main.313d9d86.js",
     "static/media/IMG_3531.jpg": "/portfolio/static/media/IMG_3531.480cbec157b6af8edc03.jpg",
     "static/media/Andrey_Tsoy_ru.pdf": "/portfolio/static/media/Andrey_Tsoy_ru.4b97e211be5eeb9becb1.pdf",
@@ -13,11 +13,11 @@
     "static/media/facebook.svg": "/portfolio/static/media/facebook.5f90d8c72e9f0636d70cce273eb9cd8d.svg",
     "index.html": "/portfolio/index.html",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.beca437ff906ecdaf04245d3f950c09c.svg",
-    "main.93bd09b7.css.map": "/portfolio/static/css/main.93bd09b7.css.map",
+    "main.e9a60015.css.map": "/portfolio/static/css/main.e9a60015.css.map",
     "main.313d9d86.js.map": "/portfolio/static/js/main.313d9d86.js.map"
   },
   "entrypoints": [
-    "static/css/main.93bd09b7.css",
+    "static/css/main.e9a60015.css",
     "static/js/main.313d9d86.js"
   ]
 }
