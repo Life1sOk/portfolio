@@ -2,14 +2,14 @@ body {
     width: 100vw;
     height: 100vh;
     max-width: 1399.98px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #001528;
     background-attachment: fixed;
-    background-image: url(/src/assets/animation.svg);
+    background-image: url(/public/assets/animation.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
