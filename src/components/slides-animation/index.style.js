@@ -4,10 +4,6 @@ export const SlidesContainer = styled.div`
     width: 100%;
     height: 100%;
 
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 20px; */
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;

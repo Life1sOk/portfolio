@@ -8,7 +8,7 @@ export const Left = styled.div`
     display: flex;
     flex-direction: column;
     /* justify-content: ; */
-    gap: 17px;
+    gap: 2%;
 `;
 
 export const Right = styled.div`

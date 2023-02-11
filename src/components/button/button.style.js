@@ -46,6 +46,6 @@ export const ButtonFront = styled.span`
     }
 
     span {
-        font-size: 13.333px;
+        font-size: .8rem;
     }
 `;

@@ -2,7 +2,7 @@ import React from "react";
 
 import { allProjects } from "../../utils/projects.all";
 import { ProjectsContainer, Checker } from "./projects.style";
-import ProjectStructure from "../../components/project-structure/project.structure.component";
+// import ProjectStructure from "../../components/project-structure/project.structure.component";
 import ButtonWindow from "../../components/button-window/button-window.component";
 import Resume from "../../components/resume/resume.component";
 import Contacts from "../../components/contacts/contacts.component";

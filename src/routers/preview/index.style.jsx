@@ -1,30 +1,43 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.main`
-    width: 100vw;
     height: 100vh;
-    min-width: 370px;
+    width: 100%;
+    min-width: 320px;
+    padding-top: 65px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 50px;
 
-
-    @media only screen and (max-width: 1150px) {
-        column-gap: 0px;
+    @media only screen and (max-width: 499.98px) and (min-height: 716.98px) {
+        flex-direction: column;
+        gap: 20px;
     };
 
-    @media only screen and (max-width: 1016px) {
-        justify-content: center;
+    @media only screen and (min-width: 500px) and (max-width: 767.98px) {
+        flex-direction: column;
+        gap: 20px;
+    };
+
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        flex-direction: column;
+        gap: 70px;
+    };
+
+    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+        column-gap: 50px;
+    };
+
+    @media only screen and (min-width: 1200px) { 
+        column-gap: 20px;
     };
 `;
 
 export const Introduction = styled.section`
-    width: 50%;
-    max-width: 500px;
-    padding: 30px;
-    margin-top: 30px; // check thant
+    width: 95%;
+    max-width: 450px;
+    padding: 20px;
     border-radius: 10px;
     background-color: rgba(0, 21, 40, .8);
 
@@ -35,6 +48,8 @@ export const Introduction = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
 
     animation-name: animationIntro;
     animation-duration: 3s;
@@ -49,81 +64,93 @@ export const Introduction = styled.section`
         }
     };
 
-    @media only screen and (max-width: 1150px) {
-        max-width: 400px;
-        padding: 30px 5px;
-    };
-
-    @media only screen and (max-width: 1016px) {
-        width: 100%;
-        max-width: 500px;
+    @media only screen and (min-width: 441px) {
         padding: 30px;
+        width: 85%;
     };
 
-    @media only screen and (max-width: 551px) {
-        padding: 20px;
-        max-width: 400px;
+    @media only screen and (max-width: 499.98px) and (min-height: 717px) {
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    };
+
+    @media only screen and (min-width: 500px) and (max-width: 767.98px) {
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    };
+
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        min-width: 400px;
+    };
+
+    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+        min-width: 450px;
+    };
+
+    @media only screen and (min-width: 1200px) { 
+        margin-right: 100px;
     };
 `;
 
 export const IntroductionBottom = styled.div`
-    position: relative;
-    width: 75%;
-    height: fit-content;
-    /* margin-top: 50px; */
-    margin: 25px 0;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
 
     display: flex;
     justify-content: space-between;
-
-    @media only screen and (max-width: 1150px) {
-        width: 90%;
-    };
-
-    /* @media only screen and (max-width: 551px) {
-        width: 80%;
-    };
-
-    @media only screen and (max-width: 430px) {
-        width: 100%;
-    }; */
+    gap: 8px;
 `;
 
 export const ProfWrapper = styled.span`
     color: #a9c6d9;
     font-size: 26px;
-
-    @media only screen and (max-width: 551px) {
-        font-size: 20px;
-    };
 `;
 
 export const IdoWrapper = styled.p`
     margin-top: 10px;
-    font-size: 18px;
+    font-size: .9rem;
     max-width: 400px;
     line-height: 1.6;
 
     .stand {
         color: #e55f3f;
     };
+`;
 
-    @media only screen and (max-width: 1016px) {
-        max-width: 100%;
+export const SmallAnimation = styled.div`
+    width: 50%;
+    perspective: 700px;
+
+    animation-name: smallWindow;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    @keyframes smallWindow {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.02);
+        }
     };
 
-    @media only screen and (max-width: 551px) {
-        font-size: 15px;
+    @media only screen and (max-width: 369.9px) {
+        display: none;
+    };
+
+    @media only screen and (min-width: 992px) {
+        display: none;
     };
 `;
 
 export const Animation = styled.section`
-    /* width: 600px; */
     width: 50%;
     height: 650px;
     perspective: 700px;
 
-    display: flex;
+    display: none;
     flex-direction: column;
 
     animation-name: animationWindow;
@@ -140,20 +167,30 @@ export const Animation = styled.section`
         }
     };
 
-    @media only screen and (max-width: 1189px) {
-       width: 500px;
-    };
-
-    @media only screen and (max-width: 1016px) {
-        display: none;
+    @media only screen and (min-width: 992px) {
+        display: flex;
     };
 `;
 
 export const MediaWrapper = styled.div`
-    margin-top: 40px; // check thant
-    transform: scale(.9); // check thant
+    @media only screen and (max-width: 500px) and (min-height: 717px) {
+        transform: scale(.8);
+    };
 
-     @media only screen and (max-width: 1189px) {
-       transform: scale(.8);
+    @media only screen and (min-width: 500px) {
+        transform: scale(.75);
+    };
+
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
+        transform: scale(1);
+    }; 
+
+    @media only screen and (min-width: 992px) and (max-width: 1279.98px) {
+        transform: scale(.85);
+    };
+
+    @media only screen and (min-width: 1280px) { 
+        transform: scale(1);
     };
 `;
+

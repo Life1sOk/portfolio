@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 export const IconWrapContainer = styled.div`
-    min-width: 100px;
-    /* height: 100px; */
-    padding: 10px;
-    background-color: rgba(11, 58, 102, .3);
-    border: 1px solid white;
+    min-width: 80px;
+    padding: 3px;
     border-radius: 20px;
 
     display: flex;
@@ -26,13 +23,9 @@ export const IconWrapContainer = styled.div`
         }
     };
 
-    @media only screen and (max-width: 805px) {
+    @media only screen and (min-width: 500px) and (max-width: 767.98px) {
         
     };
-
-    @media only screen and (max-width: 485px) {
-
-    }
 `;
 
 export const IconWrap = styled.div`
@@ -42,11 +35,18 @@ export const IconWrap = styled.div`
     color: #f1a845;
 
     svg {
-        width: 35px;
-        height: 35px;
+        width: 27px;
+        height: 27px;
     }
+
+    @media only screen and (min-width: 500px) {
+        svg {
+            width: 35px;
+            height: 35px;
+        }
+    };
 `;
 
 export const NameFont = styled.span`
-    font-size: 14px;
+    font-size: .8rem;
 `;

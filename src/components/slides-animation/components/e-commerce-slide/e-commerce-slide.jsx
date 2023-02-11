@@ -34,14 +34,14 @@ const top = [
 
 const box = [
     {
-        width: '65px',
-        height: '85px',
+        width: '100%',
+        height: '40%',
         color: 'lightblue',
         type: 'box',
     },
     {
-        width: '65px',
-        height: '85px',
+        width: '100%',
+        height: '40%',
         color: 'lightblue',
         type: 'box',
     }

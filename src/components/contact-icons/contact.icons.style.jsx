@@ -12,6 +12,8 @@ export const ContactIconsContainer = styled.div`
     justify-content: center;
     gap: 30px;
 
+    display: none; /// here
+
     & img {
         width: 100%;
         background-color: white;

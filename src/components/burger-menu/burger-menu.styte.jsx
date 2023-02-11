@@ -5,8 +5,8 @@ export const BackToCloseMenu = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     z-index: 3;
 `;
 
@@ -14,38 +14,40 @@ export const BurgerMenuContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    width: 50vw;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
     min-width: 300px;
-    align-items: flex-start;
-    padding: 2rem;
+    padding: 40px 32px 32px 32px;
     position: fixed;
-    background-color: #06223c;
+    background-color: rgba(0,21,40,.9);;
     top: 0;
     left: 0;
     transition: transform 0.4s ease-in-out;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-200%)'};
     z-index: 3;
-
-    @media(max-width: 760px) {
-        width: 65vw;
-    }
-
-    @media(max-width: 490px) {
-        width: 100vw;
-    }
 `;
 
 export const BurgerWord = styled.span`
-    font-size: 2rem;
+    width: 70%;
+    padding: 15px;
+    margin: 1.5rem 0;
+    border-right: 2px solid rgba(255,255,255, .3);
+    border-left: 2px solid rgba(255,255,255, .3);
+    border-radius: 5px;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    margin: 37px auto;
-    width: auto;
-    cursor: pointer;
-
+    
     &:hover {
-        color: rgb(211, 96, 96);
-        border-bottom: 2px solid rgb(211, 96, 96);
-    }
+        border-right: 2px solid rgba(229,95,63,1);
+        border-left: 2px solid rgba(229,95,63,1);
+        cursor: pointer;
+    };
+    
+    & span {
+        font-size: 14px;
+    };
 `;
+

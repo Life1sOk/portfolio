@@ -3,21 +3,32 @@ import styled from "styled-components";
 export const BoxWrapper = styled.div`
     perspective: 750px;
     perspective-origin: 50% 100px;
+    transform: scale(.5);
 
     animation: animationBox 2s ease-in;
 
     @keyframes animationBox {
         0%{
-            transform: translateY(-100px);
+            transform: translateY(-100px) scale(.5);
         }
 
         100%{
-            transform: translateY(0px);
+            transform: translateY(0px) scale(.5);
         }
     };
 
-    @media only screen and (max-width: 805px) {
-        transform: scale(.5);
+    @media only screen and (min-width: 992px) {
+        transform: scale(1);
+
+        @keyframes animationBox {
+            0%{
+                transform: translateY(-100px);
+            }
+
+            100%{
+                transform: translateY(0px);
+            }
+        };
     };
 `;
 

@@ -7,33 +7,33 @@ import Figur from "../figur/figur.component";
 
 const left = [
     {
-        width: '65px',
-        height: '65px',
+        width: '90%',
+        height: '25%',
         radius: '50%',
         color: 'lightblue',
         type: 'box'
     },
     {
-        width: '65px',
-        height: '25px',
+        width: '90%',
+        height: '15%',
         color: 'lightblue',
         type: 'line'
     },
     {
-        width: '65px',
-        height: '25px',
+        width: '90%',
+        height: '15%',
         color: 'lightblue',
         type: 'line'
     },
     {
-        width: '65px',
-        height: '25px',
+        width: '90%',
+        height: '15%',
         color: 'lightblue',
         type: 'line'
     },
     {
-        width: '65px',
-        height: '25px',
+        width: '90%',
+        height: '15%',
         color: 'lightblue',
         type: 'line'
     },

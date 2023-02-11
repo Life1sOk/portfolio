@@ -22,18 +22,16 @@ const Navbar = () => {
                     openToggle={() => setOpen(!open)}
                 />
                 <Burger open={open} openToggle={() => setOpen(!open)} />
-                <SideContainer>
-                    <Linker to='/'>
-                        <LogoStyle src={Logo}/>
-                    </Linker>
-                </SideContainer>
+                <Linker to='/'>
+                    <LogoStyle src={Logo}/>
+                </Linker>
                 <NavbarMenu>
                     <Linker to='/projects' name='Projects' />
                     <Linker to='/skills' name='Skills' />
                     <Linker to='/about' name='About' />
                 </NavbarMenu>
                 <SideContainer>
-                    <Button name='Contacts'>
+                    <Button name='C' type='small'>
                         <Contacts />
                     </Button>
                     <LanguageToggle />

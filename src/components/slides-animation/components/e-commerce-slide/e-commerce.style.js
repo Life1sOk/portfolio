@@ -24,7 +24,7 @@ export const Aside = styled.div`
     width: 30%;
     height: 90%;
     border-right: 1px solid white;
-    padding-right: 8px;
+    padding-right: 3%;
 
     display: flex;
     flex-direction: column;
@@ -34,12 +34,14 @@ export const Aside = styled.div`
 export const BoxWrapper = styled.div`
     width: 70%;
     height: 90%;
+    padding: 3%;
+
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     /* align-items: center; */
-    grid-row-gap: 10px;
+    gap: 3%;
 `;
 
 export const BoxContainer = styled.div`

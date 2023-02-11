@@ -9,7 +9,7 @@ import Copyright from "./components/copyright/copyright.component";
 import Preview from "./routers/preview";
 import Skills from "./routers/skills";
 import Projects from "./sections/projects/projects.component";
-import About from "./routers/about/about.component";
+import About from "./routers/about";
 import Footer from "./sections/footer/footer.component";
 
 function App() {

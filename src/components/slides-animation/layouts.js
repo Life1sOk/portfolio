@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const SlideContainerLayout = styled.div`
-    width: 270px;
-    height: 300px;
+    width: 200px;
+    height: 280px;
     padding: 0 3px 3px 3px;
     background-color: rgba(64, 87, 143, .6);
     border-radius: 5px;
@@ -25,6 +25,10 @@ export const SlideContainerLayout = styled.div`
         to {
             transform: scale(1);
         }
+    };
+
+    @media only screen and (min-width: 992px) {
+        width: 250px;
     };
 `;
 
