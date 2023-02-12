@@ -10,9 +10,10 @@ export const MainContainer = styled.main`
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: 499.98px) and (min-height: 716.98px) {
-        flex-direction: column;
-        gap: 20px;
+    @media only screen and (max-width: 499.98px) {
+        /* flex-direction: column; */
+
+        /* gap: 20px; */
     };
 
     @media only screen and (min-width: 500px) and (max-width: 767.98px) {
@@ -35,7 +36,7 @@ export const MainContainer = styled.main`
 `;
 
 export const Introduction = styled.section`
-    width: 95%;
+    width: 85%;
     max-width: 450px;
     padding: 20px;
     border-radius: 10px;
@@ -64,14 +65,9 @@ export const Introduction = styled.section`
         }
     };
 
-    @media only screen and (min-width: 441px) {
+    @media only screen and (max-width: 499.98px) {
         padding: 30px;
         width: 85%;
-    };
-
-    @media only screen and (max-width: 499.98px) and (min-height: 717px) {
-        padding-bottom: 10px;
-        margin-bottom: 20px;
     };
 
     @media only screen and (min-width: 500px) and (max-width: 767.98px) {
@@ -136,7 +132,7 @@ export const SmallAnimation = styled.div`
         }
     };
 
-    @media only screen and (max-width: 369.9px) {
+    @media only screen and (max-width: 499.98px) {
         display: none;
     };
 
