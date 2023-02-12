@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.main`
-    height: calc(100vh - 65.5px);
+    height: 100%;
     width: 100%;
     min-width: 320px;
     /* min-height: 582px; */
     /* padding-top: 32px; */
+    margin-top: 40px;
 
     display: flex;
     justify-content: center;
@@ -17,9 +18,14 @@ export const MainContainer = styled.main`
         /* gap: 20px; */
     };
 
+    @media only screen and (min-width: 500px) {
+        /* flex-direction: column;
+        gap: 20px; */
+    };
+
     @media only screen and (min-width: 500px) and (max-width: 767.98px) {
-        flex-direction: column;
-        gap: 20px;
+        /* flex-direction: column;
+        gap: 20px; */
     };
 
     @media only screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -97,7 +103,7 @@ export const IntroductionBottom = styled.div`
     align-items: center;
     /* gap: 10px; */
 
-    @media only screen and (max-width: 429.98px) and (min-height: 745px) {
+    @media only screen and (max-width: 429.98px) and (min-height: 635px) {
         flex-direction: column;
         gap: 20px;
     };
