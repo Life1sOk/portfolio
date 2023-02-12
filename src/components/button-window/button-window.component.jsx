@@ -14,7 +14,7 @@ const ButtonWindow = ({ name, children, type }) => {
                 {name}
                 {children && <span>&#8595;</span>}
                 {open && children &&
-                    <ButtonWindowContainer onClick={toggleHandler} type={type}>{children}</ButtonWindowContainer>
+                    <ButtonWindowContainer open={open} onClick={toggleHandler} type={type}>{children}</ButtonWindowContainer>
                 }
             </ButtonFront>
         </ButtonBack>

@@ -52,6 +52,10 @@ export const ButtonFront = styled.button`
 `;
 
 export const ButtonWindowContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: absolute;
     top: 0;
     left: 50%;
@@ -62,28 +66,19 @@ export const ButtonWindowContainer = styled.div`
     background-color: rgba(0,21,40, .9);
     border: 1px solid rgba(255,255,255, .3);
     border-radius: 5px;
-    transform: ${({type}) => type === 'small' ? 'translate(-91%, 50px)' : 'translate(-50%, 50px)'};
+    transform: ${({type}) => type !== 'small' ? 'translate(-91%, 50px)' : 'translate(-50%, 50px)'};
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    animation-name: ${({type}) => type === 'small' ? 'smallWindow' : 'buttonWindow'};
+    animation-name: ${({type}) => type !== 'small' ? 'smallWindow' : 'buttonWindow'};
     animation-duration: 1s;
 
     @keyframes smallWindow {
         0% {
-            transform: translate(40%, 50px);
             opacity: 0;
         };
 
-        50% {
-            transform: translate(40%, 50px);
-            opacity: 0;
-        }
-
         100% {
-            transform: translate(-91%, 50px);
+            /* transform: translate(-91%, 50px); */
             opacity: 1;
         }
     };

@@ -13,11 +13,11 @@ import { MainContainer, Introduction, SmallAnimation, Animation, MediaWrapper, I
 const Preview = () => {
     return (
         <MainContainer>
-            <MediaWrapper>
+            {/* <MediaWrapper>
                 <SmallAnimation>
                     <SmallSlides /> 
                 </SmallAnimation>
-            </MediaWrapper>
+            </MediaWrapper> */}
             <Introduction>
                 <Title>Welcome, I'm <span className="name">Andrey</span></Title>
                 <ProfWrapper>Front-end Developer</ProfWrapper> 
@@ -28,19 +28,19 @@ const Preview = () => {
                     <span className="stand"> Result</span>!
                 </IdoWrapper>
                 <IntroductionBottom>
-                    <ButtonWindow name='Resume'>
-                        <Resume />
-                    </ButtonWindow>
                     <Mailto email='andreytsoy.webdev@gmail.com'>
                         <Button />
                     </Mailto>
+                    <ButtonWindow name='Resume'>
+                        <Resume />
+                    </ButtonWindow>
                 </IntroductionBottom>
             </Introduction>
-            <MediaWrapper>
+            {/* <MediaWrapper>
                 <Animation>
                     <Slides />
                 </Animation>
-            </MediaWrapper>
+            </MediaWrapper> */}
         </MainContainer>
     );
 }

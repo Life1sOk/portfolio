@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.main`
-    height: 100vh;
+    height: calc(100vh - 65.5px);
     width: 100%;
     min-width: 320px;
-    padding-top: 65px;
+    min-height: 582px;
+    /* padding-top: 32px; */
 
     display: flex;
     justify-content: center;
@@ -37,6 +38,7 @@ export const MainContainer = styled.main`
 
 export const Introduction = styled.section`
     width: 85%;
+    height: 80%;
     max-width: 450px;
     padding: 20px;
     border-radius: 10px;
@@ -49,8 +51,7 @@ export const Introduction = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
+    justify-content: space-around;
 
     animation-name: animationIntro;
     animation-duration: 3s;
@@ -67,7 +68,6 @@ export const Introduction = styled.section`
 
     @media only screen and (max-width: 499.98px) {
         padding: 30px;
-        width: 85%;
     };
 
     @media only screen and (min-width: 500px) and (max-width: 767.98px) {
@@ -90,12 +90,19 @@ export const Introduction = styled.section`
 
 export const IntroductionBottom = styled.div`
     width: 100%;
-    max-width: 300px;
-    margin: 10px 0;
+    /* max-width: 300px; */
+    /* margin: 10px 0; */
 
     display: flex;
-    justify-content: space-between;
-    gap: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    @media only screen and (min-width: 359.98px) {
+        /* flex-direction: row;
+        justify-content: space-around; */
+    };
 `;
 
 export const ProfWrapper = styled.span`
@@ -104,8 +111,7 @@ export const ProfWrapper = styled.span`
 `;
 
 export const IdoWrapper = styled.p`
-    margin-top: 10px;
-    font-size: .9rem;
+    font-size: 19px;
     max-width: 400px;
     line-height: 1.6;
 

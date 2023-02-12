@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavigationContainer = styled.nav`
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
 
