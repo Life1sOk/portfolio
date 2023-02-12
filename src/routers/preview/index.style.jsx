@@ -4,7 +4,7 @@ export const MainContainer = styled.main`
     height: calc(100vh - 65.5px);
     width: 100%;
     min-width: 320px;
-    min-height: 582px;
+    /* min-height: 582px; */
     /* padding-top: 32px; */
 
     display: flex;
@@ -41,7 +41,7 @@ export const Introduction = styled.section`
     height: fit-content;
     max-width: 450px;
     max-height: 550px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 33px 20px;
     border-radius: 10px;
     background-color: rgba(0, 21, 40, .8);
@@ -97,7 +97,7 @@ export const IntroductionBottom = styled.div`
     align-items: center;
     /* gap: 10px; */
 
-    @media only screen and (max-width: 429.98px) and (min-height: 645px) {
+    @media only screen and (max-width: 429.98px) and (min-height: 745px) {
         flex-direction: column;
         gap: 20px;
     };
