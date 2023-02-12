@@ -38,9 +38,11 @@ export const MainContainer = styled.main`
 
 export const Introduction = styled.section`
     width: 85%;
-    height: 80%;
+    height: fit-content;
     max-width: 450px;
-    padding: 20px;
+    max-height: 550px;
+    margin-bottom: 10px;
+    padding: 33px 20px;
     border-radius: 10px;
     background-color: rgba(0, 21, 40, .8);
 
@@ -51,7 +53,8 @@ export const Introduction = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 
     animation-name: animationIntro;
     animation-duration: 3s;
@@ -66,42 +69,37 @@ export const Introduction = styled.section`
         }
     };
 
-    @media only screen and (max-width: 499.98px) {
-        padding: 30px;
-    };
-
-    @media only screen and (min-width: 500px) and (max-width: 767.98px) {
-        padding-bottom: 10px;
+    @media only screen and (min-width: 499.98px) {
+        max-height: 420px;
+        height: 100%;
+        padding: 12px 20px 10px 20px;
         margin-bottom: 20px;
+        gap: 24px;
     };
 
-    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-        min-width: 400px;
-    };
+    @media only screen and (min-width: 500px) and (max-width: 767.98px) {};
 
-    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-        min-width: 450px;
-    };
+    @media only screen and (min-width: 768px) and (max-width: 991.98px) {};
 
-    @media only screen and (min-width: 1200px) { 
-        margin-right: 100px;
-    };
+    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {};
+
+    @media only screen and (min-width: 1200px) {};
 `;
 
 export const IntroductionBottom = styled.div`
     width: 100%;
-    /* max-width: 300px; */
+    max-width: 420px;
     /* margin: 10px 0; */
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
+    /* gap: 10px; */
 
-    @media only screen and (min-width: 359.98px) {
-        /* flex-direction: row;
-        justify-content: space-around; */
+    @media only screen and (max-width: 429.98px) and (min-height: 645px) {
+        flex-direction: column;
+        gap: 20px;
     };
 `;
 

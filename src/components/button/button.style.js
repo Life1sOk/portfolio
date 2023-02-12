@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ButtonBack = styled.div`
     position: relative;
 
-    width: 160px;
-    height: 61px;
+    width: 145px;
+    height: 50px;
     min-width: 120px;
     min-height: 44px;
     background-color: white;
@@ -43,11 +43,11 @@ export const ButtonFront = styled.span`
     }
 
     svg {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
     span {
-        font-size: 19px;
+        font-size: 14px;
     }
 `;
