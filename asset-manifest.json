@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e9a60015.css",
-    "main.js": "/portfolio/static/js/main.b9ce7178.js",
+    "main.js": "/portfolio/static/js/main.102eff86.js",
     "static/media/IMG_3531.jpg": "/portfolio/static/media/IMG_3531.480cbec157b6af8edc03.jpg",
     "static/media/Andrey_Tsoy_ru.pdf": "/portfolio/static/media/Andrey_Tsoy_ru.4b97e211be5eeb9becb1.pdf",
     "static/media/Andrey_Tsoy_cz.pdf": "/portfolio/static/media/Andrey_Tsoy_cz.dff2045adb8131102154.pdf",
@@ -14,10 +14,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.beca437ff906ecdaf04245d3f950c09c.svg",
     "main.e9a60015.css.map": "/portfolio/static/css/main.e9a60015.css.map",
-    "main.b9ce7178.js.map": "/portfolio/static/js/main.b9ce7178.js.map"
+    "main.102eff86.js.map": "/portfolio/static/js/main.102eff86.js.map"
   },
   "entrypoints": [
     "static/css/main.e9a60015.css",
-    "static/js/main.b9ce7178.js"
+    "static/js/main.102eff86.js"
   ]
 }
