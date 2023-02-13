@@ -13,6 +13,7 @@ export const MainContainer = styled.main`
 
     @media only screen and (min-width: 1049.98px) {
        justify-content: space-around;
+       /* height: 100vh; */
     };
 `;
 
@@ -80,16 +81,24 @@ export const IntroductionBottom = styled.div`
 
 export const ProfWrapper = styled.span`
     color: #a9c6d9;
-    font-size: 26px;
+    font-size: 23px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 26px;
+    };
 `;
 
 export const IdoWrapper = styled.p`
-    font-size: 19px;
+    font-size: 16px;
     max-width: 400px;
     line-height: 1.6;
 
     .stand {
         color: #e55f3f;
+    };
+
+    @media only screen and (min-width: 768px) {
+        font-size: 19px;
     };
 `;
 

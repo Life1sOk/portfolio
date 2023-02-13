@@ -1,7 +1,7 @@
 import React from "react";
 
-import ButtonWindow from "../../components/button-window/button-window.component";
-import Button from "../../components/button/button.component";
+import ButtonWindow from "../../components/buttons/window/window.component";
+import Button from "../../components/buttons/mail/mail.component";
 import Mailto from "../../components/mailto/mailto.component";
 import Slides from "../../components/slides-animation";
 import Resume from "../../components/resume/resume.component";

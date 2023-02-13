@@ -3,7 +3,7 @@ import React from "react";
 import { contactsIcons } from "../../utils/tools-icons";
 
 import { ContactsContainer, SocialLine, IconWrap, BasicInfo } from './contacts.style';
-import Button from "../button/button.component";
+import Button from "../buttons/mail/mail.component";
 import Mailto from '../mailto/mailto.component';
 
 export const locationBasics = {

@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 
 import Logo from '../../assets/andrey-high-resolution-logo-color-on-transparent-background.png';
-import { NavigationContainer, NavbarMenu, LogoStyle, SideContainer} from './navbar.style';
-import Button from "../../components/button-window/button-window.component";
-import Burger from "../../components/burger/burger";
+import { NavigationContainer, NavbarMenu, LogoStyle, SideContainer, SmallSideContainer} from './navbar.style';
+import ButtonWindow from "../../components/buttons/window/window.component";
+import ButtonPhone from "../../components/buttons/phone/phone.component";
+import ButtonBurger from "../../components/buttons/burger/burger";
 import BurgerMemu from "../../components/burger-menu/burger-menu.component";
 import Contacts from "../../components/contacts/contacts.component";
 import Linker from "../../components/linker/linker.component";
@@ -21,7 +22,7 @@ const Navbar = () => {
                     open={open}
                     openToggle={() => setOpen(!open)}
                 />
-                <Burger open={open} openToggle={() => setOpen(!open)} />
+                <ButtonBurger open={open} openToggle={() => setOpen(!open)} />
                 <Linker to='/'>
                     <LogoStyle src={Logo}/>
                 </Linker>
@@ -30,10 +31,13 @@ const Navbar = () => {
                     <Linker to='/skills' name='Skills' />
                     <Linker to='/about' name='About' />
                 </NavbarMenu>
+                <SmallSideContainer>
+                    <ButtonPhone />
+                </SmallSideContainer>
                 <SideContainer>
-                    <Button name='C' type='small'>
+                    <ButtonWindow name='Contacts' type='small'>
                         <Contacts />
-                    </Button>
+                    </ButtonWindow>
                     <LanguageToggle />
                 </SideContainer>
             </NavigationContainer>

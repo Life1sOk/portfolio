@@ -30,7 +30,7 @@ export const BurgerMenuContainer = styled.div`
 `;
 
 export const BurgerWord = styled.span`
-    width: 70%;
+    width: 70vw;
     padding: 15px;
     margin: 1.5rem 0;
     border-right: 2px solid rgba(255,255,255, .3);

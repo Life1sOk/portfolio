@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavigationContainer = styled.nav`
-    position: static;
+    position: sticky;
     top: 0;
     left: 0;
 
@@ -10,7 +10,7 @@ export const NavigationContainer = styled.nav`
     height: 65.5px;
     background-color: rgba(0, 21, 40, .8);
     padding: 0px 22px;
-    z-index: 200;
+    z-index: 20;
 
     display: flex;
     justify-content: space-between;
@@ -64,11 +64,21 @@ export const LogoStyle = styled.img`
     };
 `;
 
+export const SmallSideContainer = styled.div`
+
+    @media only screen and (min-width: 992px) {
+        display: none;
+    };
+`;
+
 export const SideContainer = styled.div`
+    display: none;
     width: fit-content;
     height: 100%;
 
-    display: flex;
-    gap: 30px;
-    align-items: center;
+    @media only screen and (min-width: 992px) {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    };
 `;

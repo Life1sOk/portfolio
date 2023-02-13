@@ -2,7 +2,7 @@ import React from "react";
 
 import { CgMail } from "react-icons/cg";
 
-import { ButtonBack, ButtonFront } from './button.style';
+import { ButtonBack, ButtonFront } from './mail.style';
 
 const Button = () => {
     return(

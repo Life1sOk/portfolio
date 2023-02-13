@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { ButtonBack, ButtonFront, ButtonWindowContainer, WindowActivator } from './button-window.style';
+import { ButtonBack, ButtonFront, ButtonWindowContainer, WindowActivator } from './window.style';
 
 const ButtonWindow = ({ name, children }) => {
     const [ open, setOpen ] = useState(false);

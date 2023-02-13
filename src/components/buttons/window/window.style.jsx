@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ButtonBack = styled.div`
-    /* display: none; */
     position: relative;
 
     width: 145px;
