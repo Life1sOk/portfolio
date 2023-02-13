@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1c1e9373.css",
-    "main.js": "/portfolio/static/js/main.5cc9bfae.js",
+    "main.css": "/portfolio/static/css/main.f45215ed.css",
+    "main.js": "/portfolio/static/js/main.58e0760a.js",
     "static/media/IMG_3531.jpg": "/portfolio/static/media/IMG_3531.480cbec157b6af8edc03.jpg",
     "static/media/Andrey_Tsoy_ru.pdf": "/portfolio/static/media/Andrey_Tsoy_ru.4b97e211be5eeb9becb1.pdf",
     "static/media/Andrey_Tsoy_cz.pdf": "/portfolio/static/media/Andrey_Tsoy_cz.dff2045adb8131102154.pdf",
@@ -13,11 +13,11 @@
     "static/media/facebook.svg": "/portfolio/static/media/facebook.5f90d8c72e9f0636d70cce273eb9cd8d.svg",
     "index.html": "/portfolio/index.html",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.beca437ff906ecdaf04245d3f950c09c.svg",
-    "main.1c1e9373.css.map": "/portfolio/static/css/main.1c1e9373.css.map",
-    "main.5cc9bfae.js.map": "/portfolio/static/js/main.5cc9bfae.js.map"
+    "main.f45215ed.css.map": "/portfolio/static/css/main.f45215ed.css.map",
+    "main.58e0760a.js.map": "/portfolio/static/js/main.58e0760a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c1e9373.css",
-    "static/js/main.5cc9bfae.js"
+    "static/css/main.f45215ed.css",
+    "static/js/main.58e0760a.js"
   ]
 }
