@@ -15,7 +15,7 @@ export const ButtonBack = styled.div`
     -moz-box-shadow: 0px 0px 8px 2px rgba(229, 95, 63,0.75) inset;
 `;
 
-export const ButtonFront = styled.span`
+export const ButtonFront = styled.button`
     position: absolute;
     bottom: 0;
     right: 0;

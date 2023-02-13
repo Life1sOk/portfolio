@@ -4,10 +4,10 @@ import { CgMail } from "react-icons/cg";
 
 import { ButtonBack, ButtonFront } from './mail.style';
 
-const Button = () => {
+const ButtonMail = () => {
     return(
         <ButtonBack>
-            <ButtonFront>
+            <ButtonFront name='mail'>
                 <CgMail />
                 <span>Get in touch</span>
             </ButtonFront>
@@ -15,4 +15,4 @@ const Button = () => {
     )
 };
 
-export default Button;
+export default ButtonMail;

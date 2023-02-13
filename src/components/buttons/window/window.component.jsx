@@ -9,7 +9,7 @@ const ButtonWindow = ({ name, side, children }) => {
 
     return (
         <ButtonBack>
-            <ButtonFront open={open}>
+            <ButtonFront open={open} name='window'>
                 <WindowActivator onClick={toggleHandler}/>
                 {name}
                 {children && <span>&#8595;</span>}

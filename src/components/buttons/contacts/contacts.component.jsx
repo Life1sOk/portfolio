@@ -7,7 +7,7 @@ import { ButtonFront } from './contacts.style';
 const ButtonContacts = ({openToggle}) => {
 
     return(
-        <ButtonFront onClick={openToggle}>
+        <ButtonFront onClick={openToggle} name='contacts'>
             <BiMailSend/>
         </ButtonFront>
     )
