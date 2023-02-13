@@ -56,11 +56,12 @@ export const NavbarMenu = styled.section`
 `;
 
 export const LogoStyle = styled.img`
-    width: 75%;
-    max-width: 160px;
+    width: 120px;
+    height: 25.13px;
 
     @media only screen and (min-width: 992px) {
-        width: 100%;
+        width: 160px;
+        height: 33.52px;
     };
 `;
 

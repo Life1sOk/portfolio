@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import { LinkWords } from './linker.style';
 
-const Linker = ({ name, to, children }) => {
+const Linker = ({ name, title, to, children }) => {
     const [active, setActive] = useState(false);
     let { pathname } = useLocation();
 
@@ -15,7 +15,7 @@ const Linker = ({ name, to, children }) => {
     }, [name, pathname]);
 
     return (
-        <Link to={to}>
+        <Link to={to} aria-label={`${title}`}>
             {name && <LinkWords active={active}>{name}</LinkWords>}
             {children}
         </Link>

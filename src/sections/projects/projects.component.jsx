@@ -18,12 +18,12 @@ const Projects = ({ projects }) => {
                     return <ProjectStructure key={project.title} project={project} side={allProjects.indexOf(project)} />
                 })
             } */}
-            <ButtonWindow>
+            {/* <ButtonWindow>
                 <Contacts />
             </ButtonWindow>
             <Button />
             <Mailto />
-            <ButtonContacts />
+            <ButtonContacts /> */}
         </ProjectsContainer>
     );
 };

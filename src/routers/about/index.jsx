@@ -12,7 +12,7 @@ const About = () => {
         <MainAbout>
             <LeftContainer>
                 <FotoWrapper>
-                    <Foto src={foto} onLoad={() => setLoaded(true)} state={loaded}/>
+                    <Foto src={foto} alt='myface' onLoad={() => setLoaded(true)} state={loaded}/>
                 </FotoWrapper>
             </LeftContainer>
             <RightContainer>

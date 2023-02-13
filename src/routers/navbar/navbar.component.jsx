@@ -22,13 +22,13 @@ const Navbar = () => {
             <NavigationContainer>
                 <BurgerMemu open={open} openToggle={() => setOpen(!open)} />
                 <ButtonBurger open={open} openToggle={() => setOpen(!open)} />
-                <Linker to='/'>
-                    <LogoStyle src={Logo}/>
+                <Linker to='/' title='main'>
+                    <LogoStyle src={Logo} alt='mylogo'/>
                 </Linker>
                 <NavbarMenu>
-                    <Linker to='/projects' name='Projects' />
-                    <Linker to='/skills' name='Skills' />
-                    <Linker to='/about' name='About' />
+                    <Linker to='/projects' name='Projects' title='Projects' />
+                    <Linker to='/skills' name='Skills' title='Skills'/>
+                    <Linker to='/about' name='About' title='About'/>
                 </NavbarMenu>
                 <SmallSideContainer>
                     <ButtonContacts openToggle={() => setContact(!contact)}/>
