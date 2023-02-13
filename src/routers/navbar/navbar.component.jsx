@@ -35,7 +35,7 @@ const Navbar = () => {
                 </SmallSideContainer>
                 <ContactsMenu open={contact} openToggle={() => setContact(!contact)}/>
                 <SideContainer>
-                    <ButtonWindow name='Contacts' type='small'>
+                    <ButtonWindow name='Contacts' side='bottom'>
                         <Contacts />
                     </ButtonWindow>
                     <LanguageToggle />

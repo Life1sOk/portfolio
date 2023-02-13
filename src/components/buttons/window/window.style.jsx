@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ButtonBack = styled.div`
     position: relative;
-
     width: 145px;
     height: 50px;
     min-width: 120px;
@@ -10,6 +9,7 @@ export const ButtonBack = styled.div`
     background-color: rgba(255,255,255);
     border-radius: 5px;
     flex-shrink: 0;
+    z-index: 30;
 
     box-shadow: 0px 0px 8px 2px rgba(229, 95, 63,0.75) inset;
     -webkit-box-shadow: 0px 0px 2px 4px rgba(0,21,40,1) inset;
@@ -61,24 +61,24 @@ export const ButtonWindowContainer = styled.div`
     background-color: rgba(0,21,40, .9);
     border: 1px solid rgba(255,255,255, .3);
     border-radius: 5px;
-    transform: translate(-50%, 50px);
+    transform: translate(-50%, 60px);
 
-    animation-name: buttonWindow;
+    animation-name: bottomWindow;
     animation-duration: 1s;
 
-    @keyframes buttonWindow {
+    @keyframes bottomWindow {
         0% {
-            transform: translate(-50%, 40px);
+            transform: translate(-50%, 50px);
             opacity: 0;
         };
 
         50% {
-            transform: translate(-50%, 40px);
+            transform: translate(-50%, 50px);
             opacity: 0;
         }
 
         100% {
-            transform: translate(-50%, 50px);
+            transform: translate(-50%, 60px);
             opacity: 1;
         }
     };

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { ButtonBack, ButtonFront, ButtonWindowContainer, WindowActivator } from './window.style';
 
-const ButtonWindow = ({ name, children }) => {
+const ButtonWindow = ({ name, side, children }) => {
     const [ open, setOpen ] = useState(false);
 
     const toggleHandler = () => setOpen(!open);
@@ -14,7 +14,7 @@ const ButtonWindow = ({ name, children }) => {
                 {name}
                 {children && <span>&#8595;</span>}
                 {open && children &&
-                    <ButtonWindowContainer open={open} onClick={toggleHandler}>{children}</ButtonWindowContainer>
+                    <ButtonWindowContainer side={side} open={open} onClick={toggleHandler}>{children}</ButtonWindowContainer>
                 }
             </ButtonFront>
         </ButtonBack>
