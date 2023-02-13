@@ -92,10 +92,6 @@ export const IdoWrapper = styled.p`
     .stand {
         color: #e55f3f;
     };
-
-    @media only screen and (min-width: 768px) {
-        /* font-size: 19px; */
-    };
 `;
 
 export const Animation = styled.section`
