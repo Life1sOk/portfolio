@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const MainContainer = styled.main`
-    height: calc(100vh - 65.5px);
     width: 100%;
+    height: calc(var(--vh, 1vh) * 100 - 65.5px);
     max-width: 1299.98px;
     min-width: 320px;
     margin: 0 auto;
