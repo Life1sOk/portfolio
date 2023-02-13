@@ -21,7 +21,7 @@ export const MenuContainer = styled.div`
     min-width: 300px;
     padding: 40px 32px 32px 32px;
     position: fixed;
-    background-color: rgba(0,21,40,.9);;
+    background-color: rgba(0,21,40,.97);;
     top: 0;
     left: 0;
     transition: transform 0.4s ease-in-out;
