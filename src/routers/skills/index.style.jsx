@@ -1,46 +1,33 @@
 import styled from "styled-components";
 
 export const MainSkills = styled.div`
-    height: 100vh;
     width: 100%;
+    height: calc(var(--vh, 1vh) * 100 - 65.5px);
+    max-width: 1117px;
     min-width: 320px;
-    padding-top: 65px;
+    margin: 0 auto;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1 1 auto;
-    column-gap: 100px;
 
-    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-        flex-direction: column;
-        row-gap: 50px;
-    };
-
-    @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-        column-gap: 150px;
-    };
-
-    @media only screen and (min-width: 1200px) { 
-        column-gap: 300px;
+    @media only screen and (min-width: 992px) {
+        justify-content: space-around;
     };
 `;
 
 export const LeftContainer = styled.div`
     display: none;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
         display: initial;
     };
 `;
 
 export const RightContainer = styled.div`
     max-width: 400px;
-    min-width: 318px;
-    width: 90vw;
-    height: 70vh;
-    max-height: 450px;
-    padding: 10px 30px;
+    width: 90%;
+    padding: 20px 30px 0px 30px;
     border-radius: 10px;
     background-color: rgba(0, 21, 40, .8);
 
@@ -52,29 +39,22 @@ export const RightContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-    @media only screen and (min-width: 500px) and (max-width: 767.98px) {
-        justify-content: space-between;
-    };
-
-    @media only screen and (min-width: 768px) and (max-width: 991.98px) {
-        max-width: fit-content;
-        height: 300px;
-    };
 `;
 
 export const BasicsContainer = styled.div`
     width: 100%;
+    margin: 20px 0;
 
     display: flex;
-    gap: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
 `;
 
 export const FrameworksLibrariesContainer = styled.div`
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px 0px;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
 
@@ -83,5 +63,4 @@ export const FrameworksLibrariesContainer = styled.div`
     justify-content: space-around;
     align-items: center;
     gap: 20px;
-    align-items: center;
 `;

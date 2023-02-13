@@ -95,17 +95,7 @@ export const IdoWrapper = styled.p`
 `;
 
 export const Animation = styled.section`
-    width: 50%;
-    height: 650px;
-    perspective: 700px;
-
     display: none;
-    flex-direction: column;
-
-    animation-name: animationWindow;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
 
     @keyframes animationWindow {
         from {
@@ -117,7 +107,17 @@ export const Animation = styled.section`
     };
 
     @media only screen and (min-width: 1049.98px) {
+        width: 50%;
+        height: 650px;
+        perspective: 700px;
+
         display: flex;
+        flex-direction: column;
+
+        animation-name: animationWindow;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
     };
 `;
 
