@@ -64,7 +64,6 @@ export const ButtonWindowContainer = styled.div`
     border-radius: 5px;
     transform: translate(-50%, 50px);
 
-
     animation-name: buttonWindow;
     animation-duration: 1s;
 

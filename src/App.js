@@ -12,6 +12,9 @@ import Projects from "./sections/projects/projects.component";
 import About from "./routers/about";
 
 function App() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
   return (
     <Routes>
       <Route path='/' element={[<Navbar key='navbar'/>, <ContactIcons key='aside' />, <Copyright key='copyright'/>]}>
