@@ -22,12 +22,12 @@ const Preview = () => {
                     <span className="stand"> Result</span>!
                 </IdoWrapper>
                 <IntroductionBottom>
-                    <ButtonWindow name='Resume' side='top'>
-                        <Resume />
-                    </ButtonWindow>
                     <Mailto email='andreytsoy.webdev@gmail.com'>
                         <Button />
                     </Mailto>
+                    <ButtonWindow name='Resume' side='top'>
+                        <Resume />
+                    </ButtonWindow>
                 </IntroductionBottom>
             </Introduction>
             <MediaWrapper>

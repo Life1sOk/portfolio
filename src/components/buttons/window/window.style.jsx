@@ -9,7 +9,7 @@ export const ButtonBack = styled.div`
     background-color: rgba(255,255,255);
     border-radius: 5px;
     flex-shrink: 0;
-    z-index: 30;
+    z-index: 7;
 
     box-shadow: 0px 0px 8px 2px rgba(229, 95, 63,0.75) inset;
     -webkit-box-shadow: 0px 0px 2px 4px rgba(0,21,40,1) inset;
