@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const ContactsContainer = styled.div`
+    /* height: 50%; */
+    justify-content: space-between;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: ${({gap}) => gap ? gap : '15px'};
 `;
 
 export const SocialLine = styled.div`

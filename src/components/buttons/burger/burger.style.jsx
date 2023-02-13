@@ -7,7 +7,7 @@ export const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0px;
-  z-index: 100;
+  z-index: 10;
   
   display: flex;
   flex-direction: column;

@@ -5,7 +5,7 @@ import { ProjectsContainer, Checker } from "./projects.style";
 // import ProjectStructure from "../../components/project-structure/project.structure.component";
 import ButtonWindow from "../../components/buttons/window/window.component";
 import Resume from "../../components/resume/resume.component";
-import ButtonPhone from "../../components/buttons/phone/phone.component";
+import ButtonContacts from "../../components/buttons/contacts/contacts.component";
 import Contacts from "../../components/contacts/contacts.component";
 import Button from "../../components/buttons/mail/mail.component";
 import Mailto from "../../components/mailto/mailto.component";
@@ -23,7 +23,7 @@ const Projects = ({ projects }) => {
             </ButtonWindow>
             <Button />
             <Mailto />
-            <ButtonPhone />
+            <ButtonContacts />
         </ProjectsContainer>
     );
 };

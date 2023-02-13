@@ -10,10 +10,10 @@ export const TitleStyle = styled.h1`
     }
 
     @media only screen and (min-width: 768px) {
-        font-size: 39.97px;
+        /* font-size: 39.97px;
 
         .name {
             font-size: 44px;
-        }
+        } */
     };
 `;

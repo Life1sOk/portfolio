@@ -1,8 +1,9 @@
 import React from "react";
 
-import { BurgerMenuContainer, BurgerWord, BackToCloseMenu } from "./burger-menu.styte";
+import { BurgerWord } from "./burger-menu.styte";
 
-import Linker from "../linker/linker.component";
+import AsideWrapper from "../../aside-wrapper/aside-wrapper.component";
+import Linker from "../../linker/linker.component";
 
 const navLinks = [
     {title: 'Home', to: '/'},
@@ -12,19 +13,15 @@ const navLinks = [
 ];
 
 const BurgerMemu = ({ open, openToggle }) => {
-
     return (
-        <>
-            <BackToCloseMenu onClick={() => openToggle()} open={open} />
-            <BurgerMenuContainer onClick={() => openToggle()} open={open}>
+        <AsideWrapper open={open} openToggle={openToggle} side='left'>
                 {
                     navLinks.map((link, index) => 
                         <Linker to={link.to} key={index}>
                             <BurgerWord>{link.title}</BurgerWord>
                         </Linker>
                 )}
-            </BurgerMenuContainer>
-        </>
+        </AsideWrapper>
     )
 }
 

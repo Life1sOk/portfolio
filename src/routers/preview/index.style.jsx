@@ -51,16 +51,12 @@ export const Introduction = styled.section`
     };
 
     @media only screen and (min-width: 499.98px) {
-        max-height: 420px;
+        max-width: 460px;
+        max-height: 350px;
         height: 100%;
         padding: 20px;
         margin-bottom: 20px;
-        gap: 24px;
-    };
-
-    @media only screen and (min-width: 768px) {
-        max-width: 500px;
-        max-height: 380px;
+        gap: 17px;
     };
 `;
 
@@ -98,7 +94,7 @@ export const IdoWrapper = styled.p`
     };
 
     @media only screen and (min-width: 768px) {
-        font-size: 19px;
+        /* font-size: 19px; */
     };
 `;
 

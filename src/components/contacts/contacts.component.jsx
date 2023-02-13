@@ -3,7 +3,7 @@ import React from "react";
 import { contactsIcons } from "../../utils/tools-icons";
 
 import { ContactsContainer, SocialLine, IconWrap, BasicInfo } from './contacts.style';
-import Button from "../buttons/mail/mail.component";
+import ButtonMail from "../buttons/mail/mail.component";
 import Mailto from '../mailto/mailto.component';
 
 export const locationBasics = {
@@ -12,7 +12,7 @@ export const locationBasics = {
     location: 'Kazakhstan, Almaty',
 };
 
-const Contacts = () => {
+const Contacts = ({gap}) => {
     const {email, number, location} = locationBasics;
 
     const openInNewTab = url => {
@@ -20,9 +20,9 @@ const Contacts = () => {
     };
 
     return(
-        <ContactsContainer>
+        <ContactsContainer gap={gap}>
             <Mailto email={email}>
-                <Button/>
+                <ButtonMail />
             </Mailto>
             {
                 contactsIcons.map((med, index) => 
