@@ -2,6 +2,7 @@
 
 body {
     overflow: hidden;
+    font-display: swap;
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color: #001528;

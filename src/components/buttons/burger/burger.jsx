@@ -3,7 +3,7 @@ import { StyledBurger } from './burger.style';
 
 const Burger = ({ openToggle, open }) => {
     return (
-        <StyledBurger open={open} className='burger' onClick={openToggle} name='burger'>
+        <StyledBurger open={open} className='burger' onClick={openToggle} title='burger'>
             <div className='line1' />
             <div className='line2' />
             <div className='line3' />
