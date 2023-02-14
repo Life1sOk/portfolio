@@ -1,7 +1,7 @@
 {
-  "main.css": "/portfolio/static/css/main.3568ca82.chunk.css",
-  "main.js": "/portfolio/static/js/main.e6f707b9.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.e6f707b9.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.4884d9ef.chunk.css",
+  "main.js": "/portfolio/static/js/main.90d74019.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.90d74019.chunk.js.map",
   "static/js/1.834e684d.chunk.js": "/portfolio/static/js/1.834e684d.chunk.js",
   "static/js/1.834e684d.chunk.js.map": "/portfolio/static/js/1.834e684d.chunk.js.map",
   "static/js/2.37fd682f.chunk.js": "/portfolio/static/js/2.37fd682f.chunk.js",
@@ -14,7 +14,6 @@
   "static/js/5.049a330b.chunk.js.map": "/portfolio/static/js/5.049a330b.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.1073b136.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.1073b136.js.map",
-  "static/media/andrey-high-resolution-logo-color-on-transparent-background.png": "/portfolio/static/media/andrey-high-resolution-logo-color-on-transparent-background.25cd75a7.png",
   "static/media/github.svg": "/portfolio/static/media/github.2f55debd.svg",
   "static/media/facebook.svg": "/portfolio/static/media/facebook.6aa5ae14.svg",
   "static/media/twitter.svg": "/portfolio/static/media/twitter.2e59f048.svg",
@@ -23,8 +22,8 @@
   "static/media/Andrey_Tsoy_eng.pdf": "/portfolio/static/media/Andrey_Tsoy_eng.fc05b3c6.pdf",
   "static/media/Andrey_Tsoy_cz.pdf": "/portfolio/static/media/Andrey_Tsoy_cz.5c6e1aee.pdf",
   "static/media/IMG_3531.jpg": "/portfolio/static/media/IMG_3531.3d6b968b.jpg",
-  "static/css/main.3568ca82.chunk.css.map": "/portfolio/static/css/main.3568ca82.chunk.css.map",
+  "static/css/main.4884d9ef.chunk.css.map": "/portfolio/static/css/main.4884d9ef.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.759060e83f5ef5d52d12dde7f5972af8.js": "/portfolio/precache-manifest.759060e83f5ef5d52d12dde7f5972af8.js",
+  "precache-manifest.ad5bf82dc24b6c6cb1d15fd135e04079.js": "/portfolio/precache-manifest.ad5bf82dc24b6c6cb1d15fd135e04079.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }

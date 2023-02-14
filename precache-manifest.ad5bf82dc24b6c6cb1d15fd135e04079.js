@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e6f707b9cefa3d3ee7ba",
-    "url": "/portfolio/static/css/main.3568ca82.chunk.css"
+    "revision": "90d740191d3560fdad19",
+    "url": "/portfolio/static/css/main.4884d9ef.chunk.css"
   },
   {
-    "revision": "e6f707b9cefa3d3ee7ba",
-    "url": "/portfolio/static/js/main.e6f707b9.chunk.js"
+    "revision": "90d740191d3560fdad19",
+    "url": "/portfolio/static/js/main.90d74019.chunk.js"
   },
   {
     "revision": "834e684d862119c41dac",
@@ -30,10 +30,6 @@ self.__precacheManifest = [
   {
     "revision": "1073b136d1d6b87b325a",
     "url": "/portfolio/static/js/runtime~main.1073b136.js"
-  },
-  {
-    "revision": "25cd75a788c75d013207b78a00c9f6e4",
-    "url": "/portfolio/static/media/andrey-high-resolution-logo-color-on-transparent-background.25cd75a7.png"
   },
   {
     "revision": "2f55debd98b4040009b3ab545969577d",
@@ -68,7 +64,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/IMG_3531.3d6b968b.jpg"
   },
   {
-    "revision": "6d7546b98c4fedb54083199eee0361bb",
+    "revision": "91c195e2927fbb9059a0970b79017017",
     "url": "/portfolio/index.html"
   }
 ];
