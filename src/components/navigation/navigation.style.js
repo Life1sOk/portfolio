@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+export const NavbarMenu = styled.section`
+    display: none;
+    width: 26rem;
+
+
+    @media only screen and (min-width: 992px) {
+        display: flex;
+        justify-content: space-around;
+    };
+`;
+
 export const LinkWords = styled.span`
     font-size: 14px;
     padding: 5px;

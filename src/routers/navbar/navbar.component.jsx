@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 import Logo from '../../assets/andrey-high-resolution-logo-color-on-transparent-background.png';
-import { NavigationContainer, NavbarMenu, LogoStyle, SideContainer, SmallSideContainer} from './navbar.style';
+import { NavigationContainer, LogoStyle, SideContainer, SmallSideContainer} from './navbar.style';
 import ButtonWindow from "../../components/buttons/window/window.component";
 import ButtonContacts from "../../components/buttons/contacts/contacts.component";
 import ButtonBurger from "../../components/buttons/burger/burger";
 import BurgerMemu from "../../components/aside-menus/burger-menu/burger-menu.component";
+import Navigation from "../../components/navigation/navigation.component";
 import Contacts from "../../components/contacts/contacts.component";
 import ContactsMenu from "../../components/aside-menus/contacts-menu/contacts-menu.component";
 import Linker from "../../components/linker/linker.component";
@@ -17,8 +18,6 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [contact, setContact] = useState(false);
 
-    const { pathname } = useLocation(null);
-
     return (
         <>
             <NavigationContainer>
@@ -27,11 +26,7 @@ const Navbar = () => {
                 <Linker to='/' title='main'>
                     <LogoStyle src={Logo} alt='mylogo'/>
                 </Linker>
-                <NavbarMenu>
-                    <Linker to='/projects' name='Projects' title='Projects' pathname={pathname}/>
-                    <Linker to='/skills' name='Skills' title='Skills' pathname={pathname}/>
-                    <Linker to='/about' name='About' title='About' pathname={pathname}/>
-                </NavbarMenu>
+                <Navigation />
                 <SmallSideContainer>
                     <ButtonContacts openToggle={() => setContact(!contact)}/>
                 </SmallSideContainer>

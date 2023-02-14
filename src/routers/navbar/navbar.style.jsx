@@ -44,17 +44,6 @@ export const NavigationContainer = styled.nav`
     };
 `;
 
-export const NavbarMenu = styled.section`
-    display: none;
-    width: 26rem;
-
-
-    @media only screen and (min-width: 992px) {
-        display: flex;
-        justify-content: space-around;
-    };
-`;
-
 export const LogoStyle = styled.img`
     width: 120px;
     height: 25.13px;
