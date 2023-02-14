@@ -6,7 +6,6 @@ import './App.css';
 import Navbar from "./routers/navbar/navbar.component";
 import ContactIcons from "./components/contact-icons/contact.icons.component";
 import Copyright from "./components/copyright/copyright.component";
-import Fallback from "./routers/fallback/fallback.component";
 
 const Preview = lazy(() => import("./routers/preview"));
 const Skills = lazy(() => import("./routers/skills/index"));
@@ -21,7 +20,7 @@ function App() {
     <Routes>
       <Route path='/' element={[<Navbar key='navbar'/>, <ContactIcons key='aside' />, <Copyright key='copyright'/>]}>
         <Route index element={
-          <Suspense fallback={<Fallback />}>
+          <Suspense>
             <Preview />
           </Suspense>
         }/>
