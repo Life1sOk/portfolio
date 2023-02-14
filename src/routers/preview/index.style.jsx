@@ -12,8 +12,9 @@ export const MainContainer = styled.main`
     align-items: center;
 
     @media only screen and (min-width: 1049.98px) {
-       justify-content: space-around;
-       /* height: 100vh; */
+        height: 100%;
+        min-height: calc(100vh - 65.5px);
+        justify-content: space-around;
     };
 `;
 

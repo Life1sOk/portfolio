@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -6,10 +6,14 @@ import './App.css';
 import Navbar from "./routers/navbar/navbar.component";
 import ContactIcons from "./components/contact-icons/contact.icons.component";
 import Copyright from "./components/copyright/copyright.component";
-import Preview from "./routers/preview";
-import Skills from "./routers/skills";
-import Projects from "./sections/projects/projects.component";
-import About from "./routers/about";
+// import Preview from "./routers/preview";
+// import Skills from "./routers/skills";
+// import Projects from "./sections/projects/projects.component";
+// import About from "./routers/about";
+const Preview = lazy(() => import("./routers/preview"));
+const Skills = lazy(() => import("./routers/skills/index"));
+const Projects = lazy(() => import("./sections/projects/projects.component"));
+const About = lazy(() => import("./routers/about"));
 
 function App() {
   let vh = window.innerHeight * 0.01;
@@ -18,10 +22,26 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={[<Navbar key='navbar'/>, <ContactIcons key='aside' />, <Copyright key='copyright'/>]}>
-        <Route index element={<Preview />}/>
-        <Route path='skills' element={<Skills />}/>
-        <Route path='projects' element={<Projects />}/>
-        <Route path='about' element={<About />}/>
+        <Route index element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <Preview />
+          </Suspense>
+        }/>
+        <Route path='skills' element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <Skills />
+          </Suspense>
+        }/>
+        <Route path='projects' element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <Projects />
+          </Suspense>
+        }/>
+        <Route path='about' element={
+          <Suspense fallback={<div>Loading...</div>}>
+            <About />
+          </Suspense>
+        }/>
       </Route>
     </Routes>
   );

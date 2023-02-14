@@ -12,6 +12,8 @@ export const MainSkills = styled.div`
     align-items: center;
 
     @media only screen and (min-width: 992px) {
+        height: 100%;
+        height: calc(100vh - 65.5px);
         justify-content: space-around;
     };
 `;

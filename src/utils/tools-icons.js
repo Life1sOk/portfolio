@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaCss3Alt, FaReact, FaSass, FaTelegram } from 'react-icons/fa';
 import { SiJavascript, SiRedux, SiTypescript, SiStyledcomponents, SiFirebase, SiHtml5, SiFacebook } from 'react-icons/si';
 
