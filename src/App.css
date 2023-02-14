@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;1,400;1,700&display=swap');
 
-body {
-    /* width: 100vw;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    margin: 0 auto;
-    padding: 0; */
-    overflow: hidden;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    background-color: #001528;
-    background-attachment: fixed;
-    background-image: url(/src/assets/animation.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-}
-
 a {
     display: flex;
     justify-content: center;

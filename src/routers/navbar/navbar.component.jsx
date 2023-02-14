@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import Logo from '../../assets/andrey-high-resolution-logo-color-on-transparent-background.png';
 import { NavigationContainer, NavbarMenu, LogoStyle, SideContainer, SmallSideContainer} from './navbar.style';
@@ -17,6 +17,8 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [contact, setContact] = useState(false);
 
+    const { pathname } = useLocation(null);
+
     return (
         <>
             <NavigationContainer>
@@ -26,9 +28,9 @@ const Navbar = () => {
                     <LogoStyle src={Logo} alt='mylogo'/>
                 </Linker>
                 <NavbarMenu>
-                    <Linker to='/projects' name='Projects' title='Projects' />
-                    <Linker to='/skills' name='Skills' title='Skills'/>
-                    <Linker to='/about' name='About' title='About'/>
+                    <Linker to='/projects' name='Projects' title='Projects' pathname={pathname}/>
+                    <Linker to='/skills' name='Skills' title='Skills' pathname={pathname}/>
+                    <Linker to='/about' name='About' title='About' pathname={pathname}/>
                 </NavbarMenu>
                 <SmallSideContainer>
                     <ButtonContacts openToggle={() => setContact(!contact)}/>

@@ -23,22 +23,22 @@ function App() {
     <Routes>
       <Route path='/' element={[<Navbar key='navbar'/>, <ContactIcons key='aside' />, <Copyright key='copyright'/>]}>
         <Route index element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense>
             <Preview />
           </Suspense>
         }/>
         <Route path='skills' element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense>
             <Skills />
           </Suspense>
         }/>
         <Route path='projects' element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense>
             <Projects />
           </Suspense>
         }/>
         <Route path='about' element={
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense>
             <About />
           </Suspense>
         }/>

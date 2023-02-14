@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { LinkWords } from './linker.style';
 
-const Linker = ({ name, title, to, children }) => {
+const Linker = ({ name, title, to, children, pathname }) => {
     const [active, setActive] = useState(false);
-    let { pathname } = useLocation();
 
     useEffect(() => {
-        let currentPage = `/${name?.toLowerCase()}`;
-
-        if (pathname === currentPage || pathname.includes(currentPage)) return setActive(true);
-        if (pathname !== currentPage) return setActive(false);
+        if(pathname === to) setActive(true);
+        if(pathname !== to) setActive(false);
     }, [name, pathname]);
 
     return (
