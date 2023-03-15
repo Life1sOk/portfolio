@@ -16,7 +16,7 @@ export const SlideContainerLayout = styled.div`
     align-items: flex-start;
 
     animation-name: slide;
-    animation-duration: ${({duration}) => duration ? duration : '2s'};
+    animation-duration: ${({ duration }) => duration ? duration : '2s'};
 
     @keyframes slide {
         from {
