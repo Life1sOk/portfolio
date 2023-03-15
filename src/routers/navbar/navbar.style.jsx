@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const NavigationContainer = styled.nav`
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
 
     min-width: 320px;
     width: 100%;
     height: 65.5px;
-    background-color: rgba(0, 21, 40, .8);
+    /* background-color: rgba(0, 21, 40, .8); */
+    /* background-color: #001528; */
     padding: 0px 22px;
     z-index: 20;
 
@@ -16,10 +17,6 @@ export const NavigationContainer = styled.nav`
     justify-content: space-between;
     align-items: center;
     gap: 0;
-
-    box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
-    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.77);
-    -moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
 
     animation-name: animationNav;
     animation-duration: 1.3s;

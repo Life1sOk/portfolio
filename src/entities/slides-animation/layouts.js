@@ -4,8 +4,11 @@ export const SlideContainerLayout = styled.div`
     width: 200px;
     height: 280px;
     padding: 0 3px 3px 3px;
-    background-color: rgba(64, 87, 143, .6);
+    /* background-color: rgba(64, 87, 143, .6); */
+    background-color: rgba(0,0,52,.5);
+    border: 1px solid var(--white);
     border-radius: 5px;
+    flex-shrink: 0;
 
     box-shadow: 21px 34px 26px -6px rgba(0,0,0,0.75);
     -webkit-box-shadow: 21px 34px 26px -6px rgba(0,0,0,0.75);
