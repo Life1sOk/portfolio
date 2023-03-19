@@ -6,11 +6,12 @@ import ButtonWindow from "../../components/buttons/window/window.component";
 import Planet from "../../entities/planet-prev";
 import { About } from "../../entities/preview";
 
-import { MainWrapper, MainContainer, Introduction, Animation, MediaWrapper, PlanetWrapper, PrevWrapper, ButtonWrapper } from './index.style';
+import { MainWrapper, MainContainer, Introduction, Animation, MediaWrapper, PlanetWrapper, PrevWrapper, ButtonWrapper, Checker } from './index.style';
 
-const Preview = () => {
+const PreviewSection = () => {
     return (
         <MainWrapper>
+            <Checker />
             <MainContainer>
                 <Introduction>
                     <PlanetWrapper>
@@ -34,4 +35,4 @@ const Preview = () => {
     );
 }
 
-export default Preview;
+export default PreviewSection;

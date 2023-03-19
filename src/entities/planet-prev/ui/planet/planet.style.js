@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import planetImage from '../../../../assets/planet3.png';
+import planet from '../../../../assets/www55.png';
 
 export const PlanetStyle = styled.div`
     position: absolute;
@@ -11,12 +12,12 @@ export const PlanetStyle = styled.div`
     aspect-ratio: 1 / 1;
     z-index: 19;
 
-    mask-image: url(${planetImage});
+    mask-image: url(${planet});
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
 
-    background: url(${planetImage});
+    background: url(${planet});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

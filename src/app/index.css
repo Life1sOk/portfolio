@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;1,400&family=Tilt+Warp&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +8,6 @@
 }
 
 :root {
-    --background: #001528;
-    --checker: #7700ff;
     --white: #ffffff;
     --blue: #40578f;
     --font-color: #a9c6d9;
@@ -15,19 +15,16 @@
     --light-yellow: #f1a845;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 body {
-    overflow: hidden;
-    font-family: 'Bebas Neue';
-    font-style: normal;
+    /* overflow: hidden; */
+    /* font-family: 'Bebas Neue';
+    font-style: normal; */
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Tilt Warp', cursive;
     color: white;
     /* background-color: #001528; */
-    /* background-attachment: fixed; */
-    /* background-image: url(./animation.svg); */
-    /* background-repeat: no-repeat; */
-    /* background-position: 0 0; */
-    /* background-size: cover; */
 }
 
 a {

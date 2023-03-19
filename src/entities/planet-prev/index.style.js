@@ -11,15 +11,17 @@ export const PlanetStyle = styled.div`
 
 export const DiskStyle = styled.div`
     position: absolute;
-    top: -90px;
-    left: 10px;
+    /* top: -90px;
+    left: 10px; */
+    top: -115px;
+    left: -15px;
 
-    width: 300px;
+    width: 350px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     z-index: 10;
 
-    box-shadow: 0px 0px 15px 11px rgba(255,255,255,0.75) inset;
-    -webkit-box-shadow: 0px 0px 15px 11px rgba(255,255,255,0.75) inset;
-    -moz-box-shadow: 0px 0px 15px 11px rgba(255,255,255,0.75) inset;
+    box-shadow: 0px 0px 15px 11px rgba(0,0,255,0.75) inset;
+    -webkit-box-shadow: 0px 0px 15px 11px rgba(51,153,255,0.45) inset;
+    -moz-box-shadow: 0px 0px 15px 11px rgba(0,0,255,0.75) inset;
 `;

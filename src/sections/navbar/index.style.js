@@ -9,7 +9,7 @@ export const NavigationContainer = styled.nav`
     width: 100%;
     height: 65.5px;
     /* background-color: rgba(0, 21, 40, .8); */
-    /* background-color: #001528; */
+    background-color: #001528;
     padding: 0px 22px;
     z-index: 20;
 

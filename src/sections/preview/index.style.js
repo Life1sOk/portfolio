@@ -1,14 +1,39 @@
 import styled from 'styled-components';
 
+import check from '../../assets/lines/line55.png';
+
 export const MainWrapper = styled.div`
+    position: relative;
     width: 100%;
-    padding: 95.5px 0 0 0;
+    padding-top: 95.5px;
     background-color: #001528;
 `;
 
+export const Checker = styled.div`
+    width: 650px;
+    /* height: 100px; */
+    aspect-ratio: 1 / 1;
+    background-color: white;
+
+    position: absolute;
+    top: 40px;
+    left: 390px;
+
+    mask-image: url(${check});
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    background: url(${check});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transform: rotate(165deg);
+`;
+
 export const MainContainer = styled.section`
-    width: 100%;
-    /* height: calc(var(--vh, 1vh) * 100 - 65.5px); */
+    width: 90vw;
     max-width: 1299.98px;
     min-width: 320px;
     margin: 0 auto;
@@ -16,22 +41,12 @@ export const MainContainer = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-
-    @media only screen and (min-width: 1049.98px) {
-        height: fit-content;
-        padding-right: 40px;
-        /* min-height: calc(100vh - 65.5px); */
-        justify-content: space-between;
-    };
 `;
 
 export const Introduction = styled.section`
     width: 100%;
     height: fit-content;
-    /* max-width: 450px; */
-    /* max-height: 550px; */
     margin-bottom: 20px;
-    /* padding: 33px 20px; */
 
     display: flex;
     flex-direction: column;
@@ -42,7 +57,6 @@ export const Introduction = styled.section`
     @media only screen and (min-width: 499.98px) {
         width: fit-content;
         min-width: 700px;
-        /* min-height: 80vh; */
         margin-bottom: 20px;
         gap: 30px;
     };
@@ -53,15 +67,16 @@ export const PlanetWrapper = styled.div`
 
     width: 100%;
     height: 300px;
+
+    
 `;
 
 export const PrevWrapper = styled.div`
     width: 90%;
-    /* height: 300px; */
     padding: 30px 10px 0 10px;
 
     display: flex;
-    flex-direction: column;
+    align-items: center;
     gap: 50px;
 `;
 
@@ -69,8 +84,9 @@ export const ButtonWrapper = styled.div`
     width: 100%;
 
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 20px;
 `;
 
 export const Animation = styled.section`
@@ -91,10 +107,10 @@ export const Animation = styled.section`
         display: flex;
         flex-direction: column;
 
-        animation-name: animationWindow;
+        /* animation-name: animationWindow;
         animation-duration: 2s;
         animation-direction: alternate;
-        animation-iteration-count: infinite;
+        animation-iteration-count: infinite; */
     };
 `;
 

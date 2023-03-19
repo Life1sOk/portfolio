@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 
 import Logo from '../../assets/andrey-high-resolution-logo-color-on-transparent-background.png';
-import { NavigationContainer, LogoStyle, SideContainer, SmallSideContainer} from './navbar.style';
+import { NavigationContainer, LogoStyle, SideContainer, SmallSideContainer } from './index.style';
 import ButtonWindow from "../../components/buttons/window/window.component";
 import ButtonContacts from "../../components/buttons/contacts/contacts.component";
 import ButtonBurger from "../../components/buttons/burger/burger";
@@ -24,13 +24,13 @@ const Navbar = () => {
                 <BurgerMemu open={open} openToggle={() => setOpen(!open)} />
                 <ButtonBurger open={open} openToggle={() => setOpen(!open)} />
                 <Linker to='/' title='main'>
-                    <LogoStyle src={Logo} alt='mylogo'/>
+                    <LogoStyle src={Logo} alt='mylogo' />
                 </Linker>
                 <Navigation />
                 <SmallSideContainer>
-                    <ButtonContacts openToggle={() => setContact(!contact)}/>
+                    <ButtonContacts openToggle={() => setContact(!contact)} />
                 </SmallSideContainer>
-                <ContactsMenu open={contact} openToggle={() => setContact(!contact)}/>
+                <ContactsMenu open={contact} openToggle={() => setContact(!contact)} />
                 <SideContainer>
                     <ButtonWindow name='Contacts' side='bottom'>
                         <Contacts />
@@ -40,6 +40,7 @@ const Navbar = () => {
             </NavigationContainer>
             <Outlet />
         </>
-)};
+    )
+};
 
 export default Navbar;

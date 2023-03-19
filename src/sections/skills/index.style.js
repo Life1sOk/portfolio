@@ -1,21 +1,20 @@
 import styled from "styled-components";
 
+export const MainWrapper = styled.div`
+    width: 100%;
+    background-color: #001528;
+    padding: 77px 0;
+`;
+
 export const MainSkills = styled.div`
     width: 100%;
-    height: calc(var(--vh, 1vh) * 100 - 65.5px);
-    max-width: 1117px;
+    max-width: 1299.98px;
     min-width: 320px;
     margin: 0 auto;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-
-    @media only screen and (min-width: 992px) {
-        height: 100%;
-        height: calc(100vh - 65.5px);
-        justify-content: space-around;
-    };
 `;
 
 export const LeftContainer = styled.div`
