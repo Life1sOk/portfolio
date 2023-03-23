@@ -5,15 +5,15 @@ import ProjectsSection from "../../sections/projects";
 import Skills from "../../sections/skills";
 import About from "../../sections/about";
 
-import { HomeWrapper, HomeContainer } from './index.style';
+import { HomeContainer } from './index.style';
 
 const HomePage = () => {
     return (
         <HomeContainer>
-            <PreviewSection />
-            <ProjectsSection />
-            <Skills />
+            {/* <PreviewSection />
             <About />
+            <Skills /> */}
+            <ProjectsSection />
         </HomeContainer>
     )
 };

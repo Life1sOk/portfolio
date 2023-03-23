@@ -1,21 +1,14 @@
 import React from "react";
 
-import { ProjectsWrapper, ProjectsContainer } from "./index.style";
+import ProjectBox from "../../containers/project-box/project-box.component";
 
-import ProjectBox from "../../components/project-box/project-box.component";
+import { ProjectsContainer } from "./index.style";
 
-const ProjectsSection = ({ projects }) => {
+const ProjectsSection = () => {
     return (
-        <ProjectsWrapper>
-            <ProjectsContainer name='projects' ref={projects}>
-                <ProjectBox />
-                <ProjectBox />
-                <ProjectBox />
-                <ProjectBox />
-                <ProjectBox />
-                <ProjectBox />
-            </ProjectsContainer>
-        </ProjectsWrapper>
+        <ProjectsContainer>
+            <ProjectBox />
+        </ProjectsContainer>
     );
 };
 

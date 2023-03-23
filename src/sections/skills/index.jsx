@@ -1,40 +1,16 @@
 import React from "react";
 
-import { tierOne, tierTwo, tierThree } from "../../utils/tools-icons";
+import SkillSetContainer from "../../containers/skill-set/skill-set.container";
+import BoxBig from "../../containers/box-big/box-big.component";
 
-import Icon from "../../components/icon-wrap/icon-wrap.component";
-import Title from "../../components/title/title.component";
-import BoxBig from "../../components/box-big/box-big.component";
-
-import { MainWrapper, MainSkills, LeftContainer, RightContainer, BasicsContainer, FrameworksLibrariesContainer } from "./index.style";
+import { MainSkills } from "./index.style";
 
 const Skills = () => {
     return (
-        <MainWrapper>
-            <MainSkills>
-                <RightContainer>
-                    <Title tier={true}>Skill sets</Title>
-                    <BasicsContainer>
-                        {
-                            tierOne.map((tool, index) => <Icon name={tool.name} time={tool.time} icon={tool.icon} key={index} />)
-                        }
-                    </BasicsContainer>
-                    <FrameworksLibrariesContainer>
-                        {
-                            tierTwo.map((tool, index) => <Icon name={tool.name} time={tool.time} icon={tool.icon} key={index} />)
-                        }
-                    </FrameworksLibrariesContainer>
-                    <BasicsContainer>
-                        {
-                            tierThree.map((tool, index) => <Icon name={tool.name} time={tool.time} icon={tool.icon} key={index} />)
-                        }
-                    </BasicsContainer>
-                </RightContainer>
-                <LeftContainer>
-                    <BoxBig />
-                </LeftContainer>
-            </MainSkills>
-        </MainWrapper>
+        <MainSkills>
+            <BoxBig />
+            <SkillSetContainer />
+        </MainSkills>
     );
 }
 

@@ -13,18 +13,16 @@
     --font-color: #a9c6d9;
     --light-orange: #e55f3f;
     --light-yellow: #f1a845;
+    --background: #001528;
 }
 
 body {
-    /* overflow: hidden; */
-    /* font-family: 'Bebas Neue';
-    font-style: normal; */
     font-family: 'Bebas Neue', cursive;
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Tilt Warp', cursive;
     color: white;
-    /* background-color: #001528; */
+    background-color: var(--background);
 }
 
 a {

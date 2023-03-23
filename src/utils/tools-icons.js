@@ -23,15 +23,15 @@ export const bigBox = [
     },
     {
         id: 3,
-        icon: <FaReact />,
-        color: '#80DEEA',
-        side: 'rigth',
-    },
-    {
-        id: 4,
         icon: <SiTypescript />,
         color: '#1976D2',
         side: 'top',
+    },
+    {
+        id: 4,
+        icon: <FaReact />,
+        color: '#80DEEA',
+        side: 'rigth',
     },
     {
         id: 5,
