@@ -9,13 +9,8 @@ export const AboutMeStyle = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-`;
 
-export const PBlock = styled.p`
-    color: var(--blue);
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     font-size: 16px;
-    text-align: left;
     line-height: 1.6;
     font-weight: 500;
 `;

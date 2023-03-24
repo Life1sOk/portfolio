@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const MainAbout = styled.div`
     width: 100%;
-    padding: 77px 122px 77px 55px;
+    padding: 99px 122px 99px 55px;
 
     display: flex;
     justify-content: space-around;
@@ -10,14 +10,40 @@ export const MainAbout = styled.div`
 `;
 
 export const FotoWrapper = styled.div`
+    position: relative;
+
     width: 300px;
     height: 403.5px;
     border-radius: 10px;
-    background-color: rgba(0, 21, 40, .8);
+    background-color: var(--background-secondary);
 
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
     -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.77);
     -moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
+
+    ::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: var(--blue);
+        opacity: .5;
+        transform: translate(-20px, -20px);
+        transition: opacity .3s linear;
+    }
+
+    :hover {
+        cursor: pointer;
+
+        ::before {
+            opacity: 0;
+        }
+    }
 `;
 
 export const Foto = styled.img`

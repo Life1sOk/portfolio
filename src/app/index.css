@@ -10,10 +10,11 @@
 :root {
     --white: #ffffff;
     --blue: #40578f;
-    --font-color: #a9c6d9;
+    --font-color: #8892b0;
     --light-orange: #e55f3f;
     --light-yellow: #f1a845;
     --background: #001528;
+    --background-secondary: #01213f;
 }
 
 body {
@@ -28,4 +29,8 @@ body {
 a {
     color: inherit;
     text-decoration: inherit;
+}
+
+ul {
+    list-style: none;
 }

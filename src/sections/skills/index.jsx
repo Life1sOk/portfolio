@@ -1,16 +1,23 @@
 import React from "react";
 
+import Title from "../../ui/title/title.component";
+
 import SkillSetContainer from "../../containers/skill-set/skill-set.container";
 import BoxBig from "../../containers/box-big/box-big.component";
 
-import { MainSkills } from "./index.style";
+import { MainWrapper, MainSkills, TitleWrapper } from "./index.style";
 
 const Skills = () => {
     return (
-        <MainSkills>
-            <BoxBig />
-            <SkillSetContainer />
-        </MainSkills>
+        <MainWrapper>
+            <TitleWrapper>
+                <Title number={2} isReverse>Tools i use</Title>
+            </TitleWrapper>
+            <MainSkills>
+                <BoxBig />
+                <SkillSetContainer />
+            </MainSkills>
+        </MainWrapper>
     );
 }
 
