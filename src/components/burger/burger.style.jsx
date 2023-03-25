@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledBurger = styled.button`
-  width: 32px;
   height: 32px;
   background: transparent;
   border: none;
@@ -18,7 +17,7 @@ export const StyledBurger = styled.button`
   }
   
   & div {
-    width: 1.7rem;
+    width: 2rem;
     height: 0.25rem;
     background-color: white;
     border-radius: 10px;
@@ -28,7 +27,7 @@ export const StyledBurger = styled.button`
   }
 
   & .line1 {
-    transform: ${({ open }) => open ? 'rotate(57deg)' : 'none'}
+    transform: ${({ open }) => open ? 'rotate(45deg)' : 'none'}
   }
 
   & .line2 {
@@ -36,10 +35,6 @@ export const StyledBurger = styled.button`
   }
 
   & .line3 {
-    transform: ${({ open }) => open ? 'rotate(-57deg)' : 'none'}
+    transform: ${({ open }) => open ? 'rotate(-45deg)' : 'none'}
   }
-
-  @media only screen and (min-width: 992px) {
-    display: none ;
-  };
 `;

@@ -1,21 +1,12 @@
 import styled from 'styled-components';
 
-export const NavigationContainer = styled.nav`
+export const NavigationWrapper = styled.div`
     position: fixed;
     top: 0;
     left: 0;
 
-    min-width: 320px;
     width: 100%;
-    height: 65.5px;
-    background-color: var(--background);
-    padding: 0px 22px;
-    z-index: 20;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0;
+    min-width: 320px;
 
     animation-name: animationNav;
     animation-duration: 1.3s;
@@ -29,35 +20,64 @@ export const NavigationContainer = styled.nav`
             transform: translateY(0);
         }
     };
+`;
 
-    @media only screen and (min-width: 992px) {
-        padding: 0 44px;
-    };
+export const NavigationContainer = styled.nav`
+    min-width: 320px;
+    max-width: 1299.98px;
+    width: 100%;
+    height: 65.5px;
+    margin: 0 auto;
+    background-color: var(--background);
+    padding: 0 44px;
 
-    @media only screen and (min-width: 1399.9px) {
-        justify-content: center;
-        gap: 270px;
-    };
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
 `;
 
 export const LogoStyle = styled.img`
-    width: 120px;
-    height: 25.13px;
+    width: 160px;
 
-    @media only screen and (min-width: 992px) {
-        width: 160px;
-        height: 33.52px;
+    @media only screen and (max-width: 799px) {
+        width: 130px;
     };
 `;
 
-export const SideContainer = styled.div`
+export const BurgerWrapper = styled.div`
     display: none;
-    width: fit-content;
-    height: 100%;
 
-    @media only screen and (min-width: 992px) {
-        display: flex;
-        gap: 30px;
-        align-items: center;
+    @media only screen and (max-width: 799px) {
+        display: initial;
+        position: relative;
+        z-index: 10;
+    };
+`;
+
+export const NavWrapper = styled.div`
+    display: initial;
+
+    @media only screen and (max-width: 799px) {
+        display: none;
+    };
+`;
+
+export const NavbarAsideWrapper = styled.div`
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 8;
+
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, .5);
+
+    display: flex;
+    justify-content: flex-end;
+    
+    @media only screen and (min-width: 799px) {
+        display: none;
     };
 `;

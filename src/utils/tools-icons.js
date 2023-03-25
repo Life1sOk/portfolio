@@ -113,3 +113,10 @@ export const contactsIcons = [
         url: 'https://www.facebook.com/andrey.tsoy.3975',
     },
 ];
+
+export const links = [
+    { title: 'About' },
+    { title: 'Tools' },
+    { title: 'Projects' },
+    { title: 'Contacts' },
+];
