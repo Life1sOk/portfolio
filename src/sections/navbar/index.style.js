@@ -8,7 +8,6 @@ export const NavigationContainer = styled.nav`
     min-width: 320px;
     width: 100%;
     height: 65.5px;
-    /* background-color: rgba(0, 21, 40, .8); */
     background-color: var(--background);
     padding: 0px 22px;
     z-index: 20;
@@ -48,13 +47,6 @@ export const LogoStyle = styled.img`
     @media only screen and (min-width: 992px) {
         width: 160px;
         height: 33.52px;
-    };
-`;
-
-export const SmallSideContainer = styled.div`
-
-    @media only screen and (min-width: 992px) {
-        display: none;
     };
 `;
 

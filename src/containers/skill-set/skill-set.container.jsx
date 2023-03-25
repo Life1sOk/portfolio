@@ -2,7 +2,7 @@ import React from "react";
 
 import { tierOne, tierTwo, tierThree } from "../../utils/tools-icons";
 
-import Icon from "../../components/icon-wrap/icon-wrap.component";
+import Icon from "../../ui/icon-wrap/icon-wrap.component";
 
 import { SkillSetStyle, BasicsContainer, FrameworksContainer } from './skill-set.style';
 

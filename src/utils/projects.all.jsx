@@ -1,4 +1,4 @@
-import screen from '../assets/picture.png';
+import screen from '../assets/projects/picture.png';
 
 export const projects = [
     {
@@ -31,4 +31,61 @@ export const projects = [
             website: 'https://life1sok.github.io/test-unistory/',
         },
     }
+];
+
+export const smallProjects = [
+    {
+        title: 'Lorem ipsom',
+        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        links: {
+            github: '',
+            website: '',
+        },
+        tools: ['firebase', 'react', 'redux'],
+    },
+    {
+        title: 'Lorem ipsom',
+        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        links: {
+            github: '',
+            website: '',
+        },
+        tools: ['firebase', 'react', 'redux'],
+    },
+    {
+        title: 'Lorem ipsom',
+        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        links: {
+            github: '',
+            website: '',
+        },
+        tools: ['firebase', 'react', 'redux'],
+    },
+    {
+        title: 'Lorem ipsom',
+        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        links: {
+            github: '',
+            website: '',
+        },
+        tools: ['firebase', 'react', 'redux'],
+    },
+    {
+        title: 'Lorem ipsom',
+        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        links: {
+            github: '',
+            website: '',
+        },
+        tools: ['firebase', 'react', 'redux'],
+    },
+    {
+        title: 'Lorem ipsom',
+        description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        links: {
+            github: '',
+            website: '',
+        },
+        tools: ['firebase', 'react', 'redux'],
+    },
 ];

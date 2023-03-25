@@ -86,8 +86,7 @@ export const Tools = styled.ul`
     flex-wrap: wrap;
 
     & li {
-        margin-right: 20px;
-        margin-bottom: 5px;
+        margin: ${({ isLeftSide }) => isLeftSide ? '0 20px 5px 0' : '0 0 5px 20px'};
     }
 `;
 

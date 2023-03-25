@@ -1,6 +1,6 @@
 import React from "react";
 
-import ButtonWindow from "../../components/buttons/window/window.component";
+import ButtonWindow from "../../components/window/window.component";
 
 import { WelcomeStyle, HelloTitle, TextStyle, MyName, MyProf, AboutStyle } from './welcome.style';
 

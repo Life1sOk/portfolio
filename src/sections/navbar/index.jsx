@@ -2,17 +2,13 @@ import React, { useState } from "react";
 
 import { Outlet } from "react-router-dom";
 
-import Logo from '../../assets/andrey-high-resolution-logo-color-on-transparent-background.png';
+import Logo from '../../assets/logo/logo.png';
 import { NavigationContainer, LogoStyle, SideContainer, SmallSideContainer } from './index.style';
-import ButtonWindow from "../../components/buttons/window/window.component";
-import ButtonContacts from "../../components/buttons/contacts/contacts.component";
-import ButtonBurger from "../../components/buttons/burger/burger";
-import BurgerMemu from "../../components/aside-menus/burger-menu/burger-menu.component";
-import Navigation from "../../components/navigation/navigation.component";
-import Contacts from "../../components/contacts/contacts.component";
-import ContactsMenu from "../../components/aside-menus/contacts-menu/contacts-menu.component";
-import Linker from "../../components/linker/linker.component";
-import LanguageToggle from "../../components/language-toggle/language-toggle.component";
+import ButtonWindow from "../../components/window/window.component";
+import ButtonBurger from "../../ui/burger/burger";
+import Navigation from "../../ui/navigation/navigation.component";
+// import ContactsMenu from "../../components/aside-menus/contacts-menu/contacts-menu.component";
+import Linker from "../../ui/linker/linker.component";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -21,21 +17,13 @@ const Navbar = () => {
     return (
         <>
             <NavigationContainer>
-                <BurgerMemu open={open} openToggle={() => setOpen(!open)} />
                 <ButtonBurger open={open} openToggle={() => setOpen(!open)} />
                 <Linker to='/' title='main'>
                     <LogoStyle src={Logo} alt='mylogo' />
                 </Linker>
                 <Navigation />
-                <SmallSideContainer>
-                    <ButtonContacts openToggle={() => setContact(!contact)} />
-                </SmallSideContainer>
-                <ContactsMenu open={contact} openToggle={() => setContact(!contact)} />
                 <SideContainer>
-                    <ButtonWindow name='Contacts' side='bottom'>
-                        <Contacts />
-                    </ButtonWindow>
-                    <LanguageToggle />
+                    <ButtonWindow />
                 </SideContainer>
             </NavigationContainer>
             <Outlet />
