@@ -6,11 +6,10 @@ export const MainContainer = styled.section`
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    @media only screen and (max-width: 1366px) {
+    @media only screen and (max-width: 1280px) {
         justify-content: center;
-        gap: 44px;
     };
 `;
 

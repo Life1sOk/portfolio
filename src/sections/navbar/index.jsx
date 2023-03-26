@@ -13,25 +13,27 @@ const Navbar = () => {
     // NeedToDO: ref to the sections on click and aside the same;
     // Chenge index to highest
     return (
-        <NavigationWrapper>
-            <NavigationContainer>
-                <LogoStyle src={Logo} alt='mylogo' />
-                <BurgerWrapper>
-                    <Burger open={open} openToggle={() => setOpen(!open)} />
-                </BurgerWrapper>
-                <NavWrapper>
-                    <NavLinksContainer isAside={false} />
-                </NavWrapper>
-                {
-                    open ?
-                        <NavbarAsideWrapper status={open}>
-                            <NavLinksContainer isAside={true} />
-                        </NavbarAsideWrapper>
-                        : null
-                }
-                {open ? <BlackBox onClick={() => setOpen(!open)} /> : null}
-            </NavigationContainer>
-        </NavigationWrapper>
+        <>
+            <NavigationWrapper>
+                <NavigationContainer>
+                    <LogoStyle src={Logo} alt='mylogo' />
+                    <BurgerWrapper>
+                        <Burger open={open} openToggle={() => setOpen(!open)} />
+                    </BurgerWrapper>
+                    <NavWrapper>
+                        <NavLinksContainer isAside={false} />
+                    </NavWrapper>
+                </NavigationContainer>
+            </NavigationWrapper>
+            {
+                open ?
+                    <NavbarAsideWrapper status={open}>
+                        <NavLinksContainer isAside={true} />
+                    </NavbarAsideWrapper>
+                    : null
+            }
+            {open ? <BlackBox onClick={() => setOpen(!open)} /> : null}
+        </>
     )
 };
 

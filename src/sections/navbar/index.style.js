@@ -4,6 +4,7 @@ export const NavigationWrapper = styled.div`
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 99;
 
     width: 100%;
     min-width: 320px;
@@ -23,6 +24,9 @@ export const NavigationWrapper = styled.div`
 `;
 
 export const NavigationContainer = styled.nav`
+    position: relative;
+    z-index: 10;
+
     min-width: 320px;
     max-width: 1299.98px;
     width: 100%;
@@ -40,7 +44,7 @@ export const NavigationContainer = styled.nav`
 export const LogoStyle = styled.img`
     width: 160px;
 
-    @media only screen and (max-width: 799px) {
+    @media only screen and (max-width: 848px) {
         width: 130px;
     };
 `;
@@ -48,7 +52,7 @@ export const LogoStyle = styled.img`
 export const BurgerWrapper = styled.div`
     display: none;
 
-    @media only screen and (max-width: 799px) {
+    @media only screen and (max-width: 848px) {
         display: initial;
         position: relative;
         z-index: 10;
@@ -58,7 +62,7 @@ export const BurgerWrapper = styled.div`
 export const NavWrapper = styled.div`
     display: initial;
 
-    @media only screen and (max-width: 799px) {
+    @media only screen and (max-width: 848px) {
         display: none;
     };
 `;
@@ -82,7 +86,7 @@ export const NavbarAsideWrapper = styled.div`
         }
     };
 
-    @media only screen and (min-width: 799px) {
+    @media only screen and (max-width: 848px) {
         display: none;
     };
 `;
@@ -99,7 +103,7 @@ export const BlackBox = styled.div`
     height: 100vh;
     background: rgba(0,0,0, .5);
 
-    @media only screen and (min-width: 799px) {
+    @media only screen and (max-width: 848px) {
         display: none;
     };
 `;

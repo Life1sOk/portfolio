@@ -5,6 +5,7 @@ export const HomeContainer = styled.div`
     max-width: 1299.98px;
     min-width: 320px;
     margin: 0 auto;
+    padding: 0 100px;
     overflow: hidden;
 
     display: flex;

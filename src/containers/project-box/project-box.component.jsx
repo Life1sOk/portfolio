@@ -12,7 +12,7 @@ const ProjectBox = ({ data, isLeftSide }) => {
     return (
         <ProjectBoxStyle>
             <ImageWrapper isLeftSide={isLeftSide}>
-                <Image src={image.screen} />
+                <Image src={image.screen} alt={title} />
             </ImageWrapper>
             <Description isLeftSide={isLeftSide}>
                 <DesTitle isLeftSide={isLeftSide}>{title}</DesTitle>

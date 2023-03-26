@@ -5,7 +5,6 @@ export const ContactStyle = styled.div`
 
     width: 100%;
     height: 100vh;
-    padding: 0 22px;
 
     display: flex;
     flex-direction: column;

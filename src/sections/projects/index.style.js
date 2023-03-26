@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProjectsContainer = styled.section`
     width: 100%;
     max-width: 1000px;
-    padding: 99px 22px;
+    padding: 99px 0;
 
     display: flex;
     flex-direction: column;

@@ -16,12 +16,9 @@ export const NavLinksContainer = styled.ol`
 `;
 
 export const SideContainer = styled.div`
-   width: 111px;
-   height: 44px;
-
-   display: flex;
-   gap: 30px;
-   align-items: center;
+    width: 111px;
+    height: 44px;
+    margin: 0 22px;
 `;
 
 
@@ -47,11 +44,12 @@ export const LinkWords = styled.li`
             font-size: 22px;
         }
     `: `
-        font-size: 13px;
+        font-size: 11px;
         padding: 5px 5px 8px 5px;
         border-bottom: 1px solid rgba(255,255,255,.2);
 
         .link {
+            font-size: 14px;
             color: var(--font-color);
         }
     `};

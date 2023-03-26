@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const MainAbout = styled.div`
     width: 100%;
-    padding: 99px 55px;
+    padding: 99px 0;
 
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 
     @media only screen and (max-width: 1112px) {
         justify-content: space-between;
@@ -14,10 +14,11 @@ export const MainAbout = styled.div`
     };
 
     @media only screen and (max-width: 798px) {
-        padding: 66px 12px;
+        padding: 66px 0;
 
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
+        align-items: center;
         gap: 22px;
     };
 `;
@@ -29,6 +30,7 @@ export const FotoWrapper = styled.div`
     max-width: 300px;
     height: 100%;
     border-radius: 10px;
+    margin-top: 5%;
     background-color: var(--background-secondary);
 
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.77);
@@ -58,10 +60,6 @@ export const FotoWrapper = styled.div`
             opacity: 0;
         }
     }
-
-    @media only screen and (max-width: 798px) {
-        width: 80%;
-    };
 `;
 
 export const Foto = styled.img`

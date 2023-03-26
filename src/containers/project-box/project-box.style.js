@@ -9,6 +9,11 @@ export const ProjectBoxStyle = styled.div`
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+
+    @media only screen and (max-width: 848px) {
+        margin-bottom: 66px;
+    };
 `;
 
 export const ImageWrapper = styled.div`
@@ -17,9 +22,6 @@ export const ImageWrapper = styled.div`
     grid-area: ${({ isLeftSide }) => isLeftSide ? '1 / 1 / -1 / 8' : '1 / 6 / -1 / -1'};
     border-radius: 5px;
     overflow: hidden;
-
-    display: flex;
-    align-items: center;
 
     ::before {
         content: '';
@@ -35,7 +37,7 @@ export const ImageWrapper = styled.div`
 
         transition: opacity .3s linear;
 
-        @media only screen and (max-width: 765px) {
+        @media only screen and (max-width: 848px) {
             display: none;
         };
     }
@@ -48,14 +50,17 @@ export const ImageWrapper = styled.div`
         }
     }
 
-    @media only screen and (max-width: 765px) {
-        grid-area: 1 / 1/ -1 / -1;
+    @media only screen and (max-width: 977px) {
+        grid-area: ${({ isLeftSide }) => isLeftSide ? '1 / 1 / -1 / 9' : '1 / 5 / -1 / -1'};
+    };
+
+    @media only screen and (max-width: 848px) {
+        grid-column: 1 / -1;
     };
 `;
 
 export const Image = styled.img`
     width: 100%;
-    height: fit-content;
 `;
 
 export const Description = styled.div`
@@ -68,10 +73,15 @@ export const Description = styled.div`
     flex-direction: column;
     justify-content: center;
 
-    @media only screen and (max-width: 765px) {
+    @media only screen and (max-width: 977px) {
+        grid-area: ${({ isLeftSide }) => isLeftSide ? '1 / 6 / -1 / -1' : '1 / 1 / -1 / 8'};
+    };
+
+    @media only screen and (max-width: 848px) {
+        height: 100%;
         grid-area: 1 / 1/ -1 / -1;
-        background-color: rgba(0, 21, 40, .8);
-        padding: 9%;
+        background-color: rgba(0, 21, 40, .9);
+        padding: 0 9%;
         border-radius: 10px;
         border: 1px solid rgba(255,255,255,.2);
     };
@@ -81,6 +91,10 @@ export const DesTitle = styled.h3`
     font-size: 22px;
     margin: ${({ isLeftSide }) => isLeftSide ? '0 22px 22px 0' : '0 0 22px 22px'};
     text-align: ${({ isLeftSide }) => isLeftSide ? 'right' : 'left'};
+
+    @media only screen and (max-width: 848px) {
+        margin-top: 11px;
+    };
 `;
 
 export const DesMain = styled.div`
@@ -94,6 +108,11 @@ export const DesMain = styled.div`
 
     border-radius: 10px;
     background-color: var(--background-secondary);
+
+    @media only screen and (max-width: 848px) {
+        padding: 7px;
+        background-color: initial;
+    };
 `;
 
 export const Tools = styled.ul`
@@ -108,6 +127,10 @@ export const Tools = styled.ul`
     & li {
         margin: ${({ isLeftSide }) => isLeftSide ? '0 20px 5px 0' : '0 0 5px 20px'};
     }
+
+    @media only screen and (max-width: 530px) {
+        margin: 7px 0 0 0;
+    };
 `;
 
 export const Links = styled.div`
@@ -116,6 +139,10 @@ export const Links = styled.div`
 
     display: flex;
     justify-content: ${({ isLeftSide }) => isLeftSide ? 'flex-end' : 'flex-start'};
+
+    @media only screen and (max-width: 530px) {
+        margin: 0;
+    };
 `;
 
 export const LinkWrapper = styled.a`
