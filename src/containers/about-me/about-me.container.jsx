@@ -1,7 +1,7 @@
 import React from "react";
 
-import Title from "../../ui/title/title.component";
-import Paragraph from '../../ui/paragraph/paragraph.component';
+import Title from "../../components/title/title.component";
+import Paragraph from '../../components/paragraph/paragraph.component';
 
 import { AboutMeStyle } from './about-me.style';
 

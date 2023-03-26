@@ -1,8 +1,8 @@
 import React from "react";
 
-// import ButtonWindow from "../../components/window/window.component";
+import Button from "../../components/button/button.component";
 
-import { WelcomeStyle, HelloTitle, TextStyle, MyName, MyProf, AboutStyle } from './welcome.style';
+import { WelcomeStyle, HelloTitle, TextStyle, MyName, MyProf, AboutStyle, ButtonWrapper } from './welcome.style';
 
 const WelcomeContainer = () => {
     return (
@@ -16,7 +16,9 @@ const WelcomeContainer = () => {
                 As a front-end web developer, I'm passionate about creating innovative digital experiences. I work closely with clients to bring their visions to life and deliver exceptional results with a focus on user experience.<br />
                 <span className="acc">Let's build something great together</span>!
             </AboutStyle>
-            {/* <ButtonWindow /> */}
+            <ButtonWrapper>
+                <Button />
+            </ButtonWrapper>
         </WelcomeStyle>
     )
 };

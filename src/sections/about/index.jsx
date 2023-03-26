@@ -8,6 +8,8 @@ import { MainAbout, FotoWrapper, Foto } from './index.style';
 
 const About = () => {
     const [loaded, setLoaded] = useState(false);
+    // checked
+    // Fixe foto window size;
 
     return (
         <MainAbout>

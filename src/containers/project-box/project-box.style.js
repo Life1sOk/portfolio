@@ -12,10 +12,14 @@ export const ProjectBoxStyle = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
+    height: fit-content;
     position: relative;
     grid-area: ${({ isLeftSide }) => isLeftSide ? '1 / 1 / -1 / 8' : '1 / 6 / -1 / -1'};
     border-radius: 5px;
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
 
     ::before {
         content: '';
@@ -30,6 +34,10 @@ export const ImageWrapper = styled.div`
         opacity: .5;
 
         transition: opacity .3s linear;
+
+        @media only screen and (max-width: 765px) {
+            display: none;
+        };
     }
 
     :hover {
@@ -39,11 +47,15 @@ export const ImageWrapper = styled.div`
             opacity: 0;
         }
     }
+
+    @media only screen and (max-width: 765px) {
+        grid-area: 1 / 1/ -1 / -1;
+    };
 `;
 
 export const Image = styled.img`
     width: 100%;
-    height: 100%;
+    height: fit-content;
 `;
 
 export const Description = styled.div`
@@ -55,6 +67,14 @@ export const Description = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: 765px) {
+        grid-area: 1 / 1/ -1 / -1;
+        background-color: rgba(0, 21, 40, .8);
+        padding: 9%;
+        border-radius: 10px;
+        border: 1px solid rgba(255,255,255,.2);
+    };
 `;
 
 export const DesTitle = styled.h3`

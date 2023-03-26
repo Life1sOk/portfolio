@@ -7,6 +7,10 @@ export const WelcomeStyle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: 1029px) {
+        padding: 0px 33px 0 33px;
+    };
 `;
 
 export const HelloTitle = styled.h1`
@@ -48,4 +52,9 @@ export const AboutStyle = styled.p`
         font-family: 'Tilt Warp', cursive;
         color: var(--light-yellow);
     }
+`;
+
+export const ButtonWrapper = styled.div`
+    width: 160px;
+    height: 55px;
 `;

@@ -4,8 +4,8 @@ export const ContactStyle = styled.div`
     position: relative;
 
     width: 100%;
-    height: 777px;
-    margin-top: 74px;
+    height: 100vh;
+    padding: 0 22px;
 
     display: flex;
     flex-direction: column;

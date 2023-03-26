@@ -40,7 +40,7 @@ export const SlidesWrapper = styled.div`
 export const BackCheck = styled.div`
     position: absolute;
     top: -20%;
-    left: -20%;
+    left: -25%;
 
     width: 140%;
     height: 140%;

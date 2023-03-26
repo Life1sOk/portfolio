@@ -2,18 +2,32 @@ import styled from 'styled-components';
 
 export const MainAbout = styled.div`
     width: 100%;
-    padding: 99px 122px 99px 55px;
+    padding: 99px 55px;
 
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media only screen and (max-width: 1112px) {
+        justify-content: space-between;
+        gap: 24px;
+    };
+
+    @media only screen and (max-width: 798px) {
+        padding: 66px 12px;
+
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+    };
 `;
 
 export const FotoWrapper = styled.div`
     position: relative;
 
-    width: 300px;
-    height: 403.5px;
+    width: 45%;
+    max-width: 300px;
+    height: 100%;
     border-radius: 10px;
     background-color: var(--background-secondary);
 
@@ -33,7 +47,7 @@ export const FotoWrapper = styled.div`
         border-radius: 10px;
         background-color: var(--blue);
         opacity: .5;
-        transform: translate(-20px, -20px);
+        transform: translate(-5%, -5%);
         transition: opacity .3s linear;
     }
 
@@ -44,6 +58,10 @@ export const FotoWrapper = styled.div`
             opacity: 0;
         }
     }
+
+    @media only screen and (max-width: 798px) {
+        width: 80%;
+    };
 `;
 
 export const Foto = styled.img`
@@ -51,17 +69,17 @@ export const Foto = styled.img`
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    transform: translate(-20px, -20px);
+    transform: translate(-5%, -5%);
     animation: openingFoto 1s ease-out;
 
     @keyframes openingFoto {
         from {
-            transform: translate(-40px, -40px);
+            transform: translate(-7%, -7%);
             opacity: 0;
         }
 
         to {
-            transform: translateX(-20px) translateY(-20px);
+            transform: translate(-5%, -5%);
             opacity: 1;
         }
     }

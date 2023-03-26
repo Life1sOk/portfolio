@@ -9,7 +9,7 @@ export const NavigationWrapper = styled.div`
     min-width: 320px;
 
     animation-name: animationNav;
-    animation-duration: 1.3s;
+    animation-duration: .5s;
     animation-direction: alternate;
 
     @keyframes animationNav {
@@ -70,13 +70,35 @@ export const NavbarAsideWrapper = styled.div`
     bottom: 0;
     z-index: 8;
 
+    animation-name: asideToggle;
+    animation-duration: .5s;
+
+    @keyframes asideToggle {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    };
+
+    @media only screen and (min-width: 799px) {
+        display: none;
+    };
+`;
+
+export const BlackBox = styled.div`
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 7;
+
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0, .5);
 
-    display: flex;
-    justify-content: flex-end;
-    
     @media only screen and (min-width: 799px) {
         display: none;
     };

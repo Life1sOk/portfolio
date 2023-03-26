@@ -1,11 +1,12 @@
 import React from "react";
 
 import ContactMe from "../../containers/contact-me/contact-me.container";
-import Copyright from '../../ui/copyright/copyright.component';
+import Copyright from '../../components/copyright/copyright.component';
 
 import { ContactStyle, Info } from './contact.style';
 
 const ContactSection = () => {
+    // Checked;
     return (
         <ContactStyle>
             <ContactMe />

@@ -8,7 +8,6 @@ export const NavLinksContainer = styled.ol`
     gap: 22px;
 
     ${({ isAside }) => isAside ? `
-        width: 55%;
         min-width: 299px;
         width: min(75vw, 400px);
         height: 100%;
@@ -49,10 +48,20 @@ export const LinkWords = styled.li`
         }
     `: `
         font-size: 13px;
-        padding: 5px;
+        padding: 5px 5px 8px 5px;
+        border-bottom: 1px solid rgba(255,255,255,.2);
 
         .link {
             color: var(--font-color);
         }
     `};
+
+    :hover {
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255,255,255,1);
+
+        .link {
+            color: var(--white);
+        }
+    }
 `;

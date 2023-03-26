@@ -2,14 +2,14 @@ import React from "react";
 
 import { projects, smallProjects } from "../../utils/projects.all";
 
-import Title from "../../ui/title/title.component";
+import Title from "../../components/title/title.component";
 import ProjectBox from "../../containers/project-box/project-box.component";
 import ProjectSmall from "../../containers/projects-small/projects-small.container";
 
 import { ProjectsContainer, ProjectsWrapper, TitleWrapper, ProjectsSmallContainerStyle, TitleSmall, ProjectsSmallWrapper } from "./index.style";
 
 const ProjectsSection = () => {
-
+    // Checked
     return (
         <ProjectsContainer>
             <TitleWrapper>

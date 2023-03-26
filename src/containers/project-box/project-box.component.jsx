@@ -2,7 +2,7 @@ import React from "react";
 
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 
-import Paragraph from "../../ui/paragraph/paragraph.component";
+import Paragraph from "../../components/paragraph/paragraph.component";
 
 import { ProjectBoxStyle, Image, Description, ImageWrapper, DesTitle, DesMain, Tools, Links, LinkWrapper } from './project-box.style';
 

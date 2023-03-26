@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SkillSetStyle = styled.div`
     max-width: 400px;
     width: 90%;
-    padding: 20px 30px 0px 30px;
+    padding: 20px 0px 0px 0px;
     border-radius: 10px;
 
     display: flex;

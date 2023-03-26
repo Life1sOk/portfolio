@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ProjectsContainer = styled.section`
     width: 100%;
     max-width: 1000px;
-    padding: 99px 0;
+    padding: 99px 22px;
 
     display: flex;
     flex-direction: column;
@@ -32,6 +32,6 @@ export const TitleSmall = styled.h2`
 
 export const ProjectsSmallWrapper = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
     gap: 18px;
 `;
