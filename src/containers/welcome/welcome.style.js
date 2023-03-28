@@ -26,12 +26,20 @@ export const TextStyle = styled.div`
 export const MyName = styled.h2`
     font-size: 56px;
     text-align: left;
+
+    @media only screen and (max-width: 599px) {
+       font-size: 44px;
+    };
 `;
 
 export const MyProf = styled.h3`
     font-size: 50px;
     text-align: left;
     color: #8892b0;
+
+    @media only screen and (max-width: 599px) {
+        font-size: 33px;
+    };
 `;
 
 export const AboutStyle = styled.p`
@@ -44,7 +52,6 @@ export const AboutStyle = styled.p`
     line-height: 1.6;
 
     .acc {
-        /* font-size: 16px; */
         font-family: 'Tilt Warp', cursive;
         color: var(--light-yellow);
     }

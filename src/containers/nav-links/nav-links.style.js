@@ -9,7 +9,7 @@ export const NavLinksContainer = styled.ol`
 
     ${({ isAside }) => isAside ? `
         min-width: 299px;
-        width: min(75vw, 400px);
+        width: 100%;
         height: 100%;
         background-color: var(--background);
     `: null};

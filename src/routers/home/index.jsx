@@ -12,10 +12,10 @@ const HomePage = () => {
     return (
         <HomeContainer>
             <PreviewSection />
-            <About />
+            {/* <About />
             <Skills />
             <ProjectsSection />
-            <ContactSection />
+            <ContactSection /> */}
         </HomeContainer>
     )
 };

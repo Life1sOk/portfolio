@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const NavigationWrapper = styled.div`
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    z-index: 99;
 
     width: 100%;
     min-width: 320px;
@@ -15,8 +14,9 @@ export const NavigationWrapper = styled.div`
 
     @keyframes animationNav {
         from {
-            transform: translateY(-100px);
+            transform: translateY(-100%);
         }
+
         to {
             transform: translateY(0);
         }
@@ -38,7 +38,10 @@ export const NavigationContainer = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0;
+
+    @media only screen and (max-width: 599px) {
+       padding: 0 22px;
+    };
 `;
 
 export const LogoStyle = styled.img`
@@ -46,6 +49,8 @@ export const LogoStyle = styled.img`
 
     @media only screen and (max-width: 848px) {
         width: 130px;
+        position: relative;
+        z-index: 105;
     };
 `;
 
@@ -55,53 +60,12 @@ export const BurgerWrapper = styled.div`
     @media only screen and (max-width: 848px) {
         display: initial;
         position: relative;
-        z-index: 10;
+        z-index: 105;
     };
 `;
 
 export const NavWrapper = styled.div`
     display: initial;
-
-    @media only screen and (max-width: 848px) {
-        display: none;
-    };
-`;
-
-export const NavbarAsideWrapper = styled.div`
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 8;
-
-    animation-name: asideToggle;
-    animation-duration: .5s;
-
-    @keyframes asideToggle {
-        from {
-            transform: translateX(100%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    };
-
-    @media only screen and (max-width: 848px) {
-        display: none;
-    };
-`;
-
-export const BlackBox = styled.div`
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 7;
-
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0, .5);
 
     @media only screen and (max-width: 848px) {
         display: none;
