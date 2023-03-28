@@ -1,16 +1,15 @@
 import styled from 'styled-components';
 
 export const IconWrapContainer = styled.div`
-    width: 85px;
-    height: 85px;
-    padding: 15px 10px 10px 10px;
+    width: 100%;
+    padding: 15px 10px;
     border-radius: 5px;
     background-color: var(--background-secondary);
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    gap: 7px;
 
     box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
@@ -30,22 +29,18 @@ export const IconWrapContainer = styled.div`
 `;
 
 export const IconWrap = styled.div`
+    width: 55%;
+    aspect-ratio: 1 / 1;
+    color: var(--font-color);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--font-color);
 
     svg {
-        width: 27px;
-        height: 27px;
+        width: 100%;
+        height: 100%;
     }
-
-    /* @media only screen and (min-width: 500px) {
-        svg {
-            width: 35px;
-            height: 35px;
-        }
-    }; */
 `;
 
 export const NameFont = styled.span`

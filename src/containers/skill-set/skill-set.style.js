@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const SkillSetStyle = styled.div`
-    max-width: 400px;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
 
     display: flex;
@@ -15,11 +14,10 @@ export const BasicsContainer = styled.div`
     width: 100%;
     padding: 20px 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 22px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+    justify-items: center;
+    grid-gap: 22px;
 `;
 
 export const FrameworksContainer = styled(BasicsContainer)`
