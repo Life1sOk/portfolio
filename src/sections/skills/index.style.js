@@ -19,7 +19,6 @@ export const MainSkills = styled.div`
     @media only screen and (max-width: 798px) {
         width: 100%;
         max-width: 521px;
-        padding: 10px 20px 20px 30px;
     };
 `;
 

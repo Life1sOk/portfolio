@@ -86,7 +86,7 @@ export const tierTwo = [
     },
     {
         id: 4,
-        name: 'Styled comp.',
+        name: 'Styled c.',
         icon: <SiStyledcomponents />,
         time: 2.4,
     }
