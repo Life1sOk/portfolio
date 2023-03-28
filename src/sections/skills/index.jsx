@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
 import Title from "../../components/title/title.component";
 
@@ -7,9 +7,9 @@ import BoxBig from "../../containers/box-big/box-big.component";
 
 import { MainWrapper, MainSkills, TitleWrapper, BoxWrapper } from "./index.style";
 
-const Skills = () => {
+const Skills = forwardRef((_, ref) => {
     return (
-        <MainWrapper>
+        <MainWrapper ref={ref}>
             <BoxWrapper>
                 <BoxBig />
             </BoxWrapper>
@@ -21,6 +21,6 @@ const Skills = () => {
             </MainSkills>
         </MainWrapper>
     );
-}
+});
 
 export default Skills;

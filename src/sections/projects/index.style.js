@@ -10,8 +10,7 @@ export const ProjectsContainer = styled.section`
 `;
 
 export const ProjectsWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 55px;
 `;
 
 export const TitleWrapper = styled.div`

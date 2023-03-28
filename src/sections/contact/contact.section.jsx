@@ -1,14 +1,14 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
 import ContactMe from "../../containers/contact-me/contact-me.container";
 import Copyright from '../../components/copyright/copyright.component';
 
 import { ContactStyle, Info } from './contact.style';
 
-const ContactSection = () => {
-    // Checked;
+const ContactSection = forwardRef((_, ref) => {
+
     return (
-        <ContactStyle>
+        <ContactStyle ref={ref}>
             <ContactMe />
             <Info>
                 <p>Inspired by Brittany Chiang</p>
@@ -16,6 +16,6 @@ const ContactSection = () => {
             </Info>
         </ContactStyle>
     )
-};
+});
 
 export default ContactSection;

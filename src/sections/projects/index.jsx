@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
 import { projects, smallProjects } from "../../utils/projects.all";
 
@@ -8,10 +8,9 @@ import ProjectSmall from "../../containers/projects-small/projects-small.contain
 
 import { ProjectsContainer, ProjectsWrapper, TitleWrapper, ProjectsSmallContainerStyle, TitleSmall, ProjectsSmallWrapper } from "./index.style";
 
-const ProjectsSection = () => {
-    // Checked
+const ProjectsSection = forwardRef((_, ref) => {
     return (
-        <ProjectsContainer>
+        <ProjectsContainer ref={ref}>
             <TitleWrapper>
                 <Title number={3}>Some projects</Title>
             </TitleWrapper>
@@ -32,6 +31,6 @@ const ProjectsSection = () => {
             </ProjectsSmallContainerStyle>
         </ProjectsContainer>
     );
-};
+});
 
 export default ProjectsSection;

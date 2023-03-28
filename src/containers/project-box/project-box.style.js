@@ -5,7 +5,7 @@ export const ProjectBoxStyle = styled.div`
     width: 100%;
     height: fit-content;
     max-width: 1000px;
-    margin-bottom: 100px;
+    margin-bottom: 111px;
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -56,22 +56,20 @@ export const ImageWrapper = styled.div`
 
     @media only screen and (max-width: 848px) {
         grid-column: 1 / -1;
-
-        width: 100%;
-        height: 100%;
     };
 `;
 
 export const Image = styled.img`
     width: 100%;
-    /* height: 100%; */
-    /* object-fit: cover; */
+    height: 100%;
+    object-fit: cover;
 `;
 
 export const Description = styled.div`
     position: relative;
 
     width: 100%;
+    height: fit-content;
     grid-area: ${({ isLeftSide }) => isLeftSide ? '1 / 7 / -1 / -1' : '1 / 1 / -1 / 7'};
 
     display: flex;

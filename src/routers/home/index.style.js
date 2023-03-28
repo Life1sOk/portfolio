@@ -7,6 +7,7 @@ export const HomeContainer = styled.div`
     margin: 0 auto;
     padding: 0 100px;
     overflow-x: hidden;
+    background-color: var(--background);
 
     display: flex;
     flex-direction: column;
