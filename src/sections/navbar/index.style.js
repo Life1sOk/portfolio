@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const NavigationContainer = styled.nav`
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 22;
 
     min-width: 320px;
     max-width: 1299.98px;

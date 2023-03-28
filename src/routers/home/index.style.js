@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
     width: 100%;
+    height: 100%;
     max-width: 1299.98px;
     min-width: 320px;
     margin: 0 auto;
@@ -14,6 +15,6 @@ export const HomeContainer = styled.div`
     justify-content: center;
 
     @media only screen and (max-width: 599px) {
-        padding: 0 33px 0 55px;
+        padding: 0 55px 0 55px;
     };
 `;

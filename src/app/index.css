@@ -22,6 +22,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Tilt Warp', cursive;
+
     color: white;
     background-color: var(--background);
 }

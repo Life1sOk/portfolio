@@ -11,8 +11,8 @@ import { HomeContainer } from './index.style';
 const HomePage = () => {
     return (
         <HomeContainer>
-            {/* <PreviewSection />
-            <About /> */}
+            <PreviewSection />
+            <About />
             <Skills />
             {/* <ProjectsSection />
             <ContactSection /> */}

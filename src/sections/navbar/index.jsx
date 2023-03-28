@@ -18,6 +18,9 @@ const Navbar = () => {
 
     return (
         <NavigationContainer>
+            <AsideNav isOpen={open} openHandler={openNavHandler}>
+                <NavLinksContainer isAside={true} />
+            </AsideNav>
             <LogoStyle src={Logo} alt='mylogo' />
             <BurgerWrapper>
                 <Burger open={open} openToggle={openNavHandler} />
@@ -25,9 +28,6 @@ const Navbar = () => {
             <NavWrapper>
                 <NavLinksContainer isAside={false} />
             </NavWrapper>
-            <AsideNav isOpen={open} openHandler={openNavHandler}>
-                <NavLinksContainer isAside={true} />
-            </AsideNav>
         </NavigationContainer>
     )
 };

@@ -34,6 +34,7 @@ export const LinkWords = styled.li`
 
         font-size: 18px;
         padding: 10px;
+        border-bottom: 1px solid transparent;
 
         display: flex;
         flex-direction: column;
