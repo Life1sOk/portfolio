@@ -7,19 +7,11 @@ import foto from '../../assets/my-foto.jpg';
 import { MainAbout, FotoWrapper, Foto } from './index.style';
 
 const About = () => {
-    const [loaded, setLoaded] = useState(false);
-    // checked
-    // Fixe foto window size;
-
     return (
         <MainAbout>
             <AboutMeContainer />
             <FotoWrapper>
-                <Foto src={foto}
-                    alt='myface'
-                    onLoad={() => setLoaded(true)}
-                    state={loaded}
-                />
+                <Foto src={foto} alt='myface' />
             </FotoWrapper>
         </MainAbout>
     );

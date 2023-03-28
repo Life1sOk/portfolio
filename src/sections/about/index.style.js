@@ -63,7 +63,6 @@ export const FotoWrapper = styled.div`
 `;
 
 export const Foto = styled.img`
-    display: ${({ state }) => state ? 'initial' : 'none'};
     width: 100%;
     height: 100%;
     border-radius: 10px;
