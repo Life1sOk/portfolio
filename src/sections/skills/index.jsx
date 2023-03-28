@@ -8,9 +8,6 @@ import BoxBig from "../../containers/box-big/box-big.component";
 import { MainWrapper, MainSkills, TitleWrapper, BoxWrapper } from "./index.style";
 
 const Skills = () => {
-    // Checked 
-    // Maybe change shown skills /tools style
-
     return (
         <MainWrapper>
             <BoxWrapper>

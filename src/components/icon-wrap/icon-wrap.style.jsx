@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const IconWrapContainer = styled.div`
     width: 100%;
+    height: fit-content;
     padding: 15px 10px;
     border-radius: 5px;
     background-color: var(--background-secondary);
