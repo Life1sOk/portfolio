@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TitleStyle = styled.h2`
+export const TitleStyle = styled.div`
     width: 100%;
     font-family: 'Tilt Warp', cursive;
     font-style: normal;
