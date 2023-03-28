@@ -1,12 +1,21 @@
 import styled from 'styled-components';
 
-export const NavigationWrapper = styled.div`
+export const NavigationContainer = styled.nav`
     position: sticky;
     top: 0;
-    left: 0;
+    z-index: 10;
 
-    width: 100%;
     min-width: 320px;
+    max-width: 1299.98px;
+    width: 100%;
+    height: 65.5px;
+    margin: 0 auto;
+    background-color: var(--background);
+    padding: 0 44px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     animation-name: animationNav;
     animation-duration: .5s;
@@ -21,23 +30,6 @@ export const NavigationWrapper = styled.div`
             transform: translateY(0);
         }
     };
-`;
-
-export const NavigationContainer = styled.nav`
-    position: relative;
-    z-index: 10;
-
-    min-width: 320px;
-    max-width: 1299.98px;
-    width: 100%;
-    height: 65.5px;
-    margin: 0 auto;
-    background-color: var(--background);
-    padding: 0 44px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     @media only screen and (max-width: 599px) {
        padding: 0 22px;

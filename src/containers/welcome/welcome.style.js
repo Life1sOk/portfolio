@@ -43,7 +43,7 @@ export const MyProf = styled.h3`
 `;
 
 export const AboutStyle = styled.p`
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     max-width: 540px;
     font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     color: #8892b0;
@@ -55,6 +55,10 @@ export const AboutStyle = styled.p`
         font-family: 'Tilt Warp', cursive;
         color: var(--light-yellow);
     }
+
+    @media only screen and (max-width: 599px) {
+        margin-bottom: 33px;
+    };
 `;
 
 export const ButtonWrapper = styled.div`

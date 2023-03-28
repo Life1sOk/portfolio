@@ -8,25 +8,25 @@ export const MainAbout = styled.div`
     justify-content: space-around;
     align-items: flex-start;
 
-    @media only screen and (max-width: 1112px) {
-        justify-content: space-between;
-        gap: 24px;
-    };
-
     @media only screen and (max-width: 798px) {
         padding: 66px 0;
 
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         gap: 22px;
+    };
+
+    @media only screen and (max-width: 1112px) {
+        justify-content: space-between;
+        gap: 44px;
     };
 `;
 
 export const FotoWrapper = styled.div`
     position: relative;
 
-    width: 45%;
+    width: 55%;
+    min-width: 233px;
     max-width: 300px;
     height: 100%;
     border-radius: 10px;

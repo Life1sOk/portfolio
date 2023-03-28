@@ -6,7 +6,6 @@ import WelcomeContainer from "../../containers/welcome/welcome.container";
 import { MainContainer, Animation } from './index.style';
 
 const PreviewSection = () => {
-    // checked
 
     return (
         <MainContainer>

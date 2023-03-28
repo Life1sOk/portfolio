@@ -12,8 +12,8 @@ const HomePage = () => {
     return (
         <HomeContainer>
             <PreviewSection />
-            {/* <About />
-            <Skills />
+            <About />
+            {/* <Skills />
             <ProjectsSection />
             <ContactSection /> */}
         </HomeContainer>
