@@ -56,11 +56,16 @@ export const ImageWrapper = styled.div`
 
     @media only screen and (max-width: 848px) {
         grid-column: 1 / -1;
+
+        width: 100%;
+        height: 100%;
     };
 `;
 
 export const Image = styled.img`
     width: 100%;
+    /* height: 100%; */
+    /* object-fit: cover; */
 `;
 
 export const Description = styled.div`
@@ -82,7 +87,6 @@ export const Description = styled.div`
         grid-area: 1 / 1/ -1 / -1;
         background-color: rgba(0, 21, 40, .9);
         padding: 0 9%;
-        border-radius: 10px;
         border: 1px solid rgba(255,255,255,.2);
     };
 `;
@@ -93,7 +97,8 @@ export const DesTitle = styled.h3`
     text-align: ${({ isLeftSide }) => isLeftSide ? 'right' : 'left'};
 
     @media only screen and (max-width: 848px) {
-        margin-top: 11px;
+        margin: 15px 0 11px 0;
+        text-align: left;
     };
 `;
 
@@ -109,9 +114,17 @@ export const DesMain = styled.div`
     border-radius: 10px;
     background-color: var(--background-secondary);
 
+    & p {
+        text-align: ${({ side }) => side ? side : 'left'};
+    }
+
     @media only screen and (max-width: 848px) {
-        padding: 7px;
-        background-color: initial;
+        padding: 0;
+        background-color: transparent;
+
+        & p {
+            text-align: left;
+        }
     };
 `;
 
@@ -128,8 +141,14 @@ export const Tools = styled.ul`
         margin: ${({ isLeftSide }) => isLeftSide ? '0 20px 5px 0' : '0 0 5px 20px'};
     }
 
-    @media only screen and (max-width: 530px) {
-        margin: 7px 0 0 0;
+    @media only screen and (max-width: 848px) {
+        margin: 18px 0 0 0;
+        justify-content: flex-start;
+        gap: 11px;
+
+        & li {
+            margin: 0;
+        }
     };
 `;
 
@@ -140,8 +159,10 @@ export const Links = styled.div`
     display: flex;
     justify-content: ${({ isLeftSide }) => isLeftSide ? 'flex-end' : 'flex-start'};
 
-    @media only screen and (max-width: 530px) {
+    @media only screen and (max-width: 848px) {
         margin: 0;
+
+        justify-content: flex-end;
     };
 `;
 

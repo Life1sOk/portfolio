@@ -14,8 +14,8 @@ const HomePage = () => {
             <PreviewSection />
             <About />
             <Skills />
-            {/* <ProjectsSection />
-            <ContactSection /> */}
+            <ProjectsSection />
+            <ContactSection />
         </HomeContainer>
     )
 };

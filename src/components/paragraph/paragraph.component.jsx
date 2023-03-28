@@ -2,9 +2,9 @@ import React from "react";
 
 import { ParagraphStyle } from './paragraph.style';
 
-const Paragraph = ({ children, side }) => {
+const Paragraph = ({ children }) => {
     return (
-        <ParagraphStyle side={side}>{children}</ParagraphStyle>
+        <ParagraphStyle>{children}</ParagraphStyle>
     )
 };
 

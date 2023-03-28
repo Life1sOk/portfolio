@@ -16,7 +16,7 @@ const ProjectBox = ({ data, isLeftSide }) => {
             </ImageWrapper>
             <Description isLeftSide={isLeftSide}>
                 <DesTitle isLeftSide={isLeftSide}>{title}</DesTitle>
-                <DesMain>
+                <DesMain side={isLeftSide ? 'right' : 'left'}>
                     <Paragraph side={isLeftSide ? 'right' : 'left'}>{description}</Paragraph>
                 </DesMain>
                 <Tools isLeftSide={isLeftSide}>
