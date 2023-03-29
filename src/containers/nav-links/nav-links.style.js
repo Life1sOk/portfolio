@@ -19,6 +19,8 @@ export const SideContainer = styled.div`
     width: 111px;
     height: 44px;
     margin: 0 22px;
+
+    font-size: 14px;
 `;
 
 

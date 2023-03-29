@@ -1,6 +1,9 @@
 import React from "react";
 
+import { locationBasics } from "../../utils/social-media";
+
 import Button from "../../components/button/button.component";
+import Mailto from "../../components/mail-to/mail-to.component";
 
 import { WelcomeStyle, HelloTitle, TextStyle, MyName, MyProf, AboutStyle, ButtonWrapper } from './welcome.style';
 
@@ -17,7 +20,9 @@ const WelcomeContainer = () => {
                 <span className="acc">Let's build something great together</span>!
             </AboutStyle>
             <ButtonWrapper>
-                <Button />
+                <Mailto email={locationBasics.email}>
+                    <Button label='Mail me!' />
+                </Mailto>
             </ButtonWrapper>
         </WelcomeStyle>
     )

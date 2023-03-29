@@ -1,12 +1,13 @@
 import React from "react";
 
-import { ButtonStyle } from './button.style';
+import { ButtonWrapper, ButtonStyle } from './button.style';
 
-const Button = () => {
+const Button = ({ label, clickHandler }) => {
+
     return (
-        <ButtonStyle>
-
-        </ButtonStyle>
+        <ButtonWrapper onClick={clickHandler}>
+            <ButtonStyle>{label}</ButtonStyle>
+        </ButtonWrapper>
     )
 };
 

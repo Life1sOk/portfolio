@@ -64,4 +64,6 @@ export const AboutStyle = styled.p`
 export const ButtonWrapper = styled.div`
     width: 160px;
     height: 55px;
+
+    font-size: 16px;
 `;

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FiGithub, FiExternalLink } from 'react-icons/fi';
+import { socialIcons } from "../../utils/social-media";
 
 import Paragraph from "../../components/paragraph/paragraph.component";
 
@@ -26,10 +26,12 @@ const ProjectBox = ({ data, isLeftSide }) => {
                 </Tools>
                 <Links isLeftSide={isLeftSide}>
                     <LinkWrapper href={links.github} target="_blank">
-                        <FiGithub />
+                        {/* <FiGithub /> */}
+                        {socialIcons.github}
                     </LinkWrapper>
                     <LinkWrapper href={links.website} target="_blank">
-                        <FiExternalLink />
+                        {/* <FiExternalLink /> */}
+                        {socialIcons.view}
                     </LinkWrapper>
                 </Links>
             </Description>

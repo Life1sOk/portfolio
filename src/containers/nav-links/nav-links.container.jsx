@@ -24,7 +24,7 @@ const NavLinks = ({ isAside, scrollHandler, openNavHandler }) => {
                 )
             }
             <SideContainer>
-                <Button />
+                <Button label='Resume' />
             </SideContainer>
         </NavLinksContainer>
     )

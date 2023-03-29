@@ -6,6 +6,8 @@ import Skills from "../../sections/skills";
 import About from "../../sections/about";
 import ContactSection from "../../sections/contact/contact.section";
 
+import FrontContacts from "../../containers/front-contacts/front-contacts.container";
+
 import { HomeContainer } from './index.style';
 
 const HomePage = forwardRef((_, ref) => {
@@ -42,6 +44,7 @@ const HomePage = forwardRef((_, ref) => {
             <Skills ref={toolsRef} />
             <ProjectsSection ref={projectsRef} />
             <ContactSection ref={contactRef} />
+            <FrontContacts />
         </HomeContainer>
     )
 });
