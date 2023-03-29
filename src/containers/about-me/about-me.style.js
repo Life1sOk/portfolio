@@ -12,4 +12,8 @@ export const AboutMeStyle = styled.div`
     font-size: 16px;
     line-height: 1.6;
     font-weight: 500;
+
+    & p {
+        text-align: left;
+    }
 `;

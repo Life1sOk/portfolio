@@ -21,9 +21,8 @@ export const ImageWrapper = styled.div`
     position: relative;
     grid-area: ${({ isLeftSide }) => isLeftSide ? '1 / 1 / -1 / 8' : '1 / 6 / -1 / -1'};
     border-radius: 5px;
-    overflow: hidden;
 
-    ::before {
+    &::before {
         content: '';
         position: absolute;
         top: 0;
@@ -32,7 +31,9 @@ export const ImageWrapper = styled.div`
 
         width: 100%;
         height: 100%;
+        border-radius: 5px;
         background-color: var(--blue);
+        border-bottom: 2px solid white;
         opacity: .5;
 
         transition: opacity .3s linear;
@@ -42,7 +43,7 @@ export const ImageWrapper = styled.div`
         };
     }
 
-    :hover {
+    &:hover {
         cursor: pointer;
 
         ::before {

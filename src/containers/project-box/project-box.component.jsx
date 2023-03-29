@@ -17,7 +17,7 @@ const ProjectBox = ({ data, isLeftSide }) => {
             <Description isLeftSide={isLeftSide}>
                 <DesTitle isLeftSide={isLeftSide}>{title}</DesTitle>
                 <DesMain side={isLeftSide ? 'right' : 'left'}>
-                    <Paragraph side={isLeftSide ? 'right' : 'left'}>{description}</Paragraph>
+                    <Paragraph>{description}</Paragraph>
                 </DesMain>
                 <Tools isLeftSide={isLeftSide}>
                     {
@@ -26,11 +26,9 @@ const ProjectBox = ({ data, isLeftSide }) => {
                 </Tools>
                 <Links isLeftSide={isLeftSide}>
                     <LinkWrapper href={links.github} target="_blank">
-                        {/* <FiGithub /> */}
                         {socialIcons.github}
                     </LinkWrapper>
                     <LinkWrapper href={links.website} target="_blank">
-                        {/* <FiExternalLink /> */}
                         {socialIcons.view}
                     </LinkWrapper>
                 </Links>

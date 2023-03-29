@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SkillSetStyle = styled.div`
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
 
     display: flex;

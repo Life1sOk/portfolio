@@ -16,7 +16,7 @@ const ContactMe = () => {
             <TitleWrapper>
                 <Title number={4}>Get In Touch</Title>
             </TitleWrapper>
-            <Paragraph side='center'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</Paragraph>
+            <Paragraph>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</Paragraph>
             <ButtonWrapper>
                 <Mailto email={locationBasics.email}>
                     <Button label='Mail me!' />
