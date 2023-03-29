@@ -43,7 +43,7 @@ const Navbar = ({ scrollHandler }) => {
         <NavigationContainer ref={navbarRef}>
             <NavWrapper>
                 <AsideNav isOpen={open} openHandler={openNavHandler}>
-                    <NavLinksContainer isAside={true} scrollHandler={scrollHandler} />
+                    <NavLinksContainer isAside={true} scrollHandler={scrollHandler} openNavHandler={openNavHandler} />
                 </AsideNav>
                 <LogoStyle src={Logo} alt='mylogo' />
                 <BurgerWrapper>
