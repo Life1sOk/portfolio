@@ -32,9 +32,8 @@ export const ImageWrapper = styled.div`
         width: 100%;
         height: 100%;
         border-radius: 5px;
-        background-color: var(--blue);
+        background-color: rgba(64, 87, 143, .5);
         border-bottom: 2px solid white;
-        opacity: .5;
 
         transition: opacity .3s linear;
 

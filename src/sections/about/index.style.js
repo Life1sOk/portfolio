@@ -48,10 +48,9 @@ export const FotoWrapper = styled.div`
         height: 100%;
         border-bottom: 2px solid white;
         border-radius: 10px;
-        background-color: var(--blue);
-        opacity: ${({ checked }) => !checked ? '.5' : '0'};
+        background-color: ${({ checked }) => !checked ? 'rgba(64, 87, 143, .5)' : 'rgba(64, 87, 143, 0)'};
         transform: translate(-5%, -5%);
-        transition: opacity .3s linear;
+        transition: all .3s linear;
     }
 
     &:hover {
