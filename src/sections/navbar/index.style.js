@@ -66,3 +66,12 @@ export const NavAsideWrapper = styled.div`
     display: none;
   }
 `;
+
+export const LogoWrapper = styled.div`
+  width: fit-content;
+  height: fit-content;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;

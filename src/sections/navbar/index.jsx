@@ -10,6 +10,7 @@ import {
   BurgerWrapper,
   NavWrapper,
   NavAsideWrapper,
+  LogoWrapper,
 } from "./index.style";
 
 const Navbar = ({ scrollHandler }) => {
@@ -53,7 +54,9 @@ const Navbar = ({ scrollHandler }) => {
             openNavHandler={openNavHandler}
           />
         </AsideNav>
-        <Logo />
+        <LogoWrapper onClick={() => scrollHandler("Preview")}>
+          <Logo />
+        </LogoWrapper>
         <BurgerWrapper>
           <Burger open={open} openToggle={openNavHandler} />
         </BurgerWrapper>
