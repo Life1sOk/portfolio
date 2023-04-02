@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, memo } from "react";
 
 import { projects, smallProjects } from "../../utils/projects.all";
 
@@ -15,27 +15,33 @@ import {
   ProjectsSmallWrapper,
 } from "./index.style";
 
-const ProjectsSection = forwardRef((_, ref) => {
-  return (
-    <ProjectsContainer ref={ref}>
-      <TitleWrapper>
-        <Title number={3}>Some projects</Title>
-      </TitleWrapper>
-      <ProjectsWrapper>
-        {projects.map((project, index) => (
-          <ProjectBox key={index} data={project} isLeftSide={index % 2 === 0} />
-        ))}
-      </ProjectsWrapper>
-      <ProjectsSmallContainerStyle>
-        <TitleSmall>Others small projects:</TitleSmall>
-        <ProjectsSmallWrapper>
-          {smallProjects.map((project, index) => (
-            <ProjectSmall key={index} data={project} />
+const ProjectsSection = memo(
+  forwardRef((_, ref) => {
+    return (
+      <ProjectsContainer ref={ref}>
+        <TitleWrapper>
+          <Title number={3}>Some projects</Title>
+        </TitleWrapper>
+        <ProjectsWrapper>
+          {projects.map((project, index) => (
+            <ProjectBox
+              key={index}
+              data={project}
+              isLeftSide={index % 2 === 0}
+            />
           ))}
-        </ProjectsSmallWrapper>
-      </ProjectsSmallContainerStyle>
-    </ProjectsContainer>
-  );
-});
+        </ProjectsWrapper>
+        <ProjectsSmallContainerStyle>
+          <TitleSmall>Others small projects:</TitleSmall>
+          <ProjectsSmallWrapper>
+            {smallProjects.map((project, index) => (
+              <ProjectSmall key={index} data={project} />
+            ))}
+          </ProjectsSmallWrapper>
+        </ProjectsSmallContainerStyle>
+      </ProjectsContainer>
+    );
+  })
+);
 
 export default ProjectsSection;

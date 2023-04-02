@@ -1,34 +1,46 @@
-import React, { Suspense, lazy, useRef } from "react";
+import React, { Suspense, lazy, useRef, useState, useEffect } from "react";
 
 import { Routes, Route } from "react-router-dom";
 
-import OutletWrapper from './layouts/outlet-wrapper';
+import OutletWrapper from "./layouts/outlet-wrapper";
 import Navbar from "../sections/navbar";
+import LoadingAnim from "../components/loading-anim/loading-anim.component";
 
 const HomePage = lazy(() => import("./home/index"));
 
 const Routing = () => {
-    const homePageRef = useRef(null);
+  const [suspended, setSuspended] = useState(false);
+  const homePageRef = useRef(null);
 
-    const scrollHandler = (section) => {
-        homePageRef.current.scrollToSection(section);
-    };
+  const scrollHandler = (section) => {
+    homePageRef.current.scrollToSection(section);
+  };
 
-    return (
-        <Routes>
-            <Route path='/' element={
-                <OutletWrapper>
-                    <Navbar scrollHandler={scrollHandler} />
-                </OutletWrapper>
-            }>
-                <Route index element={
-                    <Suspense>
-                        <HomePage ref={homePageRef} />
-                    </Suspense>
-                } />
-            </Route>
-        </Routes>
-    );
-}
+  useEffect(() => {
+    setTimeout(() => setSuspended(true), 2500);
+  }, []);
+
+  return (
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <OutletWrapper>
+            {suspended ? <Navbar scrollHandler={scrollHandler} /> : null}
+          </OutletWrapper>
+        }
+      >
+        <Route
+          index
+          element={
+            <Suspense>
+              {suspended ? <HomePage ref={homePageRef} /> : <LoadingAnim />}
+            </Suspense>
+          }
+        />
+      </Route>
+    </Routes>
+  );
+};
 
 export default Routing;
