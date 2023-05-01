@@ -1,6 +1,7 @@
 import React, { forwardRef, memo } from "react";
+import { useTranslation } from "react-i18next";
 
-import { projects, smallProjects } from "../../utils/projects.all";
+import { projectStore } from "../../utils/projects.all";
 
 import Title from "../../components/title/title.component";
 import ProjectBox from "../../containers/project-box/project-box.component";
@@ -17,13 +18,17 @@ import {
 
 const ProjectsSection = memo(
   forwardRef((_, ref) => {
+    const { t } = useTranslation();
+
+    const projects = projectStore();
+
     return (
       <ProjectsContainer ref={ref}>
         <TitleWrapper>
-          <Title number={3}>Some projects</Title>
+          <Title number={3}>{t("projects.title")}</Title>
         </TitleWrapper>
         <ProjectsWrapper>
-          {projects.map((project, index) => (
+          {projects.big.map((project, index) => (
             <ProjectBox
               key={index}
               data={project}
@@ -32,9 +37,9 @@ const ProjectsSection = memo(
           ))}
         </ProjectsWrapper>
         <ProjectsSmallContainerStyle>
-          <TitleSmall>Others small projects:</TitleSmall>
+          <TitleSmall>{t("projects.titleSmall")}</TitleSmall>
           <ProjectsSmallWrapper>
-            {smallProjects.map((project, index) => (
+            {projects.small.map((project, index) => (
               <ProjectSmall key={index} data={project} />
             ))}
           </ProjectsSmallWrapper>

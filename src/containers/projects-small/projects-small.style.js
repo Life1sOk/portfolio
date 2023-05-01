@@ -50,6 +50,8 @@ export const Title = styled.h3`
 export const Description = styled.p`
   height: 125px;
 
+  overflow: scroll;
+
   font-size: 14px;
   color: var(--font-color);
   padding: 10px 0 10px 10px;
@@ -67,6 +69,7 @@ export const Tools = styled.ul`
 
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 
   & li {
     margin: 0 0 15px 10px;

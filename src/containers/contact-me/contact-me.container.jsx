@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useTranslation } from "react-i18next";
+
 import { locationBasics, socialMedia } from "../../utils/social-media";
 
 import Mailto from "../../components/mail-to/mail-to.component";
@@ -8,28 +10,36 @@ import Title from "../../components/title/title.component";
 import Paragraph from "../../components/paragraph/paragraph.component";
 import IconSocial from "../../components/icon-social/icon-social.component";
 
-import { ContactMeStyle, TitleWrapper, ButtonWrapper, SocialWrapper } from './contact-me.style';
+import {
+  ContactMeStyle,
+  TitleWrapper,
+  ButtonWrapper,
+  SocialWrapper,
+} from "./contact-me.style";
 
 const ContactMe = () => {
-    return (
-        <ContactMeStyle>
-            <TitleWrapper>
-                <Title number={4}>Get In Touch</Title>
-            </TitleWrapper>
-            <Paragraph>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</Paragraph>
-            <ButtonWrapper>
-                <Mailto email={locationBasics.email}>
-                    <Button label='Mail me!' />
-                </Mailto>
-            </ButtonWrapper>
-            <SocialWrapper>
-                {
-                    socialMedia.map((social, index) =>
-                        <IconSocial key={index} data={social} />
-                    )}
-            </SocialWrapper>
-        </ContactMeStyle>
-    )
+  const { t } = useTranslation();
+
+  return (
+    <ContactMeStyle>
+      <TitleWrapper>
+        <Title number={4}>{t("footer.title")}</Title>
+      </TitleWrapper>
+      <Paragraph>
+        {t("footer.lastDance.part1")} <br /> {t("footer.lastDance.part2")}
+      </Paragraph>
+      <ButtonWrapper>
+        <Mailto email={locationBasics.email}>
+          <Button label={t("others.buttons.mail")} />
+        </Mailto>
+      </ButtonWrapper>
+      <SocialWrapper>
+        {socialMedia.map((social, index) => (
+          <IconSocial key={index} data={social} />
+        ))}
+      </SocialWrapper>
+    </ContactMeStyle>
+  );
 };
 
 export default ContactMe;

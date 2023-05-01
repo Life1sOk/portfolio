@@ -1,97 +1,95 @@
+import { useTranslation } from "react-i18next";
+
 import screen from "../assets/projects/picture.png";
+import profile from "../assets/projects/profile.png";
 
-export const projects = [
-  {
-    title: "Lorem Ipsum",
-    image: { screen },
-    description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-    tools: ["TypeScript", "Redux", "React", "Firebase"],
-    links: {
-      github: "https://github.com/Life1sOk/test-unistory",
-      website: "https://life1sok.github.io/test-unistory/",
-    },
-  },
-  {
-    title: "Lorem Ipsum",
-    image: { screen },
-    description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-    tools: ["TypeScript", "Redux", "React", "Firebase"],
-    links: {
-      github: "https://github.com/Life1sOk/test-unistory",
-      website: "https://life1sok.github.io/test-unistory/",
-    },
-  },
-  {
-    title: "Lorem Ipsum",
-    image: { screen },
-    description:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-    tools: ["TypeScript", "Redux", "React", "Firebase"],
-    links: {
-      github: "https://github.com/Life1sOk/test-unistory",
-      website: "https://life1sok.github.io/test-unistory/",
-    },
-  },
-];
+export const projectStore = () => {
+  const { t } = useTranslation();
 
-export const smallProjects = [
-  {
-    title: "Small in one",
-    description:
-      "I created a single platform for displaying my small projects visually on a webpage. This allowed me to showcase my programming skills and see my progress over time.",
-    links: {
-      github: "https://github.com/Life1sOk/small-projects",
-      website: "https://life1sok.github.io/small-projects/",
+  const projects = [
+    {
+      title: "Lorem Ipsum",
+      image: { screen },
+      description:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+      tools: ["TypeScript", "Redux", "React", "Firebase"],
+      links: {
+        github: "https://github.com/Life1sOk/test-unistory",
+        website: "https://life1sok.github.io/test-unistory/",
+      },
     },
-    tools: ["React", "TypeScript", "Sass"],
-  },
-  {
-    title: "Test unistory",
-    description:
-      "Passing my first job test was a great experience that allowed me to gain interesting CSS skills, improve my TypeScript proficiency, and familiarize myself with new APIs.",
-    links: {
-      github: "https://github.com/Life1sOk/test-unistory",
-      website: "https://life1sok.github.io/test-unistory/",
+    {
+      title: `${t("projects.big.project2.title")}`,
+      image: { screen },
+      description: `${t("projects.big.project2.description")}`,
+      tools: ["TypeScript", "Redux", "React", "Firebase"],
+      links: {
+        github: "https://github.com/Life1sOk/link-saver",
+        website: "https://life1sok.github.io/link-saver/",
+      },
     },
-    tools: [
-      "React",
-      "TypeScript",
-      "RTKQuery",
-      "React router",
-      "Styled com.",
-      "useDapp",
-    ],
-  },
-  {
-    title: "Quote generator",
-    description:
-      "I created a simple quote generator, which not only helps me find nice quotes but also allowed me to learn new JavaScript concepts through utilizing an API call.",
-    links: {
-      github: "https://github.com/Life1sOk/quote-generator",
-      //   website: "",
+    {
+      title: `${t("projects.big.project3.title")}`,
+      image: { screen: profile },
+      description: `${t("projects.big.project3.description")}`,
+      tools: ["React", "Styled. comp.", "i18n"],
+      links: {
+        github: "https://github.com/Life1sOk/portfolio",
+        website: "https://life1sok.github.io/portfolio/",
+      },
     },
-    tools: ["React", "TypeScript", "Sass"],
-  },
-  {
-    title: "Robo friends",
-    description:
-      "In completing this project, I learned how to make an API call and retrieve data from around the world, and I found the experience to be extremely exciting.",
-    links: {
-      github: "https://github.com/Life1sOk/robo-friends",
-      //   website: "",
+  ];
+
+  const smallProjects = [
+    {
+      title: `${t("projects.small.project1.title")}`,
+      description: `${t("projects.small.project1.description")}`,
+      links: {
+        github: "https://github.com/Life1sOk/small-projects",
+        website: "https://life1sok.github.io/small-projects/",
+      },
+      tools: ["React", "TypeScript", "Sass"],
     },
-    tools: ["React", "TypeScript", "Styled com."],
-  },
-  {
-    title: "Background generator ",
-    description:
-      "This is the first project I have ever completed, which generates a simple background using two colors. Completing this project made me proud of what I created.",
-    links: {
-      github: "https://github.com/Life1sOk/background-generator",
-      //   website: "",
+    {
+      title: `${t("projects.small.project2.title")}`,
+      description: `${t("projects.small.project2.description")}`,
+      links: {
+        github: "https://github.com/Life1sOk/test-unistory",
+        website: "https://life1sok.github.io/test-unistory/",
+      },
+      tools: ["React", "TypeScript", "RTKQuery", "useDapp"],
     },
-    tools: ["React", "TypeScript", "Styled com."],
-  },
-];
+    {
+      title: `${t("projects.small.project3.title")}`,
+      description: `${t("projects.small.project3.description")}`,
+      links: {
+        github: "https://github.com/Life1sOk/quote-generator",
+        //   website: "",
+      },
+      tools: ["React", "TypeScript", "Sass"],
+    },
+    {
+      title: `${t("projects.small.project4.title")}`,
+      description: `${t("projects.small.project4.description")}`,
+      links: {
+        github: "https://github.com/Life1sOk/robo-friends",
+        //   website: "",
+      },
+      tools: ["React", "TypeScript", "Styled com."],
+    },
+    {
+      title: `${t("projects.small.project5.title")}`,
+      description: `${t("projects.small.project5.description")}`,
+      links: {
+        github: "https://github.com/Life1sOk/background-generator",
+        //   website: "",
+      },
+      tools: ["React", "TypeScript", "Styled com."],
+    },
+  ];
+
+  return {
+    big: projects,
+    small: smallProjects,
+  };
+};

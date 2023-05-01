@@ -41,5 +41,6 @@ export const Line = styled.div`
 
 export const Name = styled.span`
   font-size: 27px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-logo);
+  font-weight: 400;
 `;

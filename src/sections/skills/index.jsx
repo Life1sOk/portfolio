@@ -1,4 +1,5 @@
 import React, { forwardRef, memo } from "react";
+import { useTranslation } from "react-i18next";
 
 import Title from "../../components/title/title.component";
 
@@ -14,6 +15,8 @@ import {
 
 const Skills = memo(
   forwardRef((_, ref) => {
+    const { t } = useTranslation();
+
     return (
       <MainWrapper ref={ref}>
         <BoxWrapper>
@@ -22,7 +25,7 @@ const Skills = memo(
         <MainSkills>
           <TitleWrapper>
             <Title number={2} isReverse>
-              Tools i use
+              {t("tools.title")}
             </Title>
           </TitleWrapper>
           <SkillSetContainer />

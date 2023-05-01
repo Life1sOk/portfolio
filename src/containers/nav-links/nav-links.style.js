@@ -1,37 +1,41 @@
 import styled from "styled-components";
 
 export const NavLinksContainer = styled.ol`
-    display: flex;
-    flex-direction: ${({ isAside }) => isAside ? 'column' : 'row'};
-    align-items: center;
-    justify-content: center;
-    gap: 22px;
+  display: flex;
+  flex-direction: ${({ isAside }) => (isAside ? "column" : "row")};
+  align-items: center;
+  justify-content: center;
 
-    ${({ isAside }) => isAside ? `
+  ${({ isAside }) =>
+    isAside
+      ? `
         min-width: 299px;
         width: 100%;
         height: 100%;
         background-color: var(--background);
-    `: null};
+
+        gap: 22px;
+    `
+      : null};
 `;
 
 export const SideContainer = styled.div`
-    width: 111px;
-    height: 44px;
-    margin: 0 22px;
+  width: 111px;
+  height: 44px;
+  margin: 0 27px 0 12px;
 
-    font-size: 14px;
+  font-size: 14px;
 `;
 
-
 export const LinkWords = styled.li`
+  .number {
+    margin-right: 3px;
+    color: var(--light-yellow);
+  }
 
-    .number {
-        margin-right: 3px;
-        color: var(--light-yellow);
-    }
-
-    ${({ isAside }) => isAside ? `
+  ${({ isAside }) =>
+    isAside
+      ? `
         min-width: 255px;
 
         font-size: 18px;
@@ -46,10 +50,12 @@ export const LinkWords = styled.li`
             color: var(--font-color);
             font-size: 22px;
         }
-    `: `
+    `
+      : `
         font-size: 11px;
         padding: 5px 5px 8px 5px;
         border-bottom: 1px solid rgba(255,255,255,.2);
+        margin-right: 22px;
 
         .link {
             font-size: 14px;
@@ -57,12 +63,12 @@ export const LinkWords = styled.li`
         }
     `};
 
-    :hover {
-        cursor: pointer;
-        border-bottom: 1px solid rgba(255,255,255,1);
+  :hover {
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
 
-        .link {
-            color: var(--white);
-        }
+    .link {
+      color: var(--white);
     }
+  }
 `;

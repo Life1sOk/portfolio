@@ -1,69 +1,71 @@
 import styled from "styled-components";
 
 export const WelcomeStyle = styled.div`
-    width: fit-content;
-    height: 100%;
+  width: fit-content;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const HelloTitle = styled.h1`
-    font-size: 16px;
-    color: var(--light-yellow);
-    text-align: left;
-    margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--light-yellow);
+  text-align: left;
+  margin-bottom: 20px;
 `;
 
 export const TextStyle = styled.div`
-    color: white;
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    margin-bottom: 15px;;
+  color: white;
+  font-family: var(--font-name);
+  font-style: normal;
+  margin-bottom: 30px;
 `;
 
 export const MyName = styled.h2`
-    font-size: 56px;
-    text-align: left;
+  font-size: 56px;
+  text-align: left;
 
-    @media only screen and (max-width: 599px) {
-       font-size: 44px;
-    };
+  @media only screen and (max-width: 599px) {
+    font-size: 44px;
+  }
 `;
 
 export const MyProf = styled.h3`
-    font-size: 50px;
-    text-align: left;
-    color: #8892b0;
+  max-width: 555px;
 
-    @media only screen and (max-width: 599px) {
-        font-size: 33px;
-    };
+  font-size: 40px;
+  text-align: left;
+  color: #8892b0;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 33px;
+  }
 `;
 
 export const AboutStyle = styled.p`
-    margin-bottom: 44px;
-    max-width: 540px;
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    color: #8892b0;
-    font-size: 16px;
-    text-align: left;
-    line-height: 1.6;
+  margin-bottom: 44px;
+  max-width: 566px;
+  font-family: var(--font-secondary);
+  color: #8892b0;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.6;
 
-    .acc {
-        font-family: 'Tilt Warp', cursive;
-        color: var(--light-yellow);
-    }
+  .acc {
+    font-family: var(--font-main);
+    color: var(--light-yellow);
+  }
 
-    @media only screen and (max-width: 599px) {
-        margin-bottom: 33px;
-    };
+  @media only screen and (max-width: 599px) {
+    margin-bottom: 33px;
+  }
 `;
 
 export const ButtonWrapper = styled.div`
-    width: 160px;
-    height: 55px;
+  width: 160px;
+  height: 55px;
 
-    font-size: 16px;
+  font-size: 16px;
 `;

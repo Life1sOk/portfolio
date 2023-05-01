@@ -1,17 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import { HashRouter } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 
-import Routing from '../routers';
+import Routing from "../routers";
 
-import './index.css';
+import "./i18n/index";
+import "./index.css";
 
 const App = () => {
-    return (
-        <HashRouter>
-            <Routing />
-        </HashRouter>
-    )
+  return (
+    <HashRouter>
+      <Routing />
+    </HashRouter>
+  );
 };
 
 export default App;

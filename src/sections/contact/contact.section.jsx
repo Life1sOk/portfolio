@@ -11,7 +11,6 @@ const ContactSection = memo(
       <ContactStyle ref={ref}>
         <ContactMe />
         <Info>
-          <p>Inspired by Brittany Chiang</p>
           <Copyright />
         </Info>
       </ContactStyle>

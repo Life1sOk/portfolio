@@ -29,7 +29,7 @@ export const ButtonStyle = styled.button`
   border-radius: 5px;
 
   color: rgba(136, 146, 244);
-  font-family: "Tilt Warp", cursive;
+  font-family: var(--font-main);
   font-size: inherit;
 
   &:hover {

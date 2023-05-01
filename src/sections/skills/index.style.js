@@ -13,7 +13,7 @@ export const MainWrapper = styled.div`
   }
 
   @media only screen and (max-width: 1242px) {
-    padding: 99px 0;
+    gap: 99px;
   }
 `;
 

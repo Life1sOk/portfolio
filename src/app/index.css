@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;1,400&family=Tilt+Warp&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;1,400&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Inter&family=Poppins&family=Russo+One&display=swap");
 
 * {
   box-sizing: border-box;
@@ -18,10 +16,15 @@
   --background: #001528;
   --background-secondary: #011a31;
   --dark-background: #000e1b;
+
+  --font-name: "Exo 2", sans-serif;
+  --font-logo: "Poppins", sans-serif;
+  --font-main: "Russo One", sans-serif;
+  --font-secondary: "Inter", sans-serif;
 }
 
 body {
-  font-family: "Tilt Warp", cursive;
+  font-family: var(--font-main);
 
   color: white;
   background-color: #001528;
