@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useRef, useState, useEffect } from "react";
+import React, { Suspense, lazy, useRef, useState, useTransition, useEffect } from "react";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -9,6 +9,7 @@ import LoadingAnim from "../components/loading-anim/loading-anim.component";
 const HomePage = lazy(() => import("./home/index"));
 
 const Routing = () => {
+  const [_, startTransition] = useTransition();
   const [suspended, setSuspended] = useState(false);
   const homePageRef = useRef(null);
 
@@ -17,7 +18,7 @@ const Routing = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => setSuspended(true), 2500);
+    setTimeout(() => startTransition(() => setSuspended(true)), 3000);
   }, []);
 
   return (

@@ -52,7 +52,7 @@ export const NavWrapper = styled.div`
 export const BurgerWrapper = styled.div`
   display: none;
 
-  @media only screen and (max-width: 944px) {
+  @media only screen and (max-width: 1044px) {
     display: initial;
     position: relative;
     z-index: 105;
@@ -62,7 +62,7 @@ export const BurgerWrapper = styled.div`
 export const NavAsideWrapper = styled.div`
   display: initial;
 
-  @media only screen and (max-width: 944px) {
+  @media only screen and (max-width: 1044px) {
     display: none;
   }
 `;

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCss3Alt, FaReact, FaSass, FaTelegram } from "react-icons/fa";
+import { FaCss3Alt, FaReact, FaSass, FaTelegram, FaNode } from "react-icons/fa";
 import {
   SiJavascript,
   SiRedux,
@@ -8,6 +8,7 @@ import {
   SiFirebase,
   SiHtml5,
   SiFacebook,
+  SiPostgresql,
 } from "react-icons/si";
 
 export const bigBox = [
@@ -106,6 +107,18 @@ export const tierThree = [
     name: "Firebase",
     icon: <SiFirebase />,
     time: 2.7,
+  },
+  {
+    id: 2,
+    name: "Node.js",
+    icon: <FaNode />,
+    time: 3,
+  },
+  {
+    id: 3,
+    name: "PostgreSQL",
+    icon: <SiPostgresql />,
+    time: 3.3,
   },
 ];
 

@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
 export const LoadingAnimStyle = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+
   width: 100vw;
   height: 100vh;
+  background-color: #001528;
 
   display: flex;
   align-items: center;

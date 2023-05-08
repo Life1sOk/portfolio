@@ -1,20 +1,11 @@
 import styled from "styled-components";
 
 export const MainWrapper = styled.div`
-  padding: 99px 77px;
   width: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  @media only screen and (max-width: 1044px) {
-    justify-content: center;
-  }
-
-  @media only screen and (max-width: 1242px) {
-    gap: 99px;
-  }
+  justify-content: space-around;
 `;
 
 export const MainSkills = styled.div`

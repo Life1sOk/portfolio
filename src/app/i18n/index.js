@@ -1,11 +1,15 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import Backend from "i18next-http-backend";
 
-import { english } from "./languages/english";
-import { russion } from "./languages/russion";
+import english from "./languages/en/translation.json";
+import russion from "./languages/ru/translation.json";
 
 i18n
+  // i18next-http-backend
+  // loads translations from your server
+  .use(Backend)
   // detect user language
   // learn more: https://github.com/i18next/i18next-browser-languageDetector
   .use(LanguageDetector)
@@ -16,9 +20,9 @@ i18n
   .init({
     debug: true,
     fallbackLng: "en",
-    interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
-    },
+    // interpolation: {
+    //   escapeValue: false, // not needed for react as it escapes by default
+    // },
     resources: {
       en: {
         translation: english,

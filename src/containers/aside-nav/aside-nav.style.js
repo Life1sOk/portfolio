@@ -18,7 +18,7 @@ export const AsideNavStyle = styled.div`
     width: min(75vw, 400px);
   }
 
-  @media only screen and (min-width: 944px) {
+  @media only screen and (min-width: 1045px) {
     display: none;
   }
 `;
@@ -34,7 +34,7 @@ export const BlackBox = styled.div`
   opacity: 0.4;
   z-index: 26;
 
-  @media only screen and (min-width: 944px) {
+  @media only screen and (min-width: 1045px) {
     display: none;
   }
 `;

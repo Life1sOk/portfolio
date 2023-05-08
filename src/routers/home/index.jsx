@@ -28,7 +28,7 @@ const HomePage = forwardRef((_, ref) => {
     if (section === "Projects") projectsRef.current.scrollIntoView(setting);
     if (section === "Contacts") contactRef.current.scrollIntoView(setting);
   };
-
+  console.log("home");
   useImperativeHandle(
     ref,
     () => {

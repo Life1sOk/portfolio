@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SmallBoxStyle = styled.div`
   width: 100%;
-  height: fit-content;
+  height: 100%;
   background-color: var(--background-secondary);
   border-radius: 10px;
   padding: 10px;
@@ -32,13 +32,12 @@ export const LinkWrapper = styled.a`
 `;
 
 export const FolderIcon = styled.div`
-  width: 66px;
-  aspect-ratio: 1/1;
-  padding: 11px;
+  width: 59px;
+  padding: 0 11px;
 
   & svg {
     width: 100%;
-    height: 100%;
+    height: fit-content;
   }
 `;
 
@@ -48,31 +47,55 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.p`
-  height: 125px;
+  height: 88px;
 
-  overflow: scroll;
+  overflow-y: scroll;
 
   font-size: 14px;
   color: var(--font-color);
-  padding: 10px 0 10px 10px;
+  margin: 5px 0 5px 10px;
+  padding-right: 10px;
   text-align: left;
   line-height: 1.5;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 10px;
+  }
 `;
 
 export const Tools = styled.ul`
   width: 100%;
 
+  overflow-x: scroll;
+
   font-size: 14px;
   color: var(--light-yellow);
-  margin: 7px 0;
-  overflow-x: scroll;
+  margin: 7px 10px 0 0;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
   & li {
-    margin: 0 0 15px 10px;
+    margin: 0 0 10px 10px;
     white-space: nowrap;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    height: 2px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 10px;
   }
 `;

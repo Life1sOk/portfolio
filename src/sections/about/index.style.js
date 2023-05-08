@@ -8,7 +8,7 @@ export const MainAbout = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  @media only screen and (max-width: 944px) {
+  @media only screen and (max-width: 1044px) {
     padding: 66px 0;
 
     flex-direction: column;

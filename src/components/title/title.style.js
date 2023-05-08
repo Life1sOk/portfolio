@@ -19,6 +19,10 @@ export const TitleStyle = styled.div`
     background-color: var(--blue);
     margin-top: 5px;
   }
+
+  @media only screen and (max-width: 599px) {
+    font-size: 29px;
+  }
 `;
 
 export const TitleNumber = styled.h2`
