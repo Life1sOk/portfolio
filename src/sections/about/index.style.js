@@ -9,8 +9,6 @@ export const MainAbout = styled.div`
   align-items: center;
 
   @media only screen and (max-width: 1044px) {
-    padding: 66px 0;
-
     flex-direction: column;
     align-items: center;
     gap: 22px;

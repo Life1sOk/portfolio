@@ -6,12 +6,9 @@ import Title from "../../components/title/title.component";
 import SkillSetContainer from "../../containers/skill-set/skill-set.container";
 import BoxBig from "../../containers/box-big/box-big.component";
 
-import {
-  MainWrapper,
-  MainSkills,
-  TitleWrapper,
-  BoxWrapper,
-} from "./index.style";
+import AnimationView from "../../routers/layouts/animation/animation-wrapper";
+
+import { MainWrapper, MainSkills, TitleWrapper, BoxWrapper } from "./index.style";
 
 const Skills = memo(
   forwardRef((_, ref) => {
@@ -19,17 +16,21 @@ const Skills = memo(
 
     return (
       <MainWrapper ref={ref}>
-        <BoxWrapper>
-          <BoxBig />
-        </BoxWrapper>
-        <MainSkills>
-          <TitleWrapper>
-            <Title number={2} isReverse>
-              {t("tools.title")}
-            </Title>
-          </TitleWrapper>
-          <SkillSetContainer />
-        </MainSkills>
+        <AnimationView>
+          <BoxWrapper>
+            <BoxBig />
+          </BoxWrapper>
+        </AnimationView>
+        <AnimationView>
+          <MainSkills>
+            <TitleWrapper>
+              <Title number={2} isReverse>
+                {t("tools.title")}
+              </Title>
+            </TitleWrapper>
+            <SkillSetContainer />
+          </MainSkills>
+        </AnimationView>
       </MainWrapper>
     );
   })

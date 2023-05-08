@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const MainWrapper = styled.div`
   width: 100%;
 
+  padding: 99px 0;
+
   display: flex;
   align-items: center;
   justify-content: space-around;

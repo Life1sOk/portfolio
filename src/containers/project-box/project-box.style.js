@@ -107,7 +107,7 @@ export const DesMain = styled.div`
   width: 100%;
   height: fit-content;
   padding: 25px;
-  font-size: 15px;
+  font-size: 16px;
 
   border-radius: 10px;
   background-color: var(--background-secondary);
