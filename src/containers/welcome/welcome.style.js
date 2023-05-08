@@ -7,6 +7,19 @@ export const WelcomeStyle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  animation-name: open;
+  animation-duration: 1s;
+
+  @keyframes open {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export const HelloTitle = styled.h1`

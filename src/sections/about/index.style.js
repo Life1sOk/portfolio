@@ -67,17 +67,4 @@ export const Foto = styled.img`
   border-radius: 10px;
   object-fit: cover;
   transform: translate(-5%, -5%);
-  animation: openingFoto 1s ease-out;
-
-  @keyframes openingFoto {
-    from {
-      transform: translate(-7%, -7%);
-      opacity: 0;
-    }
-
-    to {
-      transform: translate(-5%, -5%);
-      opacity: 1;
-    }
-  }
 `;

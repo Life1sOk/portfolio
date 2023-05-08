@@ -54,17 +54,14 @@ export const tierOne = [
   {
     name: "HTML5",
     icon: <SiHtml5 />,
-    time: 0.3,
   },
   {
     name: "CSS3",
     icon: <FaCss3Alt />,
-    time: 0.6,
   },
   {
     name: "JavaScript",
     icon: <SiJavascript />,
-    time: 0.9,
   },
 ];
 
@@ -73,31 +70,26 @@ export const tierTwo = [
     id: 0,
     name: "React.js",
     icon: <FaReact />,
-    time: 1.2,
   },
   {
     id: 2,
     name: "Redux",
     icon: <SiRedux />,
-    time: 1.5,
   },
   {
     id: 1,
     name: "Sass",
     icon: <FaSass />,
-    time: 1.8,
   },
   {
     id: 3,
     name: "TypeScript",
     icon: <SiTypescript />,
-    time: 2.1,
   },
   {
     id: 4,
     name: "Styled c.",
     icon: <SiStyledcomponents />,
-    time: 2.4,
   },
 ];
 
@@ -106,19 +98,16 @@ export const tierThree = [
     id: 1,
     name: "Firebase",
     icon: <SiFirebase />,
-    time: 2.7,
   },
   {
     id: 2,
     name: "Node.js",
     icon: <FaNode />,
-    time: 3,
   },
   {
     id: 3,
     name: "PostgreSQL",
     icon: <SiPostgresql />,
-    time: 3.3,
   },
 ];
 

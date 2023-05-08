@@ -15,18 +15,6 @@ export const IconWrapContainer = styled.div`
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
-
-  animation-name: zero;
-  animation-duration: ${({ time }) => (time ? `${time}s` : "2s")};
-
-  @keyframes zero {
-    from {
-      transform: scale(0);
-    }
-    to {
-      transform: scale(1);
-    }
-  }
 `;
 
 export const IconWrap = styled.div`
