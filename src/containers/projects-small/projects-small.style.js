@@ -10,6 +10,7 @@ export const SmallBoxStyle = styled.div`
 
 export const BoxTop = styled.div`
   width: 100%;
+  height: fit-content;
 
   display: flex;
   align-items: center;
@@ -33,11 +34,12 @@ export const LinkWrapper = styled.a`
 
 export const FolderIcon = styled.div`
   width: 59px;
+  aspect-ratio: 1/1;
   padding: 0 11px;
 
   & svg {
     width: 100%;
-    height: fit-content;
+    height: 100%;
   }
 `;
 
