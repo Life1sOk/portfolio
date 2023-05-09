@@ -1,13 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import ResumeWrapper from "./resume-wrapper";
 import Button from "../../components/button/button.component";
 import Translate from "../../components/translate/translate.component";
 
 import { NavLinksContainer, SideContainer, LinkWords } from "./nav-links.style";
 
 const NavLinks = ({ isAside, scrollHandler, openNavHandler }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const links = [
     { title: `${t("others.nav.one")}`, scroll: "About" },
@@ -39,7 +40,9 @@ const NavLinks = ({ isAside, scrollHandler, openNavHandler }) => {
         </LinkWords>
       ))}
       <SideContainer>
-        <Button label={t("others.buttons.resume")} />
+        <ResumeWrapper lang={i18n.resolvedLanguage}>
+          <Button label={t("others.buttons.resume")} />
+        </ResumeWrapper>
       </SideContainer>
       {!isAside && <Translate type="column" />}
     </NavLinksContainer>
