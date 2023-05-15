@@ -29,7 +29,7 @@ const WelcomeContainer = () => {
       <AboutStyle>
         {t("welcome.about")}
         <br />
-        <span className="acc">{t("welcome.call")}</span>!
+        <span className="acc">{t("welcome.call")}</span>
       </AboutStyle>
       <ButtonWrapper>
         <Mailto email={locationBasics.email}>

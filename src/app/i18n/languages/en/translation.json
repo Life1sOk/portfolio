@@ -1,21 +1,21 @@
 {
   "welcome": {
     "hello": "Hi, my name is",
-    "name": "Andrey Tsoy.",
-    "do": "I build a website for your needs.",
-    "about": "As a web developer, I am passionate about creating innovative digital projects. I work closely with clients to turn their vision into reality and help them explore the opportunities of the digital world and the internet.",
-    "call": "Let's build something great together"
+    "name": "Andrey Tsoy",
+    "do": "Front-end developer",
+    "about": "As a web developer, I am passionate about creating innovative digital projects. My goal is to provide users with modern and efficient solutions and contribute to the development of the Internet and the digital world.",
+    "call": "I am always open to new opportunities!"
   },
   "about": {
     "title": "About me",
-    "part1": "I am an experienced frontend developer with a broad range of skills, including HTML, CSS, JavaScript, and React. I am also familiar with various libraries, such as Redux, React Router, and Styled Components, to create projects more efficiently and quickly. Using these technologies, I create beautiful and interactive user interfaces (UI).",
-    "part2": "I also have knowledge of backend development. I use Node.js to create servers and work with CRUD operations. For databases, I often use PostgreSQL because it provides high performance and flexibility for my projects. I have also worked with libraries and tools such as Express.js, Knex.js, and others.",
-    "part3": "Currently, I am actively developing my skills in frontend development, but I am also interested in new opportunities and possibilities to expand my experience."
+    "part1": "I am a front-end developer with a broad range of skills, including HTML, CSS, JavaScript, and React. I am also familiar with various libraries such as Redux, React Router, and Styled Components to create projects more efficiently and quickly. Using these technologies, I create beautiful and interactive user interfaces.",
+    "part2": "I also have knowledge of backend development. I use Node.js to create servers and work with CRUD operations. As for the database, I often use PostgreSQL as it provides high performance and flexibility for my projects.",
+    "part3": "Currently, I am actively developing my skills in the front-end. However, I am always open to new opportunities and opportunities to expand my experience."
   },
   "tools": { "title": "Tools i use" },
   "projects": {
     "title": "Some projects",
-    "titleSmall": "Others small projects:",
+    "titleSmall": "Others projects:",
     "big": {
       "project1": { "title": "Kleo4you", "description": "" },
       "project2": {

@@ -58,7 +58,7 @@ export const MyProf = styled.h3`
 `;
 
 export const AboutStyle = styled.p`
-  margin-bottom: 44px;
+  margin-bottom: 34px;
   max-width: 566px;
   font-family: var(--font-secondary);
   color: #8892b0;
