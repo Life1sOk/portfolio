@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const IconWrapContainer = styled.div`
   width: 100%;
   height: fit-content;
+  max-width: 100px;
   padding: 15px 10px;
   border-radius: 5px;
   background-color: var(--background-secondary);
@@ -34,6 +35,6 @@ export const IconWrap = styled.div`
 `;
 
 export const NameFont = styled.span`
-  font-size: 14px;
+  font-size: inherit;
   color: var(--font-color);
 `;

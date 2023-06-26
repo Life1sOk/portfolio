@@ -11,16 +11,24 @@ export const ProjectBoxStyle = styled.div`
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
 
+  border-radius: 5px;
+
   @media only screen and (max-width: 848px) {
     margin-bottom: 66px;
+
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 8px -2px var(--light-yellow);
   }
 `;
 
 export const ImageWrapper = styled.div`
-  height: fit-content;
+  height: 100%;
   position: relative;
   grid-area: ${({ isLeftSide }) => (isLeftSide ? "1 / 1 / -1 / 8" : "1 / 6 / -1 / -1")};
+
   border-radius: 5px;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -30,7 +38,7 @@ export const ImageWrapper = styled.div`
     z-index: 2;
 
     width: 100%;
-    height: 100%;
+    height: inherit;
     border-radius: 5px;
     background-color: rgba(64, 87, 143, 0.5);
     border-bottom: 2px solid white;
@@ -55,6 +63,7 @@ export const ImageWrapper = styled.div`
   }
 
   @media only screen and (max-width: 848px) {
+    border-radius: 5px;
     grid-column: 1 / -1;
   }
 `;
@@ -85,7 +94,8 @@ export const Description = styled.div`
     grid-area: 1 / 1/ -1 / -1;
     background-color: rgba(0, 21, 40, 0.9);
     padding: 5%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
   }
 `;
 

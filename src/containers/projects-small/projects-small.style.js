@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SmallBoxStyle = styled.div`
   width: 100%;
   height: 100%;
+  max-width: 371.55px;
   background-color: var(--background-secondary);
   border-radius: 10px;
   padding: 10px;
@@ -10,7 +11,7 @@ export const SmallBoxStyle = styled.div`
 
 export const BoxTop = styled.div`
   width: 100%;
-  height: fit-content;
+  height: 51px;
 
   display: flex;
   align-items: center;
@@ -33,8 +34,7 @@ export const LinkWrapper = styled.a`
 `;
 
 export const FolderIcon = styled.div`
-  width: 59px;
-  aspect-ratio: 1/1;
+  width: 55px;
   padding: 0 11px;
 
   & svg {
@@ -78,7 +78,7 @@ export const Tools = styled.ul`
 
   overflow-x: scroll;
 
-  font-size: 14px;
+  font-size: 12px;
   color: var(--light-yellow);
   margin: 7px 10px 0 0;
 

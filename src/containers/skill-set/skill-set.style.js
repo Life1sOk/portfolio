@@ -18,11 +18,17 @@ export const SkillSetStyle = styled.div`
 export const BasicsContainer = styled.div`
   width: 100%;
   padding: 20px 0;
+  font-size: 14px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(97px, 1fr));
+  grid-template-columns: repeat(3, minmax(44px, 1fr));
   justify-items: center;
   grid-gap: 22px;
+
+  @media only screen and (max-width: 411px) {
+    grid-gap: 15px;
+    font-size: 10px;
+  }
 `;
 
 export const FrameworksContainer = styled(BasicsContainer)`
