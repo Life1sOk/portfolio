@@ -40,7 +40,7 @@ export const ImageWrapper = styled.div`
     width: 100%;
     height: inherit;
     border-radius: 5px;
-    background-color: rgba(64, 87, 143, 0.5);
+    background-color: rgba(64, 87, 143, 0.7);
     border-bottom: 2px solid white;
 
     transition: opacity 0.3s linear;
@@ -185,5 +185,10 @@ export const LinkWrapper = styled.a`
   & svg {
     width: 100%;
     height: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: var(--blue);
   }
 `;

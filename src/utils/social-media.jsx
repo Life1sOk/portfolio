@@ -2,11 +2,7 @@ import React from "react";
 
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
-import {
-  TbBrandTelegram,
-  TbBrandFacebook,
-  TbBrandTwitter,
-} from "react-icons/tb";
+import { TbBrandTelegram, TbBrandFacebook, TbBrandTwitter } from "react-icons/tb";
 
 export const socialMedia = [
   {
@@ -24,11 +20,11 @@ export const socialMedia = [
     icon: <TbBrandFacebook />,
     url: "https://www.facebook.com/andrey.tsoy.3975",
   },
-  {
-    sm: "twitter",
-    icon: <TbBrandTwitter />,
-    url: "https://twitter.com/AndreyTsoy_dev",
-  },
+  // {
+  //   sm: "twitter",
+  //   icon: <TbBrandTwitter />,
+  //   url: "https://twitter.com/AndreyTsoy_dev",
+  // },
 ];
 
 export const locationBasics = {

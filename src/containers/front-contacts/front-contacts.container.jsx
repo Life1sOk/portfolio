@@ -1,15 +1,11 @@
 import React, { memo } from "react";
 
-import { socialMedia } from "../../utils/social-media";
+import { locationBasics, socialMedia } from "../../utils/social-media";
 
+import Mailto from "../../components/mail-to/mail-to.component";
 import IconSocial from "../../components/icon-social/icon-social.component";
 
-import {
-  SocialContacts,
-  EmailLink,
-  StartLine,
-  Email,
-} from "./front-contacts.style";
+import { SocialContacts, EmailLink, StartLine, Email } from "./front-contacts.style";
 
 const FrontContacts = memo(() => {
   return (
@@ -21,7 +17,9 @@ const FrontContacts = memo(() => {
         <StartLine />
       </SocialContacts>
       <EmailLink>
-        <Email>andreytsoy.webdev@gmail.com</Email>
+        <Mailto email={locationBasics.email}>
+          <Email>andreytsoy.webdev@gmail.com</Email>
+        </Mailto>
         <StartLine />
       </EmailLink>
     </>

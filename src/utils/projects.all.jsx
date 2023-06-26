@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import screen from "../assets/projects/picture.png";
 import profile from "../assets/projects/profile.png";
+import linker from "../assets/projects/linker.png";
 
 export const projectStore = () => {
   const { t } = useTranslation();
@@ -20,9 +21,9 @@ export const projectStore = () => {
     // },
     {
       title: `${t("projects.big.project2.title")}`,
-      image: { screen },
+      image: { screen: linker },
       description: `${t("projects.big.project2.description")}`,
-      tools: ["TypeScript", "Redux", "React", "Firebase"],
+      tools: ["TypeScript", "RTK", "React", "Node.js", "PostgreSQL"],
       links: {
         github: "https://github.com/Life1sOk/link-saver",
         website: "https://life1sok.github.io/link-saver/",

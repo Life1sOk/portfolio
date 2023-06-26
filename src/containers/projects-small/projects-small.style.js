@@ -31,6 +31,11 @@ export const LinkWrapper = styled.a`
     width: 100%;
     height: 100%;
   }
+
+  &:hover {
+    cursor: pointer;
+    color: var(--blue);
+  }
 `;
 
 export const FolderIcon = styled.div`
