@@ -1,7 +1,7 @@
 {
   "main.css": "/portfolio/static/css/main.2817728e.chunk.css",
-  "main.js": "/portfolio/static/js/main.7f524437.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.7f524437.chunk.js.map",
+  "main.js": "/portfolio/static/js/main.f21fb8ef.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.f21fb8ef.chunk.js.map",
   "static/js/1.9e999700.chunk.js": "/portfolio/static/js/1.9e999700.chunk.js",
   "static/js/1.9e999700.chunk.js.map": "/portfolio/static/js/1.9e999700.chunk.js.map",
   "static/js/2.78e8aed7.chunk.js": "/portfolio/static/js/2.78e8aed7.chunk.js",
@@ -11,8 +11,8 @@
   "runtime~main.js": "/portfolio/static/js/runtime~main.a86f2095.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.a86f2095.js.map",
   "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.2b2b7da4.cjs",
-  "static/media/andrey-ru.pdf": "/portfolio/static/media/andrey-ru.0f05c008.pdf",
-  "static/media/andrey-eng.pdf": "/portfolio/static/media/andrey-eng.7429b3e4.pdf",
+  "static/media/resume-ru.pdf": "/portfolio/static/media/resume-ru.b3ced4d4.pdf",
+  "static/media/resume-eng.pdf": "/portfolio/static/media/resume-eng.4666ebb4.pdf",
   "static/media/back1.png": "/portfolio/static/media/back1.117a9d89.png",
   "static/media/picture.png": "/portfolio/static/media/picture.e7a55216.png",
   "static/media/profile.png": "/portfolio/static/media/profile.a5d48880.png",
@@ -20,6 +20,6 @@
   "static/media/my-foto.jpg": "/portfolio/static/media/my-foto.6fb35c0d.jpg",
   "static/css/main.2817728e.chunk.css.map": "/portfolio/static/css/main.2817728e.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.946d0e8a4d6c98135dad67de92952ced.js": "/portfolio/precache-manifest.946d0e8a4d6c98135dad67de92952ced.js",
+  "precache-manifest.d1b9f4af8780646a14a0089f361733e7.js": "/portfolio/precache-manifest.d1b9f4af8780646a14a0089f361733e7.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }

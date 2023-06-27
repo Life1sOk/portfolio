@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7f52443771676f3440af",
+    "revision": "f21fb8ef6fdeadf7c97b",
     "url": "/portfolio/static/css/main.2817728e.chunk.css"
   },
   {
-    "revision": "7f52443771676f3440af",
-    "url": "/portfolio/static/js/main.7f524437.chunk.js"
+    "revision": "f21fb8ef6fdeadf7c97b",
+    "url": "/portfolio/static/js/main.f21fb8ef.chunk.js"
   },
   {
     "revision": "9e99970091f88bc9372e",
@@ -28,12 +28,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/getFetch.2b2b7da4.cjs"
   },
   {
-    "revision": "0f05c0087441f270cfb5d86862cf08ed",
-    "url": "/portfolio/static/media/andrey-ru.0f05c008.pdf"
+    "revision": "b3ced4d42c82494eead79d98ab8013fe",
+    "url": "/portfolio/static/media/resume-ru.b3ced4d4.pdf"
   },
   {
-    "revision": "7429b3e4cfacddfd3ae780487ce05618",
-    "url": "/portfolio/static/media/andrey-eng.7429b3e4.pdf"
+    "revision": "4666ebb4b39073c2b84f135a37a346b0",
+    "url": "/portfolio/static/media/resume-eng.4666ebb4.pdf"
   },
   {
     "revision": "117a9d89578cfe238d5b2110a09fd6f0",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/my-foto.6fb35c0d.jpg"
   },
   {
-    "revision": "28130c443ea8931671df637511ebd331",
+    "revision": "f7b71d2e03ca9ab02a772a53ab8d10ec",
     "url": "/portfolio/index.html"
   }
 ];
