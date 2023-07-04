@@ -35,7 +35,7 @@ const ContactMe = () => {
       </ButtonWrapper>
       <SocialWrapper>
         {socialMedia.map((social, index) => (
-          <IconSocial key={index} icon={social.icon} url={social.url} />
+          <IconSocial key={index} icon={social.icon} url={social.url} sm={social.sm} />
         ))}
       </SocialWrapper>
     </ContactMeStyle>

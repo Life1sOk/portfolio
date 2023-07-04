@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NavLinksContainer = styled.ol`
+export const NavLinksContainer = styled.div`
   display: flex;
   flex-direction: ${({ isAside }) => (isAside ? "column" : "row")};
   align-items: center;
@@ -27,7 +27,7 @@ export const SideContainer = styled.div`
   font-size: 14px;
 `;
 
-export const LinkWords = styled.li`
+export const LinkWords = styled.span`
   .number {
     margin-right: 3px;
     color: var(--light-yellow);

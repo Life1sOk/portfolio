@@ -12,13 +12,13 @@ const FrontContacts = memo(() => {
     <>
       <SocialContacts>
         {socialMedia.map((social, index) => (
-          <IconSocial key={index} icon={social.icon} url={social.url} />
+          <IconSocial key={index} icon={social.icon} url={social.url} sm={social.sm} />
         ))}
         <StartLine />
       </SocialContacts>
       <EmailLink>
         <Mailto email={locationBasics.email}>
-          <Email>andreytsoy.webdev@gmail.com</Email>
+          <Email title="My email">andreytsoy.webdev@gmail.com</Email>
         </Mailto>
         <StartLine />
       </EmailLink>

@@ -26,7 +26,7 @@ export const EmailLink = styled(Basic)`
   bottom: 20px;
 `;
 
-export const Email = styled.a`
+export const Email = styled.span`
   font-family: var(--font-secondary);
   font-size: 13px;
   letter-spacing: 2px;

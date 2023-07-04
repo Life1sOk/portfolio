@@ -2,7 +2,7 @@ import React from "react";
 
 import { IconSocialStyle } from "./icon-social.style";
 
-const IconSocial = ({ url, icon, size, type }) => {
+const IconSocial = ({ url, icon, size, type, sm }) => {
   return (
     <IconSocialStyle
       href={url}
@@ -10,6 +10,7 @@ const IconSocial = ({ url, icon, size, type }) => {
       rel="noopener noreferrer"
       size={size}
       type={type}
+      title={sm}
     >
       {icon}
     </IconSocialStyle>

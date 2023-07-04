@@ -25,13 +25,20 @@ const ProjectSmall = ({ data }) => {
           <AiOutlineFolder />
         </FolderIcon>
         <LinksMain>
-          <IconSocial icon={<FiGithub />} url={links.github} size="small" type="white" />
+          <IconSocial
+            icon={<FiGithub />}
+            url={links.github}
+            size="small"
+            type="white"
+            sm={`${title} - github`}
+          />
           {links.website && (
             <IconSocial
               icon={<FiExternalLink />}
               url={links.website}
               size="small"
               type="white"
+              sm={`${title} - link`}
             />
           )}
         </LinksMain>
