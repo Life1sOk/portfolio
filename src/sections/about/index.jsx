@@ -2,7 +2,7 @@ import React, { forwardRef, useState, memo } from "react";
 
 import AboutMeContainer from "../../containers/about-me/about-me.container";
 
-import foto from "../../assets/my-foto.jpg";
+import foto from "../../assets/my-foto.webp";
 
 import { MainAbout, FotoWrapper, Foto } from "./index.style";
 

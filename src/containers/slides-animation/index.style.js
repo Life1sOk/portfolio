@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import back from "../../assets/back1.png";
+import back from "../../assets/back1.webp";
 
 export const SlidesContainer = styled.div`
   position: relative;
