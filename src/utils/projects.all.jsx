@@ -1,24 +1,12 @@
 import { useTranslation } from "react-i18next";
 
-import screen from "../assets/projects/picture.png";
-import profile from "../assets/projects/profile.png";
-import linker from "../assets/projects/linker.png";
+import profile from "../assets/projects/profile.webp";
+import linker from "../assets/projects/linker.webp";
 
 export const projectStore = () => {
   const { t } = useTranslation();
 
   const projects = [
-    // {
-    //   title: "Lorem Ipsum",
-    //   image: { screen },
-    //   description:
-    //     "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-    //   tools: ["TypeScript", "Redux", "React", "Firebase"],
-    //   links: {
-    //     github: "https://github.com/Life1sOk/test-unistory",
-    //     website: "https://life1sok.github.io/test-unistory/",
-    //   },
-    // },
     {
       title: `${t("projects.big.project2.title")}`,
       image: { screen: linker },
