@@ -50,7 +50,7 @@ export const MyProf = styled.h3`
 
   font-size: 40px;
   text-align: left;
-  color: #8892b0;
+  color: var(--font-color);
 
   @media only screen and (max-width: 599px) {
     font-size: 33px;
@@ -61,7 +61,7 @@ export const AboutStyle = styled.p`
   margin-bottom: 34px;
   max-width: 566px;
   font-family: var(--font-secondary);
-  color: #8892b0;
+  color: var(--font-color);
   font-size: 15.5px;
   text-align: left;
   line-height: 1.6;
