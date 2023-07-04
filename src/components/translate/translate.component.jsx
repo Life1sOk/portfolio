@@ -22,10 +22,10 @@ const Translate = ({ type, toggleAction }) => {
 
   return (
     <TranslateStyle type={type}>
-      <Picker state={i18n.resolvedLanguage === "en"} onClick={changeLangEng}>
+      <Picker state={i18n.resolvedLanguage === "en"} onClick={changeLangEng} type={type}>
         eng
       </Picker>
-      <Picker state={i18n.resolvedLanguage === "ru"} onClick={changeLangRus}>
+      <Picker state={i18n.resolvedLanguage === "ru"} onClick={changeLangRus} type={type}>
         rus
       </Picker>
     </TranslateStyle>

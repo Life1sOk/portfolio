@@ -13,13 +13,12 @@ export const TranslateStyle = styled.div`
 export const Picker = styled.button`
   border: none;
   background-color: transparent;
-  padding: 3px;
+  padding: ${({ type }) => (type === "row" ? "5px" : "3px")};
 
   font-family: var(--font-main);
-  font-size: 12px;
+  font-size: ${({ type }) => (type === "row" ? "16px" : "12px")};
 
-  color: ${({ state }) =>
-    state ? "var(--light-yellow)" : "var(--font-color)"};
+  color: ${({ state }) => (state ? "var(--light-yellow)" : "var(--font-color)")};
 
   &:hover {
     cursor: pointer;

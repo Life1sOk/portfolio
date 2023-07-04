@@ -58,7 +58,7 @@ export const LinkWords = styled.span`
         margin-right: 22px;
 
         .link {
-            font-size: 14px;
+            font-size: 13px;
             color: var(--font-color);
         }
     `};
