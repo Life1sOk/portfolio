@@ -10,16 +10,16 @@ const HomePage = lazy(() => import("./home/index"));
 
 const Routing = () => {
   const [_, startTransition] = useTransition();
-  const [suspended, setSuspended] = useState(false);
+  const [suspended, setSuspended] = useState(true);
   const homePageRef = useRef(null);
 
   const scrollHandler = (section) => {
     homePageRef.current.scrollToSection(section);
   };
 
-  useEffect(() => {
-    setTimeout(() => startTransition(() => setSuspended(true)), 3000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => startTransition(() => setSuspended(true)), 3000);
+  // }, []);
 
   return (
     <Routes>

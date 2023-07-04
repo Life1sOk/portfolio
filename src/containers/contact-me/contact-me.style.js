@@ -19,7 +19,7 @@ export const ButtonWrapper = styled.div`
   height: 55px;
 
   margin: 33px auto 0 auto;
-  font-size: 16px;
+  font-size: 15.5px;
 `;
 
 export const SocialWrapper = styled.div`

@@ -18,7 +18,7 @@ export const SkillSetStyle = styled.div`
 export const BasicsContainer = styled.div`
   width: 100%;
   padding: 20px 0;
-  font-size: 14px;
+  font-size: 12px;
 
   display: grid;
   grid-template-columns: repeat(3, minmax(44px, 1fr));

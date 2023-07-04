@@ -12,7 +12,7 @@ const FrontContacts = memo(() => {
     <>
       <SocialContacts>
         {socialMedia.map((social, index) => (
-          <IconSocial key={index} data={social} />
+          <IconSocial key={index} icon={social.icon} url={social.url} />
         ))}
         <StartLine />
       </SocialContacts>

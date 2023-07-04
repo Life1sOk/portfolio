@@ -1,40 +1,25 @@
 import React from "react";
 
-import { socialIcons } from "../../utils/social-media";
+import ImageUi from "./image/image.ui";
+import DescriptionUi from "./description/description.ui";
 
-import Paragraph from "../../components/paragraph/paragraph.component";
-
-import { ProjectBoxStyle, Image, Description, ImageWrapper, DesTitle, DesMain, Tools, Links, LinkWrapper } from './project-box.style';
+import { ProjectBoxStyle } from "./project-box.style";
 
 const ProjectBox = ({ data, isLeftSide }) => {
-    const { title, image, description, tools, links } = data;
+  const { title, image, description, tools, links } = data;
 
-    return (
-        <ProjectBoxStyle>
-            <ImageWrapper isLeftSide={isLeftSide}>
-                <Image src={image.screen} alt={title} />
-            </ImageWrapper>
-            <Description isLeftSide={isLeftSide}>
-                <DesTitle isLeftSide={isLeftSide}>{title}</DesTitle>
-                <DesMain side={isLeftSide ? 'right' : 'left'}>
-                    <Paragraph>{description}</Paragraph>
-                </DesMain>
-                <Tools isLeftSide={isLeftSide}>
-                    {
-                        tools.map((tool, index) => <li key={index}>{tool}</li>)
-                    }
-                </Tools>
-                <Links isLeftSide={isLeftSide}>
-                    <LinkWrapper href={links.github} target="_blank">
-                        {socialIcons.github}
-                    </LinkWrapper>
-                    <LinkWrapper href={links.website} target="_blank">
-                        {socialIcons.view}
-                    </LinkWrapper>
-                </Links>
-            </Description>
-        </ProjectBoxStyle>
-    )
+  return (
+    <ProjectBoxStyle>
+      <ImageUi isLeftSide={isLeftSide} screen={image.screen} title={title} />
+      <DescriptionUi
+        isLeftSide={isLeftSide}
+        title={title}
+        description={description}
+        tools={tools}
+        links={links}
+      />
+    </ProjectBoxStyle>
+  );
 };
 
 export default ProjectBox;

@@ -1,16 +1,25 @@
 import styled from "styled-components";
 
 export const IconSocialStyle = styled.a`
-    width: 27px;
-    aspect-ratio: 1/ 1;
-    color: var(--font-color);
+  width: fit-content;
+  height: fit-content;
 
-    & svg {
-        width: 100%;
-        height: 100%;
-    }
+  padding: 7px;
+  color: var(--font-color);
+  color: ${({ type }) => (type === "white" ? "var(--white)" : "var(--font-color)")};
 
-    &:hover {
-        color: var(--blue)
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & svg {
+    width: ${({ size }) =>
+      size === "small" ? "20px" : size === "normal" ? "24px" : "24px"};
+    height: ${({ size }) =>
+      size === "small" ? "20px" : size === "normal" ? "24px" : "24px"};
+  }
+
+  &:hover {
+    color: var(--blue);
+  }
 `;

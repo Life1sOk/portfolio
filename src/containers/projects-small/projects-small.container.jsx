@@ -3,15 +3,16 @@ import React from "react";
 import { AiOutlineFolder } from "react-icons/ai";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
+import IconSocial from "../../components/icon-social/icon-social.component";
+import Tools from "../../components/tools/tools.component";
+
 import {
   SmallBoxStyle,
   BoxTop,
   FolderIcon,
-  LinkWrapper,
   LinksMain,
   Title,
   Description,
-  Tools,
 } from "./projects-small.style";
 
 const ProjectSmall = ({ data }) => {
@@ -24,23 +25,20 @@ const ProjectSmall = ({ data }) => {
           <AiOutlineFolder />
         </FolderIcon>
         <LinksMain>
-          <LinkWrapper href={links.github} target="_blank">
-            <FiGithub />
-          </LinkWrapper>
+          <IconSocial icon={<FiGithub />} url={links.github} size="small" type="white" />
           {links.website && (
-            <LinkWrapper href={links.website} target="_blank">
-              <FiExternalLink />
-            </LinkWrapper>
+            <IconSocial
+              icon={<FiExternalLink />}
+              url={links.website}
+              size="small"
+              type="white"
+            />
           )}
         </LinksMain>
       </BoxTop>
       <Title>{title}</Title>
       <Description>{description}</Description>
-      <Tools>
-        {tools.map((tool, index) => (
-          <li key={index}>{tool}</li>
-        ))}
-      </Tools>
+      <Tools tools={tools} size="small" />
     </SmallBoxStyle>
   );
 };

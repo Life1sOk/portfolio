@@ -14,6 +14,10 @@ export const HomeContainer = styled.div`
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: 771px) {
+    padding: 0 77px;
+  }
+
   @media only screen and (max-width: 599px) {
     padding: 0 25px;
   }

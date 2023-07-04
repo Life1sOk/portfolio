@@ -22,22 +22,6 @@ export const LinksMain = styled.div`
   display: flex;
 `;
 
-export const LinkWrapper = styled.a`
-  width: 40px;
-  aspect-ratio: 1/1;
-  padding: 10px;
-
-  & svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  &:hover {
-    cursor: pointer;
-    color: var(--blue);
-  }
-`;
-
 export const FolderIcon = styled.div`
   width: 55px;
   padding: 0 11px;
@@ -69,36 +53,6 @@ export const Description = styled.p`
   /* width */
   ::-webkit-scrollbar {
     width: 2px;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--blue);
-    border-radius: 10px;
-  }
-`;
-
-export const Tools = styled.ul`
-  width: 100%;
-
-  overflow-x: scroll;
-
-  font-size: 12px;
-  color: var(--light-yellow);
-  margin: 7px 10px 0 0;
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  & li {
-    margin: 0 0 10px 10px;
-    white-space: nowrap;
-  }
-
-  /* width */
-  ::-webkit-scrollbar {
-    height: 2px;
   }
 
   /* Handle */

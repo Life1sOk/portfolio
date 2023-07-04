@@ -37,4 +37,7 @@ export const IconWrap = styled.div`
 export const NameFont = styled.span`
   font-size: inherit;
   color: var(--font-color);
+
+  display: flex;
+  align-items: center;
 `;

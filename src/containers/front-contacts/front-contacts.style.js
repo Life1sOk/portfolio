@@ -7,9 +7,9 @@ const Basic = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 22px;
+  gap: 17px;
 
-  @media only screen and (max-width: 599px) {
+  @media only screen and (max-width: 771px) {
     display: none;
   }
 `;
