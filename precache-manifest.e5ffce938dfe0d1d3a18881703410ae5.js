@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "f7470583ae76ddb2c008",
+    "revision": "3c64c52c523f4b9a7b6d",
     "url": "/portfolio/static/css/main.23af2be4.chunk.css"
   },
   {
-    "revision": "f7470583ae76ddb2c008",
-    "url": "/portfolio/static/js/main.f7470583.chunk.js"
+    "revision": "3c64c52c523f4b9a7b6d",
+    "url": "/portfolio/static/js/main.3c64c52c.chunk.js"
   },
   {
-    "revision": "be35c115ec7c5f21d806",
-    "url": "/portfolio/static/js/1.be35c115.chunk.js"
+    "revision": "d04ba7941a0c48572545",
+    "url": "/portfolio/static/js/1.d04ba794.chunk.js"
   },
   {
-    "revision": "78e8aed79175f2a18fec",
-    "url": "/portfolio/static/js/2.78e8aed7.chunk.js"
+    "revision": "120ae6a955de1fafd588",
+    "url": "/portfolio/static/js/2.120ae6a9.chunk.js"
   },
   {
     "revision": "0c4d706b37964cf1fbb9",
     "url": "/portfolio/static/js/3.0c4d706b.chunk.js"
   },
   {
-    "revision": "4b03e33151235ad4a10c",
-    "url": "/portfolio/static/js/runtime~main.4b03e331.js"
+    "revision": "63b40d3d2aea991693dd",
+    "url": "/portfolio/static/js/runtime~main.63b40d3d.js"
   },
   {
     "revision": "2b2b7da40e9fe37746226683d444215a",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/my-foto.0cd8c4cf.webp"
   },
   {
-    "revision": "885caadd313cb6f6417683515fe73ead",
+    "revision": "bbf491d9dead702fcafc2f5d3abd0853",
     "url": "/portfolio/index.html"
   }
 ];
