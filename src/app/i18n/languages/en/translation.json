@@ -3,8 +3,8 @@
     "hello": "Hi, my name is",
     "name": "Andrey Tsoy",
     "do": "Front-end developer",
-    "about": "As a web-developer, I am passionate about creating innovative digital projects. My main goals are to develop appealing web interfaces, improve user experience, and achieve success in the online world.",
-    "call": "I am always open to new opportunities!"
+    "about": "I am passionate about creating innovative digital projects. My main goal is to develop attractive web interfaces and enhance user experience.",
+    "call": "Let's create something unique together!"
   },
   "about": {
     "title": "About me",
@@ -24,7 +24,7 @@
       },
       "project3": {
         "title": "Personal portfolio",
-        "description": "My personal website serves as a platform where I showcase my projects and cultivate my career as a web developer. Here, you can explore my skills, achievements, and easily get in touch with me."
+        "description": "My personally designed website showcases my projects. You can also learn more about me, my professional skills, and get in touch with me."
       }
     },
     "small": {
