@@ -34,31 +34,6 @@ export const FotoWrapper = styled.div`
   box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.77);
   -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.77);
   -moz-box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.77);
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-
-    width: 100%;
-    height: 100%;
-    border-bottom: 2px solid white;
-    border-radius: 10px;
-    background-color: ${({ checked }) =>
-      !checked ? "rgba(64, 87, 143, .5)" : "rgba(64, 87, 143, 0)"};
-    transform: translate(-5%, -5%);
-    transition: all 0.3s linear;
-  }
-
-  &:hover {
-    cursor: pointer;
-
-    &::before {
-      opacity: 0;
-    }
-  }
 `;
 
 export const Foto = styled.img`
@@ -67,4 +42,26 @@ export const Foto = styled.img`
   border-radius: 10px;
   object-fit: cover;
   transform: translate(-5%, -5%);
+`;
+
+export const FotoFront = styled.div`
+  display: ${({ isChecked }) => (isChecked ? "none" : "initial")};
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(64, 87, 143, 0.7);
+  border-bottom: 2px solid white;
+
+  transform: translate(-5%, -5%);
+  transition: opacity 0.3s linear;
+
+  &:hover {
+    opacity: 0;
+  }
 `;

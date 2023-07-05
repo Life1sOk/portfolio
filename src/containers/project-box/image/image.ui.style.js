@@ -42,7 +42,6 @@ export const ImageFront = styled.div`
   transition: opacity 0.3s linear;
 
   &:hover {
-    cursor: pointer;
     opacity: 0;
   }
 

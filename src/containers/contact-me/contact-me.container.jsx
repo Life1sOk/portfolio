@@ -25,9 +25,7 @@ const ContactMe = () => {
       <TitleWrapper>
         <Title number={4}>{t("footer.title")}</Title>
       </TitleWrapper>
-      <Paragraph>
-        {t("footer.lastDance.part1")} <br /> {t("footer.lastDance.part2")}
-      </Paragraph>
+      <Paragraph>{t("footer.lastDance.part1")}</Paragraph>
       <ButtonWrapper>
         <Mailto email={locationBasics.email}>
           <Button label={t("others.buttons.mail")} />

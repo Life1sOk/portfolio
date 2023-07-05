@@ -8,9 +8,9 @@
   },
   "about": {
     "title": "About me",
-    "part1": "I am a front-end developer with a broad range of skills, including HTML, CSS, JavaScript, and React. I am also familiar with various libraries such as Redux, React Router, and Styled Components to create projects more efficiently and quickly. Using these technologies, I create beautiful and interactive user interfaces.",
-    "part2": "I also have knowledge of backend development. I use Node.js to create servers and work with CRUD operations. As for the database, I often use PostgreSQL as it provides high performance and flexibility for my projects.",
-    "part3": "Currently, I am actively developing my skills in the front-end. However, I am always open to new opportunities and opportunities to expand my experience."
+    "part1": "I am a front-end developer with over 1.5 years of experience. I am proficient in the essential skills required for development (HTML, CSS, JavaScript). My main tech stack includes React.js, Redux, TypeScript, and Styled Components.",
+    "part2": "In addition, I possess expertise in backend development. I leverage Node.js to create servers and handle CRUD operations. When it comes to databases, I utilize PostgreSQL and Redis, empowering me to efficiently manage data with flexibility.",
+    "part3": "While I currently identify myself as a front-end developer, I am improving my front-end and back-end development skills to enhance and broaden my capabilities."
   },
   "tools": { "title": "Tools i use" },
   "projects": {
@@ -20,11 +20,11 @@
       "project1": { "title": "Kleo4you", "description": "" },
       "project2": {
         "title": "Link saver",
-        "description": "This is a web application for saving links with the ability to group and categorize them into different topics. It also allows to share groups and useful links with other users."
+        "description": "An application for saving useful links with the ability to create groups and categorize them based on different 'topics'. It assists in managing a large number of links and saving them for the future."
       },
       "project3": {
         "title": "Personal portfolio",
-        "description": "My personal website where I have posted information about myself, my projects, and contact details. Here you can learn more about me, my accomplishments, and get in touch with me."
+        "description": "My personal website serves as a platform where I showcase my projects and cultivate my career as a web developer. Here, you can explore my skills, achievements, and easily get in touch with me."
       }
     },
     "small": {
@@ -53,8 +53,7 @@
   "footer": {
     "title": "Get In Touch",
     "lastDance": {
-      "part1": "Thanks for checking out my portfolio! If you'd like to discuss a potential project or just want to say hi, feel free to get in touch using the button below.",
-      "part2": "I'm always open to new opportunities and collaborations."
+      "part1": "I'm always open to new opportunities and collaborations."
     }
   },
   "others": {
