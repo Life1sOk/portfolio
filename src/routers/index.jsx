@@ -18,7 +18,7 @@ const Routing = () => {
   };
 
   useEffect(() => {
-    setTimeout(() => startTransition(() => setSuspended(true)), 1500);
+    setTimeout(() => startTransition(() => setSuspended(true)), 2500);
   }, []);
 
   return (
