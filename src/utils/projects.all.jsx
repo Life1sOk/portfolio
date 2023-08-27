@@ -14,7 +14,7 @@ export const projectStore = () => {
       tools: ["TypeScript", "RTK", "React", "Node.js", "PostgreSQL"],
       links: {
         github: "https://github.com/Life1sOk/link-saver",
-        website: "https://life1sok.github.io/link-saver/",
+        // website: "https://life1sok.github.io/link-saver/",
       },
     },
     {

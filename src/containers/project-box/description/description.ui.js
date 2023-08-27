@@ -29,13 +29,15 @@ const DescriptionUi = ({ isLeftSide, title, description, tools, links }) => {
           size="small"
           sm={`${title} - github`}
         />
-        <IconSocial
-          icon={socialIcons.view}
-          url={links.website}
-          type="white"
-          size="small"
-          sm={`${title} - link`}
-        />
+        {links.website && (
+          <IconSocial
+            icon={socialIcons.view}
+            url={links.website}
+            type="white"
+            size="small"
+            sm={`${title} - link`}
+          />
+        )}
       </Links>
     </DescriptionUiStyle>
   );
