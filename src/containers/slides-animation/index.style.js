@@ -46,6 +46,8 @@ export const BackCheck = styled.div`
   height: 140%;
   z-index: 10;
 
+  transform: rotate(45deg);
+
   background: url(${back});
   background-position: center;
   background-size: contain;

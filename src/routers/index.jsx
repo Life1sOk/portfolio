@@ -6,7 +6,7 @@ import OutletWrapper from "./layouts/outlet-wrapper";
 import Navbar from "../sections/navbar";
 import LoadingAnim from "../components/loading-anim/loading-anim.component";
 
-const HomePage = lazy(() => import("./home/index"));
+const HomePage = lazy(() => import("./home"));
 
 const Routing = () => {
   const [_, startTransition] = useTransition();

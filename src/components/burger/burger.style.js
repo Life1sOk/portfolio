@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledBurger = styled.button`
   height: 32px;
@@ -7,7 +7,7 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0px;
   z-index: 10;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -15,7 +15,7 @@ export const StyledBurger = styled.button`
   &:focus {
     outline: none;
   }
-  
+
   & div {
     width: 2rem;
     height: 0.25rem;
@@ -27,14 +27,14 @@ export const StyledBurger = styled.button`
   }
 
   & .line1 {
-    transform: ${({ open }) => open ? 'rotate(45deg)' : 'none'}
+    transform: ${({ open }) => (open ? "rotate(45deg)" : "none")};
   }
 
   & .line2 {
-    transform: ${({ open }) => open ? 'scaleY(0)' : 'none'}
+    transform: ${({ open }) => (open ? "scaleY(0)" : "none")};
   }
 
   & .line3 {
-    transform: ${({ open }) => open ? 'rotate(-45deg)' : 'none'}
+    transform: ${({ open }) => (open ? "rotate(-45deg)" : "none")};
   }
 `;
