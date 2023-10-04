@@ -2,7 +2,7 @@ import React from "react";
 
 import { TbWorld } from "react-icons/tb";
 
-import { LogoStyle, WorldGlobus, Name, Line } from "./logo.style";
+import { LogoStyle, WorldGlobus, Name } from "./logo.style";
 
 const Logo = () => {
   return (
@@ -10,7 +10,6 @@ const Logo = () => {
       <WorldGlobus>
         <TbWorld />
       </WorldGlobus>
-      <Line />
       <Name>ANDREY</Name>
     </LogoStyle>
   );

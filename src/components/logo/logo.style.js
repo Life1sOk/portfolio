@@ -10,8 +10,8 @@ export const LogoStyle = styled.div`
 `;
 
 export const WorldGlobus = styled.div`
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   color: var(--light-yellow);
 
   animation: logoRotation 12s linear infinite;
@@ -32,15 +32,8 @@ export const WorldGlobus = styled.div`
   }
 `;
 
-export const Line = styled.div`
-  width: 2px;
-  height: 27px;
-
-  background-color: var(--white);
-`;
-
 export const Name = styled.span`
-  font-size: 27px;
+  font-size: 25px;
   font-family: var(--font-logo);
   font-weight: 400;
 `;

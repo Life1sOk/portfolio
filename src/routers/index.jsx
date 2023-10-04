@@ -3,23 +3,23 @@ import React, { Suspense, lazy, useRef, useState, useTransition, useEffect } fro
 import { Routes, Route } from "react-router-dom";
 
 import OutletWrapper from "./layouts/outlet-wrapper";
-import Navbar from "../sections/navbar";
+import Navbar from "../sections/navigation";
 import LoadingAnim from "../components/loading-anim/loading-anim.component";
 
 const HomePage = lazy(() => import("./home"));
 
 const Routing = () => {
   const [_, startTransition] = useTransition();
-  const [suspended, setSuspended] = useState(false);
+  const [suspended, setSuspended] = useState(true);
   const homePageRef = useRef(null);
 
   const scrollHandler = (section) => {
     homePageRef.current.scrollToSection(section);
   };
 
-  useEffect(() => {
-    setTimeout(() => startTransition(() => setSuspended(true)), 2500);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => startTransition(() => setSuspended(true)), 2500);
+  // }, []);
 
   return (
     <Routes>

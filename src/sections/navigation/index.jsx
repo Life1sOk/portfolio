@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import NavLinksContainer from "../../containers/nav-links/nav-links.container";
 import Burger from "../../components/burger/burger";
 import AsideNav from "../../containers/aside-nav/aside-nav.container";
 import Logo from "../../components/logo/logo.component";
+
+import DesktopNavbar from "../../containers/navbar/ui/desktop";
+import MobileNavbar from "../../containers/navbar/ui/mobile";
 
 import {
   NavigationContainer,
@@ -21,10 +23,10 @@ const Navbar = ({ scrollHandler }) => {
   const openNavHandler = () => setOpen(!open);
 
   useEffect(() => {
-    let prevScrollpos = window.pageYOffset;
+    let prevScrollpos = window.scrollY;
 
     const handleScroll = () => {
-      let currentScrollPos = window.pageYOffset;
+      let currentScrollPos = window.scrollY;
 
       if (prevScrollpos > currentScrollPos) {
         navbarRef.current.style.transform = "translateY(0)";
@@ -48,11 +50,7 @@ const Navbar = ({ scrollHandler }) => {
     <NavigationContainer ref={navbarRef}>
       <NavWrapper>
         <AsideNav isOpen={open} openHandler={openNavHandler}>
-          <NavLinksContainer
-            isAside={true}
-            scrollHandler={scrollHandler}
-            openNavHandler={openNavHandler}
-          />
+          <MobileNavbar scrollHandler={scrollHandler} openNavHandler={openNavHandler} />
         </AsideNav>
         <LogoWrapper onClick={() => scrollHandler("Preview")}>
           <Logo />
@@ -61,7 +59,7 @@ const Navbar = ({ scrollHandler }) => {
           <Burger open={open} openToggle={openNavHandler} />
         </BurgerWrapper>
         <NavAsideWrapper>
-          <NavLinksContainer isAside={false} scrollHandler={scrollHandler} />
+          <DesktopNavbar scrollHandler={scrollHandler} />
         </NavAsideWrapper>
       </NavWrapper>
     </NavigationContainer>

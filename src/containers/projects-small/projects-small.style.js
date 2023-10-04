@@ -42,7 +42,7 @@ export const Description = styled.p`
 
   overflow-y: scroll;
 
-  font-family: var(--font-secondary);
+  font-family: var(--font-main);
   font-size: 14px;
   color: var(--font-color);
   margin: 5px 0 5px 10px;

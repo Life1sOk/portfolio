@@ -10,8 +10,7 @@ export const AsideNavStyle = styled.div`
   width: 100vw;
   height: 100vh;
 
-  transform: ${({ status }) =>
-    !status ? "translateX(100%) scale(0)" : "translateX(0) scale(1)"};
+  transform: ${({ status }) => (!status ? "translateX(100%)" : "translateX(0)")};
   transition: transform 0.4s ease-in-out;
 
   @media only screen and (min-width: 474px) {

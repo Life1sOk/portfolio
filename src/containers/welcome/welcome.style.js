@@ -60,7 +60,7 @@ export const MyProf = styled.h3`
 export const AboutStyle = styled.p`
   margin-bottom: 34px;
   max-width: 566px;
-  font-family: var(--font-secondary);
+  font-family: var(--font-main);
   color: var(--font-color);
   font-size: 15.5px;
   text-align: left;
