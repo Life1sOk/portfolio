@@ -1,65 +1,30 @@
 {
-  "homepage": "https://Life1sOk.github.io/portfolio",
-  "name": "portfolio",
+  "name": "portfolio-up",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@emailjs/browser": "^3.6.2",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0",
-    "i18next": "^22.4.15",
-    "i18next-browser-languagedetector": "^7.0.1",
-    "i18next-http-backend": "^2.2.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-hooks-global-state": "^2.1.0",
-    "react-i18next": "^12.2.2",
-    "react-icons": "^4.11.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "^2.1.3",
-    "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4",
-    "workbox-background-sync": "^6.5.4",
-    "workbox-broadcast-update": "^6.5.4",
-    "workbox-cacheable-response": "^6.5.4",
-    "workbox-core": "^6.5.4",
-    "workbox-expiration": "^6.5.4",
-    "workbox-google-analytics": "^6.5.4",
-    "workbox-navigation-preload": "^6.5.4",
-    "workbox-precaching": "^6.5.4",
-    "workbox-range-requests": "^6.5.4",
-    "workbox-routing": "^6.5.4",
-    "workbox-strategies": "^6.5.4",
-    "workbox-streams": "^6.5.4"
-  },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "babel-plugin-styled-components": "^2.1.4",
+    "i18next": "^23.5.1",
+    "next": "latest",
+    "next-i18next": "^14.0.3",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-i18next": "^13.2.2",
+    "react-icons": "^4.11.0",
+    "styled-components": "^6.0.8"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
   }
 }
