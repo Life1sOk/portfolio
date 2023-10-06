@@ -17,9 +17,9 @@ const Routing = () => {
     homePageRef.current.scrollToSection(section);
   };
 
-  // useEffect(() => {
-  //   setTimeout(() => startTransition(() => setSuspended(true)), 2500);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => startTransition(() => setSuspended(true)), 2500);
+  }, []);
 
   return (
     <Routes>
