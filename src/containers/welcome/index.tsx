@@ -1,5 +1,7 @@
 import { useTranslation } from "next-i18next";
 
+import { exoTwo } from "@components/app/fonts";
+
 import { locationBasics } from "@components/utils/social-media";
 
 import Button from "@components/shared/button";
@@ -22,8 +24,8 @@ const WelcomePrev = () => {
     <WelcomeStyle>
       <HelloTitle>{t("welcome.hello")}</HelloTitle>
       <TextStyle>
-        <MyName>{t("welcome.name")}</MyName>
-        <MyProf>{t("welcome.do")}</MyProf>
+        <MyName className={exoTwo.className}>{t("welcome.name")}</MyName>
+        <MyProf className={exoTwo.className}>{t("welcome.do")}</MyProf>
       </TextStyle>
       <AboutStyle>
         <p>{t("welcome.about")}</p>

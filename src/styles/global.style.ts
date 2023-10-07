@@ -14,9 +14,9 @@ const GlobalStyle = createGlobalStyle`
     text-align: center;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     background-color: #001528;
     scroll-behavior: smooth;
   }

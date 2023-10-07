@@ -6,8 +6,8 @@ export const ButtonWrapper = styled.div`
 
   width: 100%;
   height: 100%;
-  min-width: 120px;
-  min-height: 44px;
+  min-width: 115px;
+  min-height: 42px;
   background-color: rgba(255, 255, 255);
   border-radius: 5px;
   flex-shrink: 0;
@@ -29,8 +29,8 @@ export const ButtonStyle = styled.button`
   border-radius: 5px;
 
   color: rgba(136, 146, 244);
-  font-family: var(--font-main);
-  font-size: inherit;
+  font-size: 13px;
+  font-weight: 600;
 
   &:hover {
     cursor: pointer;

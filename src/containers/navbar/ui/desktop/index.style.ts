@@ -16,19 +16,19 @@ export const DesktopNavbarSide = styled.div`
 `;
 
 export const LinkWrapper = styled.p`
-  font-size: 11px;
   padding: 5px 5px 8px 5px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin-right: 22px;
 
   .link {
-    font-size: 11.5px;
+    font-size: 12px;
     color: var(--font-color);
     font-family: var(--font-main);
     font-weight: 600;
   }
 
   .number {
+    font-size: 11px;
     margin-right: 3px;
     color: var(--light-yellow);
   }

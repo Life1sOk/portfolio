@@ -1,15 +1,9 @@
 import React, { useState, useEffect, useRef, RefObject } from "react";
 
-// import Burger from "../../components/burger/burger";
 import AsideModal from "@components/modals/aside-modal";
-// import Logo from "../../components/logo/logo.component";
-
 import Logo from "@components/shared/logo";
 import Burger from "@components/shared/burger";
 import { MobileNav, DesktopNav } from "@components/containers/navbar";
-
-// import DesktopNavbar from "../../containers/navbar/ui/desktop";
-// import MobileNavbar from "../../containers/navbar/ui/mobile";
 
 import {
   NavigationContainer,

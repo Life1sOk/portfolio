@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const TitleStyle = styled.div`
   width: 100%;
-  font-family: var(--font-main);
-  font-style: normal;
+
   font-size: 33px;
+  font-weight: 600;
   color: var(--light-yellow);
   white-space: nowrap;
 

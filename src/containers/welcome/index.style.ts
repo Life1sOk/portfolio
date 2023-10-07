@@ -71,7 +71,8 @@ export const AboutStyle = styled.article`
 
   .acc {
     margin-top: 14px;
-    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 500;
     color: var(--light-yellow);
   }
 
@@ -81,8 +82,6 @@ export const AboutStyle = styled.article`
 `;
 
 export const ButtonWrapper = styled.div`
-  width: 160px;
-  height: 55px;
-
-  font-size: 16px;
+  width: 133px;
+  height: 52px;
 `;

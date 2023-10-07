@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useRef, useImperativeHandle, RefObject } from "react";
 
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import Head from "next/head";
@@ -8,10 +8,48 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import NavigationSub from "@components/sections/navigation";
 import PreviewSub from "@components/sections/preview";
 import AboutSub from "@components/sections/about";
+import SkillsSub from "@components/sections/skills";
+import ProjectsSub from "@components/sections/projects";
+import ContactSub from "@components/sections/contact";
+import FrontContacts from "@components/containers/front-contacts";
 
 import { HomeContainer } from "@components/styles/home.style";
 
 const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const homeRef: any = useRef(null);
+
+  const previewRef: RefObject<HTMLElement> = useRef(null);
+  const aboutRef: RefObject<HTMLElement> = useRef(null);
+  const toolsRef: RefObject<HTMLElement> = useRef(null);
+  const projectsRef: RefObject<HTMLElement> = useRef(null);
+  const contactRef: RefObject<HTMLElement> = useRef(null);
+
+  const scrollIntoViewHandler = (section: string) => {
+    const setting: ScrollIntoViewOptions = {
+      behavior: "smooth",
+    };
+
+    if (section === "Preview") window.scrollTo(0, 0);
+    if (section === "About") aboutRef.current?.scrollIntoView(setting);
+    if (section === "Tools") toolsRef.current?.scrollIntoView(setting);
+    if (section === "Projects") projectsRef.current?.scrollIntoView(setting);
+    if (section === "Contacts") contactRef.current?.scrollIntoView(setting);
+  };
+
+  useImperativeHandle(
+    homeRef,
+    () => {
+      return {
+        scrollToSection(section: string) {
+          scrollIntoViewHandler(section);
+        },
+      };
+    },
+    []
+  );
+
+  const handleScroll = (section: string) => homeRef.current.scrollToSection(section);
+
   return (
     <Fragment>
       <Head>
@@ -21,10 +59,14 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <NavigationSub scrollHandler={() => {}} />
+        <NavigationSub scrollHandler={handleScroll} />
         <HomeContainer>
-          <PreviewSub />
-          <AboutSub />
+          <PreviewSub ref={previewRef} />
+          <AboutSub ref={aboutRef} />
+          <SkillsSub ref={toolsRef} />
+          <ProjectsSub ref={projectsRef} />
+          <ContactSub ref={contactRef} />
+          <FrontContacts />
         </HomeContainer>
       </main>
     </Fragment>

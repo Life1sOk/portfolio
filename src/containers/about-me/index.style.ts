@@ -9,7 +9,7 @@ export const AboutMeStyle = styled.div`
   flex-direction: column;
   gap: 20px;
 
-  font-size: 15.5px;
+  font-size: 15px;
   line-height: 1.6;
   font-weight: 500;
 
