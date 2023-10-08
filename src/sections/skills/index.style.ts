@@ -32,6 +32,7 @@ export const TitleWrapper = styled.div`
 
 export const BoxWrapper = styled.div`
   width: 350px;
+  margin-top: 55px;
 
   @media only screen and (max-width: 1044px) {
     display: none;

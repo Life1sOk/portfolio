@@ -8,8 +8,9 @@ export const useGenerateLinks = () => {
   const links = [
     { title: `${t("others.nav.one")}`, scroll: "About" },
     { title: `${t("others.nav.two")}`, scroll: "Tools" },
-    { title: `${t("others.nav.three")}`, scroll: "Projects" },
-    { title: `${t("others.nav.four")}`, scroll: "Contacts" },
+    { title: `${t("others.nav.three")}`, scroll: "Experience" },
+    { title: `${t("others.nav.four")}`, scroll: "Projects" },
+    { title: `${t("others.nav.five")}`, scroll: "Contacts" },
   ];
 
   return links;

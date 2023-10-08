@@ -54,16 +54,6 @@ export const InfoWrapper = styled.div`
   gap: 10px;
 `;
 
-export const Status = styled.div`
-  width: 100%;
-
-  font-size: 12px;
-  font-weight: 500;
-
-  display: flex;
-  justify-content: space-between;
-`;
-
 export const Title = styled.h3`
   font-size: 20px;
   color: white;

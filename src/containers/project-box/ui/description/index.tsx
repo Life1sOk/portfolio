@@ -3,19 +3,13 @@ import { socialIcons } from "../../../../utils/social-media";
 import Paragraph from "@components/shared/paragraph";
 import IconSocial from "@components/shared/icon-social";
 import Tools from "@components/shared/tools";
+import Space from "@components/shared/space";
 
 import StatusProject from "./status";
 
 import type { IStatus, IPosition } from "../..";
 
-import {
-  DescriptionUiStyle,
-  Main,
-  Links,
-  Status,
-  InfoWrapper,
-  Title,
-} from "./index.style";
+import { DescriptionUiStyle, Main, Links, InfoWrapper, Title } from "./index.style";
 
 interface IComponent {
   title: string;
@@ -36,14 +30,8 @@ const DescriptionUi = (props: IComponent) => {
     <DescriptionUiStyle>
       <Title>{title}</Title>
       <InfoWrapper>
-        <Status>
-          <span>Status:</span>
-          <StatusProject data={status} />
-        </Status>
-        <Status>
-          <span>Possition:</span>
-          <span>{position}</span>
-        </Status>
+        <Space title="Status:" desc={<StatusProject data={status} />} />
+        <Space title="Possition:" desc={<span>{position}</span>} />
       </InfoWrapper>
       <Main>
         <Paragraph title={description} />

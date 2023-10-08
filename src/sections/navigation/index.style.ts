@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavigationContainer = styled.nav`
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 22;
 
@@ -12,25 +12,12 @@ export const NavigationContainer = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s;
+
+  transition: transform 1s;
 
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-
-  animation-name: animationNav;
-  animation-duration: 1s;
-  animation-direction: alternate;
-
-  @keyframes animationNav {
-    from {
-      transform: translateY(-100%);
-    }
-
-    to {
-      transform: translateY(0);
-    }
-  }
 `;
 
 export const NavWrapper = styled.div`

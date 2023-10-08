@@ -16,21 +16,13 @@ export const SkillSetStyle = styled.div`
 `;
 
 export const BasicsContainer = styled.div`
-  padding: 20px 0;
+  width: 100%;
+
+  padding-top: 12px;
   font-size: 12px;
 
-  display: grid;
-  grid-template-columns: repeat(3, minmax(44px, 95px));
+  display: flex;
   justify-content: center;
-  grid-gap: 22px;
-
-  @media only screen and (max-width: 411px) {
-    grid-gap: 15px;
-    font-size: 10px;
-  }
-`;
-
-export const FrameworksContainer = styled(BasicsContainer)`
-  border-top: 1px solid var(--blue);
-  border-bottom: 1px solid var(--blue);
+  flex-wrap: wrap;
+  gap: 12px;
 `;

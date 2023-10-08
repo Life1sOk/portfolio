@@ -33,5 +33,5 @@ export const ImageWhiteFront = styled.div`
   height: 100%;
   border-radius: 5px;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.08);
 `;

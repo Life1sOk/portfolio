@@ -57,7 +57,13 @@
     }
   },
   "others": {
-    "nav": { "one": "About", "two": "Tools", "three": "Projects", "four": "Contact" },
+    "nav": {
+      "one": "About",
+      "two": "Tools",
+      "three": "Experience",
+      "four": "Projects",
+      "five": "Contact"
+    },
     "buttons": { "mail": "Mail me!", "resume": "Resume" }
   }
 }

@@ -2,14 +2,16 @@ import styled from "styled-components";
 
 export const IconWrapContainer = styled.div`
   width: 100%;
-  height: fit-content;
-  max-width: 100px;
-  padding: 15px 10px;
+  /* height: fit-content; */
+  aspect-ratio: 1 / 1;
+  max-width: 75px;
+  /* padding: 15px 10px; */
   border-radius: 5px;
   background-color: var(--background-secondary);
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 9px;
 
@@ -20,7 +22,7 @@ export const IconWrapContainer = styled.div`
 
 export const IconWrap = styled.div`
   width: 55%;
-  max-width: 34px;
+  max-width: 25px;
   aspect-ratio: 1 / 1;
   color: var(--font-color);
 
@@ -31,11 +33,12 @@ export const IconWrap = styled.div`
   & svg {
     width: 100%;
     height: 100%;
+    fill: white;
   }
 `;
 
 export const NameFont = styled.span`
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
   color: var(--font-color);
 

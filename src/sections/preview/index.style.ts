@@ -5,6 +5,8 @@ export const MainContainer = styled.section`
   min-height: calc(100vh - 65.5px);
   background-color: var(--background);
 
+  padding-top: 65.5px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;

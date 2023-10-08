@@ -9,11 +9,12 @@ import NavigationSub from "@components/sections/navigation";
 import PreviewSub from "@components/sections/preview";
 import AboutSub from "@components/sections/about";
 import SkillsSub from "@components/sections/skills";
+import ExperienceSub from "@components/sections/experience";
 import ProjectsSub from "@components/sections/projects";
 import ContactSub from "@components/sections/contact";
 import FrontContacts from "@components/containers/front-contacts";
 
-import { HomeContainer } from "@components/styles/home.style";
+import { HomeWrapper, HomeContainer } from "@components/styles/home.style";
 
 const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const homeRef: any = useRef(null);
@@ -21,6 +22,7 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
   const previewRef: RefObject<HTMLElement> = useRef(null);
   const aboutRef: RefObject<HTMLElement> = useRef(null);
   const toolsRef: RefObject<HTMLElement> = useRef(null);
+  const experienceRef: RefObject<HTMLElement> = useRef(null);
   const projectsRef: RefObject<HTMLElement> = useRef(null);
   const contactRef: RefObject<HTMLElement> = useRef(null);
 
@@ -29,9 +31,10 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
       behavior: "smooth",
     };
 
-    if (section === "Preview") window.scrollTo(0, 0);
+    if (section === "Preview") previewRef.current?.scrollIntoView(setting);
     if (section === "About") aboutRef.current?.scrollIntoView(setting);
     if (section === "Tools") toolsRef.current?.scrollIntoView(setting);
+    if (section === "Experience") experienceRef.current?.scrollIntoView(setting);
     if (section === "Projects") projectsRef.current?.scrollIntoView(setting);
     if (section === "Contacts") contactRef.current?.scrollIntoView(setting);
   };
@@ -58,17 +61,18 @@ const Home = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <HomeWrapper>
         <NavigationSub scrollHandler={handleScroll} />
         <HomeContainer>
           <PreviewSub ref={previewRef} />
           <AboutSub ref={aboutRef} />
           <SkillsSub ref={toolsRef} />
           <ProjectsSub ref={projectsRef} />
+          <ExperienceSub ref={experienceRef} />
           <ContactSub ref={contactRef} />
           <FrontContacts />
         </HomeContainer>
-      </main>
+      </HomeWrapper>
     </Fragment>
   );
 };
