@@ -20,7 +20,7 @@ export const Picker = styled.p<IPicker>`
   border: none;
   background-color: transparent;
   width: ${({ type }) => (type === "row" ? "55px" : "fit-content")};
-  padding: ${({ type }) => (type === "row" ? "5px" : "3px")};
+  padding: ${({ type }) => (type === "row" ? "5px" : "2.5px  5px 2.5px 0")};
 
   font-family: var(--font-main);
   font-size: ${({ type }) => (type === "row" ? "22px" : "12px")};

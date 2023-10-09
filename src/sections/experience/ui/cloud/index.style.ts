@@ -14,9 +14,10 @@ export const MainWrapper = styled.div`
   width: 100%;
   height: fit-content;
 
-  padding: 19px;
+  padding: 13px 16px;
   background-color: var(--background-secondary);
   border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
 
   display: flex;
@@ -30,6 +31,12 @@ export const MainWrapper = styled.div`
     to {
       transform: translateY(-5px);
     }
+  }
+
+  & .infinit {
+    font-size: 14px;
+    font-weight: 600;
+    color: green;
   }
 `;
 
@@ -64,9 +71,4 @@ export const CloudBall = styled.div`
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-`;
-
-export const Position = styled.h4`
-  font-size: 16px;
-  font-weight: 500;
 `;

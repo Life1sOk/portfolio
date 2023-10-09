@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
-export const TitleStyle = styled.div`
-  width: 100%;
+export const TitleStyle = styled.div<{ procent?: number }>`
+  width: ${({ procent }) => (procent ? `${procent}%` : "100%")};
+  height: 40px;
+
+  margin-bottom: 40px;
 
   font-size: 33px;
   font-weight: 600;

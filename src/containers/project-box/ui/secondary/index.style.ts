@@ -6,12 +6,12 @@ export const SmallBoxStyle = styled.div`
   max-width: 371.55px;
   background-color: var(--background-secondary);
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px 10px;
 `;
 
 export const BoxTop = styled.div`
   width: 100%;
-  height: 51px;
+  height: 44px;
 
   display: flex;
   align-items: center;
@@ -32,18 +32,19 @@ export const FolderIcon = styled.div`
   }
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h4`
   text-align: left;
-  padding: 10px 0 10px 10px;
+  font-size: 16.5px;
+  padding: 5px 0 10px 10px;
 `;
 
 export const Description = styled.p`
-  height: 88px;
+  height: 62px;
 
   overflow-y: scroll;
 
   font-family: var(--font-main);
-  font-size: 14px;
+  font-size: 13px;
   color: var(--font-color);
   margin: 5px 0 5px 10px;
   padding-right: 10px;

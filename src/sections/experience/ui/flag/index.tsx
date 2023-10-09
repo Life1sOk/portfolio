@@ -4,12 +4,14 @@ import { FlagStyle, FlagTitle } from "./index.style";
 
 interface IComponent {
   company: string;
+  color?: string;
+  src?: string;
 }
 
-const Flag = ({ company }: IComponent) => {
+const Flag = ({ company, color, src }: IComponent) => {
   return (
-    <FlagStyle>
-      <Image alt="flag" src="/icons/flag-2s-160px.svg" width={100} height={100} />
+    <FlagStyle color={color}>
+      <Image alt="flag" src={src ? src : "/icons/study.gif"} width={100} height={100} />
       <FlagTitle>{company}</FlagTitle>
     </FlagStyle>
   );

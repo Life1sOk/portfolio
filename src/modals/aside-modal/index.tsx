@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import { useEffect, Fragment } from "react";
 
-import { AsideModalWrapper, AsideModalStyle, BlackBox } from "./index.style";
+import { AsideModalStyle, BlackBox } from "./index.style";
 
 interface IComponent {
   isOpen: boolean;
@@ -19,10 +19,10 @@ const AsideModal = ({ isOpen, openHandler, children }: IComponent) => {
   }, [isOpen]);
 
   return (
-    <AsideModalWrapper>
+    <Fragment>
       <AsideModalStyle $status={isOpen}>{children}</AsideModalStyle>
       {isOpen ? <BlackBox onClick={openHandler} /> : null}
-    </AsideModalWrapper>
+    </Fragment>
   );
 };
 

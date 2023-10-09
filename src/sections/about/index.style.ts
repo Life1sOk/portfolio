@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainAbout = styled.section`
   width: 100%;
-  padding: 99px 0;
+  padding: 135px 0;
 
   display: flex;
   justify-content: space-around;

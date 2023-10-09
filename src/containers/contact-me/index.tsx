@@ -23,7 +23,7 @@ const ContactMe = () => {
   return (
     <ContactMeStyle>
       <TitleWrapper>
-        <Title number={4} title={t("footer.title")} />
+        <Title number={5} title={t("footer.title")} />
       </TitleWrapper>
       <Paragraph title={t("footer.lastDance.part1")} />
       <ButtonWrapper>

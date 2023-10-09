@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
-export const FlagStyle = styled.div`
+export const FlagStyle = styled.div<{ color?: string }>`
   width: fit-content;
   height: fit-content;
 
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 0 12px 16px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: ${({ color }) => (color ? color : "rgba(149, 157, 165, 0.2)")} 0px 8px 24px;
+  border: 1px solid rgba(38, 57, 77, 0.2);
 
   display: flex;
   flex-direction: column;

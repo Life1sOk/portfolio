@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProjectsContainer = styled.section`
   width: 100%;
-  padding: 99px 0;
+  padding: 135px 0;
 
   color: white;
 
@@ -10,16 +10,11 @@ export const ProjectsContainer = styled.section`
   flex-direction: column;
 `;
 
-export const ProjectsWrapper = styled.div`
+export const ProjectsStyle = styled.div`
   margin-bottom: 55px;
 `;
 
-export const TitleWrapper = styled.div`
-  width: 70%;
-  margin: 10px 0 44px 0;
-`;
-
-export const ProjectsSmallContainerStyle = styled.div`
+export const SmallWrapper = styled.div`
   width: 100%;
 
   display: flex;
@@ -28,9 +23,10 @@ export const ProjectsSmallContainerStyle = styled.div`
 
 export const TitleSmall = styled.h2`
   margin: 22px 0 33px 0;
+  font-size: 20px;
 `;
 
-export const ProjectsSmallWrapper = styled.div`
+export const SmallStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
   justify-items: center;

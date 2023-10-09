@@ -1,25 +1,23 @@
-import React from "react";
-
 import { tierFront, tierBack } from "./consts";
 
 import Icon from "./ui/icon-wrap";
 
-import { SkillSetStyle, BasicsContainer } from "./index.style";
+import { SkillSetWrapper, SkillSetStyle } from "./index.style";
 
 const SkillSet = () => {
   return (
-    <>
-      <BasicsContainer>
+    <SkillSetWrapper>
+      <SkillSetStyle>
         {tierFront.map((tool, index) => (
           <Icon name={tool.name} icon={tool.icon} key={index} />
         ))}
-      </BasicsContainer>
-      <BasicsContainer>
+      </SkillSetStyle>
+      <SkillSetStyle>
         {tierBack.map((tool, index) => (
           <Icon name={tool.name} icon={tool.icon} key={index} />
         ))}
-      </BasicsContainer>
-    </>
+      </SkillSetStyle>
+    </SkillSetWrapper>
   );
 };
 

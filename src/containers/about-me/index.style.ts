@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const AboutMeStyle = styled.div`
   width: 100%;
-  max-width: 521px;
   border-radius: 10px;
 
   display: flex;
@@ -16,4 +15,13 @@ export const AboutMeStyle = styled.div`
   & p {
     text-align: left;
   }
+`;
+
+export const AboutWrapper = styled.div`
+  width: 100%;
+  max-width: 521px;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
 `;

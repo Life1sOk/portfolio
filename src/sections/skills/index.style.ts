@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const MainWrapper = styled.section`
   width: 100%;
-
-  padding: 99px 0;
+  padding: 135px 0;
 
   display: flex;
   align-items: center;
@@ -18,7 +17,6 @@ export const MainSkills = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 22px;
 
   @media only screen and (max-width: 1044px) {
     width: 100%;
@@ -26,13 +24,9 @@ export const MainSkills = styled.div`
   }
 `;
 
-export const TitleWrapper = styled.div`
-  width: 100%;
-`;
-
 export const BoxWrapper = styled.div`
   width: 350px;
-  margin-top: 55px;
+  margin-top: 70px;
 
   @media only screen and (max-width: 1044px) {
     display: none;

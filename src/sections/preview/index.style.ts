@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const MainContainer = styled.section`
   width: 100%;
-  min-height: calc(100vh - 65.5px);
-  background-color: var(--background);
+  height: fit-content;
+  min-height: 100vh;
 
+  background-color: var(--background);
   padding-top: 65.5px;
 
   display: flex;

@@ -15,7 +15,7 @@ export const TopStyle = styled.div`
   width: 100%;
   height: fit-content;
 
-  padding: 27% 42px 0;
+  padding: 27% 63px 0 34px;
 
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ export const LinkWord = styled.div`
 
   .link {
     color: var(--font-color);
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .number {

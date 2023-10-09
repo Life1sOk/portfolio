@@ -24,14 +24,14 @@ const Translate = ({ type, toggleAction }: IComponent) => {
         onClick={() => handleLngToggle("en")}
         type={type}
       >
-        eng
+        en
       </Picker>
       <Picker
         $state={!!(i18n.resolvedLanguage === "ru")}
         onClick={() => handleLngToggle("ru")}
         type={type}
       >
-        rus
+        ru
       </Picker>
     </TranslateStyle>
   );

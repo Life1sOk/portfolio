@@ -5,7 +5,7 @@ import SkillSet from "@components/containers/skill-set";
 import Title from "@components/shared/title";
 import CubeBox from "@components/containers/cube";
 
-import { MainWrapper, MainSkills, TitleWrapper, BoxWrapper } from "./index.style";
+import { MainWrapper, MainSkills, BoxWrapper } from "./index.style";
 
 const SkillsSub = forwardRef<HTMLElement>(function Skills(_, ref) {
   const { t } = useTranslation();
@@ -16,9 +16,7 @@ const SkillsSub = forwardRef<HTMLElement>(function Skills(_, ref) {
         <CubeBox />
       </BoxWrapper>
       <MainSkills>
-        <TitleWrapper>
-          <Title title={t("tools.title")} number={2} />
-        </TitleWrapper>
+        <Title title={t("tools.title")} number={2} />
         <SkillSet />
       </MainSkills>
     </MainWrapper>

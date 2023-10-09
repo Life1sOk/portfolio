@@ -13,14 +13,14 @@ export const ContactMeStyle = styled.div`
 export const TitleWrapper = styled.div`
   width: 100%;
   max-width: 355px;
-  margin: 0 auto 33px auto;
+  margin: 0 auto;
 `;
 
 export const ButtonWrapper = styled.div`
   width: 133px;
   height: 52px;
 
-  margin: 33px auto 0 auto;
+  margin: 32px auto 0;
 `;
 
 export const SocialWrapper = styled.div`

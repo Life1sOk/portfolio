@@ -1,24 +1,19 @@
 import styled from "styled-components";
 
-export const SkillSetStyle = styled.div`
-  width: 90%;
-  min-width: 360px;
-  border-radius: 10px;
+export const SkillSetWrapper = styled.div`
+  width: 100%;
+  height: fit-content;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 
-  @media only screen and (max-width: 1044px) {
-    min-width: initial;
-  }
+  gap: 34px;
 `;
 
-export const BasicsContainer = styled.div`
+export const SkillSetStyle = styled.div`
   width: 100%;
-
-  padding-top: 12px;
   font-size: 12px;
 
   display: flex;

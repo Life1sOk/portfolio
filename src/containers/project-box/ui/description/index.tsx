@@ -1,3 +1,5 @@
+import { useTranslation } from "next-i18next";
+
 import { socialIcons } from "../../../../utils/social-media";
 
 import Paragraph from "@components/shared/paragraph";
@@ -26,12 +28,14 @@ interface IComponent {
 const DescriptionUi = (props: IComponent) => {
   const { title, description, tools, links, status, position } = props;
 
+  const { t } = useTranslation();
+
   return (
     <DescriptionUiStyle>
       <Title>{title}</Title>
       <InfoWrapper>
-        <Space title="Status:" desc={<StatusProject data={status} />} />
-        <Space title="Possition:" desc={<span>{position}</span>} />
+        <Space title={t("others.status.title")} desc={<StatusProject data={status} />} />
+        <Space title={t("others.status.position")} desc={<span>{position}</span>} />
       </InfoWrapper>
       <Main>
         <Paragraph title={description} />

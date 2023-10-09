@@ -8,11 +8,10 @@ import Title from "@components/shared/title";
 
 import {
   ProjectsContainer,
-  ProjectsWrapper,
-  TitleWrapper,
-  ProjectsSmallContainerStyle,
+  ProjectsStyle,
+  SmallWrapper,
   TitleSmall,
-  ProjectsSmallWrapper,
+  SmallStyle,
 } from "./index.style";
 
 const ProjectsSub = forwardRef<HTMLElement>(function Projects(_, ref) {
@@ -22,22 +21,20 @@ const ProjectsSub = forwardRef<HTMLElement>(function Projects(_, ref) {
 
   return (
     <ProjectsContainer ref={ref}>
-      <TitleWrapper>
-        <Title number={3} title={t("projects.title")} />
-      </TitleWrapper>
-      <ProjectsWrapper>
+      <Title number={3} title={t("projects.title")} procent={70} />
+      <ProjectsStyle>
         {projects.big.map((project, index) => (
           <MainProject key={index} data={project} />
         ))}
-      </ProjectsWrapper>
-      <ProjectsSmallContainerStyle>
+      </ProjectsStyle>
+      <SmallWrapper>
         <TitleSmall>{t("projects.titleSmall")}</TitleSmall>
-        <ProjectsSmallWrapper>
+        <SmallStyle>
           {projects.small.map((project, index) => (
             <ScondaryProject key={index} data={project} />
           ))}
-        </ProjectsSmallWrapper>
-      </ProjectsSmallContainerStyle>
+        </SmallStyle>
+      </SmallWrapper>
     </ProjectsContainer>
   );
 });
